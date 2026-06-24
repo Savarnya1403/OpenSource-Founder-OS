@@ -9,5 +9,16 @@
     "sector": "FinTech",
     "city": "Bengaluru",
     "created_at": "2026-06-24T10:08:00.723075+00:00"
+  },
+  {
+    "id": 2,
+    "email": "baba@gmail.com",
+    "name": "Baba",
+    "hashed_password": "$2b$12$dGqMT7X0mmyvy4EugXJFG.hr/omo8ch9.oSK2GvY7mYhgiK4iKurO",
+    "startup_name": "",
+    "startup_stage": "",
+    "sector": "",
+    "city": "",
+    "created_at": "2026-06-24T16:13:39.779419+00:00"
   }
 ]
