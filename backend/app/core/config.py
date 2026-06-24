@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     # App
     APP_NAME: str = "OpenFounder OS"
     ENVIRONMENT: str = "development"
-    CORS_ORIGINS: str = "http://localhost:3000"
+    CORS_ORIGINS: str = "*"  # Set to specific domains in production via env var
 
     # LLM
     ANTHROPIC_API_KEY: str = ""
