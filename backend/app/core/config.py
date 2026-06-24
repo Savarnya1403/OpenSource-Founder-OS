@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     # App
     APP_NAME: str = "OpenFounder OS"
     ENVIRONMENT: str = "development"
-    CORS_ORIGINS: str = "*"  # Set to specific domains in production via env var
+    CORS_ORIGINS: str = "*"
 
     # LLM
     ANTHROPIC_API_KEY: str = ""
@@ -20,7 +20,16 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080  # 7 days
     ALGORITHM: str = "HS256"
 
-    # Databases
+    # GitHub-as-database (user storage)
+    GITHUB_TOKEN: str = ""       # set in Vercel env vars
+    GITHUB_OWNER: str = "Savarnya1403"
+    GITHUB_REPO: str = "OpenSource-Founder-OS"
+    GITHUB_DB_BRANCH: str = "db"
+
+    # SQLite for forum/traction (ephemeral /tmp on Vercel — fine for MVP)
+    DATABASE_URL: str = "sqlite+aiosqlite:////tmp/openfounder.db"
+
+    # RAG (optional)
     USE_MOCK_RAG: bool = True
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_API_KEY: str = ""
@@ -29,8 +38,6 @@ class Settings(BaseSettings):
     NEO4J_URI: str = "bolt://localhost:7687"
     NEO4J_USER: str = "neo4j"
     NEO4J_PASSWORD: str = "openfounder"
-
-    DATABASE_URL: str = "sqlite+aiosqlite:///./openfounder.db"
 
     @property
     def cors_origins_list(self) -> List[str]:

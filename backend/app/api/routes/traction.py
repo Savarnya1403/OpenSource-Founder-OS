@@ -5,7 +5,6 @@ from sqlalchemy import select, desc
 from typing import Optional
 from app.core.database import get_db
 from app.models.traction import TractionEntryDB, TractionEntryCreate, TractionEntryOut
-from app.models.user import UserDB
 from app.api.deps import get_current_user
 
 router = APIRouter(prefix="/traction", tags=["traction"])
@@ -15,11 +14,11 @@ router = APIRouter(prefix="/traction", tags=["traction"])
 async def get_traction(
     limit: int = 20,
     db: AsyncSession = Depends(get_db),
-    user: UserDB = Depends(get_current_user),
+    user: dict = Depends(get_current_user),
 ):
     result = await db.execute(
         select(TractionEntryDB)
-        .where(TractionEntryDB.user_id == user.id)
+        .where(TractionEntryDB.user_id == user["id"])
         .order_by(desc(TractionEntryDB.entry_date))
         .limit(limit)
     )
@@ -30,9 +29,9 @@ async def get_traction(
 async def create_traction(
     payload: TractionEntryCreate,
     db: AsyncSession = Depends(get_db),
-    user: UserDB = Depends(get_current_user),
+    user: dict = Depends(get_current_user),
 ):
-    entry = TractionEntryDB(user_id=user.id, **payload.model_dump())
+    entry = TractionEntryDB(user_id=user["id"], **payload.model_dump())
     db.add(entry)
     await db.commit()
     await db.refresh(entry)
@@ -42,11 +41,11 @@ async def create_traction(
 @router.get("/chart")
 async def get_traction_chart(
     db: AsyncSession = Depends(get_db),
-    user: UserDB = Depends(get_current_user),
+    user: dict = Depends(get_current_user),
 ):
     result = await db.execute(
         select(TractionEntryDB)
-        .where(TractionEntryDB.user_id == user.id)
+        .where(TractionEntryDB.user_id == user["id"])
         .order_by(TractionEntryDB.entry_date)
         .limit(52)
     )
@@ -83,12 +82,12 @@ async def get_traction_chart(
 async def delete_traction(
     entry_id: int,
     db: AsyncSession = Depends(get_db),
-    user: UserDB = Depends(get_current_user),
+    user: dict = Depends(get_current_user),
 ):
     result = await db.execute(
         select(TractionEntryDB).where(
             TractionEntryDB.id == entry_id,
-            TractionEntryDB.user_id == user.id,
+            TractionEntryDB.user_id == user["id"],
         )
     )
     entry = result.scalar_one_or_none()

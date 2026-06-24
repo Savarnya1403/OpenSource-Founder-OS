@@ -7,7 +7,6 @@ from langchain_core.messages import HumanMessage, AIMessage
 from app.agents.graph import get_graph
 from app.agents.state import OpenFounderState
 from app.models.chat import ChatRequest
-from app.models.user import UserDB
 from app.api.deps import get_optional_user
 from app.core.config import get_settings
 
@@ -21,7 +20,7 @@ _sessions: dict[str, list] = {}
 @router.post("/stream")
 async def chat_stream(
     payload: ChatRequest,
-    user: UserDB | None = Depends(get_optional_user),
+    user: dict | None = Depends(get_optional_user),
 ):
     """Stream chat response via Server-Sent Events."""
     if not settings.ANTHROPIC_API_KEY:
@@ -37,10 +36,10 @@ async def chat_stream(
     startup_profile = {}
     if user:
         startup_profile = {
-            "startup_name": user.startup_name,
-            "startup_stage": user.startup_stage,
-            "sector": user.sector,
-            "city": user.city,
+            "startup_name": user.get("startup_name"),
+            "startup_stage": user.get("startup_stage"),
+            "sector": user.get("sector"),
+            "city": user.get("city"),
         }
     if payload.startup_context:
         startup_profile.update(payload.startup_context)
@@ -107,7 +106,7 @@ async def chat_stream(
 @router.post("/message")
 async def chat_message(
     payload: ChatRequest,
-    user: UserDB | None = Depends(get_optional_user),
+    user: dict | None = Depends(get_optional_user),
 ):
     """Non-streaming chat — returns full response at once."""
     if not settings.ANTHROPIC_API_KEY:
@@ -122,10 +121,10 @@ async def chat_message(
     startup_profile = {}
     if user:
         startup_profile = {
-            "startup_name": user.startup_name,
-            "startup_stage": user.startup_stage,
-            "sector": user.sector,
-            "city": user.city,
+            "startup_name": user.get("startup_name"),
+            "startup_stage": user.get("startup_stage"),
+            "sector": user.get("sector"),
+            "city": user.get("city"),
         }
     if payload.startup_context:
         startup_profile.update(payload.startup_context)

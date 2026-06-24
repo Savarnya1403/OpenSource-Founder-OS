@@ -9,7 +9,6 @@ from app.models.forum import (
     ForumPostOut, ForumReplyOut,
     FORUM_CATEGORIES,
 )
-from app.models.user import UserDB
 from app.api.deps import get_current_user, get_optional_user
 
 router = APIRouter(prefix="/forum", tags=["forum"])
@@ -47,12 +46,12 @@ async def list_posts(
 async def create_post(
     payload: ForumPostCreate,
     db: AsyncSession = Depends(get_db),
-    user: UserDB = Depends(get_current_user),
+    user: dict = Depends(get_current_user),
 ):
     if payload.category not in FORUM_CATEGORIES:
         raise HTTPException(status_code=400, detail=f"Invalid category. Choose from: {FORUM_CATEGORIES}")
     post = ForumPostDB(
-        user_id=user.id,
+        user_id=user["id"],
         title=payload.title,
         body=payload.body,
         category=payload.category,
@@ -84,13 +83,13 @@ async def create_reply(
     post_id: int,
     payload: ForumReplyCreate,
     db: AsyncSession = Depends(get_db),
-    user: UserDB = Depends(get_current_user),
+    user: dict = Depends(get_current_user),
 ):
     result = await db.execute(select(ForumPostDB).where(ForumPostDB.id == post_id))
     post = result.scalar_one_or_none()
     if not post:
         raise HTTPException(status_code=404, detail="Post not found")
-    reply = ForumReplyDB(post_id=post_id, user_id=user.id, body=payload.body)
+    reply = ForumReplyDB(post_id=post_id, user_id=user["id"], body=payload.body)
     db.add(reply)
     post.reply_count = (post.reply_count or 0) + 1
     await db.commit()
