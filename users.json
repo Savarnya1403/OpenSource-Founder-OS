@@ -20,5 +20,16 @@
     "sector": "",
     "city": "",
     "created_at": "2026-06-24T16:13:39.779419+00:00"
+  },
+  {
+    "id": 3,
+    "email": "sanjbanz@gmail.com",
+    "name": "Sk",
+    "hashed_password": "$2b$12$nbANJkNJpvYoLsTTRcANc.j7LAWuOmiVoMAixMm4tS./.jNvgOMoO",
+    "startup_name": "Microsoft",
+    "startup_stage": "Scale",
+    "sector": "Technology",
+    "city": "Seattle",
+    "created_at": "2026-06-24T18:25:50.348593+00:00"
   }
 ]
