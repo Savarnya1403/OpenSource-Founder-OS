@@ -1,0 +1,1936 @@
+[
+  {
+    "id": "peak-xv-partners",
+    "name": "Peak XV Partners",
+    "formerly": "Sequoia India",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B",
+      "Series C",
+      "Growth"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 100000000,
+    "check_size_display": "$1M – $100M+",
+    "sectors": [
+      "SaaS",
+      "Consumer",
+      "FinTech",
+      "HealthTech",
+      "EdTech",
+      "D2C",
+      "Deep Tech",
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru / Mumbai",
+    "website": "https://www.peakxv.com",
+    "linkedin": "https://www.linkedin.com/company/peak-xv-partners",
+    "description": "India's largest and most active VC fund, formerly Sequoia India. Backs companies from early to late stage across all sectors. Known for long-term conviction bets.",
+    "thesis": "Back exceptional founders addressing large markets with a product or service that is 10x better than alternatives.",
+    "notable_portfolio": [
+      "Zomato",
+      "Mamaearth",
+      "BYJU'S",
+      "Razorpay",
+      "OYO",
+      "PolicyBazaar",
+      "KreditBee",
+      "Mensa Brands"
+    ],
+    "partners": [
+      "Rajan Anandan",
+      "Shailendra Singh",
+      "GV Ravishankar",
+      "Ishaan Mittal",
+      "Rohit Agarwal"
+    ],
+    "aum_cr": 150000,
+    "apply_url": "https://www.peakxv.com/contact",
+    "twitter": "https://twitter.com/peakxvpartners",
+    "warm_intro_required": true,
+    "tags": [
+      "top-tier",
+      "all-stage",
+      "pan-india",
+      "consumer",
+      "b2b"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "accel-india",
+    "name": "Accel India",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 20000000,
+    "check_size_display": "$500K – $20M",
+    "sectors": [
+      "SaaS",
+      "Consumer",
+      "FinTech",
+      "Deep Tech",
+      "B2B",
+      "Developer Tools"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://www.accel.com/india",
+    "linkedin": "https://www.linkedin.com/company/accel",
+    "description": "One of the most active early-stage investors in India. Has backed Flipkart, Freshworks, and BrowserStack. Known for strong founder relationships and global network.",
+    "thesis": "Partner with founders at the earliest stages, especially in B2B and enterprise software, and support their global expansion ambitions.",
+    "notable_portfolio": [
+      "Flipkart",
+      "Freshworks",
+      "BrowserStack",
+      "BookMyShow",
+      "Swiggy",
+      "Chargebee",
+      "Moglix"
+    ],
+    "partners": [
+      "Prashanth Prakash",
+      "Prayank Swaroop",
+      "Anand Daniel",
+      "Dinesh Katiyar",
+      "Barath Shankar"
+    ],
+    "aum_cr": 80000,
+    "apply_url": "https://www.accel.com/about",
+    "twitter": "https://twitter.com/Accel",
+    "warm_intro_required": true,
+    "tags": [
+      "top-tier",
+      "early-stage",
+      "b2b-saas",
+      "global-ambition"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "lightspeed-india",
+    "name": "Lightspeed India",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 25000000,
+    "check_size_display": "$500K – $25M",
+    "sectors": [
+      "Consumer",
+      "Enterprise",
+      "FinTech",
+      "HealthTech",
+      "Gaming",
+      "Web3"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Delhi / Bengaluru",
+    "website": "https://lsvp.com",
+    "linkedin": "https://www.linkedin.com/company/lightspeed-venture-partners",
+    "description": "Part of global Lightspeed network. Active in consumer and enterprise in India. Known for backing OYO, Udaan, and Darwinbox.",
+    "thesis": "Invest in founders with an insight-driven approach to transforming large markets in India, across consumer and enterprise.",
+    "notable_portfolio": [
+      "OYO",
+      "Udaan",
+      "Darwinbox",
+      "Sharechat",
+      "Yellow.ai",
+      "Stanza Living",
+      "MediBuddy"
+    ],
+    "partners": [
+      "Bejul Somaia",
+      "Harsha Kumar",
+      "Dev Khare",
+      "Rahul Taneja",
+      "Nishant Rao"
+    ],
+    "aum_cr": 60000,
+    "apply_url": "https://lsvp.com/contact",
+    "twitter": "https://twitter.com/lightspeedvp",
+    "warm_intro_required": true,
+    "tags": [
+      "top-tier",
+      "consumer",
+      "enterprise",
+      "b2b"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "nexus-venture-partners",
+    "name": "Nexus Venture Partners",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 15000000,
+    "check_size_display": "$1M – $15M",
+    "sectors": [
+      "SaaS",
+      "Cloud Infrastructure",
+      "Consumer",
+      "B2B",
+      "Marketplace"
+    ],
+    "geography": [
+      "Pan-India",
+      "India–US"
+    ],
+    "location": "Bengaluru / Mumbai / Menlo Park",
+    "website": "https://nexusvp.com",
+    "linkedin": "https://www.linkedin.com/company/nexus-venture-partners",
+    "description": "India-US VC focused on building global product companies from India. Strong thesis on SaaS and cloud infrastructure.",
+    "thesis": "Partner with Indian founders building global software products, leveraging India's engineering talent to serve world markets.",
+    "notable_portfolio": [
+      "Unacademy",
+      "Postman",
+      "Rapido",
+      "Delhivery",
+      "Druva",
+      "Snapdeal",
+      "Curefit"
+    ],
+    "partners": [
+      "Naren Gupta",
+      "Sandeep Singhal",
+      "Jishnu Bhattacharjee",
+      "Anup Gupta"
+    ],
+    "aum_cr": 50000,
+    "apply_url": "https://nexusvp.com",
+    "twitter": "https://twitter.com/nexusvp",
+    "warm_intro_required": true,
+    "tags": [
+      "india-us",
+      "saas",
+      "cloud",
+      "global-product"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "blume-ventures",
+    "name": "Blume Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 250000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$250K – $5M",
+    "sectors": [
+      "SaaS",
+      "Consumer",
+      "Deep Tech",
+      "FinTech",
+      "Climate Tech",
+      "D2C"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru / Mumbai",
+    "website": "https://blume.vc",
+    "linkedin": "https://www.linkedin.com/company/blume-ventures",
+    "description": "India's leading early-stage VC with a focus on the first institutional cheque. Known for backing Unacademy, Slice, and Dunzo early.",
+    "thesis": "Be the first institutional partner for ambitious Indian founders, providing capital, conviction, and community.",
+    "notable_portfolio": [
+      "Unacademy",
+      "Slice",
+      "Dunzo",
+      "GreyOrange",
+      "Purplle",
+      "Carbon Clean",
+      "Marrow"
+    ],
+    "partners": [
+      "Karthik Reddy",
+      "Sanjay Nath",
+      "Arpit Agarwal",
+      "Ujjwal Jain"
+    ],
+    "aum_cr": 30000,
+    "apply_url": "https://blume.vc/contact",
+    "twitter": "https://twitter.com/BlumeVentures",
+    "warm_intro_required": false,
+    "tags": [
+      "early-stage",
+      "first-cheque",
+      "founder-friendly",
+      "deep-tech"
+    ],
+    "pitch_email": "pitch@blume.vc"
+  },
+  {
+    "id": "kalaari-capital",
+    "name": "Kalaari Capital",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 10000000,
+    "check_size_display": "$1M – $10M",
+    "sectors": [
+      "Consumer",
+      "SaaS",
+      "HealthTech",
+      "EdTech",
+      "Gaming"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://kalaari.com",
+    "linkedin": "https://www.linkedin.com/company/kalaari-capital",
+    "description": "Women-led fund (Vani Kola) with deep roots in the Indian consumer internet ecosystem. Backed Dream11 and Cure.fit.",
+    "thesis": "Back the next generation of Indian consumer companies that deeply understand and serve the aspirations of young India.",
+    "notable_portfolio": [
+      "Dream11",
+      "Cure.fit",
+      "Urban Ladder",
+      "Milkbasket",
+      "Myntra (early)",
+      "Snapdeal (early)"
+    ],
+    "partners": [
+      "Vani Kola",
+      "Rajesh Raju",
+      "Sumit Jain"
+    ],
+    "aum_cr": 25000,
+    "apply_url": "https://kalaari.com/contact",
+    "twitter": "https://twitter.com/KalaariCapital",
+    "warm_intro_required": true,
+    "tags": [
+      "consumer",
+      "gaming",
+      "healthtech",
+      "women-led"
+    ],
+    "pitch_email": "pitch@kalaari.com"
+  },
+  {
+    "id": "3one4-capital",
+    "name": "3one4 Capital",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 250000,
+    "check_size_max_usd": 8000000,
+    "check_size_display": "$250K – $8M",
+    "sectors": [
+      "SaaS",
+      "Deep Tech",
+      "B2B",
+      "Consumer",
+      "AI/ML",
+      "Climate"
+    ],
+    "geography": [
+      "Pan-India",
+      "India–US"
+    ],
+    "location": "Bengaluru",
+    "website": "https://3one4.com",
+    "linkedin": "https://www.linkedin.com/company/3one4capital",
+    "description": "Research-driven early stage VC known for contrarian bets. Backed Locus, Open (neobank), and Setu. Strong LP network in Silicon Valley.",
+    "thesis": "Back founders who approach problems with first-principles thinking and have an unfair advantage—technology, insight, or distribution.",
+    "notable_portfolio": [
+      "Locus",
+      "Yulu",
+      "Open",
+      "Setu",
+      "DarwinboxTimer",
+      "Darwinbox (co-invest)",
+      "Xeno"
+    ],
+    "partners": [
+      "Pranav Pai",
+      "Siddarth Pai",
+      "Anuradha Das Mathur"
+    ],
+    "aum_cr": 20000,
+    "apply_url": "https://3one4.com/contact",
+    "twitter": "https://twitter.com/3one4Capital",
+    "warm_intro_required": false,
+    "tags": [
+      "research-driven",
+      "contrarian",
+      "saas",
+      "deep-tech",
+      "climate"
+    ],
+    "pitch_email": "invest@3one4.com"
+  },
+  {
+    "id": "z47",
+    "name": "Z47 (Matrix Partners India)",
+    "formerly": "Matrix Partners India",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 25000000,
+    "check_size_display": "$1M – $25M",
+    "sectors": [
+      "B2B SaaS",
+      "Consumer",
+      "FinTech",
+      "Logistics",
+      "Marketplace"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru / Mumbai",
+    "website": "https://z47.com",
+    "linkedin": "https://www.linkedin.com/company/z47",
+    "description": "Rebranded from Matrix Partners India in 2024. Known for backing Ola and Razorpay. Strong operator network across India.",
+    "thesis": "Partner with category-defining companies at Series A/B, when there is early proof of product-market fit.",
+    "notable_portfolio": [
+      "Ola",
+      "Razorpay",
+      "Dailyhunt",
+      "Mswipe",
+      "CountX",
+      "Limeroad",
+      "Zetwerk"
+    ],
+    "partners": [
+      "Vikram Vaidyanathan",
+      "Avnish Bajaj",
+      "Rajinder Balaraman",
+      "Tarun Davda"
+    ],
+    "aum_cr": 40000,
+    "apply_url": "https://z47.com/contact",
+    "twitter": "https://twitter.com/z47vc",
+    "warm_intro_required": true,
+    "tags": [
+      "series-a",
+      "b2b",
+      "consumer",
+      "fintech"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "elevation-capital",
+    "name": "Elevation Capital",
+    "formerly": "SAIF Partners India",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B",
+      "Growth"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 50000000,
+    "check_size_display": "$1M – $50M",
+    "sectors": [
+      "Consumer",
+      "FinTech",
+      "SaaS",
+      "HealthTech",
+      "Logistics"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Gurugram / Bengaluru",
+    "website": "https://elevationcapital.com",
+    "linkedin": "https://www.linkedin.com/company/elevation-capital",
+    "description": "One of the oldest India-focused VCs with a portfolio spanning Swiggy, ShareChat, and Paytm. Independent fund since 2022 after separation from GGV.",
+    "thesis": "Invest across stages in companies that will define the next decade of Indian digital consumption and enterprise technology.",
+    "notable_portfolio": [
+      "Swiggy",
+      "ShareChat",
+      "Unacademy",
+      "Meesho",
+      "Paytm (early)",
+      "Delhivery",
+      "Urban Company"
+    ],
+    "partners": [
+      "Mukul Arora",
+      "Ravi Adusumalli",
+      "Mridul Arora",
+      "Mayank Khanduja"
+    ],
+    "aum_cr": 55000,
+    "apply_url": "https://elevationcapital.com",
+    "twitter": "https://twitter.com/ElevationCap",
+    "warm_intro_required": true,
+    "tags": [
+      "consumer",
+      "fintech",
+      "multi-stage",
+      "large-cheque"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "chiratae-ventures",
+    "name": "Chiratae Ventures",
+    "formerly": "IDG Ventures India",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 20000000,
+    "check_size_display": "$1M – $20M",
+    "sectors": [
+      "Consumer",
+      "SaaS",
+      "HealthTech",
+      "EdTech",
+      "D2C",
+      "Enterprise"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru / Delhi",
+    "website": "https://chiratae.com",
+    "linkedin": "https://www.linkedin.com/company/chiratae-ventures",
+    "description": "Formerly IDG Ventures India. One of India's oldest VCs with 17+ years of experience. Known for Firstcry and Lenskart IPOs.",
+    "thesis": "Invest in category-creating Indian companies that address fundamental gaps in the Indian consumer and enterprise landscape.",
+    "notable_portfolio": [
+      "Firstcry",
+      "Lenskart",
+      "Cure.fit",
+      "HDFC Credila",
+      "Uniphore",
+      "Myntra (early)"
+    ],
+    "partners": [
+      "Sudhir Sethi",
+      "TC Meenakshisundaram",
+      "Venkatesh Peddi",
+      "Beenext India"
+    ],
+    "aum_cr": 35000,
+    "apply_url": "https://chiratae.com/contact",
+    "twitter": "https://twitter.com/ChirataeVC",
+    "warm_intro_required": true,
+    "tags": [
+      "d2c",
+      "edtech",
+      "healthtech",
+      "ipo-track-record"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "stellaris-venture-partners",
+    "name": "Stellaris Venture Partners",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 7000000,
+    "check_size_display": "$500K – $7M",
+    "sectors": [
+      "SaaS",
+      "Deep Tech",
+      "Consumer",
+      "FinTech",
+      "B2B"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://stellarisvp.com",
+    "linkedin": "https://www.linkedin.com/company/stellaris-venture-partners",
+    "description": "Founded by ex-Helion Venture Partners GPs. Strong focus on B2B and SaaS companies targeting global markets from India.",
+    "thesis": "Back founders at the intersection of insight + distribution advantage, especially in B2B SaaS going global.",
+    "notable_portfolio": [
+      "Jai Kisan",
+      "Superops",
+      "Pixis",
+      "SuperK",
+      "Nory",
+      "Jar"
+    ],
+    "partners": [
+      "Ritesh Banglani",
+      "Alok Goyal",
+      "Rahul Chowdhri"
+    ],
+    "aum_cr": 15000,
+    "apply_url": "https://stellarisvp.com/contact",
+    "twitter": "https://twitter.com/StellarisvP",
+    "warm_intro_required": false,
+    "tags": [
+      "b2b-saas",
+      "global-saas",
+      "deep-tech",
+      "founder-friendly"
+    ],
+    "pitch_email": "invest@stellarisvp.com"
+  },
+  {
+    "id": "fireside-ventures",
+    "name": "Fireside Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$500K – $5M",
+    "sectors": [
+      "D2C",
+      "Consumer Brands",
+      "FMCG",
+      "Personal Care",
+      "Food & Beverage"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru / Delhi",
+    "website": "https://firesideventures.in",
+    "linkedin": "https://www.linkedin.com/company/fireside-ventures",
+    "description": "India's premier consumer brand-focused VC. Backed Mamaearth from early stage. Specializes in building D2C consumer brands in India.",
+    "thesis": "Back the next generation of purpose-led consumer brands that solve genuine consumer pain, with a digital-first approach.",
+    "notable_portfolio": [
+      "Mamaearth",
+      "Yoga Bar",
+      "Bombay Shaving Company",
+      "mCaffeine",
+      "Nua",
+      "Sanfe",
+      "Slurrp Farm"
+    ],
+    "partners": [
+      "Kannan Sitaram",
+      "Vinay Singh",
+      "Anil Joshi"
+    ],
+    "aum_cr": 12000,
+    "apply_url": "https://firesideventures.in/apply",
+    "twitter": "https://twitter.com/FiresideVC",
+    "warm_intro_required": false,
+    "tags": [
+      "d2c",
+      "consumer-brands",
+      "fmcg",
+      "personal-care",
+      "specialist"
+    ],
+    "pitch_email": "pitch@firesideventures.in"
+  },
+  {
+    "id": "omnivore-partners",
+    "name": "Omnivore Partners",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 10000000,
+    "check_size_display": "$500K – $10M",
+    "sectors": [
+      "AgriTech",
+      "Food Tech",
+      "Climate Tech",
+      "Rural India",
+      "Supply Chain"
+    ],
+    "geography": [
+      "Pan-India (Rural Focus)"
+    ],
+    "location": "Delhi / Mumbai",
+    "website": "https://omnivore.vc",
+    "linkedin": "https://www.linkedin.com/company/omnivore-partners",
+    "description": "India's only specialist agri-food-climate VC. Deep expertise in farm-to-fork innovation and rural India. Backed by DFIs and impact investors.",
+    "thesis": "Build a profitable, sustainable food and agriculture system in India that benefits 600M+ farmers and rural communities.",
+    "notable_portfolio": [
+      "Stellapps",
+      "AgrSmart",
+      "Jai Kisan",
+      "WayCool Foods",
+      "SatSure",
+      "DeHaat",
+      "Animall"
+    ],
+    "partners": [
+      "Mark Kahn",
+      "Jinesh Shah",
+      "Reihem Roy"
+    ],
+    "aum_cr": 8000,
+    "apply_url": "https://omnivore.vc/apply",
+    "twitter": "https://twitter.com/OmnivoreVC",
+    "warm_intro_required": false,
+    "tags": [
+      "agritech",
+      "food",
+      "climate",
+      "rural",
+      "impact",
+      "specialist"
+    ],
+    "pitch_email": "pitch@omnivore.vc"
+  },
+  {
+    "id": "india-quotient",
+    "name": "India Quotient",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 200000,
+    "check_size_max_usd": 3000000,
+    "check_size_display": "$200K – $3M",
+    "sectors": [
+      "Bharat Consumer",
+      "FinTech",
+      "Social Media",
+      "Regional Language",
+      "Rural Tech"
+    ],
+    "geography": [
+      "Tier-2",
+      "Tier-3 India",
+      "Bharat"
+    ],
+    "location": "Mumbai",
+    "website": "https://indiaquotient.in",
+    "linkedin": "https://www.linkedin.com/company/india-quotient",
+    "description": "Specializes in Bharat-focused startups — products for the next 500M Indian internet users in Tier-2 and Tier-3 cities. Backed ShareChat and Meesho.",
+    "thesis": "The next wave of Indian internet will be driven by regional language, vernacular media, and social commerce. We back those founders.",
+    "notable_portfolio": [
+      "ShareChat",
+      "Meesho",
+      "PagarBook",
+      "OTO Capital",
+      "Jar",
+      "GoKwik"
+    ],
+    "partners": [
+      "Madhukar Sinha",
+      "Anand Lunia"
+    ],
+    "aum_cr": 8000,
+    "apply_url": "https://indiaquotient.in/portfolio",
+    "twitter": "https://twitter.com/IndiaQuotient",
+    "warm_intro_required": false,
+    "tags": [
+      "bharat",
+      "tier-2-3",
+      "vernacular",
+      "social-commerce",
+      "specialist"
+    ],
+    "pitch_email": "pitch@indiaquotient.in"
+  },
+  {
+    "id": "100x-vc",
+    "name": "100X.VC",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 100000,
+    "check_size_max_usd": 500000,
+    "check_size_display": "₹50L – ₹4 Cr",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Mumbai",
+    "website": "https://100x.vc",
+    "linkedin": "https://www.linkedin.com/company/100x-vc",
+    "description": "India's leading first-cheque VC. Invests iSAFE notes in 100 startups per year. Strong Mumbai-based network. Known for high-volume, early-stage bets.",
+    "thesis": "Every startup deserves a first institutional investor. We write the first cheque, fast, with minimal dilution, using iSAFE.",
+    "notable_portfolio": [
+      "300+ startups across 6 cohorts"
+    ],
+    "partners": [
+      "Yagnesh Sanghrajka",
+      "Ninad Karpe",
+      "Sanjay Mehta"
+    ],
+    "aum_cr": 5000,
+    "apply_url": "https://100x.vc/apply",
+    "twitter": "https://twitter.com/100xVC",
+    "warm_intro_required": false,
+    "tags": [
+      "first-cheque",
+      "isafe",
+      "high-volume",
+      "pre-seed",
+      "accessible"
+    ],
+    "pitch_email": "apply@100x.vc"
+  },
+  {
+    "id": "pi-ventures",
+    "name": "pi Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 200000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$200K – $5M",
+    "sectors": [
+      "AI/ML",
+      "Deep Tech",
+      "IoT",
+      "Robotics",
+      "HealthTech (AI)",
+      "Enterprise AI"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://pi.ventures",
+    "linkedin": "https://www.linkedin.com/company/pi-ventures",
+    "description": "India's leading deep tech and AI-focused VC. Specializes in companies where AI and ML are the core product differentiation, not just a feature.",
+    "thesis": "Back technical founders building products where AI/ML is the moat, not just a feature — from robotics to healthcare AI.",
+    "notable_portfolio": [
+      "Niramai",
+      "Myelin Foundry",
+      "Zuddl",
+      "Sarvam AI",
+      "CropIn",
+      "Dozee",
+      "Flixstock"
+    ],
+    "partners": [
+      "Manish Singhal",
+      "Umakant Soni"
+    ],
+    "aum_cr": 6000,
+    "apply_url": "https://pi.ventures/contact",
+    "twitter": "https://twitter.com/piventures",
+    "warm_intro_required": false,
+    "tags": [
+      "deep-tech",
+      "ai-ml",
+      "iot",
+      "robotics",
+      "specialist",
+      "technical-founders"
+    ],
+    "pitch_email": "pitch@pi.ventures"
+  },
+  {
+    "id": "antler-india",
+    "name": "Antler India",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Idea",
+      "Pre-Seed"
+    ],
+    "check_size_min_usd": 100000,
+    "check_size_max_usd": 500000,
+    "check_size_display": "$100K – $500K + co-founder matching",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://www.antler.co/location/india",
+    "linkedin": "https://www.linkedin.com/company/antler",
+    "description": "Global VC that helps individuals build companies. Runs cohort programs in Bengaluru where talented individuals are matched as co-founders and funded from day 1.",
+    "thesis": "The hardest part of starting a startup is finding the right co-founder. We solve that and fund the team from day zero.",
+    "notable_portfolio": [
+      "Flam",
+      "Kaleidofin",
+      "60+ India portfolio companies"
+    ],
+    "partners": [
+      "Rajiv Srivatsa",
+      "Nitin Sharma"
+    ],
+    "aum_cr": 4000,
+    "apply_url": "https://www.antler.co/apply",
+    "twitter": "https://twitter.com/AntlerGlobal",
+    "warm_intro_required": false,
+    "tags": [
+      "co-founder-matching",
+      "pre-idea",
+      "cohort",
+      "accessible",
+      "global"
+    ],
+    "pitch_email": "india@antler.co"
+  },
+  {
+    "id": "prime-venture-partners",
+    "name": "Prime Venture Partners",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$500K – $5M",
+    "sectors": [
+      "FinTech",
+      "SaaS",
+      "Consumer Tech",
+      "B2B"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://primevp.in",
+    "linkedin": "https://www.linkedin.com/company/prime-venture-partners",
+    "description": "Founded by serial entrepreneurs. Known for hands-on mentorship and operator experience. Backed Niyo, Happay (acquired by CRED), and MyGate.",
+    "thesis": "Bring operator experience and network to founders solving fundamental India-specific problems in fintech and consumer software.",
+    "notable_portfolio": [
+      "Happay (acq. CRED)",
+      "Niyo",
+      "DotPe",
+      "MyGate",
+      "Freo",
+      "Lemnisk"
+    ],
+    "partners": [
+      "Sanjay Swamy",
+      "Amit Somani",
+      "Shripati Acharya"
+    ],
+    "aum_cr": 7000,
+    "apply_url": "https://primevp.in/submit-your-pitch",
+    "twitter": "https://twitter.com/PrimeVP",
+    "warm_intro_required": false,
+    "tags": [
+      "fintech",
+      "saas",
+      "operator-vcs",
+      "hands-on"
+    ],
+    "pitch_email": "pitch@primevp.in"
+  },
+  {
+    "id": "stellaris-vp",
+    "name": "Fundamentum Partnership",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 3000000,
+    "check_size_max_usd": 20000000,
+    "check_size_display": "$3M – $20M",
+    "sectors": [
+      "SaaS",
+      "Tech-enabled Services",
+      "Enterprise",
+      "B2B"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://fundamentum.in",
+    "linkedin": "https://www.linkedin.com/company/fundamentum",
+    "description": "Founded by Nandan Nilekani (Infosys co-founder, Aadhaar architect) and Sanjeev Aggarwal. Focuses on Indian mid-market B2B and tech-enabled services.",
+    "thesis": "Back Indian companies serving the mid-market opportunity at Series A/B with proven product-market fit and a clear path to profitability.",
+    "notable_portfolio": [
+      "Juspay",
+      "Kissht",
+      "Furlenco",
+      "Fynd",
+      "Zolo",
+      "Locus"
+    ],
+    "partners": [
+      "Nandan Nilekani",
+      "Sanjeev Aggarwal",
+      "Ashish Kumar"
+    ],
+    "aum_cr": 10000,
+    "apply_url": "https://fundamentum.in",
+    "twitter": "https://twitter.com/NandanNilekani",
+    "warm_intro_required": true,
+    "tags": [
+      "series-a-b",
+      "b2b",
+      "saas",
+      "mid-market",
+      "infosys-network"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "venture-catalysts",
+    "name": "Venture Catalysts (VCats)",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 100000,
+    "check_size_max_usd": 1000000,
+    "check_size_display": "₹50L – ₹5 Cr",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Delhi / Mumbai / Bengaluru",
+    "website": "https://venturecatalysts.in",
+    "linkedin": "https://www.linkedin.com/company/venture-catalysts",
+    "description": "India's largest and most active angel investor platform. 400+ HNI investors across 6 cities. Also runs 9Unicorns accelerator.",
+    "thesis": "Democratize early-stage investing in India by pooling HNI capital into diverse startup bets across all sectors.",
+    "notable_portfolio": [
+      "300+ startups including Otipy, WinZO, NoBroker (co-invest)"
+    ],
+    "partners": [
+      "Apoorv Ranjan Sharma",
+      "Anil Jain",
+      "Anuj Golecha",
+      "Gaurav Jain"
+    ],
+    "aum_cr": 3000,
+    "apply_url": "https://venturecatalysts.in/apply",
+    "twitter": "https://twitter.com/VentureCatIN",
+    "warm_intro_required": false,
+    "tags": [
+      "angel-platform",
+      "pre-seed",
+      "accessible",
+      "hni-pool",
+      "9unicorns"
+    ],
+    "pitch_email": "deals@venturecatalysts.in"
+  },
+  {
+    "id": "axilor-ventures",
+    "name": "Axilor Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 50000,
+    "check_size_max_usd": 500000,
+    "check_size_display": "₹25L – ₹2.5 Cr (accelerator + seed)",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://axilor.com",
+    "linkedin": "https://www.linkedin.com/company/axilor-ventures",
+    "description": "Founded by Kris Gopalakrishnan (Infosys) and SD Shibulal. Runs structured accelerator programs + seed fund. Strong Infosys alumni mentor network.",
+    "thesis": "Help first-time founders cross the valley of death from idea to Series A through structured acceleration and early capital.",
+    "notable_portfolio": [
+      "100+ startups across accelerator cohorts"
+    ],
+    "partners": [
+      "Kris Gopalakrishnan",
+      "SD Shibulal",
+      "Ganapathy Venugopal"
+    ],
+    "aum_cr": 2000,
+    "apply_url": "https://axilor.com/apply",
+    "twitter": "https://twitter.com/axilor",
+    "warm_intro_required": false,
+    "tags": [
+      "accelerator",
+      "infosys-alumni",
+      "pre-seed",
+      "accessible",
+      "structured-program"
+    ],
+    "pitch_email": "programs@axilor.com"
+  },
+  {
+    "id": "bharat-innovation-fund",
+    "name": "Bharat Innovation Fund",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 10000000,
+    "check_size_display": "$1M – $10M",
+    "sectors": [
+      "Deep Tech",
+      "R&D-intensive",
+      "Healthcare",
+      "Agriculture",
+      "Energy",
+      "Defence"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Hyderabad",
+    "website": "https://bharatinnovationfund.com",
+    "linkedin": "https://www.linkedin.com/company/bharat-innovation-fund",
+    "description": "Hyderabad-based deep tech VC with strong connections to IIT Hyderabad, IIIT Hyderabad, and CSIR labs. Focus on R&D-heavy startups solving India-specific problems.",
+    "thesis": "Back Indian deeptech that solves fundamental problems in healthcare, agriculture, energy, and defence with proprietary IP.",
+    "notable_portfolio": [
+      "Eruvaka (aquatech)",
+      "Praan (clean air)",
+      "StanPlus (ambulance)",
+      "Oakter (smart home)"
+    ],
+    "partners": [
+      "Sateesh Andra",
+      "Shashi Reddy"
+    ],
+    "aum_cr": 5000,
+    "apply_url": "https://bharatinnovationfund.com/apply",
+    "twitter": "https://twitter.com/BharatIF",
+    "warm_intro_required": false,
+    "tags": [
+      "deep-tech",
+      "r-and-d",
+      "hyderabad",
+      "defence",
+      "healthcare",
+      "agriculture"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "iron-pillar",
+    "name": "Iron Pillar",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Series B",
+      "Series C",
+      "Growth"
+    ],
+    "check_size_min_usd": 10000000,
+    "check_size_max_usd": 50000000,
+    "check_size_display": "$10M – $50M",
+    "sectors": [
+      "B2B SaaS",
+      "FinTech",
+      "Enterprise Software",
+      "Consumer Tech"
+    ],
+    "geography": [
+      "India",
+      "India-origin global"
+    ],
+    "location": "Gurugram",
+    "website": "https://ironpillar.com",
+    "linkedin": "https://www.linkedin.com/company/iron-pillar",
+    "description": "Growth-stage specialist with deep expertise in B2B and enterprise software. Backed Zenoti (unicorn), Cashfree, and BetterPlace.",
+    "thesis": "Scale companies that have proven PMF and unit economics, helping them expand from India to global markets.",
+    "notable_portfolio": [
+      "Zenoti",
+      "Cashfree Payments",
+      "Mfine",
+      "Licious",
+      "BetterPlace",
+      "Healthians"
+    ],
+    "partners": [
+      "Anand Prasanna",
+      "Mohanjit Jolly"
+    ],
+    "aum_cr": 8000,
+    "apply_url": "https://ironpillar.com",
+    "twitter": "https://twitter.com/IronPillarFund",
+    "warm_intro_required": true,
+    "tags": [
+      "growth-stage",
+      "b2b-saas",
+      "series-b-c",
+      "global-expansion"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "ankur-capital",
+    "name": "Ankur Capital",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 200000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$200K – $5M",
+    "sectors": [
+      "Agriculture",
+      "Healthcare",
+      "Education",
+      "Climate",
+      "Livelihoods",
+      "Rural India"
+    ],
+    "geography": [
+      "Rural India",
+      "Tier-2/3"
+    ],
+    "location": "Delhi",
+    "website": "https://ankurcapital.com",
+    "linkedin": "https://www.linkedin.com/company/ankur-capital",
+    "description": "Impact-focused VC investing in technology companies addressing underserved markets in India — especially rural, agricultural, and low-income segments.",
+    "thesis": "Build profitable businesses that create measurable positive impact for underserved Indian communities through technology.",
+    "notable_portfolio": [
+      "AgrSmart",
+      "Farmlink",
+      "Tessol",
+      "Frontier Markets",
+      "Hesa",
+      "Gram Unnati"
+    ],
+    "partners": [
+      "Ritu Verma",
+      "Rema Subramanian",
+      "Anirban Lahiri"
+    ],
+    "aum_cr": 4000,
+    "apply_url": "https://ankurcapital.com/apply",
+    "twitter": "https://twitter.com/AnkurCapital",
+    "warm_intro_required": false,
+    "tags": [
+      "impact",
+      "agriculture",
+      "rural",
+      "underserved",
+      "climate",
+      "women-led"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "omidyar-network-india",
+    "name": "Omidyar Network India",
+    "formerly": null,
+    "type": "Impact VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 15000000,
+    "check_size_display": "$500K – $15M",
+    "sectors": [
+      "Digital Financial Services",
+      "Property Rights",
+      "Governance Tech",
+      "Education",
+      "Health",
+      "Livelihoods"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Delhi / Bengaluru",
+    "website": "https://omidyarnetwork.in",
+    "linkedin": "https://www.linkedin.com/company/omidyar-network",
+    "description": "Part of Pierre Omidyar (eBay founder)'s philanthropy network. Combines grants and equity investments in companies and nonprofits creating social impact in India.",
+    "thesis": "Invest in companies and nonprofits creating pathways to greater individual opportunity and societal impact across financial access, digital public infrastructure, and livelihoods.",
+    "notable_portfolio": [
+      "Dvara Trust",
+      "IFMR",
+      "Artoo (acquired)",
+      "Pratham",
+      "Sahamati",
+      "Signzy"
+    ],
+    "partners": [
+      "Roopa Kudva",
+      "Amrita Agrawal",
+      "Nidhi Chadha"
+    ],
+    "aum_cr": 10000,
+    "apply_url": "https://omidyarnetwork.in/contact",
+    "twitter": "https://twitter.com/OmidyarNetworkI",
+    "warm_intro_required": false,
+    "tags": [
+      "impact",
+      "financial-inclusion",
+      "governance",
+      "education",
+      "grants-and-equity"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "quona-capital",
+    "name": "Quona Capital",
+    "formerly": null,
+    "type": "Impact VC",
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 2000000,
+    "check_size_max_usd": 15000000,
+    "check_size_display": "$2M – $15M",
+    "sectors": [
+      "FinTech",
+      "Financial Inclusion",
+      "InsurTech",
+      "Payments",
+      "Credit"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Delhi / Bengaluru",
+    "website": "https://quona.com",
+    "linkedin": "https://www.linkedin.com/company/quona-capital",
+    "description": "Global FinTech impact investor focused on financial inclusion for underserved populations across India, Southeast Asia, and Africa.",
+    "thesis": "FinTech for the underserved: invest in companies that bring affordable, accessible financial services to low-income and underbanked populations.",
+    "notable_portfolio": [
+      "Lendingkart",
+      "LoanTap",
+      "NiYO",
+      "Signzy",
+      "Smartcoin",
+      "Aye Finance"
+    ],
+    "partners": [
+      "Ganesh Rengaswamy",
+      "Monica Brand Engel",
+      "Jonathan Whittle"
+    ],
+    "aum_cr": 6000,
+    "apply_url": "https://quona.com/apply",
+    "twitter": "https://twitter.com/QuonaCapital",
+    "warm_intro_required": false,
+    "tags": [
+      "fintech",
+      "financial-inclusion",
+      "impact",
+      "credit",
+      "global"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "titan-capital",
+    "name": "Titan Capital",
+    "formerly": null,
+    "type": "Angel Fund",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 100000,
+    "check_size_max_usd": 1000000,
+    "check_size_display": "₹50L – ₹5 Cr",
+    "sectors": [
+      "Consumer",
+      "D2C",
+      "SaaS",
+      "Social Commerce",
+      "FinTech"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Delhi / Bengaluru",
+    "website": "https://titancapital.vc",
+    "linkedin": "https://www.linkedin.com/company/titan-capital",
+    "description": "Fund by Sarthak Ahuja and Utsav Somani. Known for early checks in 200+ companies including CoinDCX and Urban Company. Strong community of founders.",
+    "thesis": "Back bold founders at pre-seed and seed who have a contrarian insight and can move fast to capture emerging Indian consumer trends.",
+    "notable_portfolio": [
+      "CoinDCX",
+      "Urban Company (co-invest)",
+      "Rooter",
+      "Jar (co-invest)",
+      "200+ companies"
+    ],
+    "partners": [
+      "Sarthak Ahuja",
+      "Utsav Somani"
+    ],
+    "aum_cr": 2000,
+    "apply_url": "https://titancapital.vc",
+    "twitter": "https://twitter.com/titanvcs",
+    "warm_intro_required": false,
+    "tags": [
+      "angel-fund",
+      "pre-seed",
+      "consumer",
+      "community",
+      "accessible"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "waterbridge-ventures",
+    "name": "WaterBridge Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 200000,
+    "check_size_max_usd": 3000000,
+    "check_size_display": "$200K – $3M",
+    "sectors": [
+      "SaaS",
+      "Consumer",
+      "FinTech",
+      "Deep Tech",
+      "B2B"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://waterbridgeventures.com",
+    "linkedin": "https://www.linkedin.com/company/waterbridge-ventures",
+    "description": "Founded by ex-LendingKart co-founder. Focused on early stage, pre-PMF companies. Known for high conviction bets on contrarian founders.",
+    "thesis": "Write the first institutional cheque in founders who are 2-3 years ahead of the market in understanding a problem.",
+    "notable_portfolio": [
+      "Anar",
+      "YAP",
+      "Hubble Money",
+      "Multiple early-stage startups"
+    ],
+    "partners": [
+      "Sashank Rishyasringa",
+      "Gaurav Arora"
+    ],
+    "aum_cr": 3000,
+    "apply_url": "https://waterbridgeventures.com",
+    "twitter": "https://twitter.com/WaterBridgeVC",
+    "warm_intro_required": false,
+    "tags": [
+      "early-stage",
+      "pre-pmf",
+      "contrarian",
+      "b2b",
+      "saas"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "general-catalyst-india",
+    "name": "General Catalyst (India Portfolio)",
+    "formerly": null,
+    "type": "Global VC",
+    "stages": [
+      "Series A",
+      "Series B",
+      "Growth"
+    ],
+    "check_size_min_usd": 5000000,
+    "check_size_max_usd": 100000000,
+    "check_size_display": "$5M – $100M+",
+    "sectors": [
+      "All Sectors",
+      "Enterprise",
+      "HealthTech",
+      "Climate",
+      "AI"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Boston / San Francisco (India portfolio)",
+    "website": "https://generalcatalyst.com",
+    "linkedin": "https://www.linkedin.com/company/general-catalyst",
+    "description": "One of the world's top VCs (Airbnb, Stripe, Canva). Expanding India presence. Led by Hemant Taneja globally. Invested in BlueSmart, DeHaat, and more.",
+    "thesis": "Invest in companies that use technology for responsible innovation — solving climate, health, and access challenges at scale.",
+    "notable_portfolio": [
+      "BlueSmart",
+      "DeHaat",
+      "Skylo",
+      "Airbnb (global)",
+      "Stripe (global)"
+    ],
+    "partners": [
+      "Hemant Taneja",
+      "Rahul Vinnakota (India)"
+    ],
+    "aum_cr": 500000,
+    "apply_url": "https://generalcatalyst.com/contact",
+    "twitter": "https://twitter.com/GeneralCatalyst",
+    "warm_intro_required": true,
+    "tags": [
+      "global-vc",
+      "large-cheque",
+      "climate",
+      "health",
+      "series-b-plus"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "b-capital-india",
+    "name": "B Capital Group (India)",
+    "formerly": null,
+    "type": "Global VC",
+    "stages": [
+      "Series B",
+      "Series C",
+      "Growth"
+    ],
+    "check_size_min_usd": 20000000,
+    "check_size_max_usd": 100000000,
+    "check_size_display": "$20M – $100M",
+    "sectors": [
+      "Enterprise Tech",
+      "HealthTech",
+      "FinTech",
+      "Supply Chain",
+      "B2B SaaS"
+    ],
+    "geography": [
+      "Pan-India",
+      "India-origin global"
+    ],
+    "location": "Singapore / Gurugram",
+    "website": "https://bcapgroup.com",
+    "linkedin": "https://www.linkedin.com/company/b-capital-group",
+    "description": "Global growth-stage VC co-founded by Eduardo Saverin (Facebook co-founder). Strong BCG consulting network. Backed Darwinbox and Qure.ai in India.",
+    "thesis": "Growth-stage investing in enterprise and healthcare technology companies with global ambitions, leveraging BCG's operational network.",
+    "notable_portfolio": [
+      "Darwinbox",
+      "Qure.ai",
+      "Open",
+      "CloudSEK",
+      "Vantage Circle"
+    ],
+    "partners": [
+      "Kabir Narang (India)",
+      "Raj Ganguly",
+      "Howard Morgan"
+    ],
+    "aum_cr": 40000,
+    "apply_url": "https://bcapgroup.com/contact",
+    "twitter": "https://twitter.com/bcapgroup",
+    "warm_intro_required": true,
+    "tags": [
+      "global-vc",
+      "growth-stage",
+      "enterprise",
+      "b2b",
+      "healthtech"
+    ],
+    "pitch_email": null
+  },
+  {
+    "id": "inflection-point-ventures",
+    "name": "Inflection Point Ventures (IPV)",
+    "formerly": null,
+    "type": "Angel Network",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 50000,
+    "check_size_max_usd": 500000,
+    "check_size_display": "₹25L – ₹2.5 Cr",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Gurugram / Bengaluru",
+    "website": "https://inflectionpoint.vc",
+    "linkedin": "https://www.linkedin.com/company/inflection-point-ventures/",
+    "description": "India's largest angel network with 7,000+ investors. Runs monthly deal reviews and backs 10–12 startups per month. Open application process.",
+    "thesis": "Connect high-quality startups with a curated network of 7,000+ HNI and angel investors across India.",
+    "notable_portfolio": [
+      "Rupifi",
+      "MedPiper",
+      "Signzy",
+      "Virohan",
+      "Evenflow"
+    ],
+    "partners": [
+      "Vikash Agarwal",
+      "Ankur Mittal",
+      "Vinay Bansal",
+      "Mitesh Shah"
+    ],
+    "aum_cr": 2000,
+    "apply_url": "https://inflectionpoint.vc/apply",
+    "pitch_email": "pitch@inflectionpoint.vc",
+    "twitter": "https://twitter.com/IPVIndia",
+    "warm_intro_required": false,
+    "tags": [
+      "angel-network",
+      "accessible",
+      "high-volume",
+      "pre-seed",
+      "monthly-deals"
+    ]
+  },
+  {
+    "id": "sprout-venture-partners",
+    "name": "Sprout Venture Partners",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 100000,
+    "check_size_max_usd": 1000000,
+    "check_size_display": "₹50L – ₹5 Cr",
+    "sectors": [
+      "Consumer",
+      "D2C",
+      "EdTech",
+      "FinTech",
+      "HealthTech"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://sproutventurepartners.com",
+    "linkedin": "https://www.linkedin.com/company/sprout-venture-partners/",
+    "description": "Seed-stage VC with focus on consumer and D2C startups. Run by ex-founders with deep operational experience in building brands.",
+    "thesis": "Back first-time founders with deep category insights and unfair distribution advantages in consumer tech and D2C.",
+    "notable_portfolio": [
+      "BabyChakra",
+      "Bella Vita Organic",
+      "Otipy"
+    ],
+    "partners": [
+      "Pankaj Karna",
+      "Mohit Bhatnagar"
+    ],
+    "aum_cr": 3000,
+    "apply_url": "https://sproutventurepartners.com/apply",
+    "pitch_email": "pitch@sproutventurepartners.com",
+    "twitter": null,
+    "warm_intro_required": false,
+    "tags": [
+      "seed",
+      "consumer",
+      "d2c",
+      "first-time-founders"
+    ]
+  },
+  {
+    "id": "sixth-sense-ventures",
+    "name": "Sixth Sense Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "check_size_min_usd": 2000000,
+    "check_size_max_usd": 15000000,
+    "check_size_display": "$2M – $15M",
+    "sectors": [
+      "Consumer",
+      "D2C",
+      "FinTech",
+      "AgriTech",
+      "Healthcare"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Mumbai",
+    "website": "https://sixthsenseventures.com",
+    "linkedin": "https://www.linkedin.com/company/sixth-sense-ventures/",
+    "description": "India consumer-focused growth VC with strong retail and FMCG industry network. LP base includes leading Indian business families.",
+    "thesis": "Back proven consumer businesses at Series A/B that are ready to scale distribution across India's 700M middle class.",
+    "notable_portfolio": [
+      "Purplle",
+      "Niine",
+      "WOW Skin Science",
+      "Bombay Shaving Company",
+      "Damensch"
+    ],
+    "partners": [
+      "Nikhil Vora",
+      "Dilip Mantha"
+    ],
+    "aum_cr": 8000,
+    "apply_url": "https://sixthsenseventures.com",
+    "pitch_email": "info@sixthsenseventures.com",
+    "twitter": null,
+    "warm_intro_required": true,
+    "tags": [
+      "consumer",
+      "series-a-b",
+      "retail",
+      "fmcg",
+      "growth"
+    ]
+  },
+  {
+    "id": "unicorn-india-ventures",
+    "name": "Unicorn India Ventures",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 200000,
+    "check_size_max_usd": 3000000,
+    "check_size_display": "₹1 Cr – ₹15 Cr",
+    "sectors": [
+      "Deep Tech",
+      "SaaS",
+      "FinTech",
+      "B2B"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Mumbai / Bengaluru",
+    "website": "https://unicorniv.com",
+    "linkedin": "https://www.linkedin.com/company/unicorn-india-ventures/",
+    "description": "Early-stage VC focused on deep tech and B2B. Runs sector-specific cohorts and annual Unicorn Battle competition for seed-stage startups.",
+    "thesis": "Back founders who are building with technical differentiation in B2B and deep tech — sectors underserved by mainstream VCs.",
+    "notable_portfolio": [
+      "Toch.ai",
+      "Classplus (co-invest)",
+      "Crejo.Fun"
+    ],
+    "partners": [
+      "Bhaskar Majumdar",
+      "Anil Joshi"
+    ],
+    "aum_cr": 2500,
+    "apply_url": "https://unicorniv.com/apply",
+    "pitch_email": "pitch@unicorniv.com",
+    "twitter": "https://twitter.com/UnicornIV",
+    "warm_intro_required": false,
+    "tags": [
+      "deep-tech",
+      "b2b-saas",
+      "early-stage",
+      "founder-friendly"
+    ]
+  },
+  {
+    "id": "better-capital",
+    "name": "Better Capital",
+    "formerly": null,
+    "type": "Angel Fund",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 50000,
+    "check_size_max_usd": 500000,
+    "check_size_display": "₹25L – ₹2.5 Cr",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Delhi",
+    "website": "https://bettercapital.vc",
+    "linkedin": "https://www.linkedin.com/company/better-capital/",
+    "description": "Pre-seed VC and angel fund run by Vaibhav Domkundwar. Known for transparent founder-first approach and publishing investment thesis publicly. First-cheque focus.",
+    "thesis": "Be the most founder-friendly first investor. Decide in days, not months. Invest in people first, ideas second.",
+    "notable_portfolio": [
+      "Vokal",
+      "NiYO",
+      "PagarBook (co-invest)",
+      "Rocketlane",
+      "Chargebee (co-invest)"
+    ],
+    "partners": [
+      "Vaibhav Domkundwar"
+    ],
+    "aum_cr": 2000,
+    "apply_url": "https://bettercapital.vc",
+    "pitch_email": "vaibhav@bettercapital.vc",
+    "twitter": "https://twitter.com/vdomkundwar",
+    "warm_intro_required": false,
+    "tags": [
+      "pre-seed",
+      "first-cheque",
+      "founder-friendly",
+      "transparent",
+      "solo-gp"
+    ]
+  },
+  {
+    "id": "gruhas",
+    "name": "Gruhas",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$500K – $5M",
+    "sectors": [
+      "Real Estate Tech",
+      "Construction Tech",
+      "Climate",
+      "Consumer"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://gruhas.co",
+    "linkedin": "https://www.linkedin.com/company/gruhas/",
+    "description": "Founded by Nikhil Kamath (Zerodha) and Abhijeet Pai. Focuses on real estate tech, proptech, construction tech, and sustainability. Young fund with strong founder network.",
+    "thesis": "The built environment is the next frontier for tech disruption. Back founders building the future of how India lives, works, and builds.",
+    "notable_portfolio": [
+      "NoBrokerHood (co-invest)",
+      "Brick&Bolt",
+      "HousingAnywhere"
+    ],
+    "partners": [
+      "Nikhil Kamath",
+      "Abhijeet Pai"
+    ],
+    "aum_cr": 3000,
+    "apply_url": "https://gruhas.co/apply",
+    "pitch_email": "pitch@gruhas.co",
+    "twitter": "https://twitter.com/NikhilKamath",
+    "warm_intro_required": false,
+    "tags": [
+      "proptech",
+      "real-estate",
+      "construction",
+      "sustainability",
+      "nikhil-kamath"
+    ]
+  },
+  {
+    "id": "incubate-fund",
+    "name": "Incubate Fund India",
+    "formerly": null,
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 100000,
+    "check_size_max_usd": 1000000,
+    "check_size_display": "$100K – $1M",
+    "sectors": [
+      "B2B SaaS",
+      "FinTech",
+      "Deep Tech",
+      "Consumer"
+    ],
+    "geography": [
+      "Pan-India",
+      "India–Japan"
+    ],
+    "location": "Bengaluru / Tokyo",
+    "website": "https://incubatefund.com",
+    "linkedin": "https://www.linkedin.com/company/incubate-fund/",
+    "description": "Japanese-origin early stage VC with India operations. Connects Indian startups to Japan and Asia market opportunities. Strong network of Japanese corporates as enterprise customers.",
+    "thesis": "Help Indian B2B and deep tech startups access the Japanese and APAC enterprise market through our corporate partnerships.",
+    "notable_portfolio": [
+      "Simplilearn (co-invest)",
+      "Oyo (early)",
+      "various B2B SaaS"
+    ],
+    "partners": [
+      "Prerna Bhutani",
+      "Takuma Terakubo"
+    ],
+    "aum_cr": 3000,
+    "apply_url": "https://incubatefund.com/apply",
+    "pitch_email": "india@incubatefund.com",
+    "twitter": null,
+    "warm_intro_required": false,
+    "tags": [
+      "india-japan",
+      "b2b-saas",
+      "deep-tech",
+      "asia-market",
+      "global-expansion"
+    ]
+  }
+]

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "razorpay",
+    "name": "Razorpay",
+    "tagline": "From rejected by YC to India's first payments unicorn — by building for developers first.",
+    "founders": [
+      {"name": "Harshil Mathur", "background": "IIT Roorkee, Computer Science"},
+      {"name": "Shashank Kumar", "background": "IIT Roorkee, Computer Science"}
+    ],
+    "founded": 2014,
+    "sector": "FinTech",
+    "sub_sector": "Payment Gateway / B2B Payments",
+    "hq": "Bengaluru",
+    "current_valuation": "$7.5 billion",
+    "valuation_year": 2021,
+    "funding_raised": "$741.5 million",
+    "last_round": "Series F — $375M (2021)",
+    "revenue": "₹2,501 crore (FY24)",
+    "profitable": false,
+    "employees": "4000+",
+    "product_description": "Full-stack payment solutions for businesses — payment gateway, payroll (RazorpayX), neo-banking, lending (Razorpay Capital), and global payments.",
+    "the_problem": "In 2014, integrating payments into an Indian website required weeks of bank approvals, complex documentation, and clunky SDKs. PayU and CCAvenue existed but were notoriously difficult for developers to use. Harshil couldn't integrate payments into his side project without 45 days of paperwork.",
+    "the_solution": "Developer-first payment gateway with a clean REST API, instant onboarding, comprehensive documentation, and multi-method support (cards, UPI, netbanking, wallets) in one integration.",
+    "key_milestones": [
+      {"year": 2014, "event": "Founded in Jaipur, built first version in a garage"},
+      {"year": 2015, "event": "Rejected by Y Combinator first time; kept building"},
+      {"year": 2015, "event": "Accepted into Y Combinator Winter 2015 cohort ($120K)"},
+      {"year": 2016, "event": "Raised $9M Series A from Tiger Global and Sequoia"},
+      {"year": 2017, "event": "Launched payment links — viral growth with SMEs"},
+      {"year": 2018, "event": "RazorpayX (neobanking for businesses) launched"},
+      {"year": 2019, "event": "Raised $75M Series C; entered payroll space"},
+      {"year": 2020, "event": "Volumes 3x in COVID — shift to digital payments accelerated"},
+      {"year": 2021, "event": "Raised $375M Series F at $7.5B valuation — unicorn status"}
+    ],
+    "fundraising_journey": [
+      {"round": "YC", "amount": "$120,000", "investors": "Y Combinator", "year": 2015},
+      {"round": "Series A", "amount": "$9M", "investors": "Tiger Global, Sequoia", "year": 2016},
+      {"round": "Series B", "amount": "$20M", "investors": "Tiger Global", "year": 2017},
+      {"round": "Series C", "amount": "$75M", "investors": "Ribbit Capital, Tiger Global, GIC, Sequoia", "year": 2019},
+      {"round": "Series D", "amount": "$100M", "investors": "GIC, Sequoia, Tiger Global, Ribbit Capital", "year": 2020},
+      {"round": "Series E", "amount": "$160M", "investors": "GIC, Sequoia, Tiger Global", "year": 2020},
+      {"round": "Series F", "amount": "$375M", "investors": "Lone Pine Capital, Alkeon Capital, TCV, Sequoia", "year": 2021}
+    ],
+    "unit_economics": {
+      "revenue_model": "2% commission on transactions + SaaS subscription for enterprise",
+      "total_payments_processed": "₹10 lakh crore+ annually",
+      "customers": "10 million+ businesses",
+      "key_metric": "₹8,000+ crore GMV/day at peak"
+    },
+    "key_lessons": [
+      "Build for developers first — the 'boring' B2B API business turned out to be a ₹7.5B opportunity.",
+      "Being rejected by investors (YC twice) is not a signal to stop — it's a signal to build more.",
+      "In regulated industries (payments), compliance IS the product. Razorpay's RBI relationships became a moat.",
+      "Distribution beats product in FinTech. Payment links reached SMEs who couldn't write code.",
+      "The right time to build platform (neo-bank, payroll) is after you have payment distribution — not before."
+    ],
+    "founder_quote": "We got rejected by YC the first time. Instead of getting dejected, we went back and built for 6 more months. That rejection was the best thing that happened to us. — Harshil Mathur",
+    "tags": ["fintech", "b2b", "payments", "api", "developer-first", "yc", "unicorn"]
+  },
+  {
+    "id": "zepto",
+    "name": "Zepto",
+    "tagline": "Two Stanford dropouts built India's fastest-growing grocery unicorn with one radical bet: 10 minutes.",
+    "founders": [
+      {"name": "Aadit Palicha", "background": "Stanford University dropout, age 20 at founding"},
+      {"name": "Kaivalya Vohra", "background": "Stanford University dropout, age 19 at founding"}
+    ],
+    "founded": 2021,
+    "sector": "Quick Commerce",
+    "sub_sector": "Grocery Delivery",
+    "hq": "Mumbai",
+    "current_valuation": "$5 billion (2024)",
+    "valuation_year": 2024,
+    "funding_raised": "$1.4 billion",
+    "last_round": "Series F — $665M (2024) led by General Atlantic",
+    "revenue": "₹4,454 crore (FY24)",
+    "profitable": false,
+    "employees": "2,000+",
+    "product_description": "10-minute grocery delivery through a network of dark stores (micro-warehouses) in dense urban neighborhoods across 10+ Indian cities.",
+    "the_problem": "Online grocery in India was 1-2 day delivery (BigBasket) or 30-45 minute delivery (Swiggy, Zomato). In Mumbai's dense, fast-moving lifestyle, a mother with a toddler can't wait 45 minutes for an urgent household need. The 30-minute delivery format wasn't meaningfully different from going to the kirana store yourself.",
+    "the_solution": "10-minute delivery through hyperlocal dark stores placed every 1-2 km in dense residential areas. 2,000-2,500 SKUs per dark store (80% of household grocery needs). No-tip model; delivery in exactly 10 minutes.",
+    "key_milestones": [
+      {"year": 2020, "event": "Aadit and Kaivalya drop out of Stanford; move to Mumbai"},
+      {"year": 2021, "event": "Founded Zepto; first dark store in Bandra, Mumbai"},
+      {"year": 2021, "event": "Raised $60M Series A/B from Y Combinator and others"},
+      {"year": 2022, "event": "Raised $200M Series D at $900M valuation — unicorn in 18 months"},
+      {"year": 2023, "event": "Expanded to 10 cities; $1.4B valuation Series E ($200M)"},
+      {"year": 2024, "event": "Raised $665M Series F at $5B valuation; IPO plans announced"},
+      {"year": 2024, "event": "Turned contribution margin positive across 60%+ of orders"}
+    ],
+    "fundraising_journey": [
+      {"round": "Seed", "amount": "$1M", "investors": "Y Combinator", "year": 2021},
+      {"round": "Series A", "amount": "$60M", "investors": "Nexus Venture Partners, Glade Brook", "year": 2021},
+      {"round": "Series B", "amount": "$100M", "investors": "Y Combinator Continuity, Nexus, Kaiser Permanente", "year": 2022},
+      {"round": "Series C", "amount": "$200M", "investors": "Accel, Nexus, Lachy Groom", "year": 2022},
+      {"round": "Series D", "amount": "$250M", "investors": "StepStone Group, Goodwater", "year": 2023},
+      {"round": "Series E", "amount": "$200M", "investors": "Nexus, Motilal Oswal", "year": 2023},
+      {"round": "Series F", "amount": "$665M", "investors": "General Atlantic, Lightspeed, Avenir", "year": 2024}
+    ],
+    "unit_economics": {
+      "revenue_model": "Product margin + delivery fee + ads revenue from FMCG brands",
+      "avg_order_value": "₹450-500",
+      "delivery_time": "10.1 minutes average",
+      "dark_stores": "250+ dark stores",
+      "cities": "10+ cities"
+    },
+    "key_lessons": [
+      "Speed can be a moat — 10 minutes vs. 30 minutes is psychologically completely different consumer behavior.",
+      "Dark stores are infrastructure, not tech — Zepto's competitive advantage is operational excellence, not algorithms.",
+      "Being young founders was a disadvantage in fundraising but an advantage in hustle — they pitched 50+ investors before their seed round.",
+      "Unit economics must be on a clear path to contribution margin positivity before chasing GMV growth.",
+      "Quick commerce requires a city-by-city, neighborhood-by-neighborhood approach — national scaling is a trap."
+    ],
+    "founder_quote": "We were 20 and 19 when we started. Every VC told us to go back to Stanford. We said: watch us. — Aadit Palicha",
+    "tags": ["quick-commerce", "d2c", "dark-stores", "consumer", "young-founders", "stanford"]
+  },
+  {
+    "id": "cred",
+    "name": "CRED",
+    "tagline": "Kunal Shah's third startup bet on the most contrarian thesis in Indian consumer: serve the top 1%, not the masses.",
+    "founders": [
+      {"name": "Kunal Shah", "background": "Wilson College Mumbai; built FreeCharge (acq. by Snapdeal ₹2,800 Cr), PaisaBack"}
+    ],
+    "founded": 2018,
+    "sector": "FinTech",
+    "sub_sector": "Credit Card Rewards / Consumer FinTech",
+    "hq": "Bengaluru",
+    "current_valuation": "$6.4 billion",
+    "valuation_year": 2021,
+    "funding_raised": "$900+ million",
+    "last_round": "Series E — $140M (2022)",
+    "revenue": "₹1,484 crore (FY24)",
+    "profitable": false,
+    "employees": "1,000+",
+    "product_description": "Members-only platform for India's top 20M credit card holders (750+ credit score). Rewards credit card bill payments, then cross-sells financial products (CRED Mint, CRED Cash), luxury commerce (CRED Store), travel (CRED Travel), and P2P lending.",
+    "the_problem": "India has 80M+ credit card holders but credit card bill payments are painful — multiple websites, no consolidated view, no rewards for paying on time. Additionally, top credit card holders (high trust individuals with good financial behavior) have no exclusive platform that recognizes their creditworthiness.",
+    "the_solution": "A members-only app where paying your credit card bill earns CRED Coins redeemable for experiences, products, and cashback. Entry restricted to 750+ CIBIL score — this exclusivity is the product.",
+    "key_milestones": [
+      {"year": 2018, "event": "Founded after selling FreeCharge to Snapdeal for ₹2,800 Cr"},
+      {"year": 2019, "event": "Raised $120M Series B from Sequoia, Tiger Global at $800M valuation"},
+      {"year": 2020, "event": "2M+ members; launched CRED Store (luxury commerce)"},
+      {"year": 2021, "event": "Raised $215M Series D; launched CRED Mint (P2P lending) — $2.2B valuation"},
+      {"year": 2021, "event": "Raised $251M Series E — $4.01B valuation; IPO discussions begin"},
+      {"year": 2022, "event": "Raised $140M at $6.4B; launched CRED Money (all-in-one finance tracker)"},
+      {"year": 2024, "event": "Revenue ₹1,484 Cr; path to profitability with lending margin expansion"}
+    ],
+    "fundraising_journey": [
+      {"round": "Seed", "amount": "$1.5M", "investors": "Kunal Shah (self), angels", "year": 2018},
+      {"round": "Series A", "amount": "$30M", "investors": "Sequoia, Ribbit Capital, General Catalyst", "year": 2018},
+      {"round": "Series B", "amount": "$120M", "investors": "Tiger Global, Sequoia, Ribbit, General Catalyst", "year": 2019},
+      {"round": "Series C", "amount": "$81M", "investors": "DST Global, Falcon Edge, RTP Global", "year": 2020},
+      {"round": "Series D", "amount": "$215M", "investors": "Falcon Edge, Coatue, Tiger Global, DST", "year": 2021},
+      {"round": "Series E (1)", "amount": "$251M", "investors": "Falcon Edge, Tiger Global, Sequoia", "year": 2021},
+      {"round": "Series E (2)", "amount": "$140M", "investors": "GIC, Tiger Global", "year": 2022}
+    ],
+    "unit_economics": {
+      "revenue_model": "Financial product distribution (lending, insurance) + CRED Store commission + advertising to FMCG/luxury brands",
+      "members": "12 million+ credit card holders",
+      "credit_score_floor": "750 CIBIL",
+      "avg_income": "₹25 lakh+ annual (member base)"
+    },
+    "key_lessons": [
+      "The Delta 4 theory: a product must create at least 4x efficiency gain over existing solution to change consumer behavior permanently.",
+      "Small, high-trust markets can be worth billions — CRED proved you don't need to serve everyone to build a unicorn.",
+      "Trust is a business model — CRED monetizes the trust its members have with lenders, insurance companies, and luxury brands.",
+      "Exclusivity as growth hack — 'only 750+ CIBIL' created massive FOMO-driven organic growth and press coverage.",
+      "A second-time founder with an exit raises on vision, not traction — Kunal's FreeCharge exit was the real fundraising asset."
+    ],
+    "founder_quote": "Every business that's a 'Trillion Dollar opportunity' has low NPS. Low NPS businesses are multi-billion dollar opportunities because they get disrupted. — Kunal Shah",
+    "tags": ["fintech", "consumer", "credit", "exclusivity", "serial-founder", "delta-4", "b2c"]
+  },
+  {
+    "id": "mamaearth",
+    "name": "Mamaearth (Honasa Consumer)",
+    "tagline": "Two parents who couldn't find safe baby products built India's first D2C unicorn to list on the stock exchange.",
+    "founders": [
+      {"name": "Varun Alagh", "background": "IIM Ahmedabad; ex-Unilever, Diageo"},
+      {"name": "Ghazal Alagh", "background": "Self-taught digital artist; no business background — authentic storytelling engine"}
+    ],
+    "founded": 2016,
+    "sector": "D2C",
+    "sub_sector": "Personal Care / Baby Care / Beauty",
+    "hq": "Gurugram",
+    "current_valuation": "₹9,920 crore (IPO listing market cap, 2023)",
+    "valuation_year": 2023,
+    "funding_raised": "$111 million (pre-IPO)",
+    "last_round": "IPO — ₹1,701 crore (November 2023)",
+    "revenue": "₹1,492 crore (FY23), ₹1,919 crore (FY24)",
+    "profitable": true,
+    "employees": "1,500+",
+    "product_description": "Toxin-free, naturally-derived personal care products across baby care, skin care, hair care, and wellness. 300+ SKUs. Sold D2C online + 1,50,000+ offline touchpoints + 9 countries export.",
+    "the_problem": "In 2016, Varun and Ghazal had a newborn and couldn't find a single toxin-free baby product in Indian retail. All products (Johnson & Johnson, Himalaya) had parabens, SLS, mineral oil. International organic products weren't available on Indian e-commerce.",
+    "the_solution": "Toxin-free, dermatologically tested baby products sold directly through their own website and Amazon. 'Made safe' certification. Community-built brand through Instagram before products were available.",
+    "key_milestones": [
+      {"year": 2016, "event": "Founded; first baby products; built Instagram community of 50,000 mothers before launch"},
+      {"year": 2016, "event": "₹3 crore first-year revenue; 100% digital"},
+      {"year": 2018, "event": "Raised ₹6.3 crore from Stellaris; launched personal care for adults"},
+      {"year": 2020, "event": "Expanded to hair care; ₹182 crore revenue; COVID accelerated D2C"},
+      {"year": 2021, "event": "Raised $50M from Sequoia at ~$730M valuation — D2C unicorn"},
+      {"year": 2022, "event": "₹1,492 crore revenue; acquired Ayuga, Staze, Dr. Sheth's brands"},
+      {"year": 2023, "event": "IPO on NSE/BSE — ₹1,701 crore raised; first D2C company to IPO in India"},
+      {"year": 2024, "event": "Expansion to UAE, USA, Singapore; Shark Tank India judges"}
+    ],
+    "fundraising_journey": [
+      {"round": "Seed", "amount": "₹6.3 crore", "investors": "Stellaris Venture Partners", "year": 2018},
+      {"round": "Series A", "amount": "₹50 crore", "investors": "Fireside Ventures, Stellaris", "year": 2019},
+      {"round": "Series B", "amount": "₹130 crore", "investors": "Sequoia India, Fireside", "year": 2020},
+      {"round": "Series C", "amount": "$50M", "investors": "Sequoia India, Evolvence, others", "year": 2021},
+      {"round": "IPO", "amount": "₹1,701 crore", "investors": "Public markets (NSE/BSE)", "year": 2023}
+    ],
+    "unit_economics": {
+      "revenue_model": "D2C e-commerce (40%) + modern retail (30%) + general trade (20%) + exports (10%)",
+      "gross_margin": "70%+",
+      "avg_order_value": "₹650 (online)",
+      "repeat_rate": "45%+ online customer repeat rate"
+    },
+    "key_lessons": [
+      "Build community before product — Ghazal's 50,000 Instagram mothers before launch created instant demand and authentic reviews.",
+      "Purpose-led brands command premium pricing — 'toxin-free' justified 3x price premium over mainstream products.",
+      "D2C is a distribution strategy, not a business model — Mamaearth needed to move to offline for scale past ₹500 crore.",
+      "Brand acquisition (Ayuga, Staze) is faster than building new categories from scratch after founding brand is established.",
+      "One founder's domain expertise + one's storytelling ability is a powerful co-founder combination."
+    ],
+    "founder_quote": "The brand was built by real mothers sharing real experiences. We just gave them a safe product. — Ghazal Alagh",
+    "tags": ["d2c", "consumer-brand", "ipo", "baby-care", "personal-care", "community-led", "instagram"]
+  },
+  {
+    "id": "nykaa",
+    "name": "Nykaa (FSN E-Commerce Ventures)",
+    "tagline": "A 49-year-old ex-banker quit Kotak Mahindra to build India's most profitable e-commerce unicorn.",
+    "founders": [
+      {"name": "Falguni Nayar", "background": "IIM Ahmedabad; 20 years at Kotak Mahindra Bank as MD, Investment Banking"}
+    ],
+    "founded": 2012,
+    "sector": "E-Commerce",
+    "sub_sector": "Beauty / Fashion / Wellness",
+    "hq": "Mumbai",
+    "current_valuation": "₹22,000 crore (2024 market cap)",
+    "valuation_year": 2021,
+    "funding_raised": "$350 million (pre-IPO)",
+    "last_round": "IPO — ₹5,352 crore (October 2021)",
+    "revenue": "₹6,386 crore (FY24)",
+    "profitable": true,
+    "employees": "4,000+",
+    "product_description": "Omnichannel beauty and lifestyle retailer. Curated authentic beauty products from 3,500+ brands across skincare, makeup, hair, wellness. Own private labels: Nykaa Cosmetics, Kay Beauty (with Katrina Kaif), Nykaa Naturals.",
+    "the_problem": "In 2012, buying authentic beauty products in India was a nightmare — multi-brand retail didn't exist (only standalone brand stores), counterfeit products rampant on Flipkart/Amazon, no expert advice, and Sephora/Ulta didn't exist in India.",
+    "the_solution": "Curated e-commerce for beauty — only authentic products, expert editorial content, beauty tutorials, and eventually physical experience stores (Nykaa Luxe, Nykaa On Trend).",
+    "key_milestones": [
+      {"year": 2012, "event": "Founded; Falguni invests own savings; first website with 40 brands"},
+      {"year": 2013, "event": "Raised ₹2.8 crore Series A; 250+ brands"},
+      {"year": 2016, "event": "Opened first physical store (Nykaa Luxe, Delhi)"},
+      {"year": 2018, "event": "₹1,000 crore GMV milestone; Raised ₹100 crore from TPG"},
+      {"year": 2019, "event": "Launched Nykaa Fashion (clothing)"},
+      {"year": 2020, "event": "Revenue ₹2,453 crore; COVID drove online beauty demand"},
+      {"year": 2021, "event": "IPO at ₹2,001 Cr issue price — ₹1,00,000 crore market cap at listing"},
+      {"year": 2023, "event": "Falguni Nayar became India's wealthiest self-made woman billionaire"}
+    ],
+    "fundraising_journey": [
+      {"round": "Series A", "amount": "₹2.8 crore", "investors": "Falguni Nayar (self)", "year": 2013},
+      {"round": "Series B", "amount": "₹40 crore", "investors": "TVS Capital", "year": 2014},
+      {"round": "Series C/D", "amount": "₹100 crore", "investors": "TPG Growth", "year": 2018},
+      {"round": "Pre-IPO", "amount": "₹1,000 crore", "investors": "Fidelity, Lighthouse India, others", "year": 2020},
+      {"round": "IPO", "amount": "₹5,352 crore", "investors": "Public markets", "year": 2021}
+    ],
+    "unit_economics": {
+      "revenue_model": "Product sales (80%) + private label margin (higher) + brand advertising + Nykaa Fashion",
+      "gross_margin": "35-38% (curated retail margin)",
+      "stores": "180+ physical stores across India",
+      "brands": "3,500+ brands on platform"
+    },
+    "key_lessons": [
+      "Domain expertise is an unfair advantage — 20 years in investment banking meant Falguni could raise money at terms most founders can't.",
+      "Curation beats selection — Amazon has everything; Nykaa has only authentic, curated products. That trust is worth a premium.",
+      "Physical stores can strengthen an e-commerce brand — Nykaa's stores drove brand credibility and discovery, not just revenue.",
+      "Private labels should wait until you own the category — launching too early destroys brand trust.",
+      "Age is not a barrier in entrepreneurship — Falguni started at 49 and built India's largest beauty company."
+    ],
+    "founder_quote": "I had a comfortable life, a successful career. But I wanted to build something of my own. Every founder has to find their 'why'. Mine was to build a company that made women feel beautiful and confident. — Falguni Nayar",
+    "tags": ["e-commerce", "beauty", "d2c", "ipo", "women-founder", "omnichannel", "profitable"]
+  },
+  {
+    "id": "meesho",
+    "name": "Meesho",
+    "tagline": "India's social commerce unicorn that made 50 million women micro-entrepreneurs through WhatsApp.",
+    "founders": [
+      {"name": "Vidit Atrey", "background": "IIT Delhi; ex-Google"},
+      {"name": "Sanjeev Barnwal", "background": "IIT Delhi; ex-Google"}
+    ],
+    "founded": 2015,
+    "sector": "E-Commerce",
+    "sub_sector": "Social Commerce / Reseller Platform",
+    "hq": "Bengaluru",
+    "current_valuation": "$3.4 billion (2024)",
+    "valuation_year": 2021,
+    "funding_raised": "$1.5 billion",
+    "last_round": "Series F — $570M (2021) led by Softbank",
+    "revenue": "₹7,615 crore (FY24)",
+    "profitable": false,
+    "employees": "4,000+",
+    "product_description": "E-commerce platform for Bharat (Tier-2/3 India). Enables resellers (mostly women) to share products via WhatsApp/Facebook and earn commission. Also direct-to-consumer platform with zero delivery fee and COD.",
+    "the_problem": "India's e-commerce was built for urban India — English interfaces, credit card payments, fast delivery in metro cities. 700M Indians in Tier-2/3 cities couldn't access or trust online shopping. Women without income wanted to earn but had no accessible path to entrepreneurship.",
+    "the_solution": "Social commerce platform where resellers (housewives, students) share product catalogs via WhatsApp and earn 15-25% commission on sales. Meesho handles inventory, logistics, payments, and returns.",
+    "key_milestones": [
+      {"year": 2015, "event": "Founded as 'Fashnear' — local fashion discovery"},
+      {"year": 2016, "event": "Pivoted to social commerce; Y Combinator W16"},
+      {"year": 2017, "event": "Raised $3.4M Series A; 100,000+ resellers"},
+      {"year": 2019, "event": "Facebook invested $25M — WhatsApp commerce thesis"},
+      {"year": 2021, "event": "Raised $570M Series F at $4.9B valuation (SoftBank lead)"},
+      {"year": 2021, "event": "50M+ resellers; 140M+ customers in 19,000+ pin codes"},
+      {"year": 2022, "event": "Moved to zero-commission model to drive GMV"},
+      {"year": 2023, "event": "Reversed to commission model; refocused on profitability"}
+    ],
+    "fundraising_journey": [
+      {"round": "YC", "amount": "$120K", "investors": "Y Combinator", "year": 2016},
+      {"round": "Series A", "amount": "$3.4M", "investors": "SAIF Partners (Elevation Capital)", "year": 2017},
+      {"round": "Series B", "amount": "$11.5M", "investors": "Sequoia India, SAIF", "year": 2018},
+      {"round": "Series C", "amount": "$25M", "investors": "Facebook, Shunwei Capital, Venture Highway", "year": 2019},
+      {"round": "Series D", "amount": "$125M", "investors": "Prosus Ventures, Shunwei", "year": 2019},
+      {"round": "Series E", "amount": "$300M", "investors": "SoftBank, Prosus, Facebook, Sequoia", "year": 2021},
+      {"round": "Series F", "amount": "$570M", "investors": "SoftBank, Fidelity, B Capital, Footpath Ventures", "year": 2021}
+    ],
+    "unit_economics": {
+      "revenue_model": "Commission on GMV (4-7%) + advertising + financial services",
+      "gmv": "₹60,000+ crore (FY24)",
+      "transacting_users": "150M+",
+      "resellers": "50M+",
+      "pin_codes": "19,000+ (deepest reach in Indian e-commerce)"
+    },
+    "key_lessons": [
+      "WhatsApp is the largest distribution channel in India for Bharat — integrate with behavior, not against it.",
+      "Trust in Tier-2/3 India is built through human intermediaries (resellers), not apps.",
+      "Zero delivery fee and COD are not gimmicks in Bharat — they are fundamental product requirements.",
+      "Pivoting aggressively in Year 1 (from Fashnear to Meesho) saved the company.",
+      "Unit economics discipline after Series F would have prevented the zero-commission mistake — growth at any cost is dangerous."
+    ],
+    "founder_quote": "Meesho was built for those who don't have Instagram accounts, who shop on WhatsApp. India's next 500M internet users. — Vidit Atrey",
+    "tags": ["social-commerce", "bharat", "tier-2-3", "women-entrepreneurship", "whatsapp", "reseller"]
+  },
+  {
+    "id": "phonepe",
+    "name": "PhonePe",
+    "tagline": "Built on UPI rails, PhonePe captured 47% of India's real-time payment market through relentless execution.",
+    "founders": [
+      {"name": "Sameer Nigam", "background": "IIT Bombay; ex-Flipkart VP Engineering"},
+      {"name": "Rahul Chari", "background": "IIT Bombay; ex-Flipkart"},
+      {"name": "Burzin Engineer", "background": "IIT Bombay; ex-Flipkart"}
+    ],
+    "founded": 2015,
+    "sector": "FinTech",
+    "sub_sector": "UPI Payments / Digital Financial Services",
+    "hq": "Bengaluru",
+    "current_valuation": "$12 billion",
+    "valuation_year": 2023,
+    "funding_raised": "$2+ billion (post-Flipkart demerger)",
+    "last_round": "Private round — $650M (2023) at $12B valuation",
+    "revenue": "₹3,728 crore (FY24)",
+    "profitable": false,
+    "employees": "5,000+",
+    "product_description": "UPI-based payments superapp. P2P transfers, bill payments, insurance (PhonePe Insurance), mutual funds (Wealth), merchant payments (Switch), credit (Pay Later), and Indus App Store.",
+    "the_problem": "Pre-UPI India: digital payments required multiple bank apps, netbanking (extremely clunky), or third-party wallets (Paytm) which had interoperability issues. UPI launched in 2016 as open infrastructure but needed a consumer-facing app.",
+    "the_solution": "First consumer UPI app built on NPCI's UPI rails. Acquired by Flipkart in 2016 for distribution, then demerged as independent company in 2022. Focused on simplifying P2P transfers before expanding to full financial services.",
+    "key_milestones": [
+      {"year": 2015, "event": "Founded by ex-Flipkart team; built on UPI architecture"},
+      {"year": 2016, "event": "Acquired by Flipkart for $25M; integrated into Flipkart checkout"},
+      {"year": 2017, "event": "10M users in first year; beat Google Tez in early UPI race"},
+      {"year": 2020, "event": "300M+ registered users; 40%+ UPI market share"},
+      {"year": 2021, "event": "₹6 lakh crore monthly UPI transactions through PhonePe"},
+      {"year": 2022, "event": "Demerged from Walmart/Flipkart; raised $350M at $12B valuation"},
+      {"year": 2023, "event": "Launched Indus App Store — alternative to Google Play for India"}
+    ],
+    "fundraising_journey": [
+      {"round": "Acquisition", "amount": "$25M", "investors": "Flipkart", "year": 2016},
+      {"round": "Strategic", "amount": "$700M", "investors": "Walmart (through Flipkart)", "year": 2018},
+      {"round": "Post-demerger", "amount": "$350M", "investors": "General Atlantic, Tiger Global, Walmart", "year": 2022},
+      {"round": "Growth", "amount": "$650M", "investors": "Ribbit Capital, Walmart, others", "year": 2023}
+    ],
+    "unit_economics": {
+      "revenue_model": "MDR on credit/credit card transactions; insurance commissions; mutual fund trail; merchant SaaS",
+      "upi_market_share": "47%+ of India UPI transactions",
+      "monthly_transactions": "600 crore+ UPI transactions/month",
+      "registered_users": "535M+"
+    },
+    "key_lessons": [
+      "Being first on a new infrastructure (UPI) compounds — early market share in payments creates nearly unshakeable network effects.",
+      "Strategic acquisition can be a launchpad — Flipkart's distribution was worth more than any VC could provide.",
+      "In infrastructure businesses, distribution is the moat, not the product.",
+      "Build the largest free product (P2P transfers) first; monetize the financial services layer second.",
+      "Regulatory relationships in FinTech are as important as the product — NPCI partnerships enabled access other companies don't have."
+    ],
+    "founder_quote": "UPI is not just payments infrastructure. It's identity infrastructure. Every Indian with a UPI ID has a verified, interoperable financial identity. That is unprecedented globally. — Sameer Nigam",
+    "tags": ["fintech", "upi", "payments", "infrastructure", "flipkart-acquisition", "superapp"]
+  },
+  {
+    "id": "lenskart",
+    "name": "Lenskart",
+    "tagline": "Peyush Bansal digitized India's ₹20,000 crore eyewear market with a playbook nobody believed would work.",
+    "founders": [
+      {"name": "Peyush Bansal", "background": "IIT Delhi; McGill University; ex-Microsoft"},
+      {"name": "Amit Chaudhary", "background": "IIT Delhi"},
+      {"name": "Sumeet Kapahi", "background": "IIT Delhi"}
+    ],
+    "founded": 2010,
+    "sector": "E-Commerce",
+    "sub_sector": "Eyewear / Omnichannel Retail",
+    "hq": "Delhi",
+    "current_valuation": "$4.5 billion",
+    "valuation_year": 2022,
+    "funding_raised": "$1.2 billion",
+    "last_round": "Series H — $500M (2022) led by ChrysCapital and Kedaara",
+    "revenue": "₹5,503 crore (FY24)",
+    "profitable": true,
+    "employees": "10,000+",
+    "product_description": "Omnichannel eyewear retailer. Online (lenskart.com) + 2,000+ stores across India. In-house manufacturing in Bhiwadi, Rajasthan. International: Singapore, UAE, Japan (SoftBank partnership).",
+    "the_problem": "India's eyewear market was fragmented optical stores with poor quality, high prices, no standardization, and no way to try glasses before buying online. 500M+ Indians need vision correction but penetration is under 30%.",
+    "the_solution": "Vertically integrated eyewear company: own manufacturing → own D2C online → own physical stores. Home trial program (5 frames free home delivery for 3 days) solved the 'can I try before I buy?' problem.",
+    "key_milestones": [
+      {"year": 2010, "event": "Founded; first eyewear website; $4B market dismissed online shopping for glasses"},
+      {"year": 2012, "event": "Launched home trial program — 5 free frames delivered home"},
+      {"year": 2014, "event": "Raised ₹50 crore from IDG Ventures (Chiratae); first store in Delhi"},
+      {"year": 2016, "event": "100+ stores; manufacturing plant setup in Bhiwadi"},
+      {"year": 2019, "event": "Raised $275M at $1.5B valuation from SoftBank"},
+      {"year": 2021, "event": "1,500+ stores; expansion to Middle East and Southeast Asia"},
+      {"year": 2022, "event": "Raised $500M at $4.5B valuation; revenue ₹3,788 crore"},
+      {"year": 2023, "event": "On Shark Tank India as investor (Peyush); global expansion continues"}
+    ],
+    "fundraising_journey": [
+      {"round": "Series A", "amount": "₹50 crore", "investors": "IDG Ventures (Chiratae)", "year": 2014},
+      {"round": "Series B", "amount": "$22M", "investors": "Unilazer Ventures, TR Capital", "year": 2015},
+      {"round": "Series C", "amount": "$60M", "investors": "TPG, SoftBank, Adveq", "year": 2018},
+      {"round": "Series D", "amount": "$275M", "investors": "SoftBank", "year": 2019},
+      {"round": "Series G", "amount": "$220M", "investors": "Temasek, Falcon Edge, Bay Capital", "year": 2021},
+      {"round": "Series H", "amount": "$500M", "investors": "ChrysCapital, Kedaara", "year": 2022}
+    ],
+    "unit_economics": {
+      "revenue_model": "Product sales (eyeframes + lenses + contact lenses) — 80%+ own-brand margin",
+      "own_brand_pct": "80%+ of frames are own brand (BLU, John Jacobs, Vincent Chase)",
+      "stores": "2,000+ stores across India",
+      "manufacturing": "Own factory producing 30,000+ frames/day"
+    },
+    "key_lessons": [
+      "Industries that seem resistant to digitization often have the highest opportunity — the friction is the moat to break through.",
+      "Vertical integration (own manufacturing + own stores) allows margin capture that pure-play e-commerce can't.",
+      "Free home trial removed the psychological barrier to online eyewear purchase — removing friction beats advertising.",
+      "Omnichannel is not a compromise — for categories requiring physical try-on, stores are growth engines not liabilities.",
+      "International expansion should wait until your domestic unit economics are proven and your manufacturing scale provides cost advantage."
+    ],
+    "founder_quote": "Everyone said glasses can't be sold online. I said: people buy the experience of wearing glasses, not the product. Fix the experience. — Peyush Bansal",
+    "tags": ["e-commerce", "omnichannel", "manufacturing", "d2c", "eyewear", "shark-tank", "profitable"]
+  },
+  {
+    "id": "ofbusiness",
+    "name": "OfBusiness",
+    "tagline": "India's most unlikely unicorn: a profitable B2B raw materials marketplace that built its own NBFC.",
+    "founders": [
+      {"name": "Asish Mohapatra", "background": "IIT Kharagpur; IIM Calcutta; ex-McKinsey"},
+      {"name": "Bhuvan Gupta", "background": "IIT Bombay; ex-Citibank"},
+      {"name": "Nitin Jain", "background": "IIT Delhi"},
+      {"name": "Vasant Sridhar", "background": "IIT Madras"},
+      {"name": "Ruchi Kalra", "background": "IIM Calcutta; CFO and runs Oxyzo (lending arm)"}
+    ],
+    "founded": 2015,
+    "sector": "B2B Commerce",
+    "sub_sector": "Raw Materials + Embedded Finance for SMEs",
+    "hq": "Gurugram",
+    "current_valuation": "$5 billion",
+    "valuation_year": 2022,
+    "funding_raised": "$1.2 billion",
+    "last_round": "Series G — $325M (2022)",
+    "revenue": "₹19,296 crore (FY24) — highest revenue among Indian unicorns",
+    "profitable": true,
+    "employees": "4,000+",
+    "product_description": "B2B marketplace for industrial raw materials (steel, chemicals, polymer, agricultural inputs). Combines procurement (OfBusiness) with embedded lending (Oxyzo Financial Services — NBFC). SMEs buy raw materials and get working capital credit in one platform.",
+    "the_problem": "Indian SME manufacturers struggle to procure raw materials competitively (lack of aggregation power, bad pricing) AND lack working capital to buy in bulk. Banks don't lend to SMEs efficiently. The result: SMEs pay 15-20% more for raw materials and borrow at 24-36% from informal lenders.",
+    "the_solution": "OfBusiness aggregates SME demand → negotiates bulk pricing from large suppliers → embeds working capital credit through Oxyzo NBFC at 14-18% rates. One-stop shop: better price + credit = massive SME switching incentive.",
+    "key_milestones": [
+      {"year": 2015, "event": "Founded; first steel trading on marketplace"},
+      {"year": 2017, "event": "Launched Oxyzo Financial Services (lending arm)"},
+      {"year": 2018, "event": "₹1,200 crore revenue; SoftBank invested"},
+      {"year": 2021, "event": "Raised $325M at $3B valuation; revenue ₹7,000 crore"},
+      {"year": 2022, "event": "Raised $325M at $5B valuation; Revenue ₹12,000 crore"},
+      {"year": 2023, "event": "Oxyzo IPO plans; AUM ₹5,000+ crore"},
+      {"year": 2024, "event": "Revenue ₹19,296 crore — largest revenue unicorn in India"}
+    ],
+    "fundraising_journey": [
+      {"round": "Seed/A", "amount": "$5M", "investors": "Creation Investments, others", "year": 2016},
+      {"round": "Series B", "amount": "$30M", "investors": "Norwest Venture Partners", "year": 2017},
+      {"round": "Series C", "amount": "$60M", "investors": "Tiger Global, Norwest", "year": 2019},
+      {"round": "Series D", "amount": "$160M", "investors": "Tiger Global, Creation, Falcon Edge", "year": 2021},
+      {"round": "Series G", "amount": "$325M", "investors": "SoftBank, Tiger Global, Alpha Wave", "year": 2022}
+    ],
+    "unit_economics": {
+      "revenue_model": "Trading margin (2-4%) on raw materials + interest income from Oxyzo lending (14-18% NBFC)",
+      "oxyzo_aum": "₹5,000+ crore loan book",
+      "smb_customers": "10,000+ SME customers",
+      "ebitda_margin": "3-4% consolidated (trading + lending combined)"
+    },
+    "key_lessons": [
+      "Profitability from Day 1 is possible even in a VC-funded startup — OfBusiness never raised for burns.",
+      "Embedding financial services into commerce creates compounding stickiness — customers who take credit buy more.",
+      "B2B commerce is boring but the margins and loyalty are far superior to B2C.",
+      "The NBFC route (Oxyzo) created a second, higher-margin business unit that now is worth as much as the marketplace.",
+      "Revenue is vanity, profit is sanity — OfBusiness at ₹19,296 crore revenue with profit is more sustainable than a ₹50,000 crore GMV money-losing marketplace."
+    ],
+    "founder_quote": "We were never trying to be a unicorn. We were trying to build a profitable business. The valuation was a byproduct. — Asish Mohapatra",
+    "tags": ["b2b", "commerce", "fintech", "nbfc", "raw-materials", "profitable", "smb", "embedded-finance"]
+  },
+  {
+    "id": "darwinbox",
+    "name": "Darwinbox",
+    "tagline": "The Indian SaaS company that beat Workday and SAP in Asia by building for the Asian employee, not the American one.",
+    "founders": [
+      {"name": "Chaitanya Peddi", "background": "IIT Kharagpur; McKinsey"},
+      {"name": "Jayant Paleti", "background": "IIT Kharagpur; Deloitte"},
+      {"name": "Rohit Chennamaneni", "background": "ISB Hyderabad; ex-Microsoft"}
+    ],
+    "founded": 2015,
+    "sector": "B2B SaaS",
+    "sub_sector": "HR Technology / HRMS",
+    "hq": "Hyderabad",
+    "current_valuation": "$1 billion (2022)",
+    "valuation_year": 2022,
+    "funding_raised": "$140 million",
+    "last_round": "Series D — $72M (2022) led by Technology Crossover Ventures (TCV)",
+    "revenue": "₹300 crore+ (FY24, estimated)",
+    "profitable": false,
+    "employees": "1,000+",
+    "product_description": "Cloud HRMS for mid to large enterprises in Asia. Recruitment, onboarding, attendance, payroll, performance management, succession planning. Covers entire employee lifecycle. Used by Swiggy, Myntra, Piramal, Kotak, Starbucks Asia.",
+    "the_problem": "SAP SuccessFactors and Workday were built for the Western employee (desk worker, fixed location, English-first). Indian and Southeast Asian employees are largely field workers, multilingual, non-desk. Existing HR software required 12-18 month implementations and was too expensive for Indian enterprises.",
+    "the_solution": "Mobile-first HRMS built for the on-the-ground Asian employee. Geo-tagging for field force attendance, multilingual support, fast implementation (3-6 months), and pricing 60-70% lower than SAP/Workday.",
+    "key_milestones": [
+      {"year": 2015, "event": "Founded; first product: attendance and leave management"},
+      {"year": 2017, "event": "Raised $3M seed; 100+ enterprise clients in India"},
+      {"year": 2019, "event": "Raised $15M Series B; expansion to Southeast Asia"},
+      {"year": 2020, "event": "Raised $45M Series C led by Sequoia India"},
+      {"year": 2021, "event": "500+ enterprise clients; Microsoft partnership for Azure integration"},
+      {"year": 2022, "event": "Raised $72M Series D led by TCV; unicorn status; 800+ clients in 100+ countries"}
+    ],
+    "fundraising_journey": [
+      {"round": "Seed", "amount": "$3M", "investors": "Endiya Partners, 3one4 Capital", "year": 2017},
+      {"round": "Series A", "amount": "$7M", "investors": "Endiya, 3one4, Lightspeed", "year": 2018},
+      {"round": "Series B", "amount": "$15M", "investors": "Sequoia India, Lightspeed", "year": 2019},
+      {"round": "Series C", "amount": "$45M", "investors": "Sequoia India, Endiya, Lightspeed", "year": 2020},
+      {"round": "Series D", "amount": "$72M", "investors": "TCV, Sequoia India, Lightspeed", "year": 2022}
+    ],
+    "unit_economics": {
+      "revenue_model": "Annual license (per employee per month) + implementation + professional services",
+      "arr": "$20M+ ARR (estimated)",
+      "clients": "800+ enterprise clients",
+      "employees_managed": "2 million+ employees on platform",
+      "nrr": "120%+ net revenue retention (estimated)"
+    },
+    "key_lessons": [
+      "Product-market fit for global SaaS can be found by being anti-global: deeply localize for a specific Asian market, then expand.",
+      "Beating incumbents (SAP, Workday) in enterprise SaaS requires being 10x faster to implement, 70% cheaper, and mobile-first.",
+      "Vertical SaaS (HR only) beats horizontal suites at mid-market because depth > breadth for single-function buyers.",
+      "Channel partnerships (Microsoft, Deloitte) can accelerate enterprise deal velocity more than a direct sales team.",
+      "Recurring revenue with high NRR (120%+) is the most valuable business model — you grow even without new customers."
+    ],
+    "founder_quote": "We built Darwinbox for the security guard at a factory who uses the app to mark attendance, not for the HR VP in a corner office. That's 90% of the Asian workforce. — Rohit Chennamaneni",
+    "tags": ["b2b-saas", "hr-tech", "enterprise", "asia", "competing-with-sap", "mobile-first", "unicorn"]
+  }
+]

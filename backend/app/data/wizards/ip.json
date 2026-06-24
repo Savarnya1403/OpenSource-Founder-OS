@@ -1,0 +1,170 @@
+{
+  "id": "ip",
+  "title": "IP Filing Assistant — Patents, Trademarks & Copyright",
+  "tagline": "Protect your innovation, brand, and creative work with India's intellectual property system.",
+  "patent": {
+    "title": "Patent Filing in India",
+    "description": "A patent gives you exclusive right to make, use, and sell your invention for 20 years from filing date. Blocks competitors from copying your core technology.",
+    "types": [
+      {
+        "name": "Provisional Patent Application",
+        "purpose": "Secures your 'priority date' cheaply while you refine the invention. Gives 12 months to file complete specification.",
+        "cost_startup": "₹1,750 (e-filing, startup/individual) | ₹4,000 (MSME) | ₹8,750 (large entity)",
+        "timeline": "Instant filing — date secured same day",
+        "validity": "Not a grant; establishes priority date only",
+        "when_to_use": "As soon as you have a novel idea/prototype, before any public disclosure"
+      },
+      {
+        "name": "Complete Patent Application",
+        "purpose": "Full patent application claiming all claims. Can be converted from provisional within 12 months.",
+        "cost_startup": "₹1,750 (< 30 pages) to ₹3,500 (30-60 pages) for startups/individuals",
+        "timeline": "18 months publication + examination time = 4-6 years to grant (without expedited)",
+        "validity": "20 years from filing date if granted",
+        "when_to_use": "After refining full claims; convert from provisional within 12 months"
+      },
+      {
+        "name": "Expedited (Request for Examination - Form 18A)",
+        "purpose": "Fast-track examination of your patent application. Used by DPIIT-recognised startups.",
+        "cost_startup": "₹8,000 additional fee (startup) | ₹40,000 (large entity)",
+        "timeline": "Examination typically within 6-12 months of request",
+        "validity": "Same as complete patent",
+        "when_to_use": "DPIIT startups should file RFE (Form 18) within 48 months of filing to trigger examination"
+      }
+    ],
+    "process": [
+      "Prior art search: Check if similar patents exist on Google Patents, Indian Patent Office (ipindia.gov.in), USPTO",
+      "Draft patent specification: Abstract, description, drawings, claims (hire a patent agent for complex inventions)",
+      "File on ipindia.gov.in: Create account → Select 'Application for Patent' → Upload PDF specification",
+      "Pay government filing fee online (₹1,750 for startup provisional)",
+      "Get Patent Application Number immediately — use this as 'Patent Pending' in marketing",
+      "Publication: Patent published in Patent Journal 18 months after priority date (can request early publication at ₹2,500)",
+      "Request for Examination (Form 18/18A): File within 48 months of priority date to start examination",
+      "Examination: First Examination Report (FER) issued — respond to objections within 6-12 months",
+      "Grant: If all objections cleared, patent granted and published in Patent Journal"
+    ],
+    "dpiit_benefits": [
+      "80% rebate on all patent fees (file fee, examination fee, renewal fee)",
+      "Fast-track examination (Form 18A) at reduced cost",
+      "IP facilitation centres at several incubators (IIMB, IIT Delhi, etc.) for free guidance"
+    ],
+    "costs_summary": {
+      "filing_with_agent": "₹25,000 – ₹75,000 (agent fee + government fee)",
+      "filing_self": "₹1,750 – ₹10,000 (government fee only — not recommended without IP expertise)",
+      "renewal_per_year": "₹800 – ₹1,600 after grant (years 1-5); higher for later years",
+      "total_20_years": "₹1,00,000 – ₹3,00,000 (all-in, including agent and renewals)"
+    },
+    "what_is_patentable": ["Novel technical process", "New machine/device", "Novel composition of matter", "New use of an existing compound", "Software if it solves a technical problem (not pure algorithm or business method)", "Biotechnology inventions"],
+    "not_patentable": ["Pure mathematical methods / algorithms", "Business methods", "Computer program per se (but embedded in hardware — possibly)", "Traditional knowledge / Ayurvedic medicines", "Atomic energy inventions"],
+    "attorney_finder": {
+      "description": "Find registered Indian patent agents (advocates) on the official list",
+      "url": "https://ipindia.gov.in/patent-agent.htm",
+      "avg_cost": "₹20,000 – ₹50,000 for drafting + filing a technical invention"
+    },
+    "official_portal": "https://ipindia.gov.in",
+    "application_portal": "https://ipindiaservices.gov.in"
+  },
+  "trademark": {
+    "title": "Trademark Registration in India",
+    "description": "A trademark protects your brand name, logo, tagline, or distinctive mark. Prevents competitors from using confusingly similar marks in your class of goods/services.",
+    "types": [
+      {
+        "name": "Word Mark",
+        "description": "Protects the text/words of your brand name alone (e.g., 'Razorpay', 'Mamaearth')",
+        "recommendation": "File first — protects the name regardless of font/design"
+      },
+      {
+        "name": "Device/Logo Mark",
+        "description": "Protects a specific logo or design. Can be combined with words.",
+        "recommendation": "File after logo is finalised"
+      },
+      {
+        "name": "Sound/Shape/Color Mark",
+        "description": "Unconventional marks. Harder to register but possible (Intel jingle, Louboutin red sole).",
+        "recommendation": "Consult IP attorney for these"
+      }
+    ],
+    "nice_classes": [
+      {"class": 9, "description": "Software, apps, scientific apparatus, electronic devices"},
+      {"class": 35, "description": "Business management, advertising, retail services, B2B services"},
+      {"class": 36, "description": "Financial services, insurance, banking, FinTech"},
+      {"class": 38, "description": "Telecommunications, internet/online services"},
+      {"class": 41, "description": "Education, training, entertainment, EdTech"},
+      {"class": 42, "description": "IT services, SaaS, technology design, cloud computing"},
+      {"class": 44, "description": "Medical, veterinary, health/beauty services, HealthTech"},
+      {"class": 45, "description": "Legal services, personal security, social services, LegalTech"},
+      {"class": 25, "description": "Clothing, footwear, headgear — for D2C fashion brands"},
+      {"class": 3, "description": "Cosmetics, cleaning products, personal care — for D2C beauty brands"},
+      {"class": 5, "description": "Pharmaceutical, dietary supplements, baby food, medical preparations"},
+      {"class": 30, "description": "Food (tea, coffee, spices, packaged food) — for D2C food brands"},
+      {"class": 29, "description": "Processed food, dairy, meat, fish — for food startups"}
+    ],
+    "process": [
+      "Trademark search: Search ipindiaservices.gov.in for identical/similar marks in your class(es)",
+      "Assess similarity: Check for phonetic, visual, and conceptual similarity with existing marks",
+      "Prepare application: Drafting on ipindiaservices.gov.in — name, class, proprietor details, user evidence",
+      "File application: Upload on ipindiaservices.gov.in; pay government fee",
+      "TM number issued immediately: Your mark is now 'TM' pending (use ™ symbol)",
+      "Examination: Trademark Registry examines within 3-6 months; issues Examination Report",
+      "Response: Respond to objections within 30 days",
+      "Publication in Trademark Journal: Third parties can oppose within 4 months",
+      "Registration: If no opposition (or opposition resolved in your favor), certificate issued in 18-24 months",
+      "Use ® symbol only after registration certificate"
+    ],
+    "costs": {
+      "government_fee_individual_startup": "₹4,500 per class (e-filing by individual / startup)",
+      "government_fee_company": "₹9,000 per class (e-filing by company)",
+      "attorney_fee": "₹5,000 – ₹15,000 per class (comprehensive search + filing)",
+      "total_per_class": "₹10,000 – ₹25,000 all-in for 1 class"
+    },
+    "timeline": "18-24 months to full registration. ™ usage allowed immediately on filing.",
+    "dpiit_benefit": "DPIIT startups get 50% rebate on government trademark filing fees",
+    "renewal": "Valid for 10 years from application date; renewable for ₹9,000 per class (company)",
+    "tips": [
+      "File in multiple classes if your brand extends across product types (e.g., Mamaearth files in Classes 3, 5, 25, 35, 44)",
+      "File as a company, not in personal name — ownership stays with business",
+      "DPIIT recognised startups get 50% fee rebate — register DPIIT first",
+      "Conduct trademark search before finalizing your brand name — saves expensive rebranding later"
+    ],
+    "official_portal": "https://ipindiaservices.gov.in/trademarkefiling/",
+    "search_portal": "https://ipindiaservices.gov.in/PublicSearch/"
+  },
+  "copyright": {
+    "title": "Copyright Registration in India",
+    "description": "Copyright protects original creative works — software code, written content, music, art, films. In India, copyright is automatic on creation, but registration provides legal proof and simplified enforcement.",
+    "what_is_protected": [
+      "Computer source code and object code",
+      "Original literary works (blog posts, whitepapers, reports)",
+      "Artistic works (logo art, UI designs, illustrations)",
+      "Musical compositions",
+      "Films and videos",
+      "Architectural designs"
+    ],
+    "what_is_not_protected": ["Ideas (only expression is protected, not ideas)", "Facts and data", "Titles and short phrases (use trademark for these)", "Government documents (public domain in India)"],
+    "process": [
+      "File at copyright.gov.in (Copyright Office, India)",
+      "Create account on official portal",
+      "Select work type: Literary / Computer Program / Artistic / Musical / Film / Sound Recording",
+      "Fill Form XIV (computer programs) or Form XIII (literary works) online",
+      "Upload the work in PDF/digital format",
+      "Pay government fee (₹500 for literary/software; ₹5,000 for cinematograph film)",
+      "A waiting period of 30 days: any third-party objections are invited",
+      "If no objection: Copyright Diary Number issued; then Copyright Registration Certificate in 3-4 months"
+    ],
+    "costs": {
+      "literary_software": "₹500 government fee per work",
+      "artistic_work": "₹500 government fee",
+      "sound_recording": "₹2,000 government fee",
+      "film": "₹5,000 government fee",
+      "attorney_fee": "₹3,000 – ₹10,000 if using a copyright attorney"
+    },
+    "timeline": "3-4 months for registration. Copyright exists from creation date, not registration date.",
+    "validity": "Life of creator + 60 years for literary/artistic works. 60 years for films/sound recordings from publication.",
+    "tips": [
+      "Always add copyright notice © [Year] [Company Name] to your code, content, and designs",
+      "Register your software's source code — provides court evidence in infringement disputes",
+      "Register your website UI/UX designs as 'Artistic Work' to protect visual design from copying",
+      "Copyright registration is very cheap (₹500) — register every major product version"
+    ],
+    "official_portal": "https://copyright.gov.in"
+  }
+}

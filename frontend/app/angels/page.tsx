@@ -1,0 +1,184 @@
+"use client";
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { Search, X, Loader2, ExternalLink, Users } from "lucide-react";
+import { api } from "@/lib/api";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { isAuthenticated } from "@/lib/auth";
+import Link from "next/link";
+import { Zap } from "lucide-react";
+
+interface AngelNetwork {
+  id: string;
+  name: string;
+  size: number;
+  check_size_range: string;
+  stages: string[];
+  sectors: string[];
+  focus_areas: string[];
+  how_to_apply: string;
+  description?: string;
+  location?: string;
+}
+
+export default function AngelsPage() {
+  const isAuthed = isAuthenticated();
+  const [search, setSearch] = useState("");
+
+  const { data, isLoading } = useQuery({
+    queryKey: ["angels", search],
+    queryFn: () => api.get("/api/angels", { params: { search: search || undefined } }).then((r) => r.data),
+    staleTime: 60_000,
+  });
+
+  const networks: AngelNetwork[] = data?.networks || data || [];
+
+  const content = (
+    <main className="flex-1 p-8">
+      <div className="max-w-5xl mx-auto">
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-gray-900 mb-1">Angel Networks</h1>
+          <p className="text-gray-500 text-sm">
+            {networks.length} angel networks and syndicates investing in early-stage Indian startups.
+          </p>
+        </div>
+
+        {/* Search */}
+        <div className="bg-white border border-gray-100 rounded-2xl p-5 mb-6">
+          <div className="flex gap-3">
+            <div className="flex-1 relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search angel networks..."
+                className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+              />
+            </div>
+            {search && (
+              <button
+                onClick={() => setSearch("")}
+                className="flex items-center gap-1.5 text-sm text-gray-500 border border-gray-200 rounded-lg px-3 hover:bg-gray-50"
+              >
+                <X className="w-4 h-4" /> Clear
+              </button>
+            )}
+          </div>
+        </div>
+
+        {isLoading ? (
+          <div className="flex items-center justify-center py-20">
+            <Loader2 className="w-8 h-8 animate-spin text-brand-500" />
+          </div>
+        ) : networks.length === 0 ? (
+          <div className="text-center py-20 text-gray-400">
+            <Users className="w-10 h-10 mx-auto mb-3 opacity-40" />
+            <p>No angel networks found.</p>
+          </div>
+        ) : (
+          <div className="grid sm:grid-cols-2 gap-4">
+            {networks.map((network) => (
+              <div key={network.id} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="font-semibold text-gray-900 text-base">{network.name}</h3>
+                  {network.size && (
+                    <span className="flex items-center gap-1 text-xs text-gray-400 shrink-0 ml-2">
+                      <Users className="w-3 h-3" />
+                      {network.size.toLocaleString()} members
+                    </span>
+                  )}
+                </div>
+
+                {network.description && (
+                  <p className="text-xs text-gray-500 mb-3 line-clamp-2">{network.description}</p>
+                )}
+
+                <div className="space-y-2 mb-4">
+                  {network.check_size_range && (
+                    <div className="text-xs">
+                      <span className="font-medium text-gray-700">Check size:</span>{" "}
+                      <span className="text-gray-600">{network.check_size_range}</span>
+                    </div>
+                  )}
+                  {network.stages && network.stages.length > 0 && (
+                    <div className="text-xs">
+                      <span className="font-medium text-gray-700">Stages:</span>{" "}
+                      <span className="text-gray-600">{network.stages.join(", ")}</span>
+                    </div>
+                  )}
+                  {network.location && (
+                    <div className="text-xs">
+                      <span className="font-medium text-gray-700">Based in:</span>{" "}
+                      <span className="text-gray-600">{network.location}</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Sector tags */}
+                {network.sectors && network.sectors.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mb-3">
+                    {network.sectors.slice(0, 5).map((s) => (
+                      <span key={s} className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-2 py-0.5 rounded-full">
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Focus areas */}
+                {network.focus_areas && network.focus_areas.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {network.focus_areas.slice(0, 4).map((f) => (
+                      <span key={f} className="text-xs bg-gray-50 text-gray-600 border border-gray-100 px-2 py-0.5 rounded-full">
+                        {f}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {network.how_to_apply && (
+                  <div className="mt-auto">
+                    <a
+                      href={network.how_to_apply}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-brand-600 hover:text-brand-700"
+                    >
+                      Apply / Learn more <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </main>
+  );
+
+  if (isAuthed) {
+    return (
+      <div className="flex min-h-screen bg-gray-50">
+        <Sidebar />
+        {content}
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <nav className="bg-white border-b border-gray-100 px-6 h-14 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2">
+          <div className="w-6 h-6 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-md flex items-center justify-center">
+            <Zap className="w-3 h-3 text-white" />
+          </div>
+          <span className="font-bold text-gray-900 text-sm">OpenFounder OS</span>
+        </Link>
+        <Link href="/login" className="text-sm font-medium text-brand-600 hover:underline">
+          Sign in
+        </Link>
+      </nav>
+      {content}
+    </div>
+  );
+}

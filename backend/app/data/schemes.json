@@ -1,0 +1,3055 @@
+[
+  {
+    "id": "startup-india-dpiit",
+    "name": "Startup India DPIIT Recognition",
+    "ministry": "DPIIT",
+    "implementing_agency": "Department for Promotion of Industry and Internal Trade",
+    "type": "recognition",
+    "category": [
+      "recognition",
+      "tax",
+      "compliance"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Official government recognition for startups enabling income tax exemptions for 3 years, self-certification under 9 labour and 3 environment laws, fast-track patent examination at 80% fee rebate, and access to Fund of Funds.",
+    "benefits": [
+      "Income tax exemption for 3 consecutive years out of first 10 years",
+      "80% rebate on patent filing fees",
+      "Self-certification under 9 labour laws and 3 environment laws",
+      "Fast-track patent examination",
+      "Access to Fund of Funds via SIDBI",
+      "Access to government procurement portals",
+      "Access to Startup India Hub"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Registered Partnership"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.startupindia.gov.in/content/sih/en/startupgov/startup-recognition-page.html",
+    "deadline": "Rolling",
+    "tags": [
+      "DPIIT",
+      "recognition",
+      "tax exemption",
+      "IPR",
+      "compliance",
+      "mandatory first step"
+    ]
+  },
+  {
+    "id": "startup-india-seed-fund",
+    "name": "Startup India Seed Fund Scheme (SISFS)",
+    "ministry": "DPIIT",
+    "implementing_agency": "Startup India / Incubators",
+    "type": "grant",
+    "category": [
+      "seed funding",
+      "grant"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "Provides financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialisation through DPIIT-approved incubators. Grants up to ₹20 lakh and loans up to ₹50 lakh.",
+    "benefits": [
+      "Grant up to ₹20 lakh for validation and prototype",
+      "Debt/convertible debenture up to ₹50 lakh for commercialisation",
+      "Mentorship from incubator network",
+      "Access to incubator infrastructure"
+    ],
+    "funding_amount": "₹20–50 lakh",
+    "funding_type": "grant + soft loan",
+    "eligibility": {
+      "entity_age_years": 2,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://seedfund.startupindia.gov.in",
+    "deadline": "Rolling",
+    "tags": [
+      "seed fund",
+      "grant",
+      "incubator",
+      "prototype",
+      "early stage",
+      "SISFS"
+    ]
+  },
+  {
+    "id": "fund-of-funds-sidbi",
+    "name": "Fund of Funds for Startups (FFS)",
+    "ministry": "DPIIT",
+    "implementing_agency": "SIDBI",
+    "type": "equity",
+    "category": [
+      "equity",
+      "VC funding"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth",
+      "Scale"
+    ],
+    "description": "₹10,000 crore corpus managed by SIDBI to provide funding support to SEBI-registered Alternative Investment Funds (AIFs) that invest in startups. Indirect funding through VC/PE funds.",
+    "benefits": [
+      "Access to equity capital through registered AIFs",
+      "No direct application — accessed via registered VC funds",
+      "Focus on sectors like deep tech, agri, healthcare, defence"
+    ],
+    "funding_amount": "₹10,000 Cr corpus (indirect)",
+    "funding_type": "equity via AIF",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth",
+        "Scale"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.sidbi.in/en/page/fund-of-funds-for-startups",
+    "deadline": "Rolling",
+    "tags": [
+      "fund of funds",
+      "SIDBI",
+      "VC",
+      "AIF",
+      "equity",
+      "growth stage"
+    ]
+  },
+  {
+    "id": "birac-big",
+    "name": "BIRAC Biotechnology Ignition Grant (BIG)",
+    "ministry": "DBT",
+    "implementing_agency": "BIRAC",
+    "type": "grant",
+    "category": [
+      "grant",
+      "biotech",
+      "deep tech"
+    ],
+    "sectors": [
+      "Biotechnology",
+      "Healthcare",
+      "Agri-tech",
+      "MedTech",
+      "Life Sciences"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "India's flagship biotech seed grant for early-stage biotech/health-tech startups and innovators. Provides up to ₹50 lakh for proof-of-concept work over 18 months. Milestone-based disbursement.",
+    "benefits": [
+      "Grant up to ₹50 lakh",
+      "18-month project duration",
+      "Access to BIRAC network and mentors",
+      "IP support and guidance",
+      "Gateway to BIRAC SPARSH and PACE programmes"
+    ],
+    "funding_amount": "Up to ₹50 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 3,
+      "max_turnover_cr": 50,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Individual Innovator"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Healthcare",
+        "Agri-tech",
+        "MedTech"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://birac.nic.in/webcontent/1461829592_BIG_scheme.pdf",
+    "deadline": "Quarterly calls",
+    "tags": [
+      "BIRAC",
+      "biotech",
+      "BIG",
+      "grant",
+      "healthcare",
+      "deep tech",
+      "DBT"
+    ]
+  },
+  {
+    "id": "birac-sparsh",
+    "name": "BIRAC SPARSH (Social Innovation Programme for Products)",
+    "ministry": "DBT",
+    "implementing_agency": "BIRAC",
+    "type": "grant",
+    "category": [
+      "grant",
+      "social innovation",
+      "biotech"
+    ],
+    "sectors": [
+      "Biotechnology",
+      "Healthcare",
+      "Agriculture",
+      "Social Impact"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Supports biotech social innovation products addressing needs of rural and underserved populations. Focus on affordable, scalable solutions for Bottom of Pyramid (BoP) markets.",
+    "benefits": [
+      "Grant up to ₹50 lakh",
+      "Connects innovators with NGOs, CSOs, and social enterprises",
+      "Last-mile deployment support",
+      "Mentorship from impact investment network"
+    ],
+    "funding_amount": "Up to ₹50 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 25,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Section 8 Company"
+      ],
+      "sectors": [
+        "Biotechnology",
+        "Healthcare",
+        "Agriculture",
+        "Social Impact"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://birac.nic.in",
+    "deadline": "Annual calls",
+    "tags": [
+      "BIRAC",
+      "SPARSH",
+      "social innovation",
+      "BOP",
+      "rural",
+      "healthcare"
+    ]
+  },
+  {
+    "id": "meity-tide-2",
+    "name": "MeitY TIDE 2.0",
+    "ministry": "MeitY",
+    "implementing_agency": "MeitY Startup Hub (MSH)",
+    "type": "grant",
+    "category": [
+      "grant",
+      "deep tech",
+      "ICT"
+    ],
+    "sectors": [
+      "Technology",
+      "AI/ML",
+      "IoT",
+      "Cybersecurity",
+      "Blockchain",
+      "AR/VR"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Technology Incubation and Development of Entrepreneurs 2.0 — supports ICT-enabled tech startups through 51 incubators across India. Equity-free grant support, prototype labs, and co-working.",
+    "benefits": [
+      "Equity-free grant up to ₹7 lakh (pre-incubation) and ₹15 lakh (incubation)",
+      "Access to prototype labs, fab labs, and co-working space",
+      "Mentorship from industry experts",
+      "Connect to angel networks and VCs"
+    ],
+    "funding_amount": "₹7–15 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 3,
+      "max_turnover_cr": 10,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Individual"
+      ],
+      "sectors": [
+        "Technology",
+        "AI/ML",
+        "IoT",
+        "Cybersecurity",
+        "Blockchain"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://tide20.meity.gov.in",
+    "deadline": "Rolling via incubators",
+    "tags": [
+      "MeitY",
+      "TIDE",
+      "ICT",
+      "tech startup",
+      "grant",
+      "incubation",
+      "deep tech"
+    ]
+  },
+  {
+    "id": "dst-nidhi-prayas",
+    "name": "DST-NIDHI PRAYAS (Promoting & Accelerating Young and Aspiring Innovators)",
+    "ministry": "DST",
+    "implementing_agency": "DST / NIDHI Programme",
+    "type": "grant",
+    "category": [
+      "grant",
+      "prototyping",
+      "deep tech"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "Provides ₹10 lakh equity-free grant to individual innovators to convert ideas into prototypes within 6 months. Hosted through DST-supported incubators with proto-labs.",
+    "benefits": [
+      "₹10 lakh equity-free grant",
+      "6-month timeline for proof of concept",
+      "Access to proto-labs at host institution",
+      "Expert mentorship",
+      "Pathway to DST-NIDHI SSS for further funding"
+    ],
+    "funding_amount": "₹10 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Individual Innovator",
+        "Team"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://nidhi.dst.gov.in",
+    "deadline": "Rolling via NIDHI incubators",
+    "tags": [
+      "DST",
+      "NIDHI",
+      "PRAYAS",
+      "prototype",
+      "grant",
+      "pre-incubation",
+      "individual"
+    ]
+  },
+  {
+    "id": "dst-nidhi-sss",
+    "name": "DST-NIDHI Seed Support System (SSS)",
+    "ministry": "DST",
+    "implementing_agency": "DST / NIDHI Programme",
+    "type": "grant",
+    "category": [
+      "seed funding",
+      "grant"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Seed support of up to ₹25 lakh to early-stage startups incubated in NIDHI-supported incubators for building market-ready product and initial business development.",
+    "benefits": [
+      "Seed grant up to ₹25 lakh",
+      "Milestone-based disbursement",
+      "Mentorship and network access",
+      "IP facilitation"
+    ],
+    "funding_amount": "Up to ₹25 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 3,
+      "max_turnover_cr": 10,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://nidhi.dst.gov.in",
+    "deadline": "Rolling via host incubators",
+    "tags": [
+      "DST",
+      "NIDHI",
+      "SSS",
+      "seed",
+      "grant",
+      "incubation"
+    ]
+  },
+  {
+    "id": "atal-incubation-centres",
+    "name": "Atal Incubation Centres (AIC) — AIM",
+    "ministry": "NITI Aayog",
+    "implementing_agency": "Atal Innovation Mission (AIM)",
+    "type": "incubation",
+    "category": [
+      "incubation",
+      "grant",
+      "infrastructure"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "World-class incubation centres set up across India to foster a culture of innovation. AICs provide incubatees with infrastructure, mentoring, seed funding access, industry linkages, and training.",
+    "benefits": [
+      "Office and lab infrastructure",
+      "Seed funding access up to ₹10 lakh via AIM",
+      "Mentoring from AIM mentor network",
+      "Access to AIC industry partners",
+      "Demo Day and investor connect"
+    ],
+    "funding_amount": "Up to ₹10 lakh (seed)",
+    "funding_type": "grant + incubation support",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 10,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Individual"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://aim.gov.in/aic.php",
+    "deadline": "Rolling via individual AICs",
+    "tags": [
+      "AIM",
+      "Atal",
+      "incubation",
+      "NITI Aayog",
+      "infrastructure",
+      "mentoring"
+    ]
+  },
+  {
+    "id": "atal-new-india-challenges",
+    "name": "Atal New India Challenges (ANIC)",
+    "ministry": "NITI Aayog",
+    "implementing_agency": "Atal Innovation Mission (AIM)",
+    "type": "grant",
+    "category": [
+      "grant",
+      "challenge",
+      "deep tech"
+    ],
+    "sectors": [
+      "Healthcare",
+      "Agriculture",
+      "Water",
+      "Energy",
+      "Transport",
+      "Education",
+      "Deep Tech"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Problem-statement-based innovation challenges co-designed with Central Ministries and CPSUs. Winners receive grants up to ₹1 crore to develop, demonstrate, and deploy technology solutions at scale.",
+    "benefits": [
+      "Grant up to ₹1 crore",
+      "Ministry/CPSU partnership for deployment",
+      "Mentorship from AIM network",
+      "Visibility and credibility"
+    ],
+    "funding_amount": "Up to ₹1 crore",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "Healthcare",
+        "Agriculture",
+        "Water",
+        "Energy",
+        "Transport",
+        "Education"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://aim.gov.in/anic.php",
+    "deadline": "Challenge-specific",
+    "tags": [
+      "AIM",
+      "ANIC",
+      "challenge",
+      "grant",
+      "CPSU",
+      "ministry partnership"
+    ]
+  },
+  {
+    "id": "sidbi-smile",
+    "name": "SIDBI SMILE (Soft Loan Fund for MSMEs)",
+    "ministry": "MSME",
+    "implementing_agency": "SIDBI",
+    "type": "loan",
+    "category": [
+      "soft loan",
+      "MSME"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Services",
+      "All Sectors"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth",
+      "Scale"
+    ],
+    "description": "Quasi-equity and term loans at below-market rates for small enterprises and startups to support expansion, technology upgradation, and working capital needs.",
+    "benefits": [
+      "Soft loans at 8–9% p.a.",
+      "Loan amount ₹10 lakh to ₹25 lakh (SMILE Express) or ₹25 lakh–₹1 crore",
+      "Minimum collateral requirements",
+      "Repayment tenure up to 7 years"
+    ],
+    "funding_amount": "₹10 lakh to ₹1 crore",
+    "funding_type": "soft loan",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Partnership",
+        "Sole Proprietorship"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Services",
+        "All Sectors"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth",
+        "Scale"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.sidbi.in",
+    "deadline": "Rolling",
+    "tags": [
+      "SIDBI",
+      "SMILE",
+      "soft loan",
+      "MSME",
+      "working capital",
+      "expansion"
+    ]
+  },
+  {
+    "id": "cgtmse",
+    "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    "ministry": "MSME",
+    "implementing_agency": "CGTMSE / Member Lending Institutions",
+    "type": "credit guarantee",
+    "category": [
+      "credit guarantee",
+      "loan facilitation"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Provides collateral-free credit guarantees on loans up to ₹5 crore to micro and small enterprises through member banks and NBFCs. Reduces lender risk, enabling MSMEs to access formal credit.",
+    "benefits": [
+      "Collateral-free loans up to ₹5 crore",
+      "85–75% coverage of loan amount by CGTMSE",
+      "Available across 100+ member banks and NBFCs",
+      "Lower interest rates due to reduced lender risk"
+    ],
+    "funding_amount": "Up to ₹5 crore",
+    "funding_type": "credit guarantee",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Sole Proprietorship",
+        "Partnership"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.cgtmse.in",
+    "deadline": "Rolling via banks",
+    "tags": [
+      "CGTMSE",
+      "credit guarantee",
+      "collateral-free",
+      "bank loan",
+      "MSME"
+    ]
+  },
+  {
+    "id": "pmmy-mudra",
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "ministry": "Finance Ministry",
+    "implementing_agency": "MUDRA / Banks / MFIs",
+    "type": "loan",
+    "category": [
+      "micro loan",
+      "working capital"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Services",
+      "Trading"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Provides loans up to ₹20 lakh to non-corporate, non-farm small/micro enterprises. Three categories: Shishu (up to ₹50K), Kishore (₹50K–₹5L), Tarun (₹5L–₹10L), and Tarun Plus (₹10L–₹20L).",
+    "benefits": [
+      "No collateral required",
+      "Shishu: up to ₹50,000",
+      "Kishore: ₹50,000–₹5 lakh",
+      "Tarun: ₹5 lakh–₹10 lakh",
+      "Tarun Plus: ₹10 lakh–₹20 lakh",
+      "Subsidised interest rates"
+    ],
+    "funding_amount": "Up to ₹20 lakh",
+    "funding_type": "micro loan",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 25,
+      "entity_types": [
+        "Sole Proprietorship",
+        "Partnership",
+        "Individual"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Services",
+        "Trading"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.mudra.org.in",
+    "deadline": "Rolling",
+    "tags": [
+      "PMMY",
+      "MUDRA",
+      "micro loan",
+      "Shishu",
+      "Kishore",
+      "Tarun",
+      "collateral-free"
+    ]
+  },
+  {
+    "id": "stand-up-india",
+    "name": "Stand-Up India",
+    "ministry": "Finance Ministry / SIDBI",
+    "implementing_agency": "Scheduled Commercial Banks",
+    "type": "loan",
+    "category": [
+      "loan",
+      "SC/ST",
+      "women entrepreneurship"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Services",
+      "Trading"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore to at least one SC/ST borrower and one woman borrower per bank branch for setting up a greenfield enterprise.",
+    "benefits": [
+      "Loan ₹10 lakh to ₹1 crore",
+      "Repayment tenure up to 7 years",
+      "Moratorium period up to 18 months",
+      "Composite loan (term + working capital)"
+    ],
+    "funding_amount": "₹10 lakh to ₹1 crore",
+    "funding_type": "bank loan",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Sole Proprietorship",
+        "Partnership",
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Services",
+        "Trading"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": "Women",
+      "caste_specific": "SC/ST",
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.standupmitra.in",
+    "deadline": "Rolling",
+    "tags": [
+      "Stand-Up India",
+      "SC/ST",
+      "women",
+      "bank loan",
+      "greenfield",
+      "inclusion"
+    ]
+  },
+  {
+    "id": "national-sc-st-hub",
+    "name": "National SC-ST Hub",
+    "ministry": "MSME",
+    "implementing_agency": "NSIC",
+    "type": "support",
+    "category": [
+      "procurement support",
+      "capacity building",
+      "SC/ST"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Services"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Empowers SC/ST entrepreneurs to participate in public procurement. Provides procurement and marketing support, skill development, and linkage with larger industries.",
+    "benefits": [
+      "Special provisions in government procurement for SC/ST entrepreneurs",
+      "Skill development and capacity building programmes",
+      "Marketing and exhibition support",
+      "Technology and financial linkages"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary support",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "All"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Services"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": "SC/ST",
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://scsthub.in",
+    "deadline": "Rolling",
+    "tags": [
+      "SC/ST Hub",
+      "NSIC",
+      "procurement",
+      "SC/ST",
+      "inclusion",
+      "capacity building"
+    ]
+  },
+  {
+    "id": "nabard-rural-innovation",
+    "name": "NABARD Rural Innovation Fund (RIF)",
+    "ministry": "Agriculture / Finance",
+    "implementing_agency": "NABARD",
+    "type": "grant",
+    "category": [
+      "grant",
+      "rural",
+      "agriculture",
+      "social impact"
+    ],
+    "sectors": [
+      "Agriculture",
+      "Rural Development",
+      "Food Processing",
+      "Agri-tech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Supports innovative projects in agriculture, micro-enterprises, and rural non-farm sectors to stimulate rural income and employment through technology adoption and market linkages.",
+    "benefits": [
+      "Grant funding for rural innovation pilots",
+      "Technical assistance and handholding",
+      "Market linkage support",
+      "Scale-up support post-pilot"
+    ],
+    "funding_amount": "Varies (project-based)",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 50,
+      "entity_types": [
+        "NGO",
+        "FPO",
+        "Private Limited",
+        "Cooperative",
+        "SHG"
+      ],
+      "sectors": [
+        "Agriculture",
+        "Rural Development",
+        "Food Processing",
+        "Agri-tech"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "Rural India"
+      ]
+    },
+    "application_url": "https://www.nabard.org",
+    "deadline": "Annual calls",
+    "tags": [
+      "NABARD",
+      "rural",
+      "agriculture",
+      "grant",
+      "RIF",
+      "agri-tech",
+      "social impact"
+    ]
+  },
+  {
+    "id": "nabard-abif",
+    "name": "NABARD Agri Business Incubation Fund (ABIF)",
+    "ministry": "Agriculture / Finance",
+    "implementing_agency": "NABARD",
+    "type": "grant",
+    "category": [
+      "grant",
+      "agri-tech",
+      "incubation"
+    ],
+    "sectors": [
+      "Agriculture",
+      "Agri-tech",
+      "Food Processing",
+      "Rural"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "Supports agri-business incubators and agri startups through funding, mentoring, and market linkages. Promotes technology and innovation in Indian agriculture.",
+    "benefits": [
+      "Grant support to agri-business incubators",
+      "Funding to agri startups through incubators",
+      "Market linkage with FPOs and cooperatives",
+      "Technology adoption support"
+    ],
+    "funding_amount": "Up to ₹25 lakh (startup grant through incubator)",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 25,
+      "entity_types": [
+        "Private Limited Company",
+        "FPO",
+        "Cooperative"
+      ],
+      "sectors": [
+        "Agriculture",
+        "Agri-tech",
+        "Food Processing"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.nabard.org/content1.aspx?id=578",
+    "deadline": "Rolling via NABARD offices",
+    "tags": [
+      "NABARD",
+      "ABIF",
+      "agri-tech",
+      "agri-business",
+      "incubation",
+      "FPO"
+    ]
+  },
+  {
+    "id": "technology-development-board",
+    "name": "Technology Development Board (TDB) Financial Assistance",
+    "ministry": "DST",
+    "implementing_agency": "Technology Development Board",
+    "type": "loan + equity",
+    "category": [
+      "soft loan",
+      "equity",
+      "deep tech"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Healthcare",
+      "Energy",
+      "Environment",
+      "Electronics",
+      "Deep Tech"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Provides soft loans and equity participation for commercialising indigenously developed technology or adapting imported technology for wider domestic applications.",
+    "benefits": [
+      "Soft loan at 5% p.a.",
+      "Equity participation up to 26%",
+      "Loan up to ₹50 crore",
+      "Repayment tenure up to 7 years",
+      "Support for technology transfer"
+    ],
+    "funding_amount": "Up to ₹50 crore",
+    "funding_type": "soft loan + equity",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company",
+        "Public Limited"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Healthcare",
+        "Energy",
+        "Electronics",
+        "Deep Tech"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.tdb.gov.in",
+    "deadline": "Rolling",
+    "tags": [
+      "TDB",
+      "DST",
+      "soft loan",
+      "equity",
+      "deep tech",
+      "commercialisation",
+      "technology"
+    ]
+  },
+  {
+    "id": "pli-scheme",
+    "name": "Production Linked Incentive (PLI) Scheme",
+    "ministry": "Various (14 sectors)",
+    "implementing_agency": "Respective Ministries",
+    "type": "incentive",
+    "category": [
+      "production incentive",
+      "manufacturing"
+    ],
+    "sectors": [
+      "Electronics",
+      "Pharmaceuticals",
+      "Medical Devices",
+      "Automobiles",
+      "Textiles",
+      "Food Processing",
+      "Solar",
+      "Advanced Chemistry Cell",
+      "Telecom"
+    ],
+    "stages": [
+      "Growth",
+      "Scale"
+    ],
+    "description": "Incentivises domestic manufacturing by offering financial incentives of 4–20% on incremental sales from products manufactured in India over 5 years. Attracts large investments and creates jobs.",
+    "benefits": [
+      "4–20% incentive on incremental sales (sector-specific)",
+      "Reduces import dependence",
+      "Technology transfer support",
+      "Access to global supply chains"
+    ],
+    "funding_amount": "₹1.97 lakh crore (total across sectors)",
+    "funding_type": "production incentive",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company",
+        "Public Limited"
+      ],
+      "sectors": [
+        "Electronics",
+        "Pharma",
+        "Medical Devices",
+        "Auto",
+        "Textiles",
+        "Food"
+      ],
+      "stages": [
+        "Growth",
+        "Scale"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://pli.gov.in",
+    "deadline": "Sector-specific application windows",
+    "tags": [
+      "PLI",
+      "manufacturing",
+      "production incentive",
+      "Make in India",
+      "large enterprise"
+    ]
+  },
+  {
+    "id": "msme-cluster-development",
+    "name": "MSME Cluster Development Programme (CDP)",
+    "ministry": "MSME",
+    "implementing_agency": "MSME-DI / DC-MSME",
+    "type": "support",
+    "category": [
+      "cluster development",
+      "infrastructure",
+      "MSME"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Handicrafts",
+      "Textiles",
+      "Food Processing"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Provides infrastructure and common facility support for clusters of MSMEs. Focus on soft (skill development, marketing) and hard (physical infrastructure, CFC) interventions.",
+    "benefits": [
+      "Common Facility Centre (CFC) with shared machinery",
+      "Infrastructure development grants",
+      "Skill development and capacity building",
+      "Marketing and branding support",
+      "Technology upgradation"
+    ],
+    "funding_amount": "₹10 crore–₹30 crore (per cluster)",
+    "funding_type": "grant (infrastructure)",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "All MSMEs in a cluster"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Handicrafts",
+        "Textiles",
+        "Food Processing"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://msme.gov.in/node/1021",
+    "deadline": "Rolling via state MSME DIs",
+    "tags": [
+      "MSME",
+      "cluster",
+      "CFC",
+      "manufacturing",
+      "infrastructure",
+      "CDP"
+    ]
+  },
+  {
+    "id": "nsic-marketing-assistance",
+    "name": "NSIC Marketing Assistance Scheme",
+    "ministry": "MSME",
+    "implementing_agency": "National Small Industries Corporation (NSIC)",
+    "type": "support",
+    "category": [
+      "marketing",
+      "government procurement",
+      "MSME"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Services"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Helps MSMEs participate in government tenders and domestic/international trade fairs. Provides tender document subsidy, trade fairs support, and single point registration for government procurement.",
+    "benefits": [
+      "Single Point Registration for Government Tenders",
+      "Exemption from Earnest Money Deposit (EMD)",
+      "Issue of Performance and Credit Rating",
+      "Subsidised participation in trade fairs and exhibitions"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary support",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "All MSMEs"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Services"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.nsic.co.in",
+    "deadline": "Rolling",
+    "tags": [
+      "NSIC",
+      "marketing",
+      "government procurement",
+      "tenders",
+      "MSME",
+      "trade fair"
+    ]
+  },
+  {
+    "id": "kerala-startup-mission",
+    "name": "Kerala Startup Mission (KSUM) Schemes",
+    "ministry": "Kerala State Government",
+    "implementing_agency": "Kerala Startup Mission (KSUM)",
+    "type": "grant + incubation",
+    "category": [
+      "grant",
+      "incubation",
+      "state scheme"
+    ],
+    "sectors": [
+      "Technology",
+      "Healthcare",
+      "Agriculture",
+      "Social Impact",
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Kerala Startup Mission offers the ELEVATE programme (grant up to ₹15 lakh), SPARK (for women entrepreneurs), CLIMBERS (for college students), and incubation through 14 regional incubators across Kerala.",
+    "benefits": [
+      "ELEVATE Grant: up to ₹15 lakh",
+      "SPARK (Women): up to ₹10 lakh",
+      "CLIMBERS (Students): up to ₹5 lakh",
+      "Co-working and lab access",
+      "Investor connect events",
+      "International exposure (Silicon Valley, Singapore)"
+    ],
+    "funding_amount": "₹5–15 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 25,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Partnership",
+        "Individual"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "Kerala"
+      ]
+    },
+    "application_url": "https://startupmission.kerala.gov.in",
+    "deadline": "Annual calls (ELEVATE usually June-July)",
+    "tags": [
+      "KSUM",
+      "Kerala",
+      "ELEVATE",
+      "SPARK",
+      "state scheme",
+      "grant",
+      "incubation"
+    ]
+  },
+  {
+    "id": "karnataka-startup-policy",
+    "name": "Karnataka Startup Policy 2022-27",
+    "ministry": "Karnataka State Government",
+    "implementing_agency": "Karnataka Startup Cell / Dept of IT, BT & S&T",
+    "type": "grant + policy",
+    "category": [
+      "grant",
+      "policy support",
+      "state scheme"
+    ],
+    "sectors": [
+      "Technology",
+      "Healthcare",
+      "Agriculture",
+      "Manufacturing",
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Karnataka's comprehensive startup policy providing seed funding, tax incentives, procurement preference, and ecosystem support through T-Hub Bangalore, ELEVATE 100, and other programmes.",
+    "benefits": [
+      "Seed funding up to ₹50 lakh (ELEVATE 100)",
+      "Product development grants",
+      "State GST reimbursement for 5 years",
+      "Preference in government procurement",
+      "Incubation support via KBITS incubators"
+    ],
+    "funding_amount": "Up to ₹50 lakh (ELEVATE 100)",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 7,
+      "max_turnover_cr": 50,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "Karnataka"
+      ]
+    },
+    "application_url": "https://elevate.karnataka.gov.in",
+    "deadline": "Annual (ELEVATE 100 usually Q3)",
+    "tags": [
+      "Karnataka",
+      "ELEVATE 100",
+      "Bengaluru",
+      "state scheme",
+      "grant",
+      "policy"
+    ]
+  },
+  {
+    "id": "telangana-t-hub",
+    "name": "T-Hub Foundation — Telangana",
+    "ministry": "Telangana State Government",
+    "implementing_agency": "T-Hub / TSIC",
+    "type": "incubation + equity",
+    "category": [
+      "incubation",
+      "accelerator",
+      "state scheme"
+    ],
+    "sectors": [
+      "Technology",
+      "Healthcare",
+      "Agriculture",
+      "All Sectors"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "World's largest startup incubator headquartered in Hyderabad. Provides physical infrastructure, mentorship, corporate partnerships, government procurement linkages, and investment facilitation.",
+    "benefits": [
+      "State-of-the-art co-working and lab space",
+      "Access to 300+ corporate and MNC partners",
+      "Government procurement fast-track",
+      "International exposure through T-Hub Global",
+      "Investment facilitation via T-Angel network"
+    ],
+    "funding_amount": "Varies (depends on programme)",
+    "funding_type": "incubation support",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "Telangana",
+        "Open to all"
+      ]
+    },
+    "application_url": "https://t-hub.co",
+    "deadline": "Rolling cohorts",
+    "tags": [
+      "T-Hub",
+      "Hyderabad",
+      "Telangana",
+      "incubation",
+      "accelerator",
+      "corporate"
+    ]
+  },
+  {
+    "id": "cgss-startup-equity",
+    "name": "Credit Guarantee Scheme for Startups (CGSS)",
+    "ministry": "DPIIT",
+    "implementing_agency": "NCGTC (National Credit Guarantee Trustee Company)",
+    "type": "credit guarantee",
+    "category": [
+      "credit guarantee",
+      "startup lending"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Provides credit guarantees to startups that have been debt-funded but lack adequate collateral. Covers loans and quasi-equity instruments from banks, NBFCs, and SEBI-registered AIFs.",
+    "benefits": [
+      "Guarantee cover up to 75–80% of credit facility",
+      "Covers loans, NCDs, and quasi-equity",
+      "Enables collateral-free credit for DPIIT-recognised startups",
+      "Applicable to loans up to ₹10 crore"
+    ],
+    "funding_amount": "Up to ₹10 crore (guarantee)",
+    "funding_type": "credit guarantee",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://ncgtc.in",
+    "deadline": "Rolling via member lenders",
+    "tags": [
+      "CGSS",
+      "credit guarantee",
+      "DPIIT",
+      "collateral-free",
+      "debt",
+      "NCGTC"
+    ]
+  },
+  {
+    "id": "meity-startup-hub",
+    "name": "MeitY Startup Hub (MSH) — Connect & Accelerate",
+    "ministry": "MeitY",
+    "implementing_agency": "MeitY Startup Hub",
+    "type": "accelerator + grant",
+    "category": [
+      "accelerator",
+      "grant",
+      "deep tech"
+    ],
+    "sectors": [
+      "Technology",
+      "AI/ML",
+      "Cybersecurity",
+      "Blockchain",
+      "IoT",
+      "GovTech",
+      "FinTech"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "MeitY's flagship startup acceleration programme connecting tech startups with government use-cases, corporates, and investors. Runs multiple cohorts yearly across AI, FinTech, AgriTech, HealthTech themes.",
+    "benefits": [
+      "₹25 lakh prototype grant (selected startups)",
+      "Direct market access via government departments",
+      "Cloud credits from AWS, Azure, GCP",
+      "Mentorship from industry and government",
+      "Demo days with investors"
+    ],
+    "funding_amount": "₹25 lakh (selected) + cloud credits",
+    "funding_type": "grant + support",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 25,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "Technology",
+        "AI/ML",
+        "FinTech",
+        "AgriTech",
+        "HealthTech",
+        "GovTech"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://msh.meity.gov.in",
+    "deadline": "Theme-specific cohort calls",
+    "tags": [
+      "MeitY",
+      "MSH",
+      "accelerator",
+      "deep tech",
+      "AI",
+      "GovTech",
+      "cloud credits"
+    ]
+  },
+  {
+    "id": "wep-women-entrepreneurs",
+    "name": "Women Entrepreneurship Platform (WEP)",
+    "ministry": "NITI Aayog",
+    "implementing_agency": "NITI Aayog / WEP Partners",
+    "type": "support platform",
+    "category": [
+      "women entrepreneurship",
+      "mentorship",
+      "network"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "National platform to foster women entrepreneurship in India. Provides mentoring, funding linkages, market access, incubation support, and compliance hand-holding.",
+    "benefits": [
+      "Mentorship from 500+ industry leaders",
+      "Access to funding opportunities (grants, loans, equity)",
+      "Market access and procurement linkages",
+      "Skilling and capacity building programmes",
+      "Community of 300,000+ women entrepreneurs"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary + linkages",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "All"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": "Women",
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://wep.gov.in",
+    "deadline": "Rolling",
+    "tags": [
+      "WEP",
+      "women",
+      "NITI Aayog",
+      "mentorship",
+      "women entrepreneur",
+      "network"
+    ]
+  },
+  {
+    "id": "gem-startup-runway",
+    "name": "Government e-Marketplace (GeM) — Startup Runway",
+    "ministry": "Commerce and Industry",
+    "implementing_agency": "GeM",
+    "type": "procurement access",
+    "category": [
+      "government procurement",
+      "market access"
+    ],
+    "sectors": [
+      "Technology",
+      "Manufacturing",
+      "Services"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "GeM's Startup Runway provides DPIIT-recognised startups preferential access to government procurement worth ₹2+ lakh crore annually. Startups can list innovative products/services with relaxed eligibility.",
+    "benefits": [
+      "Access to ₹2+ lakh crore government procurement",
+      "Relaxed eligibility (no prior experience requirement for startups)",
+      "Faster payment cycles (10–15 days)",
+      "Direct-to-government sales without middlemen"
+    ],
+    "funding_amount": null,
+    "funding_type": "market access",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "Technology",
+        "Manufacturing",
+        "Services"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://gem.gov.in",
+    "deadline": "Rolling",
+    "tags": [
+      "GeM",
+      "government procurement",
+      "market access",
+      "B2G",
+      "DPIIT",
+      "Startup Runway"
+    ]
+  },
+  {
+    "id": "startup-india-international",
+    "name": "Startup India International Market Access Programme",
+    "ministry": "DPIIT",
+    "implementing_agency": "Startup India / Indian Embassies",
+    "type": "market access",
+    "category": [
+      "international expansion",
+      "export",
+      "market access"
+    ],
+    "sectors": [
+      "Technology",
+      "SaaS",
+      "Healthcare",
+      "Manufacturing"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth",
+      "Scale"
+    ],
+    "description": "Facilitates Indian startups to expand globally through bilateral innovation bridges (with USA, UK, Israel, Japan, Singapore), soft landing programmes, and Startup20 engagement under G20.",
+    "benefits": [
+      "Soft landing support in partner countries",
+      "Introductions to foreign investors and accelerators",
+      "Participation in global trade missions",
+      "Access to Innovation Bridges with 15+ countries"
+    ],
+    "funding_amount": null,
+    "funding_type": "market access support",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth",
+        "Scale"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.startupindia.gov.in",
+    "deadline": "Programme-specific",
+    "tags": [
+      "Startup India",
+      "international",
+      "global expansion",
+      "export",
+      "innovation bridge"
+    ]
+  },
+  {
+    "id": "nsrcel-iimb-incubation",
+    "name": "NSRCEL IIMB — Incubation & Acceleration",
+    "ministry": "IIM Bangalore / DST",
+    "implementing_agency": "N.S. Raghavan Centre for Entrepreneurial Learning (NSRCEL), IIM Bangalore",
+    "type": "incubation + acceleration",
+    "category": [
+      "incubation",
+      "accelerator",
+      "mentorship"
+    ],
+    "sectors": [
+      "Technology",
+      "Social Impact",
+      "Healthcare",
+      "Education",
+      "FinTech",
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "One of India's premier business incubators at IIM Bangalore. NSRCEL offers the Goldman Sachs 10,000 Women programme, Villgro social innovation fellowship, Women Startup Programme, and sector-specific accelerators.",
+    "benefits": [
+      "6-month intensive incubation",
+      "Mentorship from IIM Bangalore faculty and industry leaders",
+      "Access to IIM Bangalore research, alumni (50,000+) network",
+      "Seed funding access up to ₹25 lakh",
+      "Office space at IIM Bangalore campus",
+      "Goldman Sachs 10KWomen (for women founders)"
+    ],
+    "funding_amount": "Up to ₹25 lakh (seed)",
+    "funding_type": "grant + seed",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 25,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP",
+        "Ideation Stage"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "Open to all India"
+      ]
+    },
+    "application_url": "https://nsrcel.org",
+    "deadline": "Biannual cohorts (January and July)",
+    "tags": [
+      "NSRCEL",
+      "IIMB",
+      "IIM Bangalore",
+      "incubation",
+      "Goldman Sachs",
+      "10KWomen",
+      "Bengaluru"
+    ]
+  },
+  {
+    "id": "iima-ciie-accelerator",
+    "name": "CIIE.CO (IIM Ahmedabad) — Bharat Inclusion Initiative",
+    "ministry": "IIM Ahmedabad / DST / SIDBI",
+    "implementing_agency": "Centre for Innovation, Incubation and Entrepreneurship, IIM Ahmedabad",
+    "type": "incubation + equity",
+    "category": [
+      "incubation",
+      "equity",
+      "social impact"
+    ],
+    "sectors": [
+      "FinTech",
+      "AgriTech",
+      "Healthcare",
+      "Education",
+      "Social Impact"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "CIIE.CO's Bharat Inclusion Initiative focuses on inclusive tech startups solving for the masses (Bharat). Offers equity investments of $100K–$500K and deep mentorship from IIM Ahmedabad faculty.",
+    "benefits": [
+      "Equity investment $100K–$500K",
+      "6-month intensive programme",
+      "IIM Ahmedabad faculty mentorship",
+      "Access to CIIE.CO network of 200+ portfolio companies",
+      "Connections to impact investors and DFIs"
+    ],
+    "funding_amount": "$100K–$500K (equity)",
+    "funding_type": "equity investment",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 10,
+      "entity_types": [
+        "Private Limited Company"
+      ],
+      "sectors": [
+        "FinTech",
+        "AgriTech",
+        "Healthcare",
+        "Education",
+        "Social Impact"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://ciie.co",
+    "deadline": "Annual cohorts",
+    "tags": [
+      "CIIE",
+      "IIMA",
+      "IIM Ahmedabad",
+      "BII",
+      "inclusion",
+      "equity",
+      "FinTech",
+      "AgriTech"
+    ]
+  },
+  {
+    "id": "anrf-grants",
+    "name": "Anusandhan National Research Foundation (ANRF) Grants",
+    "ministry": "DST / Education",
+    "implementing_agency": "ANRF",
+    "type": "research grant",
+    "category": [
+      "R&D grant",
+      "deep tech",
+      "research"
+    ],
+    "sectors": [
+      "Deep Tech",
+      "AI/ML",
+      "Quantum",
+      "Semiconductors",
+      "Climate",
+      "BioTech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "India's apex body for funding research and development. ANRF (formerly SERB) provides grants for breakthrough research translatable to commercial applications. Startup-researcher collaboration grants available.",
+    "benefits": [
+      "Grants ₹25 lakh to ₹5 crore for research projects",
+      "Startup-Academic collaboration grants",
+      "Access to national research infrastructure",
+      "Pathway to technology commercialisation"
+    ],
+    "funding_amount": "₹25 lakh to ₹5 crore",
+    "funding_type": "research grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Academic Institution",
+        "Private Limited Company",
+        "Research Institution"
+      ],
+      "sectors": [
+        "Deep Tech",
+        "AI/ML",
+        "Quantum",
+        "Semiconductors",
+        "BioTech"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://anrf.gov.in",
+    "deadline": "Annual calls by theme",
+    "tags": [
+      "ANRF",
+      "SERB",
+      "DST",
+      "research grant",
+      "deep tech",
+      "R&D",
+      "academia-industry"
+    ]
+  },
+  {
+    "id": "sidbi-venture-capital",
+    "name": "SIDBI Venture Capital — India Aspiration Fund",
+    "ministry": "MSME / Finance",
+    "implementing_agency": "SIDBI Venture Capital Ltd",
+    "type": "equity",
+    "category": [
+      "venture capital",
+      "equity"
+    ],
+    "sectors": [
+      "Technology",
+      "Manufacturing",
+      "Healthcare",
+      "All Sectors"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "India Aspiration Fund (IAF) is a ₹2,000 crore fund-of-funds managed by SIDBI Venture Capital, investing in domestic VC/PE funds focused on MSME and startups. Drives venture capital into tier-2 and tier-3 cities.",
+    "benefits": [
+      "Access to SIDBI-backed VC funds",
+      "Indirect access to ₹2,000 crore corpus",
+      "Focus on underserved geographies and sectors",
+      "Patient capital with MSME-friendly terms"
+    ],
+    "funding_amount": "₹2,000 crore corpus (indirect via VC funds)",
+    "funding_type": "equity via VC fund-of-funds",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "Private Limited Company"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India (tier-2, tier-3 focus)"
+      ]
+    },
+    "application_url": "https://www.sidbivcl.com",
+    "deadline": "Rolling via VC fund managers",
+    "tags": [
+      "SIDBI",
+      "IAF",
+      "venture capital",
+      "VC",
+      "MSME",
+      "fund-of-funds",
+      "tier-2",
+      "tier-3"
+    ]
+  },
+  {
+    "id": "pm-vishwakarma",
+    "name": "PM Vishwakarma Scheme",
+    "ministry": "Ministry of MSME",
+    "implementing_agency": "Ministry of Micro, Small & Medium Enterprises",
+    "type": "grant",
+    "category": [
+      "skill",
+      "grant",
+      "credit"
+    ],
+    "sectors": [
+      "Handicrafts",
+      "Manufacturing",
+      "Traditional Artisans"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "Holistic support scheme for traditional artisans and craftspeople in 18 trades. Provides recognition via PM Vishwakarma certificate, skill training, toolkit incentive of ₹15,000, and collateral-free credit starting at ₹1 lakh (up to ₹3 lakh).",
+    "benefits": [
+      "PM Vishwakarma certificate and ID card",
+      "Basic skill training of 5-7 days with ₹500/day stipend",
+      "Advanced skill training of 15 days with ₹500/day stipend",
+      "Toolkit incentive of ₹15,000",
+      "Collateral-free credit up to ₹1 lakh (Tier 1), ₹2 lakh (Tier 2)",
+      "Digital transaction incentive of ₹1 per transaction (up to 100 per month)",
+      "Marketing support via GeM, trade fairs"
+    ],
+    "funding_amount": "₹15,000 + Credit up to ₹3 lakh",
+    "funding_type": "grant + credit",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Individual Artisan",
+        "Craftsperson"
+      ],
+      "sectors": [
+        "Handicrafts",
+        "Manufacturing",
+        "Traditional trades"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://pmvishwakarma.gov.in",
+    "deadline": "Rolling",
+    "tags": [
+      "artisan",
+      "craftsperson",
+      "traditional",
+      "skill",
+      "credit",
+      "msme"
+    ]
+  },
+  {
+    "id": "aspire-kvic",
+    "name": "ASPIRE — A Scheme for Promotion of Innovation, Rural Industry & Entrepreneurship",
+    "ministry": "Ministry of MSME",
+    "implementing_agency": "KVIC (Khadi and Village Industries Commission)",
+    "type": "grant",
+    "category": [
+      "rural",
+      "incubation",
+      "grant"
+    ],
+    "sectors": [
+      "Rural Enterprise",
+      "Agro-processing",
+      "Traditional Industries"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "ASPIRE promotes innovation and agro-industry in rural areas through livelihood business incubators (LBI) and technology business incubators (TBI). Provides grants to set up LBIs with resources for training and entrepreneurship.",
+    "benefits": [
+      "Grants to Livelihood Business Incubators (LBIs) — up to ₹1 crore",
+      "Grants to Technology Business Incubators — up to ₹5 crore",
+      "Training and mentorship for rural entrepreneurs",
+      "Access to KVIC network for sales and distribution"
+    ],
+    "funding_amount": "Up to ₹1–5 crore (for incubators)",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "NGO",
+        "Co-operative",
+        "Educational Institution",
+        "Startup"
+      ],
+      "sectors": [
+        "Rural Enterprise"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "Rural India"
+      ]
+    },
+    "application_url": "https://www.kvic.gov.in/kvicres/aspire.php",
+    "deadline": "Rolling",
+    "tags": [
+      "rural",
+      "kvic",
+      "agro",
+      "incubation",
+      "livelihood"
+    ]
+  },
+  {
+    "id": "anudip-foundation",
+    "name": "PMEGP — Prime Minister's Employment Generation Programme",
+    "ministry": "Ministry of MSME",
+    "implementing_agency": "KVIC + KVIB + DIC",
+    "type": "subsidy",
+    "category": [
+      "subsidy",
+      "employment",
+      "manufacturing"
+    ],
+    "sectors": [
+      "Manufacturing",
+      "Services",
+      "Agro-processing"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "PMEGP provides credit-linked subsidy for self-employment and new micro-enterprises in rural and urban areas. Subsidy of 15–35% on project cost up to ₹50 lakh (manufacturing) and ₹20 lakh (services).",
+    "benefits": [
+      "Subsidy 25% for urban general category (project cost up to ₹25 lakh for manufacturing)",
+      "Subsidy 35% for rural general category",
+      "Subsidy 25–35% for SC/ST/Women/Ex-servicemen/Minorities",
+      "Covers manufacturing (₹50 lakh) and services (₹20 lakh)",
+      "Bank loan arranged for remaining project cost"
+    ],
+    "funding_amount": "Subsidy 15–35% of project cost",
+    "funding_type": "subsidy",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Individual",
+        "Self-Help Group",
+        "Co-operative"
+      ],
+      "sectors": [
+        "Manufacturing",
+        "Services"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
+    "deadline": "Rolling",
+    "tags": [
+      "pmegp",
+      "employment",
+      "subsidy",
+      "kvic",
+      "manufacturing",
+      "services"
+    ]
+  },
+  {
+    "id": "nidhi-prayas-dst",
+    "name": "NIDHI-PRAYAS (Promoting and Accelerating Young and Aspiring Innovators)",
+    "ministry": "DST (Department of Science & Technology)",
+    "implementing_agency": "Technology Business Incubators (TBIs) / NSTPs",
+    "type": "grant",
+    "category": [
+      "deep tech",
+      "prototype",
+      "grant"
+    ],
+    "sectors": [
+      "Deep Tech",
+      "Engineering",
+      "Science"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "DST's PRAYAS grants help innovators build prototypes and validate their technology concepts. Provides up to ₹10 lakh in early-stage prototype development funding through accredited TBIs.",
+    "benefits": [
+      "Proof-of-concept/prototype grant up to ₹10 lakh",
+      "6–9 months support period",
+      "Access to TBI infrastructure (labs, equipment)",
+      "Mentorship from domain experts"
+    ],
+    "funding_amount": "Up to ₹10 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Individual",
+        "Team",
+        "Startup"
+      ],
+      "sectors": [
+        "Deep Tech",
+        "Science",
+        "Technology"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://nstpindia.gov.in/PRAYAS.aspx",
+    "deadline": "Rolling (via TBIs)",
+    "tags": [
+      "nidhi",
+      "prayas",
+      "dst",
+      "prototype",
+      "deep tech",
+      "early stage"
+    ]
+  },
+  {
+    "id": "tide-20-meity",
+    "name": "TIDE 2.0 — Technology Incubation and Development of Entrepreneurs",
+    "ministry": "MeitY (Ministry of Electronics and IT)",
+    "implementing_agency": "MeitY Startup Hub",
+    "type": "grant",
+    "category": [
+      "deep tech",
+      "ict",
+      "grant",
+      "incubation"
+    ],
+    "sectors": [
+      "ICT",
+      "AI",
+      "IoT",
+      "Blockchain",
+      "Cybersecurity",
+      "AR/VR"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "TIDE 2.0 supports tech startups in ICT sectors (AI, IoT, Blockchain, AR/VR) through 51 host institutes. Provides seed grants of up to ₹75 lakh and equity-free support.",
+    "benefits": [
+      "Seed grant up to ₹75 lakh (Phase 1: ₹25 lakh, Phase 2: ₹50 lakh)",
+      "Equity-free support",
+      "Infrastructure and lab access at host institutes",
+      "Mentorship and industry connect",
+      "Access to MeitY Startup Hub network"
+    ],
+    "funding_amount": "Up to ₹75 lakh",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": 5,
+      "max_turnover_cr": 10,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "ICT",
+        "AI",
+        "IoT",
+        "Blockchain",
+        "AR/VR",
+        "Cybersecurity"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://msins.in/tide-2/",
+    "deadline": "Rolling (batch-wise)",
+    "tags": [
+      "meity",
+      "tide",
+      "ict",
+      "ai",
+      "iot",
+      "blockchain",
+      "equity-free"
+    ]
+  },
+  {
+    "id": "sidbi-cgtmse-plus",
+    "name": "CGTMSE — Credit Guarantee Fund Trust for Micro and Small Enterprises",
+    "ministry": "Ministry of MSME + SIDBI",
+    "implementing_agency": "CGTMSE (Credit Guarantee Fund Trust for MSE)",
+    "type": "credit_guarantee",
+    "category": [
+      "credit",
+      "collateral-free",
+      "guarantee"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "CGTMSE provides collateral-free credit guarantee to banks lending to MSEs. Covers up to 75–85% of the credit amount (up to ₹5 crore), enabling startups and MSMEs to access working capital and term loans without pledging assets.",
+    "benefits": [
+      "Collateral-free loans up to ₹5 crore",
+      "Credit guarantee cover of 75–85% of loan amount",
+      "Wide bank coverage — all major public and private sector banks",
+      "Annual guarantee fee as low as 0.37% of credit facility"
+    ],
+    "funding_amount": "Guarantee for loans up to ₹5 crore",
+    "funding_type": "credit guarantee",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "Proprietorship",
+        "Partnership",
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.cgtmse.in",
+    "deadline": "Rolling",
+    "tags": [
+      "cgtmse",
+      "collateral-free",
+      "credit guarantee",
+      "bank loan",
+      "msme"
+    ]
+  },
+  {
+    "id": "atal-innovation-mission",
+    "name": "Atal Innovation Mission (AIM)",
+    "ministry": "NITI Aayog",
+    "implementing_agency": "NITI Aayog — AIM Office",
+    "type": "ecosystem",
+    "category": [
+      "incubation",
+      "innovation",
+      "school",
+      "ecosystem"
+    ],
+    "sectors": [
+      "All Sectors",
+      "STEM",
+      "Deep Tech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "AIM promotes innovation and entrepreneurship across India through Atal Tinkering Labs (ATLs in schools), Atal Incubation Centres (AICs), and Atal New India Challenges (ANICs). Flagship government innovation initiative under NITI Aayog.",
+    "benefits": [
+      "Atal Tinkering Labs with ₹20 lakh grant to schools",
+      "Atal Incubation Centres (AICs) with ₹10 crore grant",
+      "Atal Community Innovation Centres for rural areas",
+      "Atal New India Challenge for deep-tech startups (₹30 lakh–₹1 crore)",
+      "ATL Marathon — national competition for school innovators"
+    ],
+    "funding_amount": "₹20 lakh (ATL) to ₹10 crore (AIC)",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "School",
+        "University",
+        "Startup",
+        "NGO"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://aim.gov.in",
+    "deadline": "Per cycle (announced on AIM portal)",
+    "tags": [
+      "aim",
+      "niti aayog",
+      "tinkering lab",
+      "aic",
+      "school",
+      "innovation ecosystem"
+    ]
+  },
+  {
+    "id": "digital-india-msme",
+    "name": "Digital MSME Scheme",
+    "ministry": "Ministry of MSME",
+    "implementing_agency": "Ministry of MSME + NIC",
+    "type": "subsidy",
+    "category": [
+      "digital",
+      "cloud",
+      "subsidy"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Pre-Revenue",
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "Encourages MSMEs to adopt cloud computing and ERP solutions by subsidising cloud subscription costs. Provides 50–80% subsidy on cloud services for 3 years through empanelled CSPs (Cloud Service Providers).",
+    "benefits": [
+      "Subsidy of 50–80% on cloud subscription costs",
+      "Coverage for 3 years",
+      "Empanelled CSPs: AWS, Azure, Google Cloud, TCS, Zoho",
+      "ERP, CRM, accounting software support"
+    ],
+    "funding_amount": "Subsidy 50–80% on cloud costs (up to ₹1 lakh/year)",
+    "funding_type": "subsidy",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": 250,
+      "entity_types": [
+        "All MSMEs"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Pre-Revenue",
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://msme.gov.in/digital-msme",
+    "deadline": "Rolling",
+    "tags": [
+      "digital",
+      "cloud",
+      "erp",
+      "msme",
+      "aws",
+      "subsidy"
+    ]
+  },
+  {
+    "id": "niif-india-fund",
+    "name": "NIIF — National Investment and Infrastructure Fund (Startup Allocation)",
+    "ministry": "Ministry of Finance",
+    "implementing_agency": "NIIF (National Investment and Infrastructure Fund)",
+    "type": "investment",
+    "category": [
+      "infrastructure",
+      "investment",
+      "growth"
+    ],
+    "sectors": [
+      "Infrastructure",
+      "Logistics",
+      "CleanEnergy",
+      "Manufacturing",
+      "Healthcare"
+    ],
+    "stages": [
+      "Growth",
+      "Pre-IPO"
+    ],
+    "description": "NIIF is India's sovereign wealth fund that invests in infrastructure and growth companies. Allocates capital to infrastructure-linked startups and growth-stage companies at Series C and beyond.",
+    "benefits": [
+      "Growth-stage equity investment ($50M–$500M range)",
+      "Government-backed sovereign investor credibility",
+      "Long investment horizon (patient capital)",
+      "Access to Ministry of Finance and NITI Aayog networks"
+    ],
+    "funding_amount": "$50M+",
+    "funding_type": "equity investment",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company",
+        "Listed Company"
+      ],
+      "sectors": [
+        "Infrastructure",
+        "Logistics",
+        "CleanEnergy"
+      ],
+      "stages": [
+        "Growth",
+        "Pre-IPO"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.niif.in",
+    "deadline": "Rolling",
+    "tags": [
+      "niif",
+      "sovereign",
+      "growth stage",
+      "infrastructure",
+      "large ticket"
+    ]
+  },
+  {
+    "id": "meity-mhrd-iic",
+    "name": "Institution's Innovation Council (IIC) — MoE",
+    "ministry": "Ministry of Education",
+    "implementing_agency": "AICTE / Ministry of Education",
+    "type": "ecosystem",
+    "category": [
+      "campus innovation",
+      "student startup",
+      "mentorship"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue"
+    ],
+    "description": "IIC network enables universities and colleges to set up Innovation Councils that promote student entrepreneurship. IIC-rated institutions get recognition, grants for startup events, and direct connect to NIDHI-TBI network.",
+    "benefits": [
+      "IIC rating (1–5 stars) for institutions",
+      "Grants for hackathons, idea festivals, and startup events",
+      "Student startup grants (up to ₹5 lakh per startup via IIC)",
+      "Access to IP filing support and mentors",
+      "Linkage to SISFS for student founders"
+    ],
+    "funding_amount": "Up to ₹5 lakh per student startup",
+    "funding_type": "grant",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Student Teams",
+        "Faculty Entrepreneurs"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://mic.gov.in",
+    "deadline": "Rolling (institutional application)",
+    "tags": [
+      "student startup",
+      "iic",
+      "college",
+      "innovation council",
+      "moe"
+    ]
+  },
+  {
+    "id": "esic-startup-exemption",
+    "name": "ESIC/PF Startup Exemption (Startup India Labour Compliance)",
+    "ministry": "DPIIT + Ministry of Labour",
+    "implementing_agency": "DPIIT via Startup India Hub",
+    "type": "compliance",
+    "category": [
+      "compliance",
+      "labour",
+      "exemption"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "DPIIT-recognised startups can self-certify compliance under 9 Labour Laws and 3 Environmental Laws, avoiding inspector raj. No inspection for first 3–5 years, reducing compliance burden significantly.",
+    "benefits": [
+      "Self-certification under 9 Labour Laws (no inspector visits for 5 years)",
+      "Self-certification under 3 Environmental Laws",
+      "Reduced compliance paperwork",
+      "Online single-window declaration"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.startupindia.gov.in",
+    "deadline": "Rolling",
+    "tags": [
+      "compliance",
+      "labour law",
+      "esic",
+      "pf",
+      "dpiit",
+      "self-certification"
+    ]
+  },
+  {
+    "id": "rbi-regulatory-sandbox",
+    "name": "RBI Regulatory Sandbox for FinTech",
+    "ministry": "Reserve Bank of India",
+    "implementing_agency": "RBI — Department of Regulation",
+    "type": "regulatory",
+    "category": [
+      "fintech",
+      "regulatory",
+      "sandbox"
+    ],
+    "sectors": [
+      "FinTech",
+      "Payments",
+      "Insurance Tech",
+      "WealthTech"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "RBI's regulatory sandbox allows fintech startups to test innovative products and services under a relaxed regulatory environment with defined eligibility criteria and testing period (up to 6 months).",
+    "benefits": [
+      "Test products under relaxed RBI regulations for 6 months",
+      "Direct engagement with RBI officials",
+      "No enforcement action during sandbox period",
+      "Pathway to full regulatory approval on completion",
+      "Cohort-based themes (Digital Payments, Lending, etc.)"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "FinTech",
+        "Payments",
+        "Credit",
+        "Wealth Management"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://rbihub.in/regulatory-sandbox",
+    "deadline": "Per cohort (announced by RBI)",
+    "tags": [
+      "rbi",
+      "fintech",
+      "sandbox",
+      "payments",
+      "regulation",
+      "cohort"
+    ]
+  },
+  {
+    "id": "sebi-regulatory-sandbox",
+    "name": "SEBI Innovation Sandbox & Regulatory Sandbox",
+    "ministry": "SEBI (Securities and Exchange Board of India)",
+    "implementing_agency": "SEBI",
+    "type": "regulatory",
+    "category": [
+      "capital markets",
+      "regulatory",
+      "sandbox",
+      "wealthtech"
+    ],
+    "sectors": [
+      "WealthTech",
+      "Capital Markets",
+      "Trading Tech"
+    ],
+    "stages": [
+      "Early Revenue",
+      "Growth"
+    ],
+    "description": "SEBI's innovation and regulatory sandbox enables capital market fintechs to test products using anonymized exchange data. Helps algo trading, robo-advisory, and analytics startups validate before full SEBI registration.",
+    "benefits": [
+      "Test capital market products with anonymized exchange data",
+      "Regulatory flexibility during testing period",
+      "SEBI's direct technical support",
+      "Pathway to SEBI intermediary registration"
+    ],
+    "funding_amount": null,
+    "funding_type": "non-monetary",
+    "eligibility": {
+      "entity_age_years": null,
+      "max_turnover_cr": null,
+      "entity_types": [
+        "Private Limited Company"
+      ],
+      "sectors": [
+        "Capital Markets",
+        "WealthTech",
+        "Trading"
+      ],
+      "stages": [
+        "Early Revenue",
+        "Growth"
+      ],
+      "requires_dpiit": false,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://www.sebi.gov.in",
+    "deadline": "Per cohort",
+    "tags": [
+      "sebi",
+      "capital markets",
+      "sandbox",
+      "wealthtech",
+      "algo trading"
+    ]
+  },
+  {
+    "id": "dpiit-qip-ip",
+    "name": "DPIIT Fast Track Patent & IPR Support",
+    "ministry": "DPIIT",
+    "implementing_agency": "Office of Controller General of Patents, Designs & Trade Marks",
+    "type": "ip_support",
+    "category": [
+      "ip",
+      "patent",
+      "trademark",
+      "compliance"
+    ],
+    "sectors": [
+      "All Sectors"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Revenue",
+      "Early Revenue"
+    ],
+    "description": "DPIIT-recognised startups get 80% rebate on patent filing fees, fast-track examination (decisions within 30 days), and dedicated facilitators at IP offices. Trademark registration fees also 50% reduced.",
+    "benefits": [
+      "80% rebate on patent filing fees",
+      "Fast-track patent examination (30 days instead of 3+ years)",
+      "Free IP facilitation via CGPDTM-appointed facilitators",
+      "50% rebate on trademark registration fees",
+      "Free legal advice on IPR matters at DPIIT offices"
+    ],
+    "funding_amount": "Up to 80% rebate on IP fees",
+    "funding_type": "non-monetary",
+    "eligibility": {
+      "entity_age_years": 10,
+      "max_turnover_cr": 100,
+      "entity_types": [
+        "Private Limited Company",
+        "LLP"
+      ],
+      "sectors": [
+        "All Sectors"
+      ],
+      "stages": [
+        "Idea",
+        "Pre-Revenue",
+        "Early Revenue"
+      ],
+      "requires_dpiit": true,
+      "gender_specific": null,
+      "caste_specific": null,
+      "geography": [
+        "India"
+      ]
+    },
+    "application_url": "https://ipindia.gov.in/startupIndia.htm",
+    "deadline": "Rolling",
+    "tags": [
+      "patent",
+      "trademark",
+      "ip",
+      "dpiit",
+      "80% rebate",
+      "fast-track"
+    ]
+  }
+]

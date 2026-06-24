@@ -1,0 +1,212 @@
+{
+  "id": "dpiit",
+  "title": "DPIIT Startup India Recognition",
+  "tagline": "Get your official government recognition — the single most impactful step for any Indian startup.",
+  "time_estimate": "2–5 working days (automated for most applications)",
+  "difficulty": "Easy",
+  "unlocks": [
+    "Income tax exemption for 3 consecutive years (Section 80-IAC)",
+    "Exemption from Angel Tax (Section 56(2)(viib)) via Form 2",
+    "80% rebate on patent filing fees + fast-track examination",
+    "Self-certification under 9 labour laws and 3 environment laws",
+    "Access to Startup India Seed Fund Scheme (up to ₹50 lakh)",
+    "Access to Fund of Funds for Startups (SIDBI-managed VC funds)",
+    "Credit Guarantee Scheme for Startups (CGSS) — collateral-free loans up to ₹10 crore",
+    "GeM Startup Runway — sell to government without prior turnover requirement",
+    "Startup India Learning Program (free courses + resources)"
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "title": "Check Eligibility",
+      "description": "Verify your startup meets DPIIT's eligibility criteria before applying.",
+      "details": [
+        "Entity age: Incorporated/registered less than 10 years ago",
+        "Annual turnover: Less than ₹100 crore in any previous financial year",
+        "Innovation: Working towards development, improvement, or commercialisation of a new product/process/service OR using technology in a scalable business model",
+        "Entity type: Private Limited Company, Limited Liability Partnership (LLP), or Registered Partnership Firm",
+        "Not formed by splitting or restructuring an existing business"
+      ],
+      "documents_needed": [],
+      "tips": ["Even if you're pre-revenue or at idea stage, you can apply — 'innovation' is broadly interpreted", "Holding companies or subsidiaries of large corporates do not qualify"],
+      "links": [
+        {"text": "Official eligibility criteria", "url": "https://www.startupindia.gov.in/content/sih/en/startupgov/startup-recognition-page.html"}
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Incorporate Your Entity",
+      "description": "Register as a Private Limited Company, LLP, or Partnership Firm with MCA.",
+      "details": [
+        "Private Limited Company: Register on MCA21 portal (mca.gov.in) via SPICe+ form",
+        "LLP: Register on MCA21 via FiLLiP form",
+        "Partnership Firm: Register under Indian Partnership Act with your state Registrar of Firms",
+        "Obtain Certificate of Incorporation (CoI) from MCA — this is your primary document",
+        "Get PAN and TAN for the entity from Income Tax department",
+        "Open a current account in the entity's name"
+      ],
+      "documents_needed": ["Director/Partner Aadhaar cards", "Director/Partner PAN cards", "Proposed company name (reserve via RUN form)", "Registered office address proof"],
+      "tips": [
+        "Private Limited Company is strongly preferred over LLP if you plan to raise VC funding (FEMA compliance is simpler)",
+        "Use a CA or company secretary to incorporate — cost ₹5,000–₹15,000 and saves errors",
+        "Minimum authorized capital for Pvt Ltd: ₹1 lakh (can be higher)",
+        "Registered office can be your home address — just provide utility bill proof"
+      ],
+      "links": [
+        {"text": "SPICe+ Form for Pvt Ltd", "url": "https://www.mca.gov.in/content/mca/global/en/mca/e-filing.html"},
+        {"text": "MCA21 Portal", "url": "https://www.mca.gov.in"}
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Register on Startup India Portal",
+      "description": "Create your founder profile and startup profile on startupindia.gov.in.",
+      "details": [
+        "Go to startupindia.gov.in",
+        "Click 'Register' → choose 'Startup'",
+        "Sign up with your Aadhaar-linked mobile number or email",
+        "Complete your founder profile with personal details",
+        "Fill startup details: entity name, CIN/LLPIN, date of incorporation, address"
+      ],
+      "documents_needed": ["Aadhaar card (for OTP-based authentication)", "PAN card", "CIN/LLPIN from MCA"],
+      "tips": ["Use the mobile number linked to your Aadhaar for smooth OTP verification", "If Aadhaar is not linked to mobile, use email-based registration"],
+      "links": [
+        {"text": "Register on Startup India", "url": "https://www.startupindia.gov.in/content/sih/en/startupgov/startup-recognition-page.html"}
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Fill the Recognition Application",
+      "description": "Complete the DPIIT recognition form with entity details, innovation description, and upload documents.",
+      "details": [
+        "Stage of startup: select from Ideation / Validation / Early Traction / Scaling",
+        "Sector: select primary sector (15+ options available)",
+        "Brief description of innovative nature: explain your product/technology innovation (200-500 words)",
+        "Select applicable recognition category: Product innovation / Service innovation / Social impact / IP-based",
+        "Upload Certificate of Incorporation (PDF, < 2MB)",
+        "Optional: Upload pitch deck or product demo video (helps reviewers understand innovation)",
+        "Self-certify the declarations: entity age, turnover, innovation, no restructuring"
+      ],
+      "documents_needed": ["Certificate of Incorporation (PDF)", "PAN card of entity", "Optional: Pitch deck (PDF), Letters of Support, Awards"],
+      "tips": [
+        "Write the innovation description clearly — 'we built an app' is not innovation; explain what problem you solve uniquely",
+        "Include keywords: 'technology-driven', 'scalable', 'novel approach', 'improvement over existing solutions'",
+        "For biotech/deep-tech: mention any patents filed, lab validations, or prototypes developed",
+        "The form has changed several times — screenshots from 2021 articles may be outdated"
+      ],
+      "links": [
+        {"text": "Startup India Application Portal", "url": "https://www.startupindia.gov.in/content/sih/en/startupgov/startup-recognition-page.html"}
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Submit and Get DPIIT Number",
+      "description": "Submit your application. For most startups, recognition is instant or within 2-5 working days via automated review.",
+      "details": [
+        "Click 'Submit Application' — you'll get an Application Reference Number immediately",
+        "DPIIT automated system reviews: ~80% of applications are auto-approved within 48-72 hours",
+        "If manual review required (complex sectors or insufficient description): 5-10 working days",
+        "You'll receive your DPIIT Recognition Certificate by email — download and save it",
+        "Your DPIIT Number format: DIPP######### (e.g., DIPP12345678)"
+      ],
+      "documents_needed": [],
+      "tips": [
+        "Save your DPIIT certificate PDF permanently — you'll need it for every scheme application",
+        "If rejected, you get specific reasons and can re-apply with corrections",
+        "Check application status at startupindia.gov.in under 'My Dashboard'"
+      ],
+      "links": [
+        {"text": "Check Application Status", "url": "https://www.startupindia.gov.in/content/sih/en/startupgov/startup-recognition-page.html"}
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Apply for Angel Tax Exemption (Form 2)",
+      "description": "Immediately after getting DPIIT number, file Form 2 to exempt yourself from angel tax before your first investment.",
+      "details": [
+        "Log back into Startup India portal → 'Tax Exemption' section",
+        "File Form 2: Declaration for exemption under Section 56(2)(viib)",
+        "Required: DPIIT recognition certificate, Annual return of company, Current balance sheet",
+        "This is self-certification — no income tax department approval required",
+        "Protection applies retroactively from date of incorporation (not just from filing date)"
+      ],
+      "documents_needed": ["DPIIT Recognition Certificate", "Annual report / balance sheet (even if nil)", "Board resolution authorising the filing"],
+      "tips": [
+        "File Form 2 BEFORE receiving your first external investment — once money is in, retroactive exemption has legal uncertainty",
+        "Angel tax exemption applies to investments up to ₹25 crore per year",
+        "File fresh Form 2 every year to maintain the exemption"
+      ],
+      "links": [
+        {"text": "Form 2 — Tax Exemption", "url": "https://www.startupindia.gov.in/content/sih/en/startupgov/startup-recognition-page.html"}
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Apply for Section 80-IAC Tax Exemption",
+      "description": "After 3 years of operation, apply for the income tax holiday — 100% profit exemption for 3 consecutive years.",
+      "details": [
+        "Eligibility: DPIIT-recognised startup with at least 3 years of filed IT returns",
+        "Apply at incometax.gov.in via e-filing portal → 'Startup' section",
+        "Application reviewed by Inter-Ministerial Board (IMB) — DPIIT, MSME, DBT representatives",
+        "IMB may call for a presentation if they need clarification on innovation",
+        "Approval takes 3-6 months but is retroactive to the year of incorporation",
+        "Once approved: choose any 3 consecutive years out of first 10 years for 100% profit deduction"
+      ],
+      "documents_needed": ["DPIIT Certificate", "Audited financial statements (3+ years)", "IT returns for 3 years", "CA certificate on innovation and IP"],
+      "tips": [
+        "Apply once you start generating profits — there's no point applying when losses are making PAT zero",
+        "Many startups wait until Series A to apply — VCs can help navigate the IMB process",
+        "80-IAC does not require profitability in all 3 years — just deduction claimed in profitable years"
+      ],
+      "links": [
+        {"text": "Income Tax Portal — Startups", "url": "https://www.incometax.gov.in/iec/foportal/"}
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Leverage Your DPIIT Status",
+      "description": "Now that you're DPIIT-recognised, activate all the benefits systematically.",
+      "details": [
+        "GeM Registration: Register as seller on gem.gov.in using your DPIIT number — access Startup Runway",
+        "Fast-track patents: File patent at ipindia.gov.in — mention DPIIT number for 80% fee rebate",
+        "Labour law self-certification: Use Shram Suvidha portal for self-certification of 9 labour laws",
+        "Startup India Learning Program: Access free courses at startupindia.gov.in/learning",
+        "SISFS Seed Fund: Apply at seedfund.startupindia.gov.in if < 2 years old and pre-revenue",
+        "Credit Guarantee: Once you have bank loans, apply for CGSS (NCGTC) for guarantee cover"
+      ],
+      "documents_needed": ["DPIIT Certificate (for all scheme applications)", "PAN and GSTIN (for GeM)"],
+      "tips": [
+        "Most schemes auto-verify your DPIIT status via PAN linking — keep PAN consistent across applications",
+        "Register on GeM within 1 week of DPIIT recognition — B2G sales can start immediately",
+        "Download the 'Startup India' mobile app to track your recognition status and benefits"
+      ],
+      "links": [
+        {"text": "GeM Startup Runway", "url": "https://gem.gov.in"},
+        {"text": "SISFS Seed Fund", "url": "https://seedfund.startupindia.gov.in"},
+        {"text": "Patent Fast-Track", "url": "https://ipindia.gov.in"}
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "I'm a solo founder at idea stage — can I apply for DPIIT recognition?",
+      "a": "Yes! You need a registered entity (Pvt Ltd/LLP) but there's no revenue or team-size requirement. Many founders apply at the idea stage. Just ensure you have an incorporated entity."
+    },
+    {
+      "q": "My startup is more than 5 years old — can I still apply?",
+      "a": "Yes, up to 10 years from incorporation. But hurry — some benefits (like SISFS seed fund) are only for startups < 2 years old."
+    },
+    {
+      "q": "Can an LLP get DPIIT recognition?",
+      "a": "Yes! LLPs are eligible. However, if you plan to raise VC funding, consider converting to Private Limited Company — LLPs have FEMA complications with foreign investment."
+    },
+    {
+      "q": "What happens if my DPIIT application is rejected?",
+      "a": "You receive specific rejection reasons and can reapply with corrections. Most rejections are due to vague innovation descriptions. Rewrite with specific technology and novelty claims."
+    },
+    {
+      "q": "Do I need a CA or lawyer to apply?",
+      "a": "No! The application is entirely self-service on the Startup India portal. Most founders complete it in under 2 hours. The hardest part is writing the innovation description."
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "saas": {
+    "model": "B2B SaaS",
+    "headline_rate": "18%",
+    "gst_applicable": true,
+    "sac_code": "998314",
+    "sac_description": "Information technology (IT) consulting and support services",
+    "input_tax_credit": true,
+    "reverse_charge": false,
+    "rules": [
+      "18% GST on all SaaS invoices — both B2B and B2C customers in India",
+      "B2B customers can claim ITC (input tax credit) on your GST — it's not their real cost",
+      "B2C customers bear the full 18% — consider whether to include in listed price or add-on",
+      "Exports of SaaS (foreign customers billed in USD) are ZERO-rated — claim ITC refund on inputs",
+      "Place of Supply for SaaS = customer's location. For foreign customers: export = 0% GST",
+      "If annual turnover > ₹20 lakh (₹10 lakh in special states), GST registration mandatory",
+      "File GSTR-1 by 11th of each month (outward supplies) and GSTR-3B by 20th"
+    ],
+    "examples": [
+      {
+        "scenario": "Indian startup client pays ₹1,00,000/month subscription",
+        "gst_on_invoice": 18000,
+        "client_claims_itc": true,
+        "net_cost_to_client": 100000,
+        "your_gst_liability": 18000
+      },
+      {
+        "scenario": "US-based client pays $1,000/month (export, zero-rated)",
+        "gst_on_invoice": 0,
+        "export_classification": "Export of Services — Zero-rated",
+        "refund_available": "Yes — claim ITC refund on inputs used to serve this client",
+        "your_gst_liability": 0
+      }
+    ],
+    "common_mistakes": [
+      "Not registering for GST when crossing ₹20 lakh threshold — leads to penalties",
+      "Not filing GSTR-9 annual return — required for registered taxpayers",
+      "Treating B2B and B2C invoices the same (different Place of Supply rules)",
+      "Not claiming GST ITC on cloud hosting costs (AWS/Azure) — you're entitled to ITC",
+      "Not converting USD invoices to INR using correct RBI rate for GST filing"
+    ],
+    "itc_claimable_expenses": ["Cloud hosting (AWS, Azure, GCP)", "Office rent (commercial)", "Equipment/hardware", "Professional services", "Advertising (Google Ads, Meta)"],
+    "compliance_calendar": {
+      "GSTR-1": "11th of every month (outward supplies)",
+      "GSTR-3B": "20th of every month (consolidated return + payment)",
+      "GSTR-9": "31st December (annual return)"
+    }
+  },
+  "d2c": {
+    "model": "D2C (Direct to Consumer) — Physical Products",
+    "headline_rate": "Varies 0–28% by product",
+    "gst_applicable": true,
+    "input_tax_credit": true,
+    "reverse_charge": false,
+    "rules": [
+      "GST rate depends on your product category — check HSN code carefully",
+      "ITC available on raw materials, packaging, and inputs at every stage",
+      "For own-website D2C: collect GST from customer, file returns",
+      "For marketplace sales (Amazon/Flipkart): marketplace collects and remits TCS (1%); you still file GSTR",
+      "Return/refund: GST refund to customer if full refund; partial refund = partial GST credit note",
+      "COD (Cash on Delivery) orders: GST applies on invoice date, not payment receipt"
+    ],
+    "product_gst_rates": [
+      {"category": "Food (unprocessed, fresh)", "rate": "0%", "examples": "Fresh vegetables, fruits, milk, eggs"},
+      {"category": "Food (packaged/branded staples)", "rate": "5%", "examples": "Branded rice, atta, pulses, bread"},
+      {"category": "Food (processed/packaged)", "rate": "12%", "examples": "Biscuits, instant noodles, namkeen, breakfast cereals"},
+      {"category": "Food (restaurant/ready-to-eat)", "rate": "5% (no ITC) or 18% (AC with ITC)", "examples": "Cloud kitchen, QSR"},
+      {"category": "Clothing < ₹1,000", "rate": "5%", "examples": "T-shirts, kurtas below ₹1000 MRP"},
+      {"category": "Clothing > ₹1,000", "rate": "12%", "examples": "Branded clothing above ₹1000"},
+      {"category": "Footwear < ₹1,000", "rate": "5%", "examples": "Economy footwear"},
+      {"category": "Footwear > ₹1,000", "rate": "12%", "examples": "Branded shoes"},
+      {"category": "Cosmetics / Personal care", "rate": "18%", "examples": "Shampoo, moisturizer, face wash, lipstick"},
+      {"category": "Baby care products (specific)", "rate": "12%", "examples": "Baby diapers, baby food"},
+      {"category": "Health supplements / nutraceuticals", "rate": "18%", "examples": "Protein powder, vitamins, health drinks"},
+      {"category": "Ayurvedic/herbal products (specific)", "rate": "12%", "examples": "Ayurvedic medicines (licensed)"},
+      {"category": "Electronics / consumer goods", "rate": "18%", "examples": "Earphones, smart devices, appliances"},
+      {"category": "Luxury goods / tobacco", "rate": "28% + cess", "examples": "Perfumes > ₹500, tobacco, pan masala"},
+      {"category": "Jewellery / gold", "rate": "3%", "examples": "Gold, silver jewellery, coins"}
+    ],
+    "common_mistakes": [
+      "Wrong HSN code classification — leads to tax notices and differential demand",
+      "Not accounting for reverse logistics GST — when goods return, credit note required",
+      "Marketplace TCS (1%) not reconciled in GSTR-2A — causes mismatches",
+      "Selling across state lines without understanding state-wise GST registration (mandatory for each state above threshold)"
+    ],
+    "itc_claimable_expenses": ["Raw materials", "Packaging", "Machinery and equipment", "Warehousing and logistics", "Marketing and advertising"],
+    "compliance_calendar": {
+      "GSTR-1": "11th of every month",
+      "GSTR-3B": "20th of every month",
+      "GSTR-9": "31st December annually",
+      "Annual turnover > ₹5 crore": "GSTR-9C (reconciliation statement with CA certificate)"
+    }
+  },
+  "marketplace": {
+    "model": "Marketplace / Platform",
+    "headline_rate": "18% on commission income",
+    "gst_applicable": true,
+    "input_tax_credit": true,
+    "reverse_charge": true,
+    "rules": [
+      "Marketplace platforms are 'Deemed Suppliers' for GST on e-commerce under Section 9(5) — you collect and remit GST on behalf of sellers for specific services",
+      "Your platform's commission/take-rate income: 18% GST",
+      "As a marketplace, you are responsible for TCS (Tax Collected at Source): collect 1% GST TCS from sellers on net value of sales made through your platform",
+      "File GSTR-8 monthly to report TCS collected",
+      "Reverse Charge Mechanism (RCM): for certain services you purchase (from unregistered vendors), you must pay GST and claim ITC",
+      "For marketplaces: Aggregator of services (cab aggregator, food delivery) must collect 18% GST on value of services — not just commission"
+    ],
+    "examples": [
+      {
+        "scenario": "Seller sells ₹1,00,000 of goods through your platform",
+        "your_commission_at_10_pct": 10000,
+        "gst_on_commission": 1800,
+        "tcs_to_collect_from_seller": 1000,
+        "net_payout_to_seller": 89000,
+        "your_gst_liability_on_commission": 1800
+      }
+    ],
+    "common_mistakes": [
+      "Not filing GSTR-8 (TCS return) — mandatory for all e-commerce operators",
+      "Confusing commission GST with TCS — they are separate obligations",
+      "Not understanding deemed supplier rules for service aggregators (Section 9(5))"
+    ],
+    "itc_claimable_expenses": ["Technology infrastructure", "Marketing", "Payment gateway fees (18% GST on MDR)", "Professional services", "Office/operations"],
+    "compliance_calendar": {
+      "GSTR-1": "11th monthly",
+      "GSTR-3B": "20th monthly",
+      "GSTR-8 (TCS)": "10th of every month",
+      "GSTR-9": "31st December annually"
+    }
+  },
+  "manufacturing": {
+    "model": "Manufacturing",
+    "headline_rate": "Varies by product (12–28%)",
+    "gst_applicable": true,
+    "input_tax_credit": true,
+    "reverse_charge": false,
+    "rules": [
+      "Full ITC chain: GST on raw materials → manufacturing inputs → finished goods → sale. ITC flows through entire chain",
+      "Job work (outsourcing manufacturing to third party): GST applicable on job work charges at 12% (for most goods)",
+      "Inverted duty structure: if input GST rate > output rate, claim refund (common in textiles, some food processing)",
+      "Export of goods: Zero-rated. File refund for accumulated ITC under Rule 89",
+      "Annual turnover > ₹1.5 crore: mandatory GSTR-1 + GSTR-3B filing",
+      "Composition scheme: Small manufacturers with turnover < ₹1.5 crore can pay flat 1% GST (but can't claim ITC)"
+    ],
+    "common_mistakes": [
+      "Not tracking input-output ratio for ITC claims — tax authorities scrutinize this",
+      "Job work challan not issued for goods sent to contract manufacturer",
+      "Not claiming refund when inverted duty structure applies"
+    ],
+    "itc_claimable_expenses": ["Raw materials", "Capital goods (machinery)", "Packaging", "Electricity (industrial use)", "Logistics inward", "Professional services"],
+    "compliance_calendar": {
+      "GSTR-1": "11th monthly (or quarterly if < ₹5 crore)",
+      "GSTR-3B": "20th monthly",
+      "GSTR-9 + GSTR-9C": "31st December annually (GSTR-9C if > ₹5 crore)"
+    }
+  },
+  "export_saas": {
+    "model": "Export SaaS (Indian company, foreign customers)",
+    "headline_rate": "0% (Zero-rated export of services)",
+    "gst_applicable": false,
+    "input_tax_credit": true,
+    "reverse_charge": false,
+    "rules": [
+      "Export of services is zero-rated under IGST — no GST on invoices to foreign customers",
+      "Two options: (a) Pay IGST and claim refund, or (b) Export under LUT (Letter of Undertaking) — no payment, direct refund",
+      "LUT filing: File LUT on GST portal annually before starting exports. Highly recommended — avoids cash flow issues",
+      "Foreign currency receipts must come through banking channels (SWIFT/FEMA compliant) to qualify as exports",
+      "Claim refund of ITC accumulated on inputs used to provide export services (within 2 years)",
+      "FIRC (Foreign Inward Remittance Certificate) from bank is critical proof of export service payment"
+    ],
+    "examples": [
+      {
+        "scenario": "US startup pays $10,000/month for your SaaS",
+        "gst_on_invoice": 0,
+        "currency": "USD",
+        "proof_needed": "Invoice + FIRC from bank + GSTIN details",
+        "itc_refund": "Claim refund for ITC on expenses (cloud, salaries excluded, but hosting yes)"
+      }
+    ],
+    "common_mistakes": [
+      "Not filing LUT — leads to paying IGST upfront (cash flow hit) and then claiming refund",
+      "Not getting FIRC from bank for every USD receipt — required for export documentation",
+      "Billing in USD but customer is Indian subsidiary of foreign company — this is NOT export of services",
+      "Mixing domestic and export billing on same GST invoice — keep separate invoice series"
+    ],
+    "itc_claimable_expenses": ["Cloud hosting (AWS/GCP/Azure)", "Domain/SaaS tools used in development", "Office rent", "Equipment"],
+    "compliance_calendar": {
+      "GSTR-1": "11th monthly (with zero-rated supply details)",
+      "GSTR-3B": "20th monthly",
+      "LUT Renewal": "Every April 1st (annual renewal)",
+      "Refund application": "Monthly or quarterly via Form RFD-01"
+    }
+  }
+}

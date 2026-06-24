@@ -1,0 +1,174 @@
+{
+  "id": "udyam",
+  "title": "Udyam Registration (MSME Certificate)",
+  "tagline": "India's MSME certificate — unlocks collateral-free credit, government procurement priority, and 20+ central schemes.",
+  "time_estimate": "10–30 minutes (instant certificate)",
+  "difficulty": "Very Easy",
+  "unlocks": [
+    "CGTMSE: Collateral-free loans up to ₹5 crore from 100+ banks/NBFCs",
+    "NSIC Single Point Registration for government tenders",
+    "Priority Sector Lending: banks must lend 7.5% of ANBC to MSMEs",
+    "Interest subvention of 2% on MSME loans (government pays part of your interest)",
+    "MSME Cluster Development Programme benefits",
+    "National SC-ST Hub (if applicable)",
+    "SIDBI SMILE soft loans",
+    "50% waiver on trademark/patent registration fees",
+    "GeM MSME status (faster payment cycles)",
+    "Protection under MSME Development Act: buyers must pay within 45 days"
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "title": "Check MSME Category",
+      "description": "Determine whether you qualify as Micro, Small, or Medium enterprise based on investment and turnover.",
+      "details": [
+        "MICRO: Investment ≤ ₹1 crore AND Turnover ≤ ₹5 crore",
+        "SMALL: Investment ≤ ₹10 crore AND Turnover ≤ ₹50 crore",
+        "MEDIUM: Investment ≤ ₹50 crore AND Turnover ≤ ₹250 crore",
+        "Investment: Plant, machinery, equipment (not land, buildings)",
+        "Turnover: As per GST filing or Income Tax return",
+        "Early-stage startups with minimal investment and revenue qualify as MICRO"
+      ],
+      "documents_needed": [],
+      "tips": ["Even startups with zero revenue can register — just declare ₹0 investment and ₹0 turnover", "Self-declaration — no documents need to be uploaded or submitted"],
+      "links": [
+        {"text": "MSME Category definitions (Official)", "url": "https://msme.gov.in/know-about-msme"}
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Go to Udyam Registration Portal",
+      "description": "Visit the official Udyam portal — no login account needed, it's Aadhaar OTP-based.",
+      "details": [
+        "Go to udyamregistration.gov.in",
+        "Click 'For New Entrepreneurs who are not Registered yet as MSME'",
+        "You'll need the Aadhaar number of the proprietor/managing partner/authorised signatory",
+        "The Aadhaar must be linked to a mobile number for OTP"
+      ],
+      "documents_needed": ["Aadhaar card (of proprietor/managing partner)", "Mobile number linked to Aadhaar"],
+      "tips": ["The portal works best on Chrome or Firefox", "If Aadhaar is not linked to mobile, visit nearest Aadhaar enrollment center first (30 minutes, free)"],
+      "links": [
+        {"text": "Udyam Registration Portal", "url": "https://udyamregistration.gov.in"}
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Enter Aadhaar Details",
+      "description": "Enter Aadhaar number of the business owner and verify via OTP.",
+      "details": [
+        "Enter 12-digit Aadhaar number of proprietor / managing partner / CEO",
+        "Enter name exactly as on Aadhaar card",
+        "Click 'Validate and Generate OTP'",
+        "Enter OTP received on Aadhaar-linked mobile number",
+        "Name will auto-populate from UIDAI — verify it's correct"
+      ],
+      "documents_needed": ["Aadhaar number"],
+      "tips": ["OTP is valid for 10 minutes", "If OTP fails 3 times, wait 30 minutes before trying again"],
+      "links": []
+    },
+    {
+      "number": 4,
+      "title": "Enter PAN and Business Details",
+      "description": "Provide enterprise PAN and basic business information.",
+      "details": [
+        "Enter Enterprise PAN (business entity's PAN, not personal PAN for sole proprietors — they're the same)",
+        "Select type of organisation: Proprietorship / Partnership / Hindu Undivided Family / LLP / Company / Others",
+        "Enter enterprise name (as registered with MCA or trade name)",
+        "Social category of promoter: General / SC / ST / OBC",
+        "Gender of entrepreneur (for classification statistics)",
+        "Specially-abled: Yes/No",
+        "Email and mobile number (can be different from Aadhaar-linked)",
+        "Official address with PIN code"
+      ],
+      "documents_needed": ["Enterprise PAN", "Registered address proof (optional — self-declaration)"],
+      "tips": ["If you're a Private Limited Company, use the company's CIN-linked PAN", "Social category matters for SC-ST Hub access and women entrepreneur scheme prioritization"],
+      "links": []
+    },
+    {
+      "number": 5,
+      "title": "Enter Activity and Investment Details",
+      "description": "Specify your business activity and declare investment and turnover figures.",
+      "details": [
+        "Main activity: Manufacturing OR Service (select your primary activity)",
+        "NIC code: 5-digit National Industrial Classification code for your activity (search NIC code list online)",
+        "Number of employees: current headcount (all types — permanent, contract, part-time)",
+        "Investment in Plant and Machinery / Equipment (in ₹ lakhs) — enter ₹0 for digital/software startups",
+        "Turnover for last financial year (in ₹ lakhs) — enter ₹0 if pre-revenue",
+        "Bank account details: IFSC code and account number of business account"
+      ],
+      "documents_needed": ["Bank passbook / cheque (for IFSC and account number)"],
+      "tips": [
+        "For SaaS/software startups: NIC code 62011 (Computer programming activities) or 63990 (Other information service activities)",
+        "For EdTech: NIC code 85499 (Other education not elsewhere classified)",
+        "For HealthTech: 86909 (Other human health activities)",
+        "Investment in equipment includes computers, servers, phones — not office furniture"
+      ],
+      "links": [
+        {"text": "NIC Code Search", "url": "https://mospi.gov.in/classification/national-industrial-classification"}
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Submit and Download Certificate",
+      "description": "Submit the self-declaration and immediately download your Udyam Registration Certificate.",
+      "details": [
+        "Check the declaration checkbox: 'I hereby declare...' (certifying accuracy)",
+        "Click 'Submit' — an OTP will be sent to the mobile/email provided",
+        "Enter OTP and click 'Final Submit'",
+        "Your Udyam Registration Certificate is generated IMMEDIATELY",
+        "Download the PDF certificate — contains your Udyam Registration Number (URN): UAM-XX-XX-XXXXXXX",
+        "Certificate is also emailed to you"
+      ],
+      "documents_needed": [],
+      "tips": [
+        "Save the certificate PDF permanently and share with your bank, insurance company, and scheme applications",
+        "Udyam certificate does not expire — valid until your enterprise crosses Medium limit (₹250 crore turnover)",
+        "Print a copy for your office — many government offices ask for physical copy"
+      ],
+      "links": [
+        {"text": "Udyam Registration Portal", "url": "https://udyamregistration.gov.in"}
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Apply for CGTMSE Credit Guarantee",
+      "description": "With Udyam certificate, apply for collateral-free credit guarantee at your bank.",
+      "details": [
+        "Visit your business current account bank (SBI, HDFC, ICICI, Axis — all CGTMSE members)",
+        "Apply for business loan with Udyam certificate + DPIIT number (if applicable)",
+        "Request the bank to cover the loan under CGTMSE guarantee scheme",
+        "CGTMSE provides 75-85% guarantee cover — reduces bank's risk, enables collateral-free lending",
+        "Loan limit: up to ₹5 crore under CGTMSE 3.0",
+        "Interest rate: typically 10-14% for MSME loans under CGTMSE"
+      ],
+      "documents_needed": ["Udyam Certificate", "Business plan/projections", "Bank statements (6 months)", "IT returns (2 years if available)", "DPIIT Certificate (if applicable)"],
+      "tips": [
+        "SBI and Bank of Baroda are most MSME-friendly for CGTMSE loans",
+        "Public sector banks mandatory process CGTMSE — private banks have more flexibility but are harder to navigate",
+        "SIDBI also provides direct MSME loans — apply at sidbi.in if bank is unresponsive"
+      ],
+      "links": [
+        {"text": "CGTMSE Portal", "url": "https://www.cgtmse.in"},
+        {"text": "SIDBI MSME Loans", "url": "https://www.sidbi.in"}
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a Private Limited Company register as MSME?",
+      "a": "Yes! All legal entity types — Private Limited, LLP, Partnership, Sole Proprietorship, HUF — can register as MSMEs under Udyam."
+    },
+    {
+      "q": "Should I get both DPIIT and Udyam registrations?",
+      "a": "YES — get both. They unlock different benefits. DPIIT for startup-specific schemes (tax exemption, seed fund). Udyam for MSME schemes (CGTMSE credit, NSIC tenders). They're complementary, not substitutes."
+    },
+    {
+      "q": "What if my turnover exceeds ₹5 crore — do I lose MSME status?",
+      "a": "No — once registered as Micro, you get 3 years of grace period before being reclassified. This is the '3-year lock-in' protection for growing MSMEs."
+    },
+    {
+      "q": "Is Udyam registration free?",
+      "a": "Yes, 100% free on the official portal. Ignore agents/lawyers charging ₹1,000-5,000 — it takes 15 minutes yourself."
+    }
+  ]
+}

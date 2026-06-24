@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded;
+  }
+}
+
+/* Markdown prose inside chat */
+.chat-prose h1, .chat-prose h2, .chat-prose h3 {
+  @apply font-semibold mt-4 mb-2;
+}
+.chat-prose h1 { @apply text-xl; }
+.chat-prose h2 { @apply text-lg; }
+.chat-prose h3 { @apply text-base; }
+.chat-prose p { @apply mb-3 leading-relaxed; }
+.chat-prose ul { @apply list-disc ml-5 mb-3 space-y-1; }
+.chat-prose ol { @apply list-decimal ml-5 mb-3 space-y-1; }
+.chat-prose code { @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono; }
+.chat-prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg mb-3 overflow-x-auto; }
+.chat-prose pre code { @apply bg-transparent text-gray-100 p-0; }
+.chat-prose strong { @apply font-semibold; }
+.chat-prose a { @apply text-brand-600 underline; }
+.chat-prose table { @apply w-full border-collapse mb-4 text-sm; }
+.chat-prose th { @apply bg-gray-100 px-3 py-2 text-left font-semibold border border-gray-200; }
+.chat-prose td { @apply px-3 py-2 border border-gray-200; }
+.chat-prose blockquote { @apply border-l-4 border-brand-400 pl-4 italic text-gray-600 my-3; }

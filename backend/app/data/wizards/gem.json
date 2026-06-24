@@ -1,0 +1,169 @@
+{
+  "id": "gem",
+  "title": "GeM Onboarding — Sell to India's Government",
+  "tagline": "Access ₹2+ lakh crore in annual government procurement with relaxed eligibility for DPIIT-recognised startups.",
+  "time_estimate": "1–3 days (document verification may take 2-3 days)",
+  "difficulty": "Moderate",
+  "unlocks": [
+    "Direct sales to 10,000+ government buyers (Ministries, PSUs, Defence, Railways, Hospitals)",
+    "Startup Runway: DPIIT startups exempt from prior experience and turnover requirements",
+    "GeM Pool: tender notifications across categories directly to your email",
+    "Faster payment cycles: government pays in 10-15 days via GeM (vs. 60-90 days in traditional procurement)",
+    "Transparent pricing: no middlemen, direct manufacturer-to-government pricing"
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "title": "Prepare Your Documents",
+      "description": "Gather all required documents before starting the registration to avoid mid-process delays.",
+      "details": [
+        "PAN Card of the business entity",
+        "GSTIN (GST Identification Number) — mandatory for sellers with turnover > ₹20 lakh",
+        "Bank account details (cancelled cheque or bank statement with IFSC)",
+        "Aadhaar of the Primary User (owner/authorised signatory)",
+        "Certificate of Incorporation / Partnership Deed / GST Certificate as entity proof",
+        "DPIIT Recognition Certificate (for Startup Runway access)",
+        "Udyam Registration Certificate (for MSME benefits on GeM)"
+      ],
+      "documents_needed": ["PAN", "GSTIN", "Cancelled cheque", "Aadhaar", "Certificate of Incorporation", "DPIIT Certificate", "Udyam Certificate"],
+      "tips": ["GSTIN is mandatory for most product sellers. Service providers below ₹20 lakh can register without GST.", "Have all documents as clear PDFs ready before starting"],
+      "links": []
+    },
+    {
+      "number": 2,
+      "title": "Register as Seller on GeM",
+      "description": "Create your seller account on the Government e-Marketplace portal.",
+      "details": [
+        "Go to gem.gov.in",
+        "Click 'Sign Up' → Select 'Seller'",
+        "Enter mobile number + OTP for initial registration",
+        "Select your organisation type (Individual / Proprietorship / Partnership / LLP / Private Limited / Public Limited / PSU)",
+        "Enter PAN number and verify",
+        "Enter GSTIN (if applicable) and verify",
+        "Enter Aadhaar number of authorised signatory + OTP verification",
+        "Upload relevant business documents (CoI, partnership deed as applicable)",
+        "Enter bank account details for payment"
+      ],
+      "documents_needed": ["Mobile OTP", "PAN", "GSTIN", "Aadhaar OTP", "Business registration document"],
+      "tips": [
+        "Use the mobile number that is linked to your Aadhaar for seamless verification",
+        "GeM verifies your PAN and GSTIN from government databases in real-time",
+        "Registration on GeM is completely free"
+      ],
+      "links": [
+        {"text": "GeM Seller Registration", "url": "https://gem.gov.in/registration/seller"}
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Activate Startup Runway (DPIIT Startups)",
+      "description": "Link your DPIIT Recognition Certificate to unlock relaxed eligibility for government procurement.",
+      "details": [
+        "After basic registration, go to 'My Profile' on GeM dashboard",
+        "Under 'Certificates', click 'Add Certificate'",
+        "Select 'Startup India (DPIIT)' from certificate type",
+        "Enter your DPIIT Recognition Number (format: DIPP#########)",
+        "Upload DPIIT Recognition Certificate PDF",
+        "GeM verifies with Startup India database (usually within 24 hours)",
+        "Once verified, your profile shows 'Startup' badge — you're on Startup Runway"
+      ],
+      "documents_needed": ["DPIIT Recognition Certificate", "DPIIT Number"],
+      "tips": [
+        "Startup Runway removes the requirement for prior year turnover or experience that normal GeM sellers need",
+        "Also link Udyam certificate if you have it — additional MSME benefits apply",
+        "Startups can bid for items even if they haven't sold that product to anyone before"
+      ],
+      "links": [
+        {"text": "GeM Startup Runway Guide", "url": "https://gem.gov.in/startup-runway"}
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Create Product/Service Catalog",
+      "description": "List your products or services on GeM with proper categorization, pricing, and specifications.",
+      "details": [
+        "Go to 'Products/Services' → 'Add Product' or 'Add Service'",
+        "For products: search and select the correct product category and specification template",
+        "Fill all mandatory specifications (dimensions, materials, technical specs)",
+        "Upload product images (minimum 4 images: front, back, sides, usage — white background preferred)",
+        "Set your price (inclusive of GST)",
+        "Select HSN/SAC code for the product/service",
+        "Set delivery timelines and serviceability (Pan-India or specific states)",
+        "For services: define scope, deliverables, SLAs, and pricing model (fixed / per unit / per day)"
+      ],
+      "documents_needed": ["Product specification sheets", "Product images", "Service delivery documents (for services)", "GST rates for your product/service"],
+      "tips": [
+        "Products with no specification template: raise a 'New Product Request' to GeM team (take 7-10 days to create new template)",
+        "Pricing on GeM is visible to all buyers — price competitively. Buyers compare multiple sellers.",
+        "For innovative startup products with no comparable: use the 'Direct Purchase' narrative highlighting unique capabilities"
+      ],
+      "links": [
+        {"text": "GeM Product Listing Guide", "url": "https://gem.gov.in/resources/training-material"}
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Participate in Bids and Direct Purchases",
+      "description": "Respond to bid invitations from government buyers and optimize for direct purchase visibility.",
+      "details": [
+        "Direct Purchase (L1 buying): For purchases up to ₹25,000 per item — buyer chooses lowest price seller directly",
+        "L1 buying up to ₹5 lakh: Buyer gets 3 quotes from eligible sellers; lowest wins",
+        "Reverse Auction / Bid: For large purchases — submit your best bid by deadline",
+        "Set up email notifications for bids in your categories at 'My Bids' → 'Notifications'",
+        "Respond to custom requirements ('Demand') from buyers who can't find standard products",
+        "Target Ministry buyers, State PSUs, Central PSUs, Defence (separate buyer portal)",
+        "Track GeM Analytical Dashboard for your category demand volumes"
+      ],
+      "documents_needed": [],
+      "tips": [
+        "D-class items (₹<25,000): Focus on price — buyers auto-pick lowest price without comparing",
+        "For complex/technical products: write strong product descriptions explaining ROI to non-technical government buyers",
+        "Build a relationship with the GeM SPOCs (Single Point of Contact) in target ministries for custom deals"
+      ],
+      "links": [
+        {"text": "GeM Bids Dashboard", "url": "https://gem.gov.in/seller/bid"}
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Fulfill Orders and Get Paid",
+      "description": "Complete orders, submit invoices on GeM, and receive payment within 10-15 days.",
+      "details": [
+        "When order received: log in to GeM, accept order within 24 hours",
+        "Deliver as per committed timeline — update tracking on GeM portal",
+        "After delivery: upload invoice on GeM with HSN code, GST breakdown, delivery proof",
+        "Buyer inspects and accepts delivery on GeM portal",
+        "Payment processed within 10 working days via PFMS (Public Financial Management System)",
+        "For late payment beyond 45 days: MSME Protection Act — you can charge compound interest at 3x bank rate"
+      ],
+      "documents_needed": ["Invoice", "Delivery proof/receipt", "Inspection report (for products)"],
+      "tips": [
+        "GeM payment is direct bank transfer — track on GeM dashboard under 'Payments'",
+        "If payment delayed: raise complaint on GeM grievance portal → escalates to buyer's DDO",
+        "Build GeM order history — higher order count improves your ranking in search results"
+      ],
+      "links": [
+        {"text": "GeM Order Management", "url": "https://gem.gov.in/seller/orders"},
+        {"text": "GeM Grievance Portal", "url": "https://gem.gov.in/grievance"}
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need GST registration for GeM?",
+      "a": "For most product sales, yes. Service providers with turnover < ₹20 lakh are exempt. Composite scheme taxpayers can also sell on GeM."
+    },
+    {
+      "q": "What are the most in-demand categories on GeM for startups?",
+      "a": "Software/SaaS licenses, IT hardware, office supplies, furniture, training services, cybersecurity solutions, clean energy products, medical supplies, and consultancy services."
+    },
+    {
+      "q": "Can I list my SaaS product on GeM?",
+      "a": "Yes! SaaS and cloud services are listed under the 'Software (as a Service)' and 'IT Services' categories. Many government departments are actively procuring SaaS on GeM."
+    },
+    {
+      "q": "Is pricing on GeM my problem or theirs?",
+      "a": "GeM uses L1 pricing (lowest gets the order) for most purchases. However, for specialized/unique products, government buyers can negotiate and justify higher prices."
+    }
+  ]
+}
