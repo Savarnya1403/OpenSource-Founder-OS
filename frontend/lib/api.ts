@@ -1,7 +1,8 @@
 import axios from "axios";
 
-// Use relative URLs so all requests proxy through Next.js → backend (works both locally and via tunnel)
-const BASE = typeof window !== "undefined" ? "" : (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000");
+// On Vercel: NEXT_PUBLIC_API_URL=/_/backend → browser calls FastAPI directly via Vercel's service routing
+// Locally: NEXT_PUBLIC_API_URL unset → browser uses "" (relative) → Next.js proxies to http://localhost:8000
+const BASE = process.env.NEXT_PUBLIC_API_URL ?? (typeof window !== "undefined" ? "" : "http://localhost:8000");
 
 export const api = axios.create({
   baseURL: BASE,
