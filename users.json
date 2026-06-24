@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "email": "kan@gmail.com",
+    "name": "Kanishk",
+    "hashed_password": "$2b$12$srI8LaMXq/gvbsYdWt.zy.TftD.EJ/KzIdSo5IUMIOjdUbquT4OXe",
+    "startup_name": "Acme AI",
+    "startup_stage": "Idea",
+    "sector": "FinTech",
+    "city": "Bengaluru",
+    "created_at": "2026-06-24T10:08:00.723075+00:00"
+  }
+]
