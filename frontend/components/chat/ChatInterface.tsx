@@ -106,35 +106,39 @@ export function ChatInterface({ initialQuestion }: Props) {
 
           for (const line of lines) {
             if (!line.startsWith("data: ")) continue;
+            let data: Record<string, string>;
             try {
-              const data = JSON.parse(line.slice(6));
-              if (data.type === "agent_switch") {
-                setCurrentAgent(data.agent);
-              } else if (data.type === "token") {
-                accum += data.content;
-                setStreamBuffer(accum);
-              } else if (data.type === "done") {
-                if (data.session_id) setSessionId(data.session_id);
-                setMessages((m) => [
-                  ...m,
-                  { role: "assistant", content: accum, agent: currentAgent },
-                ]);
-                setStreamBuffer("");
-              } else if (data.type === "error") {
-                throw new Error(data.content);
-              }
+              data = JSON.parse(line.slice(6));
             } catch {
-              // ignore parse errors
+              continue; // skip malformed SSE lines
+            }
+            if (data.type === "agent_switch") {
+              setCurrentAgent(data.agent);
+            } else if (data.type === "token") {
+              accum += data.content;
+              setStreamBuffer(accum);
+            } else if (data.type === "done") {
+              if (data.session_id) setSessionId(data.session_id);
+              setMessages((m) => [
+                ...m,
+                { role: "assistant", content: accum, agent: currentAgent },
+              ]);
+              setStreamBuffer("");
+            } else if (data.type === "error") {
+              throw new Error(data.content);
             }
           }
         }
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : "Something went wrong";
+        const isAuthError = msg.toLowerCase().includes("401") || msg.toLowerCase().includes("authentication") || msg.toLowerCase().includes("invalid") && msg.toLowerCase().includes("api key");
         setMessages((m) => [
           ...m,
           {
             role: "assistant",
-            content: `**Error:** ${msg}\n\nMake sure the backend is running and your ANTHROPIC_API_KEY is set in \`backend/.env\`.`,
+            content: isAuthError
+              ? `**API key error:** ${msg}\n\nPlease check your API key in [AI Settings](/settings) — make sure it's valid and has credits.`
+              : `**Error:** ${msg}`,
             agent: "mentor",
           },
         ]);
