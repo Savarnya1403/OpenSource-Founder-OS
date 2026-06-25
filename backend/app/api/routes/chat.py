@@ -3,16 +3,32 @@ import json
 import uuid
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
-from langchain_core.messages import HumanMessage, AIMessage
+from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from app.agents.graph import get_graph
 from app.agents.state import OpenFounderState
 from app.models.chat import ChatRequest
 from app.api.deps import get_optional_user
 from app.core.config import get_settings
-from app.core.llm_factory import PROVIDERS
+from app.core.llm_factory import PROVIDERS, build_llm_from_state
+
+# Agent system prompts — imported at module level so they're available without LangGraph
+from app.agents.nodes.supervisor import SUPERVISOR_SYSTEM
+from app.agents.nodes.mentor import MENTOR_SYSTEM
+from app.agents.nodes.researcher import RESEARCHER_SYSTEM
+from app.agents.nodes.pitch import PITCH_SYSTEM
+from app.agents.nodes.schemes import build_schemes_system
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 settings = get_settings()
+
+AGENT_SYSTEMS = {
+    "mentor": (MENTOR_SYSTEM, 0.7),
+    "researcher": (RESEARCHER_SYSTEM, 0.5),
+    "pitch": (PITCH_SYSTEM, 0.6),
+}
+
+# In-memory session store (use Redis in production)
+_sessions: dict[str, list] = {}
 
 
 @router.get("/providers")
@@ -30,8 +46,44 @@ async def list_providers():
         ]
     }
 
-# In-memory session store (use Redis in production)
-_sessions: dict[str, list] = {}
+
+def _extract_token(chunk) -> str:
+    """Extract text from an AIMessageChunk regardless of provider format."""
+    if not hasattr(chunk, "content"):
+        return ""
+    raw = chunk.content
+    if isinstance(raw, str):
+        return raw
+    if isinstance(raw, list):
+        return "".join(
+            item.get("text", "") if isinstance(item, dict) else str(item)
+            for item in raw
+        )
+    return ""
+
+
+def _build_llm_config(payload: ChatRequest) -> dict:
+    if payload.llm_provider and payload.llm_api_key:
+        return {
+            "provider": payload.llm_provider,
+            "api_key": payload.llm_api_key,
+            "model": payload.llm_model,
+        }
+    return {}
+
+
+def _build_profile(user, payload: ChatRequest) -> dict:
+    profile: dict = {}
+    if user:
+        profile = {
+            "startup_name": user.get("startup_name"),
+            "startup_stage": user.get("startup_stage"),
+            "sector": user.get("sector"),
+            "city": user.get("city"),
+        }
+    if payload.startup_context:
+        profile.update(payload.startup_context)
+    return profile
 
 
 @router.post("/stream")
@@ -39,96 +91,70 @@ async def chat_stream(
     payload: ChatRequest,
     user: dict | None = Depends(get_optional_user),
 ):
-    """Stream chat response via Server-Sent Events."""
-    has_user_key = bool(payload.llm_provider and payload.llm_api_key)
+    """Stream chat response via SSE — streams directly from llm.astream()."""
+    llm_config = _build_llm_config(payload)
+    has_user_key = bool(llm_config)
     if not has_user_key and not settings.ANTHROPIC_API_KEY:
         raise HTTPException(
             status_code=503,
-            detail="No AI provider configured. Add your API key in AI Settings (⚙ icon in sidebar).",
+            detail="No AI provider configured. Add your API key in AI Settings.",
         )
 
     session_id = payload.session_id or str(uuid.uuid4())
-    history = _sessions.get(session_id, [])
+    history = list(_sessions.get(session_id, []))
+    startup_profile = _build_profile(user, payload)
 
-    startup_profile = {}
-    if user:
-        startup_profile = {
-            "startup_name": user.get("startup_name"),
-            "startup_stage": user.get("startup_stage"),
-            "sector": user.get("sector"),
-            "city": user.get("city"),
-        }
-    if payload.startup_context:
-        startup_profile.update(payload.startup_context)
-
-    llm_config: dict = {}
-    if has_user_key:
-        llm_config = {
-            "provider": payload.llm_provider,
-            "api_key": payload.llm_api_key,
-            "model": payload.llm_model,
-        }
+    # Build a minimal state dict so build_llm_from_state works
+    state_stub = {"llm_config": llm_config}
 
     history.append(HumanMessage(content=payload.message))
 
-    initial_state: OpenFounderState = {
-        "messages": history,
-        "active_agent": "",
-        "startup_profile": startup_profile,
-        "retrieved_context": "",
-        "next_agent": "",
-        "llm_config": llm_config,
-    }
-
     async def event_generator():
-        graph = get_graph()
-        agent_announced = False
         full_response = ""
-
         try:
-            async for event in graph.astream_events(initial_state, version="v2"):
-                kind = event.get("event")
+            # ── Step 1: Supervisor (fast, non-streaming) ───────────────────
+            sv_llm = build_llm_from_state(state_stub, max_tokens=20, temperature=0)
+            sv_resp = await sv_llm.ainvoke([
+                SystemMessage(content=SUPERVISOR_SYSTEM),
+                HumanMessage(content=payload.message),
+            ])
+            agent = sv_resp.content.strip().lower().split()[0] if sv_resp.content.strip() else "mentor"
+            if agent not in {"mentor", "schemes", "researcher", "pitch"}:
+                agent = "mentor"
 
-                # Announce which agent is responding
-                if kind == "on_chain_end" and event.get("name") == "supervisor":
-                    output = event.get("data", {}).get("output", {})
-                    active = output.get("active_agent", "")
-                    if active and not agent_announced:
-                        agent_announced = True
-                        chunk = json.dumps({"type": "agent_switch", "agent": active, "session_id": session_id})
-                        yield f"data: {chunk}\n\n"
+            yield f"data: {json.dumps({'type': 'agent_switch', 'agent': agent, 'session_id': session_id})}\n\n"
 
-                # Stream LLM tokens
-                elif kind == "on_chat_model_stream":
-                    msg_chunk = event.get("data", {}).get("chunk", {})
-                    if not hasattr(msg_chunk, "content"):
-                        continue
-                    raw = msg_chunk.content
-                    # Anthropic/Gemini return str; OpenAI/DeepSeek return list of dicts
-                    if isinstance(raw, str):
-                        token = raw
-                    elif isinstance(raw, list):
-                        token = "".join(
-                            item.get("text", "") if isinstance(item, dict) else str(item)
-                            for item in raw
-                        )
-                    else:
-                        token = ""
-                    if token:
-                        full_response += token
-                        chunk = json.dumps({"type": "token", "content": token})
-                        yield f"data: {chunk}\n\n"
+            # ── Step 2: Build system prompt ───────────────────────────────
+            if agent == "schemes":
+                system_content = build_schemes_system(payload.message, startup_profile)
+                temperature = 0.3
+            else:
+                base_system, temperature = AGENT_SYSTEMS[agent]
+                profile_ctx = ""
+                if startup_profile:
+                    profile_ctx = "\n\n[Founder's Startup Profile]\n" + "\n".join(
+                        f"- {k}: {v}" for k, v in startup_profile.items() if v
+                    )
+                system_content = base_system + profile_ctx
 
-            # Save to session history
+            # ── Step 3: Stream tokens directly ───────────────────────────
+            agent_llm = build_llm_from_state(state_stub, max_tokens=2048, temperature=temperature)
+            messages = [SystemMessage(content=system_content)] + history
+
+            async for chunk in agent_llm.astream(messages):
+                token = _extract_token(chunk)
+                if token:
+                    full_response += token
+                    yield f"data: {json.dumps({'type': 'token', 'content': token})}\n\n"
+
+            # ── Save session ──────────────────────────────────────────────
             history.append(AIMessage(content=full_response))
-            _sessions[session_id] = history[-20:]  # keep last 20 messages
+            _sessions[session_id] = history[-20:]
 
-            done = json.dumps({"type": "done", "session_id": session_id})
-            yield f"data: {done}\n\n"
+            yield f"data: {json.dumps({'type': 'done', 'session_id': session_id})}\n\n"
 
         except Exception as e:
-            error = json.dumps({"type": "error", "content": str(e)})
-            yield f"data: {error}\n\n"
+            yield f"data: {json.dumps({'type': 'error', 'content': str(e)})}\n\n"
 
     return StreamingResponse(
         event_generator(),
@@ -146,61 +172,48 @@ async def chat_message(
     user: dict | None = Depends(get_optional_user),
 ):
     """Non-streaming chat — returns full response at once."""
-    has_user_key = bool(payload.llm_provider and payload.llm_api_key)
+    llm_config = _build_llm_config(payload)
+    has_user_key = bool(llm_config)
     if not has_user_key and not settings.ANTHROPIC_API_KEY:
-        raise HTTPException(
-            status_code=503,
-            detail="No AI provider configured. Add your API key in AI Settings.",
-        )
+        raise HTTPException(status_code=503, detail="No AI provider configured.")
 
     session_id = payload.session_id or str(uuid.uuid4())
-    history = _sessions.get(session_id, [])
-
-    startup_profile = {}
-    if user:
-        startup_profile = {
-            "startup_name": user.get("startup_name"),
-            "startup_stage": user.get("startup_stage"),
-            "sector": user.get("sector"),
-            "city": user.get("city"),
-        }
-    if payload.startup_context:
-        startup_profile.update(payload.startup_context)
-
-    llm_config: dict = {}
-    if has_user_key:
-        llm_config = {
-            "provider": payload.llm_provider,
-            "api_key": payload.llm_api_key,
-            "model": payload.llm_model,
-        }
+    history = list(_sessions.get(session_id, []))
+    startup_profile = _build_profile(user, payload)
+    state_stub = {"llm_config": llm_config}
 
     history.append(HumanMessage(content=payload.message))
 
-    initial_state: OpenFounderState = {
-        "messages": history,
-        "active_agent": "",
-        "startup_profile": startup_profile,
-        "retrieved_context": "",
-        "next_agent": "",
-        "llm_config": llm_config,
-    }
+    # Supervisor
+    sv_llm = build_llm_from_state(state_stub, max_tokens=20, temperature=0)
+    sv_resp = await sv_llm.ainvoke([
+        SystemMessage(content=SUPERVISOR_SYSTEM),
+        HumanMessage(content=payload.message),
+    ])
+    agent = sv_resp.content.strip().lower().split()[0] if sv_resp.content.strip() else "mentor"
+    if agent not in {"mentor", "schemes", "researcher", "pitch"}:
+        agent = "mentor"
 
-    graph = get_graph()
-    result = await graph.ainvoke(initial_state)
+    if agent == "schemes":
+        system_content = build_schemes_system(payload.message, startup_profile)
+        temperature = 0.3
+    else:
+        base_system, temperature = AGENT_SYSTEMS[agent]
+        profile_ctx = ""
+        if startup_profile:
+            profile_ctx = "\n\n[Founder's Startup Profile]\n" + "\n".join(
+                f"- {k}: {v}" for k, v in startup_profile.items() if v
+            )
+        system_content = base_system + profile_ctx
 
-    ai_messages = [m for m in result["messages"] if isinstance(m, AIMessage)]
-    response_text = ai_messages[-1].content if ai_messages else "No response generated."
-    active_agent = result.get("active_agent", "mentor")
+    agent_llm = build_llm_from_state(state_stub, max_tokens=2048, temperature=temperature)
+    response = await agent_llm.ainvoke([SystemMessage(content=system_content)] + history)
+    response_text = response.content if isinstance(response.content, str) else str(response.content)
 
     history.append(AIMessage(content=response_text))
     _sessions[session_id] = history[-20:]
 
-    return {
-        "session_id": session_id,
-        "agent": active_agent,
-        "response": response_text,
-    }
+    return {"session_id": session_id, "agent": agent, "response": response_text}
 
 
 @router.delete("/history")

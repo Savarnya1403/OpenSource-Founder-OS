@@ -1,8 +1,8 @@
 from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, desc, update
-from app.core.database import get_db
+from sqlalchemy import select, desc
+from app.core.database import get_db, init_db
 from app.models.forum import (
     ForumPostDB, ForumReplyDB,
     ForumPostCreate, ForumReplyCreate,
@@ -12,6 +12,16 @@ from app.models.forum import (
 from app.api.deps import get_current_user, get_optional_user
 
 router = APIRouter(prefix="/forum", tags=["forum"])
+
+_db_ready = False
+
+
+async def ensure_db():
+    """Idempotent: create tables on first request (safety net for serverless cold starts)."""
+    global _db_ready
+    if not _db_ready:
+        await init_db()
+        _db_ready = True
 
 
 @router.get("/categories")
@@ -48,6 +58,7 @@ async def create_post(
     db: AsyncSession = Depends(get_db),
     user: dict = Depends(get_current_user),
 ):
+    await ensure_db()
     if payload.category not in FORUM_CATEGORIES:
         raise HTTPException(status_code=400, detail=f"Invalid category. Choose from: {FORUM_CATEGORIES}")
     post = ForumPostDB(
@@ -85,6 +96,7 @@ async def create_reply(
     db: AsyncSession = Depends(get_db),
     user: dict = Depends(get_current_user),
 ):
+    await ensure_db()
     result = await db.execute(select(ForumPostDB).where(ForumPostDB.id == post_id))
     post = result.scalar_one_or_none()
     if not post:

@@ -9,10 +9,9 @@ from app.core.database import Base
 FORUM_CATEGORIES = [
     "General",
     "Fundraising",
-    "GTM & Sales",
+    "GTM",
     "Product",
     "Legal & Compliance",
-    "Team & Culture",
     "Mental Health",
 ]
 

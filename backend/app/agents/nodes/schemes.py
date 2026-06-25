@@ -27,6 +27,33 @@ Format each scheme with:
 Be concise but thorough. Always end with a prioritised action list."""
 
 
+def build_schemes_system(user_query: str, profile: dict) -> str:
+    """Return a fully-hydrated system prompt with RAG-retrieved schemes injected."""
+    rag = get_rag()
+    sector = profile.get("sector") or _extract_sector(user_query)
+    stage = profile.get("startup_stage") or "Early Revenue"
+    match_req = SchemeMatchRequest(
+        sector=sector, stage=stage,
+        entity_type=profile.get("entity_type"),
+        city=profile.get("city"),
+        dpiit_registered=profile.get("dpiit_registered"),
+        description=user_query,
+    )
+    matched = rag.match_startup(match_req, limit=6)
+    if not matched:
+        schemes_context = "No highly specific schemes found. Showing broadly applicable schemes.\n"
+        for s in rag.search("startup grant fund India", limit=5):
+            schemes_context += _format_scheme_brief(s)
+    else:
+        schemes_context = f"Found {len(matched)} relevant schemes:\n\n"
+        for s in matched:
+            schemes_context += _format_scheme_brief(s)
+    profile_ctx = ""
+    if profile:
+        profile_ctx = "\n[Startup Profile]\n" + "\n".join(f"- {k}: {v}" for k, v in profile.items() if v)
+    return f"{SCHEMES_SYSTEM}\n\n[Retrieved Schemes from Database]\n{schemes_context}{profile_ctx}"
+
+
 def schemes_node(state: OpenFounderState) -> dict:
     rag = get_rag()
     profile = state.get("startup_profile", {})
