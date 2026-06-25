@@ -1,11 +1,8 @@
 from __future__ import annotations
 """AI Cofounder Mentor — strategic startup guidance."""
-from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage
 from app.agents.state import OpenFounderState
-from app.core.config import get_settings
-
-settings = get_settings()
+from app.core.llm_factory import build_llm_from_state
 
 MENTOR_SYSTEM = """You are an experienced AI cofounder and startup mentor with deep expertise in the Indian startup ecosystem. You've built and exited multiple companies, advised 200+ startups, and understand the nuances of building in India — from tier-2 city dynamics to navigating RBI regulations to leveraging the jugaad mindset.
 
@@ -30,12 +27,7 @@ Always structure your response clearly. Use markdown formatting."""
 
 
 def mentor_node(state: OpenFounderState) -> dict:
-    llm = ChatAnthropic(
-        model=settings.CLAUDE_MODEL,
-        anthropic_api_key=settings.ANTHROPIC_API_KEY,
-        max_tokens=2048,
-        temperature=0.7,
-    )
+    llm = build_llm_from_state(state, max_tokens=2048, temperature=0.7)
 
     profile = state.get("startup_profile", {})
     context_block = ""

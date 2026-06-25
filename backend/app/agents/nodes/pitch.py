@@ -1,11 +1,8 @@
 from __future__ import annotations
 """Pitch Coach — investor pitch, fundraising, deck structure."""
-from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage
 from app.agents.state import OpenFounderState
-from app.core.config import get_settings
-
-settings = get_settings()
+from app.core.llm_factory import build_llm_from_state
 
 PITCH_SYSTEM = """You are OpenFounder OS's Pitch & Fundraising Coach — you've sat on both sides of the table (founder and investor) in the Indian VC ecosystem.
 
@@ -36,12 +33,7 @@ Be direct, ask hard questions investors will ask, and help founders prepare hone
 
 
 def pitch_node(state: OpenFounderState) -> dict:
-    llm = ChatAnthropic(
-        model=settings.CLAUDE_MODEL,
-        anthropic_api_key=settings.ANTHROPIC_API_KEY,
-        max_tokens=2048,
-        temperature=0.6,
-    )
+    llm = build_llm_from_state(state, max_tokens=2048, temperature=0.6)
 
     profile = state.get("startup_profile", {})
     context_block = ""

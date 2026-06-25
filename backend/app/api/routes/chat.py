@@ -9,9 +9,26 @@ from app.agents.state import OpenFounderState
 from app.models.chat import ChatRequest
 from app.api.deps import get_optional_user
 from app.core.config import get_settings
+from app.core.llm_factory import PROVIDERS
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 settings = get_settings()
+
+
+@router.get("/providers")
+async def list_providers():
+    """Return supported LLM providers and their available models."""
+    return {
+        "providers": [
+            {
+                "id": pid,
+                "label": meta["label"],
+                "models": meta["models"],
+                "default_model": meta["default_model"],
+            }
+            for pid, meta in PROVIDERS.items()
+        ]
+    }
 
 # In-memory session store (use Redis in production)
 _sessions: dict[str, list] = {}
@@ -23,16 +40,16 @@ async def chat_stream(
     user: dict | None = Depends(get_optional_user),
 ):
     """Stream chat response via Server-Sent Events."""
-    if not settings.ANTHROPIC_API_KEY:
+    has_user_key = bool(payload.llm_provider and payload.llm_api_key)
+    if not has_user_key and not settings.ANTHROPIC_API_KEY:
         raise HTTPException(
             status_code=503,
-            detail="ANTHROPIC_API_KEY not configured. Add it to backend/.env to enable AI features.",
+            detail="No AI provider configured. Add your API key in AI Settings (⚙ icon in sidebar).",
         )
 
     session_id = payload.session_id or str(uuid.uuid4())
     history = _sessions.get(session_id, [])
 
-    # Build startup profile from user + request context
     startup_profile = {}
     if user:
         startup_profile = {
@@ -44,7 +61,14 @@ async def chat_stream(
     if payload.startup_context:
         startup_profile.update(payload.startup_context)
 
-    # Append user message to history
+    llm_config: dict = {}
+    if has_user_key:
+        llm_config = {
+            "provider": payload.llm_provider,
+            "api_key": payload.llm_api_key,
+            "model": payload.llm_model,
+        }
+
     history.append(HumanMessage(content=payload.message))
 
     initial_state: OpenFounderState = {
@@ -53,6 +77,7 @@ async def chat_stream(
         "startup_profile": startup_profile,
         "retrieved_context": "",
         "next_agent": "",
+        "llm_config": llm_config,
     }
 
     async def event_generator():
@@ -109,10 +134,11 @@ async def chat_message(
     user: dict | None = Depends(get_optional_user),
 ):
     """Non-streaming chat — returns full response at once."""
-    if not settings.ANTHROPIC_API_KEY:
+    has_user_key = bool(payload.llm_provider and payload.llm_api_key)
+    if not has_user_key and not settings.ANTHROPIC_API_KEY:
         raise HTTPException(
             status_code=503,
-            detail="ANTHROPIC_API_KEY not configured.",
+            detail="No AI provider configured. Add your API key in AI Settings.",
         )
 
     session_id = payload.session_id or str(uuid.uuid4())
@@ -129,6 +155,14 @@ async def chat_message(
     if payload.startup_context:
         startup_profile.update(payload.startup_context)
 
+    llm_config: dict = {}
+    if has_user_key:
+        llm_config = {
+            "provider": payload.llm_provider,
+            "api_key": payload.llm_api_key,
+            "model": payload.llm_model,
+        }
+
     history.append(HumanMessage(content=payload.message))
 
     initial_state: OpenFounderState = {
@@ -137,6 +171,7 @@ async def chat_message(
         "startup_profile": startup_profile,
         "retrieved_context": "",
         "next_agent": "",
+        "llm_config": llm_config,
     }
 
     graph = get_graph()

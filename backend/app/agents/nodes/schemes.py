@@ -1,14 +1,11 @@
 from __future__ import annotations
 """Schemes Agent — matches government grants/schemes to the startup."""
-from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage, AIMessage
 from app.agents.state import OpenFounderState
 from app.rag import get_rag
 from app.models.scheme import SchemeMatchRequest
-from app.core.config import get_settings
+from app.core.llm_factory import build_llm_from_state
 import json
-
-settings = get_settings()
 
 SCHEMES_SYSTEM = """You are OpenFounder OS's Government Schemes Specialist with encyclopaedic knowledge of Indian central and state government schemes for startups, MSMEs, and innovators.
 
@@ -61,12 +58,7 @@ def schemes_node(state: OpenFounderState) -> dict:
         for s in matched:
             schemes_context += _format_scheme_brief(s)
 
-    llm = ChatAnthropic(
-        model=settings.CLAUDE_MODEL,
-        anthropic_api_key=settings.ANTHROPIC_API_KEY,
-        max_tokens=2048,
-        temperature=0.3,
-    )
+    llm = build_llm_from_state(state, max_tokens=2048, temperature=0.3)
 
     profile_ctx = ""
     if profile:

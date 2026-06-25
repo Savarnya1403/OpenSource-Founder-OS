@@ -11,3 +11,4 @@ class OpenFounderState(TypedDict):
     startup_profile: dict[str, Any]
     retrieved_context: str
     next_agent: str
+    llm_config: dict[str, Any]  # {"provider": ..., "api_key": ..., "model": ...}

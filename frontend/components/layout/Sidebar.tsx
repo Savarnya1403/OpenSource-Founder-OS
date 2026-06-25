@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { BookOpen, Building2, Calendar, Compass, LayoutDashboard, LogOut, MessageCircle, MessageSquare, School, TrendingUp, User, Wrench, Zap } from "lucide-react";
+import { BookOpen, Building2, Calendar, Compass, KeyRound, LayoutDashboard, LogOut, MessageCircle, MessageSquare, School, TrendingUp, User, Wrench, Zap } from "lucide-react";
+import { hasLLMConfig } from "@/lib/llm-config";
 import { cn } from "@/lib/utils";
 import { clearAuth, getUser } from "@/lib/auth";
 import toast from "react-hot-toast";
@@ -18,12 +19,14 @@ const NAV = [
   { href: "/knowledge", icon: BookOpen, label: "Knowledge" },
   { href: "/forum", icon: MessageCircle, label: "Forum" },
   { href: "/profile", icon: User, label: "Profile" },
+  { href: "/settings", icon: KeyRound, label: "AI Settings" },
 ];
 
 export function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const user = getUser();
+  const llmConfigured = typeof window !== "undefined" ? hasLLMConfig() : true;
 
   function handleLogout() {
     clearAuth();
@@ -60,7 +63,10 @@ export function Sidebar() {
             )}
           >
             <Icon className="w-4 h-4 shrink-0" />
-            {label}
+            <span className="flex-1">{label}</span>
+            {href === "/settings" && !llmConfigured && (
+              <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" title="No AI key configured" />
+            )}
           </Link>
         ))}
       </nav>

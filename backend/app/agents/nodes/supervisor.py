@@ -1,11 +1,8 @@
 from __future__ import annotations
 """Supervisor: classifies intent and routes to the right specialist agent."""
-from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage, HumanMessage
 from app.agents.state import OpenFounderState
-from app.core.config import get_settings
-
-settings = get_settings()
+from app.core.llm_factory import build_llm_from_state
 
 SUPERVISOR_SYSTEM = """You are the OpenFounder OS supervisor. Your only job is to classify the user's intent and output EXACTLY one word — the name of the agent to handle the request.
 
@@ -22,12 +19,7 @@ Rules:
 
 
 def supervisor_node(state: OpenFounderState) -> dict:
-    llm = ChatAnthropic(
-        model=settings.CLAUDE_MODEL,
-        anthropic_api_key=settings.ANTHROPIC_API_KEY,
-        max_tokens=10,
-        temperature=0,
-    )
+    llm = build_llm_from_state(state, max_tokens=10, temperature=0)
 
     last_message = state["messages"][-1]
     user_text = last_message.content if hasattr(last_message, "content") else str(last_message)

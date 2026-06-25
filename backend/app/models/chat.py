@@ -15,6 +15,9 @@ class ChatRequest(BaseModel):
     message: str
     session_id: Optional[str] = None
     startup_context: Optional[dict] = None
+    llm_provider: Optional[str] = None   # "anthropic" | "openai" | "gemini" | "deepseek"
+    llm_api_key: Optional[str] = None    # user's own key (never stored server-side)
+    llm_model: Optional[str] = None      # optional model override
 
 
 class ChatStreamChunk(BaseModel):

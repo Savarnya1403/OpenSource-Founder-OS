@@ -2,9 +2,11 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { Send, Loader2, Brain, Building2, Search, TrendingUp, Sparkles } from "lucide-react";
+import { Send, Loader2, Brain, Building2, Search, TrendingUp, Sparkles, KeyRound } from "lucide-react";
 import { cn, AGENT_META } from "@/lib/utils";
 import { getUser } from "@/lib/auth";
+import { getLLMConfig } from "@/lib/llm-config";
+import Link from "next/link";
 
 interface Message {
   role: "user" | "assistant";
@@ -30,9 +32,15 @@ export function ChatInterface({ initialQuestion }: Props) {
   const [currentAgent, setCurrentAgent] = useState<string>("mentor");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [streamBuffer, setStreamBuffer] = useState("");
+  const [llmReady, setLlmReady] = useState(true);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const user = getUser();
+
+  useEffect(() => {
+    const config = getLLMConfig();
+    setLlmReady(Boolean(config?.provider && config?.api_key));
+  }, []);
 
   const scrollToBottom = () => bottomRef.current?.scrollIntoView({ behavior: "smooth" });
 
@@ -56,6 +64,7 @@ export function ChatInterface({ initialQuestion }: Props) {
       if (user?.city) startup_context.city = user.city;
 
       try {
+        const llmConfig = getLLMConfig();
         const resp = await fetch(
           `/api/chat/stream`,
           {
@@ -68,6 +77,11 @@ export function ChatInterface({ initialQuestion }: Props) {
               message: text,
               session_id: sessionId,
               startup_context,
+              ...(llmConfig && {
+                llm_provider: llmConfig.provider,
+                llm_api_key: llmConfig.api_key,
+                llm_model: llmConfig.model,
+              }),
             }),
           }
         );
@@ -159,6 +173,17 @@ export function ChatInterface({ initialQuestion }: Props) {
           {agentInfo.emoji} {agentInfo.label}
         </div>
       </div>
+
+      {/* No-key warning */}
+      {!llmReady && (
+        <div className="mx-4 mt-3 flex items-center gap-2.5 bg-amber-50 border border-amber-200 text-amber-800 rounded-xl px-4 py-2.5 text-sm">
+          <KeyRound className="w-4 h-4 shrink-0 text-amber-600" />
+          <span>No AI key configured.</span>
+          <Link href="/settings" className="ml-auto font-semibold text-amber-700 hover:underline whitespace-nowrap">
+            Add key →
+          </Link>
+        </div>
+      )}
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto scrollbar-thin px-4 py-6 space-y-6">

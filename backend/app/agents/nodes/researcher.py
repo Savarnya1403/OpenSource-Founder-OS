@@ -1,11 +1,8 @@
 from __future__ import annotations
 """Research Agent — market sizing, competitor analysis, industry trends."""
-from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage
 from app.agents.state import OpenFounderState
-from app.core.config import get_settings
-
-settings = get_settings()
+from app.core.llm_factory import build_llm_from_state
 
 RESEARCHER_SYSTEM = """You are OpenFounder OS's Market Research Specialist — a combination of McKinsey analyst and Y Combinator researcher focused on the Indian startup ecosystem.
 
@@ -30,12 +27,7 @@ Use markdown tables for comparisons."""
 
 
 def researcher_node(state: OpenFounderState) -> dict:
-    llm = ChatAnthropic(
-        model=settings.CLAUDE_MODEL,
-        anthropic_api_key=settings.ANTHROPIC_API_KEY,
-        max_tokens=2048,
-        temperature=0.5,
-    )
+    llm = build_llm_from_state(state, max_tokens=2048, temperature=0.5)
 
     profile = state.get("startup_profile", {})
     context_block = ""
