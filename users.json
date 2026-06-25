@@ -31,5 +31,16 @@
     "sector": "Technology",
     "city": "Seattle",
     "created_at": "2026-06-24T18:25:50.348593+00:00"
+  },
+  {
+    "id": 4,
+    "email": "archit.bharadwaj@gmail.com",
+    "name": "Archit Bharadwaj",
+    "hashed_password": "$2b$12$DSV.ER/H5qssgkCJP.GL7ObYFn5liiFgNynTCVPpUbIuxW3UG7XpO",
+    "startup_name": "NSRCEL",
+    "startup_stage": "Idea",
+    "sector": "IoT",
+    "city": "Bangalore",
+    "created_at": "2026-06-25T04:20:01.120294+00:00"
   }
 ]
