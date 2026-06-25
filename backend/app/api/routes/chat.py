@@ -100,9 +100,21 @@ async def chat_stream(
 
                 # Stream LLM tokens
                 elif kind == "on_chat_model_stream":
-                    content = event.get("data", {}).get("chunk", {})
-                    if hasattr(content, "content") and content.content:
-                        token = content.content
+                    msg_chunk = event.get("data", {}).get("chunk", {})
+                    if not hasattr(msg_chunk, "content"):
+                        continue
+                    raw = msg_chunk.content
+                    # Anthropic/Gemini return str; OpenAI/DeepSeek return list of dicts
+                    if isinstance(raw, str):
+                        token = raw
+                    elif isinstance(raw, list):
+                        token = "".join(
+                            item.get("text", "") if isinstance(item, dict) else str(item)
+                            for item in raw
+                        )
+                    else:
+                        token = ""
+                    if token:
                         full_response += token
                         chunk = json.dumps({"type": "token", "content": token})
                         yield f"data: {chunk}\n\n"

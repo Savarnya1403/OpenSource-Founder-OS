@@ -2,9 +2,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BookOpen, Brain, Building2, MessageSquare, ArrowRight, Zap, TrendingUp, Shield } from "lucide-react";
+import { BookOpen, Brain, Building2, MessageSquare, ArrowRight, Zap, TrendingUp, Shield, KeyRound } from "lucide-react";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { getUser, isAuthenticated } from "@/lib/auth";
+import { hasLLMConfig } from "@/lib/llm-config";
 
 const QUICK_ACTIONS = [
   {
@@ -69,12 +70,14 @@ const STARTER_QUESTIONS = [
 export default function DashboardPage() {
   const router = useRouter();
   const [user, setUser] = useState(getUser());
+  const [llmConfigured, setLlmConfigured] = useState(true);
 
   useEffect(() => {
     if (!isAuthenticated()) {
       router.push("/login");
     } else {
       setUser(getUser());
+      setLlmConfigured(hasLLMConfig());
     }
   }, [router]);
 
@@ -109,6 +112,25 @@ export default function DashboardPage() {
             </p>
           )}
         </div>
+
+        {/* API key banner */}
+        {!llmConfigured && (
+          <div className="mb-6 flex items-center gap-4 bg-gradient-to-r from-violet-50 to-brand-50 border border-violet-200 rounded-2xl px-5 py-4">
+            <div className="w-10 h-10 bg-violet-100 rounded-xl flex items-center justify-center shrink-0">
+              <KeyRound className="w-5 h-5 text-violet-600" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-gray-900">Add your API key to start chatting with our FounderOS Model</p>
+              <p className="text-xs text-gray-500 mt-0.5">Supports Anthropic, OpenAI, Gemini, and DeepSeek — your key stays in your browser.</p>
+            </div>
+            <Link
+              href="/settings"
+              className="shrink-0 bg-violet-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-violet-700 transition-colors whitespace-nowrap"
+            >
+              Add API key →
+            </Link>
+          </div>
+        )}
 
         {/* Quick actions */}
         <div className="grid sm:grid-cols-3 gap-4 mb-8">

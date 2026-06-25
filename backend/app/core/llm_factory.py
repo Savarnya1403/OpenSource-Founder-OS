@@ -62,6 +62,7 @@ def build_llm(
             api_key=api_key,
             max_tokens=max_tokens,
             temperature=temperature,
+            streaming=True,
         )
 
     if provider == "gemini":
@@ -71,16 +72,20 @@ def build_llm(
             google_api_key=api_key,
             max_output_tokens=max_tokens,
             temperature=temperature,
+            streaming=True,
         )
 
     if provider == "deepseek":
         from langchain_openai import ChatOpenAI
+        # deepseek-reasoner doesn't support temperature
+        extra: dict = {} if chosen_model == "deepseek-reasoner" else {"temperature": temperature}
         return ChatOpenAI(
             model=chosen_model,
             api_key=api_key,
-            base_url="https://api.deepseek.com",
+            base_url="https://api.deepseek.com/v1",
             max_tokens=max_tokens,
-            temperature=temperature,
+            streaming=True,
+            **extra,
         )
 
     raise ValueError(f"Unhandled provider: {provider}")
