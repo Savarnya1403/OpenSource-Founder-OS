@@ -47,32 +47,32 @@ export default function SchemesPage() {
   const hasFilters = !!(search || sector || stage || ministry || requiresDpiit !== undefined);
 
   const content = (
-    <main className="flex-1 p-8">
+    <main className="flex-1 overflow-y-auto p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-gray-900 mb-1">Government Schemes</h1>
-          <p className="text-gray-500 text-sm">
+          <h1 className="text-2xl font-bold text-stone-900 mb-1">Government Schemes</h1>
+          <p className="text-stone-500 text-sm">
             {total} scheme{total !== 1 ? "s" : ""} from central and state governments for Indian startups.
           </p>
         </div>
 
         {/* Filters */}
-        <div className="bg-white border border-gray-100 rounded-2xl p-5 mb-6 space-y-4">
+        <div className="glass rounded-2xl p-5 mb-6 space-y-4">
           <div className="flex gap-3">
             <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search schemes..."
-                className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                className="w-full pl-9 pr-4 py-2.5 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
               />
             </div>
             {hasFilters && (
               <button
                 onClick={clearFilters}
-                className="flex items-center gap-1.5 text-sm text-gray-500 border border-gray-200 rounded-lg px-3 hover:bg-gray-50"
+                className="flex items-center gap-1.5 text-sm text-stone-500 border border-peach-200/60 rounded-lg px-3 hover:bg-peach-50/60"
               >
                 <X className="w-4 h-4" /> Clear
               </button>
@@ -82,7 +82,7 @@ export default function SchemesPage() {
             <select
               value={sector}
               onChange={(e) => setSector(e.target.value)}
-              className="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               <option value="">All Sectors</option>
               {meta?.sectors?.map((s: string) => <option key={s} value={s}>{s}</option>)}
@@ -90,7 +90,7 @@ export default function SchemesPage() {
             <select
               value={stage}
               onChange={(e) => setStage(e.target.value)}
-              className="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               <option value="">All Stages</option>
               {STAGES.map((s) => <option key={s} value={s}>{s}</option>)}
@@ -98,7 +98,7 @@ export default function SchemesPage() {
             <select
               value={ministry}
               onChange={(e) => setMinistry(e.target.value)}
-              className="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               <option value="">All Ministries</option>
               {meta?.ministries?.map((m: string) => <option key={m} value={m}>{m}</option>)}
@@ -106,7 +106,7 @@ export default function SchemesPage() {
             <select
               value={requiresDpiit === undefined ? "" : String(requiresDpiit)}
               onChange={(e) => setRequiresDpiit(e.target.value === "" ? undefined : e.target.value === "true")}
-              className="px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               <option value="">DPIIT: Any</option>
               <option value="true">DPIIT Required</option>
@@ -118,10 +118,10 @@ export default function SchemesPage() {
         {/* Results */}
         {isLoading ? (
           <div className="flex items-center justify-center py-20">
-            <Loader2 className="w-8 h-8 animate-spin text-brand-500" />
+            <Loader2 className="w-8 h-8 animate-spin text-peach-500" />
           </div>
         ) : schemes.length === 0 ? (
-          <div className="text-center py-20 text-gray-400">
+          <div className="text-center py-20 text-stone-400">
             <Filter className="w-10 h-10 mx-auto mb-3 opacity-40" />
             <p>No schemes match your filters. Try broadening your search.</p>
           </div>
@@ -138,7 +138,7 @@ export default function SchemesPage() {
 
   if (isAuthed) {
     return (
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen">
         <Sidebar />
         {content}
       </div>
@@ -146,15 +146,15 @@ export default function SchemesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white border-b border-gray-100 px-6 h-14 flex items-center justify-between">
+    <div className="min-h-screen">
+      <nav className="glass-strong border-b border-peach-200/30 px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-md flex items-center justify-center">
+          <div className="w-6 h-6 bg-gradient-to-br from-peach-500 to-saffron-500 rounded-md flex items-center justify-center">
             <Zap className="w-3 h-3 text-white" />
           </div>
-          <span className="font-bold text-gray-900 text-sm">OpenFounder OS</span>
+          <span className="font-bold text-stone-900 text-sm">OpenFounder OS</span>
         </Link>
-        <Link href="/login" className="text-sm font-medium text-brand-600 hover:underline">
+        <Link href="/login" className="text-sm font-medium text-peach-600 hover:underline">
           Sign in
         </Link>
       </nav>

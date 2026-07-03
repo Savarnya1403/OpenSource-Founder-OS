@@ -15,12 +15,12 @@ function ChatContent() {
   }, [router]);
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen">
       <Sidebar />
       <main className="flex-1 flex flex-col h-screen overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-100 bg-white">
-          <h1 className="font-bold text-gray-900">AI Cofounder</h1>
-          <p className="text-xs text-gray-400 mt-0.5">
+        <div className="px-6 py-4 border-b border-peach-200/40 bg-white">
+          <h1 className="font-bold text-stone-900">AI Cofounder</h1>
+          <p className="text-xs text-stone-400 mt-0.5">
             Mentor · Schemes · Researcher · Pitch Coach — all in one conversation
           </p>
         </div>

@@ -1,0 +1,237 @@
+{
+  "last_updated": "2025-Q1",
+  "disclaimer": "These are market benchmarks based on observed India VC deals in 2023-2025. Terms vary significantly by investor, sector, and negotiation. Always consult a CA and startup lawyer before signing any term sheet. This is educational information, not legal advice.",
+  "stages": {
+    "pre_seed": {
+      "label": "Pre-Seed",
+      "typical_stage": "Idea to MVP — 0 to 12 months post-incorporation",
+      "typical_investors": ["Angel investors", "HNIs (High Net-Worth Individuals)", "Micro-VCs", "Family offices", "Accelerators (equity-free grants)"],
+      "round_size": {
+        "min_cr": 0.25, "max_cr": 3, "typical_cr": 1,
+        "display": "₹25L – ₹3 Cr",
+        "in_usd": "$30K – $350K"
+      },
+      "valuation_post_money": {
+        "min_cr": 2, "max_cr": 12, "typical_cr": 6,
+        "display": "₹2 Cr – ₹12 Cr post-money",
+        "note": "Valuation is largely a negotiated number at pre-seed — traction, team pedigree, and market matter more than any formula"
+      },
+      "dilution": {
+        "min_pct": 10, "max_pct": 20, "typical_pct": 15,
+        "note": "15% is a fair pre-seed dilution. Above 20% is founder-unfavorable unless the investor brings exceptional value"
+      },
+      "instrument": {
+        "primary": "CCD (Compulsorily Convertible Debenture)",
+        "alternative": "Post-money SAFE (US-style, gaining popularity)",
+        "india_note": "CCDs are most common for Indian entities due to RBI regulations on FDI. SAFEs are increasingly used by founders with US investor exposure. Avoid straight equity at pre-seed — it creates complex cap table issues early.",
+        "avoid": "Equity shares — too early for cap table complexity"
+      },
+      "board": {
+        "seats": 0,
+        "observer": "Optional — 1 observer right for lead investor writing > ₹50L",
+        "note": "No board seats is standard at pre-seed. An observer right (attend but not vote) is acceptable for a large angel."
+      },
+      "esop_pool": {
+        "pre_investment_pct": 10,
+        "post_investment_pct": 8,
+        "note": "Investors typically want a 10% ESOP pool created pre-money. This dilutes founders, not investors. 10% is standard and fair."
+      },
+      "anti_dilution": {
+        "type": "None",
+        "note": "Anti-dilution protection is rare and inappropriate at pre-seed. If an investor insists on it at this stage, treat it as a yellow flag."
+      },
+      "pro_rata": {
+        "applicable": false,
+        "note": "Pro-rata rights are uncommon at pre-seed. Occasionally offered to large angels (writing ₹1Cr+) as a 'participation right' — acceptable if it's for the next round only."
+      },
+      "liquidation_preference": {
+        "type": "None or 1x non-participating",
+        "note": "1x non-participating is acceptable at pre-seed. Participating liquidation preference (double-dipping) is a red flag. Any preference above 1x at this stage is investor-favorable to an unreasonable degree."
+      },
+      "information_rights": ["Quarterly financial summary (P&L)", "Annual audited accounts within 6 months of year end"],
+      "lock_in": "12-18 months for founders (vesting schedule if not already agreed)",
+      "no_shop": "30-45 days",
+      "due_diligence_timeline": "2-4 weeks (lightweight — term sheet review + basic KYC)",
+      "typical_docs": ["Term Sheet", "SHA (Shareholders Agreement)", "SSA (Share Subscription Agreement) or CCD Agreement", "IP Assignment Agreement"],
+      "founder_tips": [
+        "Get the DPIIT Recognition certificate before raising — many angels won't write cheques without it and it unlocks Section 56(2)(viib) exemption from angel tax.",
+        "Fix co-founder equity and vesting BEFORE the first external round. A handshake deal that falls apart post-funding is a startup killer.",
+        "Raise the minimum viable amount at pre-seed — enough for 12-18 months runway. Over-raising at pre-seed creates valuation expectations that can trap you at seed.",
+        "Negotiate a post-money SAFE cap that's 2-3x your current pre-seed valuation. This gives investors downside protection without capping your upside too aggressively.",
+        "Always get a 'most favoured nation' (MFN) clause if you're doing rolling SAFEs — it ensures earlier investors get the same terms as later ones in the same round."
+      ],
+      "red_flags": [
+        "Participating liquidation preference at pre-seed — this lets investors 'double dip' on exit (get their money back AND share in upside). Walk away.",
+        "Full-ratchet anti-dilution — if your valuation ever drops, investors get new shares at your expense. Only BBWA (broad-based weighted average) is acceptable.",
+        "Veto rights on hiring/firing decisions — operational control should stay with founders at this stage.",
+        "Drag-along rights at pre-seed in isolation without a threshold — can force a sale you don't agree with. Ensure minimum drag threshold is the majority of the cap table."
+      ]
+    },
+    "seed": {
+      "label": "Seed",
+      "typical_stage": "MVP to early revenue — 10 to 500 paying customers or users",
+      "typical_investors": ["Institutional seed funds (Blume Ventures, Stellaris, 3one4 Capital, Kae Capital, ah! Ventures)", "Micro-VCs", "Lead angel + syndicate", "Accelerator follow-on (Surge, Antler)"],
+      "round_size": {
+        "min_cr": 3, "max_cr": 15, "typical_cr": 7,
+        "display": "₹3 Cr – ₹15 Cr",
+        "in_usd": "$350K – $1.8M"
+      },
+      "valuation_post_money": {
+        "min_cr": 15, "max_cr": 60, "typical_cr": 35,
+        "display": "₹15 Cr – ₹60 Cr post-money",
+        "note": "Seed valuations in India have compressed in 2023-25. ₹30-40 Cr post-money for a capital-efficient team with real traction is a fair range."
+      },
+      "dilution": {
+        "min_pct": 15, "max_pct": 25, "typical_pct": 18,
+        "note": "18-20% is market standard at seed. Anything above 25% will make Series A pricing very difficult for founders."
+      },
+      "instrument": {
+        "primary": "CCD (Compulsorily Convertible Debenture)",
+        "alternative": "CCPS (Compulsorily Convertible Preference Shares) for larger seed rounds",
+        "india_note": "CCDs remain dominant at seed stage with Indian institutional VCs. US-style preferred equity (CCPS) is increasingly used for rounds above ₹10 Cr. The distinction matters for RBI FEMA compliance if you have foreign investors."
+      },
+      "board": {
+        "seats": 1,
+        "composition": "2 founders + 1 investor director (5-seat board possible with independent)",
+        "note": "Standard seed board is 2F + 1I. An independent director can be added at this stage — it's good governance and makes Series A negotiations easier."
+      },
+      "esop_pool": {
+        "pre_investment_pct": 10,
+        "post_investment_pct": 8,
+        "note": "10% ESOP pool created pre-money is standard. Investors push for 15% — push back to 10-12%. The pool gets refreshed at Series A anyway."
+      },
+      "anti_dilution": {
+        "type": "Broad-based weighted average (BBWA)",
+        "note": "BBWA is the market standard and is fair to both sides. Full-ratchet anti-dilution is unacceptable at any stage. BBWA only triggers in a 'down round' — protect yourself by building in exceptions for ESOP grants and pre-agreed convertibles."
+      },
+      "pro_rata": {
+        "applicable": true,
+        "threshold": "Lead investor and major co-investors",
+        "note": "Pro-rata rights for the lead investor are standard at seed. It's reasonable for angels writing ₹1Cr+ to also ask for pro-rata. Uncapped pro-rata obligations can create problems at Series A if all seed investors want to maintain their percentage."
+      },
+      "liquidation_preference": {
+        "type": "1x non-participating preferred",
+        "note": "Standard and founder-friendly. 1x non-participating means investors get their money back OR convert to equity — they can't do both. Push back hard on participating preference; 1x participating is sometimes accepted but avoid it if possible."
+      },
+      "drag_along": "Yes — standard. Protects investors in M&A. Ensure threshold is majority of all shareholders (not just preference shareholders).",
+      "right_of_first_refusal": "Yes — investors get first right to buy shares if a founder wants to sell.",
+      "tag_along": "Yes — investors can participate in any secondary sale on same terms.",
+      "information_rights": [
+        "Monthly MIS (management information system) — P&L, balance sheet, cash position",
+        "Quarterly board meetings (mandatory)",
+        "Annual audited financial statements within 6 months of year end",
+        "Cap table updates within 30 days of any new issuances",
+        "Material event notifications (C-suite change, major contract, litigation)"
+      ],
+      "no_shop": "30-45 days",
+      "due_diligence_timeline": "3-6 weeks",
+      "typical_docs": ["Term Sheet", "SHA (full form — covers board, information rights, transfer restrictions)", "SSA (Share Subscription Agreement)", "Disclosure Letter", "IP Assignment Agreements for founders and early employees", "Restated Articles of Association"],
+      "founder_tips": [
+        "At seed, fight hardest on post-money valuation cap rather than dilution percentage — a higher cap means less dilution at the same round size.",
+        "Negotiate a 'pay-to-play' clause: investors who don't participate pro-rata in future rounds lose their anti-dilution protection. This protects you from investors who take rights but don't follow on.",
+        "Try to keep your ESOP pool below 12% pre-seed. The standard investor ask is 15% — the difference significantly affects founder dilution.",
+        "Always negotiate a 'sunset clause' on ROFR (Right of First Refusal) — ideally it expires 3 years post-close or at Series A, whichever is earlier. Permanent ROFR creates secondary market complications.",
+        "Get a legal opinion on your CCD terms before signing — specifically ensure conversion ratios are clearly defined and don't have hidden adverse adjustment clauses."
+      ],
+      "red_flags": [
+        "Full participating liquidation preference — the investor both gets their money back AND shares in the equity upside. It's economically equivalent to double-dipping and is genuinely harmful to founders on exit.",
+        "Cumulative dividends on preference shares — these compound over time and can make an acquisition economics look worse than they are. Non-cumulative is the standard.",
+        "Investor consent required for every new hire above a certain level — operational drag that slows you down. Reserve consent rights for C-suite and material contracts only.",
+        "Automatic conversion at IPO or acquisition blocked by investor veto — ensure automatic conversion provisions cannot be individually blocked by minority investors."
+      ]
+    },
+    "series_a": {
+      "label": "Series A",
+      "typical_stage": "Proven PMF, scaling revenue — ₹3-25 Cr ARR or $500K-$3M ARR",
+      "typical_investors": ["Peak XV Partners", "Accel India", "Lightspeed India", "Matrix Partners India", "Nexus Venture Partners", "Elevation Capital", "Chiratae Ventures", "Kalaari Capital"],
+      "round_size": {
+        "min_usd_mn": 2, "max_usd_mn": 10, "typical_usd_mn": 5,
+        "min_cr": 16, "max_cr": 80, "typical_cr": 40,
+        "display": "$2M – $10M USD (₹16 Cr – ₹80 Cr)",
+        "in_usd": "$2M – $10M"
+      },
+      "valuation_post_money": {
+        "min_usd_mn": 8, "max_usd_mn": 40, "typical_usd_mn": 20,
+        "display": "$8M – $40M post-money (~₹65 Cr – ₹330 Cr)",
+        "note": "In India 2024-25, B2B SaaS typically prices at 5-8x ARR multiple at Series A. Consumer/D2C at 3-5x. Revenue-based multiples are now common — show 18 months of financial history."
+      },
+      "dilution": {
+        "min_pct": 18, "max_pct": 30, "typical_pct": 22,
+        "note": "22-25% is typical for a $5M round. If you're raising from a top-tier VC, they'll push for 25-30% — negotiate hard if you have competing term sheets."
+      },
+      "instrument": {
+        "primary": "CCPS (Compulsorily Convertible Preference Shares)",
+        "note": "Series A is a full equity round in India. CCPS is standard for institutional VC investment. It comes with liquidation preference, anti-dilution, and board rights. The CCPS converts to ordinary equity at IPO or liquidity event."
+      },
+      "board": {
+        "seats": 5,
+        "composition": "2 founders + 1 lead VC director + 1 independent director + 1 optional (for large co-investor)",
+        "note": "Independent director is legally required for private companies with paid-up share capital > ₹10 Cr or turnover > ₹100 Cr. Get a credible independent director from your network — it builds investor confidence."
+      },
+      "esop_pool": {
+        "refresh": "10-15% post-investment top-up is typical",
+        "note": "Series A investors will typically want the ESOP pool refreshed to 10-15% post-round. This dilutes existing shareholders. Budget this into your valuation negotiations."
+      },
+      "anti_dilution": {
+        "type": "Broad-based weighted average (BBWA)",
+        "note": "Same standard as seed. Make sure BBWA calculations are specified in the SHA — ambiguity in formula is a common source of disputes at later rounds."
+      },
+      "pro_rata": {
+        "applicable": true,
+        "threshold": "All Series A investors typically get pro-rata in Series B",
+        "note": "Pro-rata is critical for VCs to maintain ownership in later rounds. Budget for this in future round models — if all Series A investors exercise pro-rata, it limits the new capital you can raise from new investors."
+      },
+      "liquidation_preference": {
+        "type": "1x non-participating preferred",
+        "note": "This is the industry standard at Series A. Some VCs will push for 1x participating — resist it. The difference: on a $30M acquisition, 1x non-participating gives investors $5M (their money) then founders split the rest. 1x participating gives investors $5M PLUS their pro-rata equity share of remaining $25M. Always non-participating."
+      },
+      "drag_along": "Yes — standard. Ensure threshold is 75-80% of all shareholders by value (not just preference shareholders) to prevent a minority blocking a majority-approved sale.",
+      "tag_along": "Yes — standard. On any secondary sale, all investors get the right to sell on same terms.",
+      "founder_vesting": "Re-vesting of remaining founder shares over 2 years with 6-month cliff is common. Negotiate to exclude shares already vested from prior arrangements.",
+      "information_rights": [
+        "Monthly P&L, balance sheet, and cash flow statement within 15 days of month end",
+        "Quarterly board meetings (mandatory by law for companies with independent directors)",
+        "Annual budget approved by board before fiscal year start",
+        "Annual statutory audit completed within 6 months of year end",
+        "Prior board approval for major decisions: acquisition, large capex, key management hiring, new business lines"
+      ],
+      "due_diligence_timeline": "4-8 weeks (full legal, financial, technical, and commercial diligence)",
+      "typical_docs": ["Term Sheet", "SHA (comprehensive — 60-100 pages)", "SSA (Share Subscription Agreement)", "Employment agreements for key management", "DD Findings Report", "Representations & Warranties", "Restated MoA & AoA", "Disclosure Letter"],
+      "founder_tips": [
+        "At Series A, try to get competing term sheets — even a soft indication from a second VC meaningfully improves your leverage on valuation and terms.",
+        "Negotiate 'carve-outs' from the drag-along right: employee ESOP exercises, small secondary sales to known buyers, and transfers to founder family trusts should not trigger drag-along.",
+        "Push for a 'most favoured nation' provision that applies going forward — if you offer better terms to any future investor at Series A, existing investors get the same. This prevents dilutive future tranches from being structured against you.",
+        "Get clarity on 'reserved matters' (decisions requiring investor board approval) upfront. A long list of reserved matters is an operational tax. Push for a shorter list focused on material transactions (>$1M), M&A, and capital structure changes.",
+        "Understand the 'pay-to-play' structure at Series A: investors who don't follow pro-rata at Series B often convert to ordinary equity. This incentivizes your cap table to stay supportive."
+      ],
+      "red_flags": [
+        "Participating liquidation preference of 1x or more — on any exit less than 5x, founders are materially worse off. Run the math: on a $30M exit with $5M raised, 1x participating LP means investors take $5M + their equity share. Non-participating means investors choose the higher of $5M OR their equity share — much better for founders.",
+        "Veto rights on M&A for minority shareholders — a 15% VC blocking a 75% shareholder-approved acquisition is not market standard. Drag-along should require 75%+ majority, not unanimity.",
+        "Option to invest in future rounds at the current round price — gives investors a 'call option' on your company at below-market rates. Each future fundraise should price fresh.",
+        "Broad 'material adverse change' clauses that let investors exit post-signing — insist on objective material adverse change definitions that are limited to fundamental changes in the business (bankruptcy, fraud, loss of key license) not market conditions."
+      ]
+    }
+  },
+  "glossary": {
+    "CCD": "Compulsorily Convertible Debenture — a debt instrument that must convert into equity shares at a future date or event. Preferred by Indian VCs for FDI compliance. Accrues interest (typically 0.001%) until conversion.",
+    "CCPS": "Compulsorily Convertible Preference Shares — a type of preference share that must convert to equity at IPO or acquisition. Standard instrument for formal VC rounds at Seed and Series A in India.",
+    "SAFE": "Simple Agreement for Future Equity — a US-originated convertible instrument (created by Y Combinator) that converts to equity at the next priced round. The 'India SAFE' or iSAFE (used by 100X.VC) is adapted for Indian law.",
+    "BBWA": "Broad-Based Weighted Average — the standard anti-dilution formula in India. In a down round, it adjusts the investor's conversion price based on the weighted average of old and new round prices, diluting impact across all parties. Better for founders than full-ratchet.",
+    "Pro-rata": "The right of an existing investor to maintain their ownership percentage by investing in future rounds. If you own 15% today and a new round raises $10M, pro-rata lets you invest enough to remain at 15% post-round.",
+    "Liquidation Preference": "Priority claim on proceeds in a sale or liquidation event. 1x non-participating = investors get their money back first, then everyone splits the rest. 1x participating = investors get their money back first AND share proportionally in the rest (double dip).",
+    "Drag-along": "Investor right to force all shareholders to agree to a sale if a specified majority (usually 75%+) approves. Prevents a minority shareholder from blocking a majority-approved exit.",
+    "Tag-along": "Right of shareholders to join ('tag along') in any sale of shares by another shareholder on the same terms. Protects minority investors from being left behind in a secondary transaction.",
+    "ROFR": "Right of First Refusal — if a founder wants to sell shares, existing investors have the right to buy those shares at the same price before anyone else. Common in all term sheets.",
+    "ESOP": "Employee Stock Option Plan — a pool of shares reserved for granting to employees, advisors, and future hires. Options vest over time (typically 4 years with 1-year cliff). The ESOP pool is created pre-money, diluting existing shareholders.",
+    "No-shop": "A clause preventing founders from soliciting competing term sheets for a fixed period after signing a term sheet. Typically 30-45 days. After this period, the term sheet lapses or is renegotiated.",
+    "Representations & Warranties": "Legally binding statements made by the founders confirming the accuracy of information provided during due diligence (no undisclosed liabilities, IP is clean, no pending litigation, etc.). Breach of R&W can result in founder liability."
+  },
+  "negotiation_tips": [
+    "Always get at least 2 term sheets before signing — even a soft indication from a second investor creates leverage. Single-term-sheet situations result in worse founder outcomes 80% of the time.",
+    "Separate 'economic terms' (valuation, dilution, liquidation preference) from 'governance terms' (board rights, reserved matters, information rights) when negotiating. Investors often concede governance in exchange for better economics — know which you care about more.",
+    "Use a startup-experienced lawyer from day one. Non-specialist lawyers may not flag uncommon Indian VC provisions like 'step-in rights' or 'conversion ratio adjustments.' Top startup law firms in India: Trilegal, Khaitan & Co, Cyril Amarchand Mangaldas (CAM), Shardul Amarchand Mangaldas (SAM).",
+    "On the ESOP pool: investors typically want 15% pre-money. Counter-offer 10% and land at 12%. Every 1% of ESOP pool reduces founder ownership — on a ₹100 Cr exit this matters significantly.",
+    "On valuation: focus on post-money valuation, not pre-money. Many Indian term sheets state pre-money valuation which is easier to manipulate. Fix the post-money number in the term sheet to prevent surprises.",
+    "Read the SHA drag-along clause carefully — specifically, what constitutes the 'required majority' to approve a drag. If the required majority is defined as a majority of preference shareholders only (not all shareholders), a VC with 25% ownership could theoretically drag you into a sale you don't want."
+  ]
+}

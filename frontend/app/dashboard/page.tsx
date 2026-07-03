@@ -2,75 +2,152 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BookOpen, Brain, Building2, MessageSquare, ArrowRight, Zap, TrendingUp, Shield, KeyRound } from "lucide-react";
+import {
+  MessageSquare, ArrowRight, Zap, TrendingUp, KeyRound,
+  BarChart3, ChevronRight, Activity, FileText, Mail, Wallet, TrendingDown,
+  Building2, Shield, Star, BookOpen, UserSearch, Gauge, Gift, Network,
+  CalendarCheck, Scale, IndianRupee,
+} from "lucide-react";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { getUser, isAuthenticated } from "@/lib/auth";
 import { hasLLMConfig } from "@/lib/llm-config";
+import { CommandTrigger } from "@/components/ui/CommandBar";
 
 const QUICK_ACTIONS = [
   {
     href: "/chat",
     icon: MessageSquare,
-    title: "Ask your AI cofounder",
-    desc: "Get strategic advice, validate ideas, or explore growth strategies.",
-    color: "bg-violet-50 text-violet-600 border-violet-100",
-    cta: "Start chatting",
+    title: "AI Cofounder",
+    desc: "Strategy, validation, pitch help, GTM — ask anything.",
+    iconBg: "bg-peach-100",
+    iconColor: "text-peach-600",
+  },
+  {
+    href: "/intel",
+    icon: Activity,
+    title: "Market Intelligence Feed",
+    desc: "Live pain-point extraction from HN & Reddit for your sector.",
+    iconBg: "bg-peach-100",
+    iconColor: "text-peach-600",
+    liveTag: true,
+  },
+  {
+    href: "/tools/equity-waterfall",
+    icon: TrendingDown,
+    title: "Equity Waterfall",
+    desc: "See dilution across Seed → Series A → B with live sliders.",
+    iconBg: "bg-peach-100",
+    iconColor: "text-peach-600",
+  },
+  {
+    href: "/tools/customer-discovery",
+    icon: UserSearch,
+    title: "Customer Discovery CRM",
+    desc: "Log interviews, track pain points, buying signals across 50+ customer conversations.",
+    iconBg: "bg-peach-100",
+    iconColor: "text-peach-600",
+  },
+  {
+    href: "/tools/pmf-scorecard",
+    icon: Gauge,
+    title: "PMF Scorecard",
+    desc: "Know where you stand on product-market fit — 10-question scorecard with India benchmarks.",
+    iconBg: "bg-peach-100",
+    iconColor: "text-peach-600",
   },
   {
     href: "/schemes",
     icon: Building2,
-    title: "Find government schemes",
-    desc: "Discover grants, soft loans, and incentives matching your startup profile.",
-    color: "bg-green-50 text-green-600 border-green-100",
-    cta: "Browse schemes",
+    title: "Govt Schemes",
+    desc: "47+ grants, soft loans & incentives from DPIIT, SIDBI, MeitY.",
+    iconBg: "bg-peach-100",
+    iconColor: "text-peach-600",
   },
-  {
-    href: "/chat?q=help+me+with+my+pitch+deck",
-    icon: TrendingUp,
-    title: "Refine your pitch",
-    desc: "Get investor-ready with pitch structure, valuation, and VC landscape advice.",
-    color: "bg-orange-50 text-orange-600 border-orange-100",
-    cta: "Polish pitch",
-  },
-  {
-    href: "/wizards/dpiit",
-    icon: Shield,
-    title: "Get DPIIT Recognition",
-    desc: "Step-by-step wizard to unlock tax exemptions and scheme access.",
-    color: "bg-green-50 text-green-600 border-green-100",
-    cta: "Start wizard",
-  },
-  {
-    href: "/vcs",
-    icon: TrendingUp,
-    title: "Explore VC Directory",
-    desc: "150+ Indian VCs with investment thesis, portfolio, and check sizes.",
-    color: "bg-purple-50 text-purple-600 border-purple-100",
-    cta: "Find investors",
-  },
-  {
-    href: "/knowledge/case-studies",
-    icon: BookOpen,
-    title: "Indian Startup Stories",
-    desc: "Real lessons from Razorpay, Zepto, CRED, Mamaearth and more.",
-    color: "bg-amber-50 text-amber-600 border-amber-100",
-    cta: "Read stories",
-  },
+];
+
+const ECOSYSTEM_CARDS = [
+  { href: "/vcs", label: "VCs", count: "100+", sub: "Venture firms", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/angels", label: "Angels", count: "50+", sub: "Angel investors", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/accelerators", label: "Accelerators", count: "20+", sub: "With capital", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/incubators", label: "Incubators", count: "18+", sub: "Support programs", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/mentors", label: "Mentors", count: "35+", sub: "Top operators", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/funded-startups", label: "Startups", count: "150+", sub: "Funded & tracked", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/communities", label: "Communities", count: "22", sub: "India networks", color: "text-peach-700", bg: "bg-peach-100" },
+  { href: "/schemes/programs", label: "Free Credits", count: "28", sub: "Startup programs", color: "text-green-700", bg: "bg-green-100" },
 ];
 
 const STARTER_QUESTIONS = [
   "How do I validate my startup idea without spending money?",
-  "What government schemes are available for my tech startup?",
-  "How do I structure a co-founder equity split?",
-  "What's the best way to do customer discovery in India?",
-  "Help me build a 10-slide investor pitch deck",
-  "What's the market size for EdTech in India?",
+  "What government schemes are available for my fintech startup?",
+  "How do I structure a co-founder equity split fairly?",
+  "What's the right fundraising strategy for a pre-seed startup?",
+  "Help me build an investor pitch deck for Series A",
+  "What's the market size for HealthTech in India?",
+  "How do I build a 0-to-1 GTM strategy for B2B SaaS?",
+  "What are the key metrics VCs look for at Seed stage?",
+  "What questions should I ask in customer discovery interviews?",
+  "What's market-standard for a seed term sheet in India in 2025?",
+  "How do I know if I've found product-market fit?",
+  "What are the GST compliance deadlines I need to know as a startup?",
+];
+
+const NEW_FEATURES = [
+  {
+    href: "/tools/customer-discovery",
+    icon: UserSearch,
+    title: "Customer Discovery CRM",
+    desc: "Log interviews, track pain points, measure buying signals — before you build the wrong thing.",
+    badge: "New",
+    badgeColor: "badge-peach",
+  },
+  {
+    href: "/tools/pmf-scorecard",
+    icon: Gauge,
+    title: "PMF Scorecard",
+    desc: "10-question self-assessment: retention, revenue, referral, engagement & market pull. Know where you stand.",
+    badge: "New",
+    badgeColor: "badge-peach",
+  },
+  {
+    href: "/schemes/programs",
+    icon: Gift,
+    title: "Free Credits & Programs",
+    desc: "AWS $100K, Google $200K, Microsoft $150K — 28 programs worth ₹3+ crore in free cloud & SaaS credits.",
+    badge: "New",
+    badgeColor: "badge-green",
+  },
+  {
+    href: "/communities",
+    icon: Network,
+    title: "Startup Community Map",
+    desc: "iSPIRT, SaaSBOOMi, TiE, Headstart — 22 communities where India's best founders share deals, hires & intros.",
+    badge: "New",
+    badgeColor: "badge-peach",
+  },
+  {
+    href: "/tools/compliance-calendar",
+    icon: CalendarCheck,
+    title: "Compliance Calendar",
+    desc: "GST, TDS, ROC, Income Tax deadlines with countdowns. Never miss a filing date again.",
+    badge: "New",
+    badgeColor: "badge-blue",
+  },
+  {
+    href: "/knowledge/deal-terms",
+    icon: Scale,
+    title: "India Deal Terms Benchmarks",
+    desc: "What's market-standard in India 2025? Dilution, CCD vs SAFE, pro-rata, liquidation preference by stage.",
+    badge: "New",
+    badgeColor: "badge-peach",
+  },
 ];
 
 export default function DashboardPage() {
   const router = useRouter();
   const [user, setUser] = useState(getUser());
   const [llmConfigured, setLlmConfigured] = useState(true);
+  const hour = new Date().getHours();
+  const greeting = hour < 12 ? "Good morning" : hour < 17 ? "Good afternoon" : "Good evening";
 
   useEffect(() => {
     if (!isAuthenticated()) {
@@ -84,108 +161,194 @@ export default function DashboardPage() {
   if (!user) return null;
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <main className="flex-1 p-8 max-w-4xl">
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
-            <Zap className="w-3.5 h-3.5" />
-            OpenFounder OS
+      <main className="flex-1 overflow-y-auto">
+        {/* Top bar */}
+        <div className="sticky top-0 z-10 px-8 py-3 flex items-center justify-between glass-strong border-b border-peach-200/30">
+          <div className="flex items-center gap-2 text-xs text-stone-400">
+            <Zap className="w-3.5 h-3.5 text-peach-400" />
+            <span>OpenFounder OS</span>
+            <span className="text-peach-200">/</span>
+            <span className="text-stone-600 font-medium">Dashboard</span>
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">
-            Good day, {user.name.split(" ")[0]} 👋
-          </h1>
-          {user.startup_name ? (
-            <p className="text-gray-500 mt-1">
-              Building <span className="font-medium text-gray-700">{user.startup_name}</span>
-              {user.startup_stage && <> · {user.startup_stage}</>}
-              {user.sector && <> · {user.sector}</>}
-            </p>
-          ) : (
-            <p className="text-gray-500 mt-1">
-              Your AI cofounder is ready.{" "}
-              <Link href="/profile" className="text-brand-600 hover:underline">
-                Complete your profile
-              </Link>{" "}
-              for better recommendations.
-            </p>
-          )}
+          <CommandTrigger />
         </div>
 
-        {/* API key banner */}
-        {!llmConfigured && (
-          <div className="mb-6 flex items-center gap-4 bg-gradient-to-r from-violet-50 to-brand-50 border border-violet-200 rounded-2xl px-5 py-4">
-            <div className="w-10 h-10 bg-violet-100 rounded-xl flex items-center justify-center shrink-0">
-              <KeyRound className="w-5 h-5 text-violet-600" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-gray-900">Add your API key to start chatting with our FounderOS Model</p>
-              <p className="text-xs text-gray-500 mt-0.5">Supports Anthropic, OpenAI, Gemini, and DeepSeek — your key stays in your browser.</p>
-            </div>
-            <Link
-              href="/settings"
-              className="shrink-0 bg-violet-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-violet-700 transition-colors whitespace-nowrap"
-            >
-              Add API key →
-            </Link>
+        <div className="p-8 max-w-5xl mx-auto">
+          {/* Header */}
+          <div className="mb-8 animate-fade-in">
+            <h1 className="text-3xl font-bold text-stone-900 tracking-tight">
+              {greeting}, {user.name.split(" ")[0]} 👋
+            </h1>
+            {user.startup_name ? (
+              <p className="text-stone-500 mt-1.5 text-sm leading-relaxed">
+                Building{" "}
+                <span className="font-semibold text-stone-800">{user.startup_name}</span>
+                {user.startup_stage && <span className="text-stone-400"> · {user.startup_stage}</span>}
+                {user.sector && <span className="text-stone-400"> · {user.sector}</span>}
+              </p>
+            ) : (
+              <p className="text-stone-500 mt-1.5 text-sm">
+                Your AI cofounder is ready.{" "}
+                <Link href="/profile" className="text-peach-600 hover:underline font-medium">
+                  Complete your profile
+                </Link>{" "}
+                for personalized insights.
+              </p>
+            )}
           </div>
-        )}
 
-        {/* Quick actions */}
-        <div className="grid sm:grid-cols-3 gap-4 mb-8">
-          {QUICK_ACTIONS.map((a) => (
-            <Link
-              key={a.href}
-              href={a.href}
-              className="bg-white border border-gray-100 rounded-2xl p-5 hover:shadow-md transition-shadow group"
-            >
-              <div className={`w-10 h-10 rounded-xl border flex items-center justify-center mb-4 ${a.color}`}>
-                <a.icon className="w-5 h-5" />
+          {/* API key banner */}
+          {!llmConfigured && (
+            <div className="mb-6 glass rounded-2xl px-5 py-4 flex items-center gap-4 border-peach-300/40 animate-slide-up">
+              <div className="w-10 h-10 bg-peach-100 rounded-xl flex items-center justify-center shrink-0">
+                <KeyRound className="w-5 h-5 text-peach-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 text-sm mb-1">{a.title}</h3>
-              <p className="text-gray-400 text-xs leading-relaxed mb-4">{a.desc}</p>
-              <span className="text-xs font-medium text-brand-600 flex items-center gap-1 group-hover:gap-2 transition-all">
-                {a.cta} <ArrowRight className="w-3 h-3" />
-              </span>
-            </Link>
-          ))}
-        </div>
-
-        {/* Starter questions */}
-        <div className="bg-white border border-gray-100 rounded-2xl p-6">
-          <h2 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
-            <Brain className="w-4 h-4 text-violet-500" />
-            Ask your AI cofounder
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-2">
-            {STARTER_QUESTIONS.map((q) => (
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-stone-900">Add your AI API key to start chatting</p>
+                <p className="text-xs text-stone-400 mt-0.5">Supports Anthropic Claude, OpenAI, Gemini — your key stays in your browser.</p>
+              </div>
               <Link
-                key={q}
-                href={`/chat?q=${encodeURIComponent(q)}`}
-                className="text-sm text-gray-600 bg-gray-50 hover:bg-brand-50 hover:text-brand-700 rounded-xl px-4 py-3 border border-gray-100 hover:border-brand-200 transition-colors cursor-pointer"
+                href="/settings"
+                className="shrink-0 btn-coral text-sm font-medium px-4 py-2 rounded-xl whitespace-nowrap"
               >
-                {q}
+                Add key →
+              </Link>
+            </div>
+          )}
+
+          {/* Quick actions */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-8">
+            {QUICK_ACTIONS.map((a) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                className="glass rounded-2xl p-5 card-hover group animate-fade-in"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${a.iconBg}`}>
+                    <a.icon className={`w-5 h-5 ${a.iconColor}`} />
+                  </div>
+                  {a.liveTag && (
+                    <div className="flex items-center gap-1.5">
+                      <span className="live-dot" />
+                      <span className="text-[10px] font-semibold text-green-600">LIVE</span>
+                    </div>
+                  )}
+                </div>
+                <h3 className="font-semibold text-stone-900 text-sm mb-1">{a.title}</h3>
+                <p className="text-stone-400 text-xs leading-relaxed mb-4">{a.desc}</p>
+                <span className="text-xs font-medium text-peach-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Open <ArrowRight className="w-3 h-3" />
+                </span>
               </Link>
             ))}
           </div>
-        </div>
 
-        {/* Schemes callout */}
-        <div className="mt-4 bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100 rounded-2xl p-6 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Shield className="w-8 h-8 text-green-600 shrink-0" />
-            <div>
-              <div className="font-semibold text-gray-900 text-sm">30+ government schemes waiting for you</div>
-              <div className="text-gray-500 text-xs mt-0.5">Grants, loans, and incentives from DPIIT, SIDBI, BIRAC, MeitY, DST and more.</div>
+          {/* New features callout */}
+          <div className="glass rounded-2xl p-6 mb-6 animate-fade-in">
+            <h2 className="font-semibold text-stone-900 mb-1 flex items-center gap-2 text-sm">
+              <Star className="w-4 h-4 text-peach-500" />
+              8 new features added
+            </h2>
+            <p className="text-xs text-stone-400 mb-4">Customer CRM, PMF Scorecard, Compliance Calendar, Deal Terms, Free Credits, Communities, Salary Benchmarks & more.</p>
+            <div className="grid sm:grid-cols-3 gap-3">
+              {NEW_FEATURES.map((f) => (
+                <Link
+                  key={f.href}
+                  href={f.href}
+                  className="group bg-peach-50/60 border border-peach-200/40 rounded-xl p-4 hover:bg-peach-100/60 transition-colors"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <f.icon className="w-4 h-4 text-peach-600" />
+                    <span className={`${f.badgeColor} text-[9px] font-bold uppercase tracking-wide`}>
+                      {f.badge}
+                    </span>
+                  </div>
+                  <p className="text-xs font-semibold text-stone-800 mb-1">{f.title}</p>
+                  <p className="text-[11px] text-stone-400 leading-relaxed">{f.desc}</p>
+                </Link>
+              ))}
             </div>
           </div>
-          <Link
-            href="/schemes"
-            className="shrink-0 ml-4 bg-green-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-green-700 transition-colors"
-          >
-            Match me →
-          </Link>
+
+          {/* Ecosystem at a glance */}
+          <div className="glass rounded-2xl p-6 mb-6 animate-fade-in">
+            <h2 className="font-semibold text-stone-900 mb-4 flex items-center gap-2 text-sm">
+              <BarChart3 className="w-4 h-4 text-peach-500" />
+              Indian Startup Ecosystem
+            </h2>
+            <div className="grid grid-cols-4 sm:grid-cols-8 gap-3">
+              {ECOSYSTEM_CARDS.map((c) => (
+                <Link
+                  key={c.href}
+                  href={c.href}
+                  className="text-center p-3 rounded-xl bg-white/50 border border-peach-100/60 hover:border-peach-300/60 hover:shadow-sm transition-all group"
+                >
+                  <div className={`w-9 h-9 ${c.bg} rounded-xl flex items-center justify-center mx-auto mb-2`}>
+                    <span className={`text-sm font-bold ${c.color}`}>{c.count}</span>
+                  </div>
+                  <p className="text-xs font-semibold text-stone-800">{c.label}</p>
+                  <p className="text-[10px] text-stone-400 mt-0.5">{c.sub}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Ask AI */}
+          <div className="glass rounded-2xl p-6 mb-6 animate-fade-in">
+            <h2 className="font-semibold text-stone-900 mb-4 flex items-center gap-2 text-sm">
+              <MessageSquare className="w-4 h-4 text-peach-500" />
+              Ask your AI cofounder
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-2">
+              {STARTER_QUESTIONS.map((q) => (
+                <Link
+                  key={q}
+                  href={`/chat?q=${encodeURIComponent(q)}`}
+                  className="text-xs text-stone-600 bg-white/50 hover:bg-peach-50 hover:text-peach-700 rounded-xl px-4 py-3 border border-peach-100/60 hover:border-peach-300/60 transition-all flex items-center justify-between group"
+                >
+                  <span className="leading-relaxed">{q}</span>
+                  <ChevronRight className="w-3.5 h-3.5 text-stone-300 group-hover:text-peach-400 shrink-0 ml-2" />
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom CTAs */}
+          <div className="grid sm:grid-cols-3 gap-4">
+            <div className="glass rounded-2xl p-5 flex items-center gap-4">
+              <Shield className="w-8 h-8 text-green-600 shrink-0" />
+              <div className="flex-1 min-w-0">
+                <div className="font-semibold text-stone-900 text-sm">47+ govt schemes</div>
+                <div className="text-stone-400 text-xs mt-0.5">DPIIT, SIDBI, BIRAC grants.</div>
+              </div>
+              <Link href="/schemes" className="shrink-0 btn-ghost-peach text-xs font-medium px-3 py-1.5 rounded-lg">
+                Explore →
+              </Link>
+            </div>
+            <div className="glass rounded-2xl p-5 flex items-center gap-4">
+              <Gift className="w-8 h-8 text-peach-600 shrink-0" />
+              <div className="flex-1 min-w-0">
+                <div className="font-semibold text-stone-900 text-sm">₹3Cr+ free credits</div>
+                <div className="text-stone-400 text-xs mt-0.5">AWS, Google, Microsoft & 25 more programs.</div>
+              </div>
+              <Link href="/schemes/programs" className="shrink-0 btn-ghost-peach text-xs font-medium px-3 py-1.5 rounded-lg">
+                Claim →
+              </Link>
+            </div>
+            <div className="glass rounded-2xl p-5 flex items-center gap-4">
+              <BookOpen className="w-8 h-8 text-peach-600 shrink-0" />
+              <div className="flex-1 min-w-0">
+                <div className="font-semibold text-stone-900 text-sm">Unicorn Playbooks</div>
+                <div className="text-stone-400 text-xs mt-0.5">How Razorpay, CRED & Zepto built category cos.</div>
+              </div>
+              <Link href="/knowledge/case-studies" className="shrink-0 btn-ghost-peach text-xs font-medium px-3 py-1.5 rounded-lg">
+                Read →
+              </Link>
+            </div>
+          </div>
         </div>
       </main>
     </div>

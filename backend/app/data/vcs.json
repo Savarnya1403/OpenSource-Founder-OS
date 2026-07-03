@@ -13,7 +13,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 100000000,
-    "check_size_display": "$1M – $100M+",
+    "check_size_display": "$1M \u2013 $100M+",
     "sectors": [
       "SaaS",
       "Consumer",
@@ -75,7 +75,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 20000000,
-    "check_size_display": "$500K – $20M",
+    "check_size_display": "$500K \u2013 $20M",
     "sectors": [
       "SaaS",
       "Consumer",
@@ -132,7 +132,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 25000000,
-    "check_size_display": "$500K – $25M",
+    "check_size_display": "$500K \u2013 $25M",
     "sectors": [
       "Consumer",
       "Enterprise",
@@ -189,7 +189,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 15000000,
-    "check_size_display": "$1M – $15M",
+    "check_size_display": "$1M \u2013 $15M",
     "sectors": [
       "SaaS",
       "Cloud Infrastructure",
@@ -199,7 +199,7 @@
     ],
     "geography": [
       "Pan-India",
-      "India–US"
+      "India\u2013US"
     ],
     "location": "Bengaluru / Mumbai / Menlo Park",
     "website": "https://nexusvp.com",
@@ -245,7 +245,7 @@
     ],
     "check_size_min_usd": 250000,
     "check_size_max_usd": 5000000,
-    "check_size_display": "$250K – $5M",
+    "check_size_display": "$250K \u2013 $5M",
     "sectors": [
       "SaaS",
       "Consumer",
@@ -301,7 +301,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 10000000,
-    "check_size_display": "$1M – $10M",
+    "check_size_display": "$1M \u2013 $10M",
     "sectors": [
       "Consumer",
       "SaaS",
@@ -354,7 +354,7 @@
     ],
     "check_size_min_usd": 250000,
     "check_size_max_usd": 8000000,
-    "check_size_display": "$250K – $8M",
+    "check_size_display": "$250K \u2013 $8M",
     "sectors": [
       "SaaS",
       "Deep Tech",
@@ -365,13 +365,13 @@
     ],
     "geography": [
       "Pan-India",
-      "India–US"
+      "India\u2013US"
     ],
     "location": "Bengaluru",
     "website": "https://3one4.com",
     "linkedin": "https://www.linkedin.com/company/3one4capital",
     "description": "Research-driven early stage VC known for contrarian bets. Backed Locus, Open (neobank), and Setu. Strong LP network in Silicon Valley.",
-    "thesis": "Back founders who approach problems with first-principles thinking and have an unfair advantage—technology, insight, or distribution.",
+    "thesis": "Back founders who approach problems with first-principles thinking and have an unfair advantage\u2014technology, insight, or distribution.",
     "notable_portfolio": [
       "Locus",
       "Yulu",
@@ -411,7 +411,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 25000000,
-    "check_size_display": "$1M – $25M",
+    "check_size_display": "$1M \u2013 $25M",
     "sectors": [
       "B2B SaaS",
       "Consumer",
@@ -467,7 +467,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 50000000,
-    "check_size_display": "$1M – $50M",
+    "check_size_display": "$1M \u2013 $50M",
     "sectors": [
       "Consumer",
       "FinTech",
@@ -522,7 +522,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 20000000,
-    "check_size_display": "$1M – $20M",
+    "check_size_display": "$1M \u2013 $20M",
     "sectors": [
       "Consumer",
       "SaaS",
@@ -577,7 +577,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 7000000,
-    "check_size_display": "$500K – $7M",
+    "check_size_display": "$500K \u2013 $7M",
     "sectors": [
       "SaaS",
       "Deep Tech",
@@ -629,7 +629,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 5000000,
-    "check_size_display": "$500K – $5M",
+    "check_size_display": "$500K \u2013 $5M",
     "sectors": [
       "D2C",
       "Consumer Brands",
@@ -684,7 +684,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 10000000,
-    "check_size_display": "$500K – $10M",
+    "check_size_display": "$500K \u2013 $10M",
     "sectors": [
       "AgriTech",
       "Food Tech",
@@ -739,7 +739,7 @@
     ],
     "check_size_min_usd": 200000,
     "check_size_max_usd": 3000000,
-    "check_size_display": "$200K – $3M",
+    "check_size_display": "$200K \u2013 $3M",
     "sectors": [
       "Bharat Consumer",
       "FinTech",
@@ -755,7 +755,7 @@
     "location": "Mumbai",
     "website": "https://indiaquotient.in",
     "linkedin": "https://www.linkedin.com/company/india-quotient",
-    "description": "Specializes in Bharat-focused startups — products for the next 500M Indian internet users in Tier-2 and Tier-3 cities. Backed ShareChat and Meesho.",
+    "description": "Specializes in Bharat-focused startups \u2014 products for the next 500M Indian internet users in Tier-2 and Tier-3 cities. Backed ShareChat and Meesho.",
     "thesis": "The next wave of Indian internet will be driven by regional language, vernacular media, and social commerce. We back those founders.",
     "notable_portfolio": [
       "ShareChat",
@@ -793,7 +793,7 @@
     ],
     "check_size_min_usd": 100000,
     "check_size_max_usd": 500000,
-    "check_size_display": "₹50L – ₹4 Cr",
+    "check_size_display": "\u20b950L \u2013 \u20b94 Cr",
     "sectors": [
       "All Sectors"
     ],
@@ -838,7 +838,7 @@
     ],
     "check_size_min_usd": 200000,
     "check_size_max_usd": 5000000,
-    "check_size_display": "$200K – $5M",
+    "check_size_display": "$200K \u2013 $5M",
     "sectors": [
       "AI/ML",
       "Deep Tech",
@@ -854,7 +854,7 @@
     "website": "https://pi.ventures",
     "linkedin": "https://www.linkedin.com/company/pi-ventures",
     "description": "India's leading deep tech and AI-focused VC. Specializes in companies where AI and ML are the core product differentiation, not just a feature.",
-    "thesis": "Back technical founders building products where AI/ML is the moat, not just a feature — from robotics to healthcare AI.",
+    "thesis": "Back technical founders building products where AI/ML is the moat, not just a feature \u2014 from robotics to healthcare AI.",
     "notable_portfolio": [
       "Niramai",
       "Myelin Foundry",
@@ -893,7 +893,7 @@
     ],
     "check_size_min_usd": 100000,
     "check_size_max_usd": 500000,
-    "check_size_display": "$100K – $500K + co-founder matching",
+    "check_size_display": "$100K \u2013 $500K + co-founder matching",
     "sectors": [
       "All Sectors"
     ],
@@ -938,7 +938,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 5000000,
-    "check_size_display": "$500K – $5M",
+    "check_size_display": "$500K \u2013 $5M",
     "sectors": [
       "FinTech",
       "SaaS",
@@ -989,7 +989,7 @@
     ],
     "check_size_min_usd": 3000000,
     "check_size_max_usd": 20000000,
-    "check_size_display": "$3M – $20M",
+    "check_size_display": "$3M \u2013 $20M",
     "sectors": [
       "SaaS",
       "Tech-enabled Services",
@@ -1041,7 +1041,7 @@
     ],
     "check_size_min_usd": 100000,
     "check_size_max_usd": 1000000,
-    "check_size_display": "₹50L – ₹5 Cr",
+    "check_size_display": "\u20b950L \u2013 \u20b95 Cr",
     "sectors": [
       "All Sectors"
     ],
@@ -1086,7 +1086,7 @@
     ],
     "check_size_min_usd": 50000,
     "check_size_max_usd": 500000,
-    "check_size_display": "₹25L – ₹2.5 Cr (accelerator + seed)",
+    "check_size_display": "\u20b925L \u2013 \u20b92.5 Cr (accelerator + seed)",
     "sectors": [
       "All Sectors"
     ],
@@ -1130,7 +1130,7 @@
     ],
     "check_size_min_usd": 1000000,
     "check_size_max_usd": 10000000,
-    "check_size_display": "$1M – $10M",
+    "check_size_display": "$1M \u2013 $10M",
     "sectors": [
       "Deep Tech",
       "R&D-intensive",
@@ -1183,7 +1183,7 @@
     ],
     "check_size_min_usd": 10000000,
     "check_size_max_usd": 50000000,
-    "check_size_display": "$10M – $50M",
+    "check_size_display": "$10M \u2013 $50M",
     "sectors": [
       "B2B SaaS",
       "FinTech",
@@ -1234,7 +1234,7 @@
     ],
     "check_size_min_usd": 200000,
     "check_size_max_usd": 5000000,
-    "check_size_display": "$200K – $5M",
+    "check_size_display": "$200K \u2013 $5M",
     "sectors": [
       "Agriculture",
       "Healthcare",
@@ -1250,7 +1250,7 @@
     "location": "Delhi",
     "website": "https://ankurcapital.com",
     "linkedin": "https://www.linkedin.com/company/ankur-capital",
-    "description": "Impact-focused VC investing in technology companies addressing underserved markets in India — especially rural, agricultural, and low-income segments.",
+    "description": "Impact-focused VC investing in technology companies addressing underserved markets in India \u2014 especially rural, agricultural, and low-income segments.",
     "thesis": "Build profitable businesses that create measurable positive impact for underserved Indian communities through technology.",
     "notable_portfolio": [
       "AgrSmart",
@@ -1291,7 +1291,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 15000000,
-    "check_size_display": "$500K – $15M",
+    "check_size_display": "$500K \u2013 $15M",
     "sectors": [
       "Digital Financial Services",
       "Property Rights",
@@ -1345,7 +1345,7 @@
     ],
     "check_size_min_usd": 2000000,
     "check_size_max_usd": 15000000,
-    "check_size_display": "$2M – $15M",
+    "check_size_display": "$2M \u2013 $15M",
     "sectors": [
       "FinTech",
       "Financial Inclusion",
@@ -1398,7 +1398,7 @@
     ],
     "check_size_min_usd": 100000,
     "check_size_max_usd": 1000000,
-    "check_size_display": "₹50L – ₹5 Cr",
+    "check_size_display": "\u20b950L \u2013 \u20b95 Cr",
     "sectors": [
       "Consumer",
       "D2C",
@@ -1449,7 +1449,7 @@
     ],
     "check_size_min_usd": 200000,
     "check_size_max_usd": 3000000,
-    "check_size_display": "$200K – $3M",
+    "check_size_display": "$200K \u2013 $3M",
     "sectors": [
       "SaaS",
       "Consumer",
@@ -1500,7 +1500,7 @@
     ],
     "check_size_min_usd": 5000000,
     "check_size_max_usd": 100000000,
-    "check_size_display": "$5M – $100M+",
+    "check_size_display": "$5M \u2013 $100M+",
     "sectors": [
       "All Sectors",
       "Enterprise",
@@ -1515,7 +1515,7 @@
     "website": "https://generalcatalyst.com",
     "linkedin": "https://www.linkedin.com/company/general-catalyst",
     "description": "One of the world's top VCs (Airbnb, Stripe, Canva). Expanding India presence. Led by Hemant Taneja globally. Invested in BlueSmart, DeHaat, and more.",
-    "thesis": "Invest in companies that use technology for responsible innovation — solving climate, health, and access challenges at scale.",
+    "thesis": "Invest in companies that use technology for responsible innovation \u2014 solving climate, health, and access challenges at scale.",
     "notable_portfolio": [
       "BlueSmart",
       "DeHaat",
@@ -1552,7 +1552,7 @@
     ],
     "check_size_min_usd": 20000000,
     "check_size_max_usd": 100000000,
-    "check_size_display": "$20M – $100M",
+    "check_size_display": "$20M \u2013 $100M",
     "sectors": [
       "Enterprise Tech",
       "HealthTech",
@@ -1605,7 +1605,7 @@
     ],
     "check_size_min_usd": 50000,
     "check_size_max_usd": 500000,
-    "check_size_display": "₹25L – ₹2.5 Cr",
+    "check_size_display": "\u20b925L \u2013 \u20b92.5 Cr",
     "sectors": [
       "All Sectors"
     ],
@@ -1615,7 +1615,7 @@
     "location": "Gurugram / Bengaluru",
     "website": "https://inflectionpoint.vc",
     "linkedin": "https://www.linkedin.com/company/inflection-point-ventures/",
-    "description": "India's largest angel network with 7,000+ investors. Runs monthly deal reviews and backs 10–12 startups per month. Open application process.",
+    "description": "India's largest angel network with 7,000+ investors. Runs monthly deal reviews and backs 10\u201312 startups per month. Open application process.",
     "thesis": "Connect high-quality startups with a curated network of 7,000+ HNI and angel investors across India.",
     "notable_portfolio": [
       "Rupifi",
@@ -1654,7 +1654,7 @@
     ],
     "check_size_min_usd": 100000,
     "check_size_max_usd": 1000000,
-    "check_size_display": "₹50L – ₹5 Cr",
+    "check_size_display": "\u20b950L \u2013 \u20b95 Cr",
     "sectors": [
       "Consumer",
       "D2C",
@@ -1702,7 +1702,7 @@
     ],
     "check_size_min_usd": 2000000,
     "check_size_max_usd": 15000000,
-    "check_size_display": "$2M – $15M",
+    "check_size_display": "$2M \u2013 $15M",
     "sectors": [
       "Consumer",
       "D2C",
@@ -1754,7 +1754,7 @@
     ],
     "check_size_min_usd": 200000,
     "check_size_max_usd": 3000000,
-    "check_size_display": "₹1 Cr – ₹15 Cr",
+    "check_size_display": "\u20b91 Cr \u2013 \u20b915 Cr",
     "sectors": [
       "Deep Tech",
       "SaaS",
@@ -1768,7 +1768,7 @@
     "website": "https://unicorniv.com",
     "linkedin": "https://www.linkedin.com/company/unicorn-india-ventures/",
     "description": "Early-stage VC focused on deep tech and B2B. Runs sector-specific cohorts and annual Unicorn Battle competition for seed-stage startups.",
-    "thesis": "Back founders who are building with technical differentiation in B2B and deep tech — sectors underserved by mainstream VCs.",
+    "thesis": "Back founders who are building with technical differentiation in B2B and deep tech \u2014 sectors underserved by mainstream VCs.",
     "notable_portfolio": [
       "Toch.ai",
       "Classplus (co-invest)",
@@ -1801,7 +1801,7 @@
     ],
     "check_size_min_usd": 50000,
     "check_size_max_usd": 500000,
-    "check_size_display": "₹25L – ₹2.5 Cr",
+    "check_size_display": "\u20b925L \u2013 \u20b92.5 Cr",
     "sectors": [
       "All Sectors"
     ],
@@ -1847,7 +1847,7 @@
     ],
     "check_size_min_usd": 500000,
     "check_size_max_usd": 5000000,
-    "check_size_display": "$500K – $5M",
+    "check_size_display": "$500K \u2013 $5M",
     "sectors": [
       "Real Estate Tech",
       "Construction Tech",
@@ -1895,7 +1895,7 @@
     ],
     "check_size_min_usd": 100000,
     "check_size_max_usd": 1000000,
-    "check_size_display": "$100K – $1M",
+    "check_size_display": "$100K \u2013 $1M",
     "sectors": [
       "B2B SaaS",
       "FinTech",
@@ -1904,7 +1904,7 @@
     ],
     "geography": [
       "Pan-India",
-      "India–Japan"
+      "India\u2013Japan"
     ],
     "location": "Bengaluru / Tokyo",
     "website": "https://incubatefund.com",
@@ -1932,5 +1932,418 @@
       "asia-market",
       "global-expansion"
     ]
+  },
+  {
+    "id": "matrix-partners",
+    "name": "Matrix Partners India",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B",
+      "Series C"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 40000000,
+    "check_size_display": "$1M \u2013 $40M",
+    "sectors": [
+      "SaaS",
+      "FinTech",
+      "Consumer",
+      "HealthTech",
+      "EdTech",
+      "DeepTech"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Mumbai / Bengaluru",
+    "website": "https://www.matrixpartners.in",
+    "description": "Affiliated with Matrix Partners USA. Deep partner engagement model. Backed Ola, Dailyhunt, Mswipe.",
+    "thesis": "Partner with founders early and stay long-term. Focus on large markets and disruptive business models.",
+    "notable_portfolio": [
+      "Ola",
+      "Dailyhunt",
+      "Mswipe",
+      "Treebo",
+      "Stanza Living"
+    ],
+    "partners": [
+      "Vikram Vaidyanathan",
+      "Avnish Bajaj",
+      "Rajinder Balaraman"
+    ],
+    "aum_usd_m": 950,
+    "total_investments": 90,
+    "founded_year": 2006,
+    "warm_intro_required": true,
+    "pitch_email": null
+  },
+  {
+    "id": "stellaris-venture",
+    "name": "Stellaris Venture Partners",
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 250000,
+    "check_size_max_usd": 8000000,
+    "check_size_display": "$250K \u2013 $8M",
+    "sectors": [
+      "SaaS",
+      "FinTech",
+      "Consumer",
+      "HealthTech",
+      "ClimaTech",
+      "B2B"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://stellarisvp.com",
+    "description": "Seed-focused VC with deep operator experience. Known for early bets in B2B SaaS.",
+    "thesis": "Invest early in product-led, capital-efficient businesses with global potential.",
+    "notable_portfolio": [
+      "Darwinbox",
+      "Mosaic Wellness",
+      "LocoNav",
+      "Exotel",
+      "Flyx"
+    ],
+    "partners": [
+      "Alok Goyal",
+      "Rahul Chowdhri",
+      "Ritesh Banglani"
+    ],
+    "aum_usd_m": 300,
+    "total_investments": 60,
+    "founded_year": 2017,
+    "warm_intro_required": false,
+    "pitch_email": "pitch@stellarisvp.com"
+  },
+  {
+    "id": "global-founders-capital",
+    "name": "Global Founders Capital (GFC)",
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 250000,
+    "check_size_max_usd": 10000000,
+    "check_size_display": "$250K \u2013 $10M",
+    "sectors": [
+      "Consumer",
+      "FinTech",
+      "SaaS",
+      "Marketplace",
+      "Creator Economy"
+    ],
+    "geography": [
+      "Pan-India",
+      "Global"
+    ],
+    "location": "Bengaluru / Berlin",
+    "website": "https://www.gfc.io",
+    "description": "Founded by Rocket Internet alumni (Oliver and Marc Samwer). Active in India. Fast decisions.",
+    "thesis": "Invest early in internet companies building large consumer or SMB platforms.",
+    "notable_portfolio": [
+      "Meesho",
+      "Slice",
+      "Vedantu",
+      "Zeta"
+    ],
+    "partners": [
+      "Alexander Kowalik",
+      "Fabian Heilemann"
+    ],
+    "aum_usd_m": 600,
+    "total_investments": 250,
+    "founded_year": 2013,
+    "warm_intro_required": false,
+    "pitch_email": "india@gfc.io"
+  },
+  {
+    "id": "fundamentum-partnership",
+    "name": "Fundamentum Partnership",
+    "type": "VC",
+    "stages": [
+      "Series A",
+      "Series B",
+      "Series C"
+    ],
+    "check_size_min_usd": 5000000,
+    "check_size_max_usd": 50000000,
+    "check_size_display": "$5M \u2013 $50M",
+    "sectors": [
+      "Consumer",
+      "SaaS",
+      "FinTech",
+      "HealthTech",
+      "AgriTech"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru",
+    "website": "https://fundamentum.com",
+    "description": "Nandan Nilekani and Sanjeev Aggarwal-backed growth fund. Focuses on Series A-C.",
+    "thesis": "Provide scale-up capital to category leaders with proven product-market fit.",
+    "notable_portfolio": [
+      "Ninjacart",
+      "Pine Labs",
+      "Udaan",
+      "Dunzo"
+    ],
+    "partners": [
+      "Nandan Nilekani",
+      "Sanjeev Aggarwal"
+    ],
+    "aum_usd_m": 700,
+    "total_investments": 35,
+    "founded_year": 2017,
+    "warm_intro_required": true,
+    "pitch_email": null
+  },
+  {
+    "id": "sequoia-arc",
+    "name": "Sequoia Arc (Early Stage Program)",
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 2000000,
+    "check_size_display": "$1M \u2013 $2M",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "India",
+      "SEA"
+    ],
+    "location": "Bengaluru",
+    "website": "https://www.peakxv.com/arc",
+    "description": "Peak XV (Sequoia India) accelerator program. 16-week cohort with $1-2M at pre-seed. Highly competitive.",
+    "thesis": "Find founders before they find product-market fit and co-build the company with them.",
+    "notable_portfolio": [
+      "Setu",
+      "Jar",
+      "Chargebee (early)"
+    ],
+    "partners": [
+      "Piyush Gupta"
+    ],
+    "aum_usd_m": 100,
+    "total_investments": 40,
+    "founded_year": 2022,
+    "warm_intro_required": false,
+    "apply_url": "https://www.peakxv.com/arc",
+    "pitch_email": "arc@peakxv.com"
+  },
+  {
+    "id": "ah-ventures",
+    "name": "ah! Ventures",
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 25000,
+    "check_size_max_usd": 1000000,
+    "check_size_display": "\u20b920L \u2013 \u20b95Cr",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Bengaluru / Mumbai / Hyderabad",
+    "website": "https://ahventures.in",
+    "description": "Democratizing angel investing in India. Platform + fund model with 4000+ angel investors.",
+    "thesis": "Democratize access to early-stage capital for Indian startups beyond tier-1 cities.",
+    "notable_portfolio": [
+      "Darwinbox",
+      "Ninjacart",
+      "MoEngage",
+      "Swaarm"
+    ],
+    "partners": [
+      "Harshad Lahoti"
+    ],
+    "aum_usd_m": 80,
+    "total_investments": 200,
+    "founded_year": 2011,
+    "warm_intro_required": false,
+    "apply_url": "https://ahventures.in/startups",
+    "pitch_email": "startups@ahventures.in"
+  },
+  {
+    "id": "venture-highway",
+    "name": "Venture Highway",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 5000000,
+    "check_size_display": "$500K \u2013 $5M",
+    "sectors": [
+      "Consumer",
+      "SaaS",
+      "FinTech",
+      "AgriTech",
+      "HealthTech"
+    ],
+    "geography": [
+      "Pan-India"
+    ],
+    "location": "Mumbai",
+    "website": "https://www.venturehighway.in",
+    "description": "Early-stage VC backed by Neeraj Arora (ex-WhatsApp BD). Strong consumer internet thesis.",
+    "thesis": "Back mission-driven founders at seed stage. Focus on billion-dollar market opportunities.",
+    "notable_portfolio": [
+      "Snap (India portfolio)",
+      "Interviewbit",
+      "Scaler",
+      "Fashinza"
+    ],
+    "partners": [
+      "Neeraj Arora",
+      "Samir Chokshi",
+      "Gagan Goyal"
+    ],
+    "aum_usd_m": 120,
+    "total_investments": 40,
+    "founded_year": 2016,
+    "warm_intro_required": false,
+    "pitch_email": "pitch@venturehighway.in"
+  },
+  {
+    "id": "sequoia-surge",
+    "name": "Surge (Sequoia / Peak XV)",
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 1000000,
+    "check_size_max_usd": 2000000,
+    "check_size_display": "$1M \u2013 $2M",
+    "sectors": [
+      "All Sectors"
+    ],
+    "geography": [
+      "India",
+      "SEA"
+    ],
+    "location": "Bengaluru / Singapore",
+    "website": "https://www.surgeahead.com",
+    "description": "Peak XV's rapid scale-up program for early-stage founders. 16-week cohort, $1-2M SAFE.",
+    "thesis": "Build with founders from idea to product-market fit, not just write a cheque.",
+    "notable_portfolio": [
+      "Workhack",
+      "Olly",
+      "StackOverflow (India)"
+    ],
+    "partners": [
+      "Shailesh Lakhani",
+      "Rajan Anandan"
+    ],
+    "aum_usd_m": 200,
+    "total_investments": 100,
+    "founded_year": 2019,
+    "warm_intro_required": false,
+    "apply_url": "https://www.surgeahead.com/apply",
+    "pitch_email": "surge@peakxv.com"
+  },
+  {
+    "id": "beenext",
+    "name": "BEENEXT",
+    "type": "VC",
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "check_size_min_usd": 250000,
+    "check_size_max_usd": 3000000,
+    "check_size_display": "$250K \u2013 $3M",
+    "sectors": [
+      "FinTech",
+      "Consumer",
+      "SaaS",
+      "Marketplace",
+      "DeepTech"
+    ],
+    "geography": [
+      "India",
+      "SEA",
+      "Japan"
+    ],
+    "location": "Singapore / Mumbai",
+    "website": "https://beenext.com",
+    "description": "Japan-backed early-stage VC. Strong Southeast Asia and India presence. Backed BharatPe, Slice.",
+    "thesis": "Partner with the most ambitious founders in emerging markets from day one.",
+    "notable_portfolio": [
+      "BharatPe",
+      "Slice",
+      "Juspay",
+      "PagarBook"
+    ],
+    "partners": [
+      "Teruhide Sato",
+      "Dirk Van Quaquebeke"
+    ],
+    "aum_usd_m": 300,
+    "total_investments": 90,
+    "founded_year": 2015,
+    "warm_intro_required": false,
+    "pitch_email": "india@beenext.com"
+  },
+  {
+    "id": "sherpalo-ventures",
+    "name": "Sherpalo Ventures",
+    "type": "VC",
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "check_size_min_usd": 500000,
+    "check_size_max_usd": 10000000,
+    "check_size_display": "$500K \u2013 $10M",
+    "sectors": [
+      "Consumer",
+      "FinTech",
+      "SaaS",
+      "HealthTech"
+    ],
+    "geography": [
+      "India",
+      "US"
+    ],
+    "location": "Silicon Valley / Mumbai",
+    "website": "https://sherpalo.com",
+    "description": "Ram Shriram's fund (original Google angel investor). Deep US-India corridor network.",
+    "thesis": "Invest in breakthrough ideas at the intersection of US/India with a focus on long-term value.",
+    "notable_portfolio": [
+      "InMobi",
+      "Myntra",
+      "Snapdeal",
+      "Zinnov"
+    ],
+    "partners": [
+      "Ram Shriram"
+    ],
+    "aum_usd_m": 250,
+    "total_investments": 40,
+    "founded_year": 2000,
+    "warm_intro_required": true,
+    "pitch_email": null
   }
 ]

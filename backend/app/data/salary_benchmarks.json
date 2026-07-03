@@ -1,0 +1,504 @@
+{
+  "last_updated": "2025-Q1",
+  "currency": "INR",
+  "source": "Crowdsourced from Glassdoor India, AmbitionBox, LinkedIn Salary Insights, AngelList India, iimjobs.com, and direct founder surveys, 2024-25",
+  "note": "All figures are annual CTC (Cost to Company) in INR. These are India startup-adjusted rates, not MNC/FAANG rates. ESOP ranges are % of fully-diluted equity at time of grant. Significant variation exists across companies.",
+  "roles": [
+    {
+      "id": "cofounder-cto",
+      "title": "Co-Founder / CTO",
+      "function": "Engineering",
+      "level": "C-Suite (Founding)",
+      "years_experience": "10+",
+      "description": "Technical co-founder or first engineering hire with ownership stake. Typically one of the original founding team members.",
+      "typical_scope": "Sets technical direction, architecture, hires first 10 engineers, manages all technology decisions, often still codes in early stages",
+      "esop_typical_range": "5–20% (founding stake, not option grant)",
+      "esop_notes": "This is a founding equity stake, not an ESOP grant. Standard 4-year vesting with 1-year cliff. If joining post-founding, typical CTO equity is 3-8% at seed.",
+      "hiring_tips": "Look for founders with full-stack competency + product sense. Code quality matters less than system design and team scaling instinct. IIT/NIT pedigree is a signal but not mandatory — GitHub portfolio matters more.",
+      "interview_signal": "Can architect a system that serves 1M users from scratch AND has hired/managed at least 5 engineers before.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 0, "max": 600000, "median": 300000, "p25": 0, "p75": 500000 },
+          "seed": { "min": 600000, "max": 1800000, "median": 1200000, "p25": 800000, "p75": 1600000 },
+          "series_a": { "min": 1800000, "max": 3600000, "median": 2400000, "p25": 2000000, "p75": 3200000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 0, "max": 570000, "median": 285000, "p25": 0, "p75": 475000 },
+          "seed": { "min": 570000, "max": 1710000, "median": 1140000, "p25": 760000, "p75": 1520000 },
+          "series_a": { "min": 1710000, "max": 3420000, "median": 2280000, "p25": 1900000, "p75": 3040000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 0, "max": 540000, "median": 270000, "p25": 0, "p75": 450000 },
+          "seed": { "min": 540000, "max": 1620000, "median": 1080000, "p25": 720000, "p75": 1440000 },
+          "series_a": { "min": 1620000, "max": 3240000, "median": 2160000, "p25": 1800000, "p75": 2880000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 0, "max": 510000, "median": 255000, "p25": 0, "p75": 425000 },
+          "seed": { "min": 510000, "max": 1530000, "median": 1020000, "p25": 680000, "p75": 1360000 },
+          "series_a": { "min": 1530000, "max": 3060000, "median": 2040000, "p25": 1700000, "p75": 2720000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 0, "max": 492000, "median": 246000, "p25": 0, "p75": 410000 },
+          "seed": { "min": 492000, "max": 1476000, "median": 984000, "p25": 656000, "p75": 1312000 },
+          "series_a": { "min": 1476000, "max": 2952000, "median": 1968000, "p25": 1640000, "p75": 2624000 }
+        }
+      }
+    },
+    {
+      "id": "vp-engineering",
+      "title": "VP Engineering / Engineering Head",
+      "function": "Engineering",
+      "level": "VP (12+ years)",
+      "years_experience": "12+",
+      "description": "First engineering leadership hire post-funding. Transitions the team from founder-led to process-led engineering while keeping velocity high.",
+      "typical_scope": "Manages 5-20 engineers, owns technical roadmap, recruiting, architecture decisions, engineering culture",
+      "esop_typical_range": "0.5–2%",
+      "esop_notes": "At seed: 1-2% ESOP with 4yr/1yr cliff is market. At Series A, 0.5-1% for a proven VP Eng is competitive.",
+      "hiring_tips": "Look for someone who has scaled an engineering team 3-5x in the past. Avoid 'VP Eng' who's never managed more than 3 people. Ask for org chart of their best team.",
+      "interview_signal": "Can walk through how they debugged a production incident that cost the company money AND how they structured the hiring process for their last team.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 1500000, "max": 2500000, "median": 1800000, "p25": 1600000, "p75": 2200000 },
+          "seed": { "min": 2400000, "max": 3600000, "median": 2800000, "p25": 2500000, "p75": 3300000 },
+          "series_a": { "min": 3600000, "max": 5500000, "median": 4200000, "p25": 3900000, "p75": 5000000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 1425000, "max": 2375000, "median": 1710000, "p25": 1520000, "p75": 2090000 },
+          "seed": { "min": 2280000, "max": 3420000, "median": 2660000, "p25": 2375000, "p75": 3135000 },
+          "series_a": { "min": 3420000, "max": 5225000, "median": 3990000, "p25": 3705000, "p75": 4750000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 1350000, "max": 2250000, "median": 1620000, "p25": 1440000, "p75": 1980000 },
+          "seed": { "min": 2160000, "max": 3240000, "median": 2520000, "p25": 2250000, "p75": 2970000 },
+          "series_a": { "min": 3240000, "max": 4950000, "median": 3780000, "p25": 3510000, "p75": 4500000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 1275000, "max": 2125000, "median": 1530000, "p25": 1360000, "p75": 1870000 },
+          "seed": { "min": 2040000, "max": 3060000, "median": 2380000, "p25": 2125000, "p75": 2805000 },
+          "series_a": { "min": 3060000, "max": 4675000, "median": 3570000, "p25": 3315000, "p75": 4250000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 1230000, "max": 2050000, "median": 1476000, "p25": 1312000, "p75": 1804000 },
+          "seed": { "min": 1968000, "max": 2952000, "median": 2296000, "p25": 2050000, "p75": 2706000 },
+          "series_a": { "min": 2952000, "max": 4510000, "median": 3444000, "p25": 3198000, "p75": 4100000 }
+        }
+      }
+    },
+    {
+      "id": "senior-swe",
+      "title": "Senior Software Engineer",
+      "function": "Engineering",
+      "level": "Senior (5-8 years)",
+      "years_experience": "5-8",
+      "description": "Experienced full-stack or specialist engineer who can own entire features independently. The most critical hire for early-stage startups — one great senior SWE outperforms 3 average engineers.",
+      "typical_scope": "Designs and implements major product features end-to-end, mentors junior engineers, reviews PRs, participates in architecture decisions",
+      "esop_typical_range": "0.1–0.5%",
+      "esop_notes": "0.25% at seed for a great senior SWE is competitive. Early hires (#5-15) should get 2-3x the standard rate.",
+      "hiring_tips": "Screen for ownership mentality — have they shipped things end-to-end before? Past startup experience is a strong positive signal. Avoid SWEs who've only worked in large-team environments where they owned one small piece.",
+      "interview_signal": "Has shipped a complete product feature from design to production and can explain the technical trade-offs they made.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 1200000, "max": 1800000, "median": 1500000, "p25": 1300000, "p75": 1650000 },
+          "seed": { "min": 1800000, "max": 2600000, "median": 2100000, "p25": 1950000, "p75": 2400000 },
+          "series_a": { "min": 2500000, "max": 3800000, "median": 3000000, "p25": 2700000, "p75": 3500000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 1140000, "max": 1710000, "median": 1425000, "p25": 1235000, "p75": 1568000 },
+          "seed": { "min": 1710000, "max": 2470000, "median": 1995000, "p25": 1853000, "p75": 2280000 },
+          "series_a": { "min": 2375000, "max": 3610000, "median": 2850000, "p25": 2565000, "p75": 3325000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 1080000, "max": 1620000, "median": 1350000, "p25": 1170000, "p75": 1485000 },
+          "seed": { "min": 1620000, "max": 2340000, "median": 1890000, "p25": 1755000, "p75": 2160000 },
+          "series_a": { "min": 2250000, "max": 3420000, "median": 2700000, "p25": 2430000, "p75": 3150000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 1020000, "max": 1530000, "median": 1275000, "p25": 1105000, "p75": 1403000 },
+          "seed": { "min": 1530000, "max": 2210000, "median": 1785000, "p25": 1658000, "p75": 2040000 },
+          "series_a": { "min": 2125000, "max": 3230000, "median": 2550000, "p25": 2295000, "p75": 2975000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 984000, "max": 1476000, "median": 1230000, "p25": 1066000, "p75": 1353000 },
+          "seed": { "min": 1476000, "max": 2132000, "median": 1722000, "p25": 1599000, "p75": 1968000 },
+          "series_a": { "min": 2050000, "max": 3116000, "median": 2460000, "p25": 2214000, "p75": 2870000 }
+        }
+      }
+    },
+    {
+      "id": "swe-mid",
+      "title": "Software Engineer (Mid)",
+      "function": "Engineering",
+      "level": "Mid (3-5 years)",
+      "years_experience": "3-5",
+      "description": "Mid-level engineer who can deliver features with some guidance. Good hire for early startups who've already validated direction and need to scale development.",
+      "typical_scope": "Implements features from spec, fixes bugs, writes tests, works within established architecture with some independent decision-making",
+      "esop_typical_range": "0.05–0.2%",
+      "esop_notes": "Early mid-level hires (#15-30) can get 0.1-0.2%. Later hires should get 0.05%.",
+      "hiring_tips": "Strong DSA skills are less important than delivery velocity. Ask for 3 projects they built in the last year. Bonus if they've worked at a previous startup.",
+      "interview_signal": "Has shipped 3+ complete projects and can debug an issue in code they've never seen before.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 800000, "max": 1300000, "median": 1000000, "p25": 900000, "p75": 1150000 },
+          "seed": { "min": 1200000, "max": 1800000, "median": 1450000, "p25": 1300000, "p75": 1650000 },
+          "series_a": { "min": 1600000, "max": 2400000, "median": 2000000, "p25": 1750000, "p75": 2200000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 760000, "max": 1235000, "median": 950000, "p25": 855000, "p75": 1093000 },
+          "seed": { "min": 1140000, "max": 1710000, "median": 1378000, "p25": 1235000, "p75": 1568000 },
+          "series_a": { "min": 1520000, "max": 2280000, "median": 1900000, "p25": 1663000, "p75": 2090000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 720000, "max": 1170000, "median": 900000, "p25": 810000, "p75": 1035000 },
+          "seed": { "min": 1080000, "max": 1620000, "median": 1305000, "p25": 1170000, "p75": 1485000 },
+          "series_a": { "min": 1440000, "max": 2160000, "median": 1800000, "p25": 1575000, "p75": 1980000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 680000, "max": 1105000, "median": 850000, "p25": 765000, "p75": 978000 },
+          "seed": { "min": 1020000, "max": 1530000, "median": 1233000, "p25": 1105000, "p75": 1403000 },
+          "series_a": { "min": 1360000, "max": 2040000, "median": 1700000, "p25": 1488000, "p75": 1870000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 656000, "max": 1066000, "median": 820000, "p25": 738000, "p75": 943000 },
+          "seed": { "min": 984000, "max": 1476000, "median": 1189000, "p25": 1066000, "p75": 1353000 },
+          "series_a": { "min": 1312000, "max": 1968000, "median": 1640000, "p25": 1435000, "p75": 1804000 }
+        }
+      }
+    },
+    {
+      "id": "ml-engineer",
+      "title": "ML / AI Engineer (Senior)",
+      "function": "Engineering",
+      "level": "Senior (5+ years)",
+      "years_experience": "5+",
+      "description": "Applied ML engineer who can take a model from research to production. In the AI era, the most in-demand and hardest-to-hire engineering role in India.",
+      "typical_scope": "Builds and deploys ML models, manages training pipelines, owns model performance metrics, works with product to define AI features",
+      "esop_typical_range": "0.15–0.6%",
+      "esop_notes": "AI engineers command a premium on both cash and ESOP. If you're an AI-first company, budget 0.4-0.6% for your first senior ML hire.",
+      "hiring_tips": "Verify their deployed models vs research projects. Ask what their model achieved in production metrics vs baseline. Strong in LLMOps, vector DBs, and RAG pipelines is the 2025 requirement.",
+      "interview_signal": "Has taken a model from prototype to serving 10K+ requests/day in production, including monitoring, retraining, and drift detection.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 1500000, "max": 2200000, "median": 1800000, "p25": 1600000, "p75": 2050000 },
+          "seed": { "min": 2200000, "max": 3200000, "median": 2600000, "p25": 2400000, "p75": 3000000 },
+          "series_a": { "min": 3000000, "max": 4800000, "median": 3800000, "p25": 3300000, "p75": 4400000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 1425000, "max": 2090000, "median": 1710000, "p25": 1520000, "p75": 1948000 },
+          "seed": { "min": 2090000, "max": 3040000, "median": 2470000, "p25": 2280000, "p75": 2850000 },
+          "series_a": { "min": 2850000, "max": 4560000, "median": 3610000, "p25": 3135000, "p75": 4180000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 1350000, "max": 1980000, "median": 1620000, "p25": 1440000, "p75": 1845000 },
+          "seed": { "min": 1980000, "max": 2880000, "median": 2340000, "p25": 2160000, "p75": 2700000 },
+          "series_a": { "min": 2700000, "max": 4320000, "median": 3420000, "p25": 2970000, "p75": 3960000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 1275000, "max": 1870000, "median": 1530000, "p25": 1360000, "p75": 1743000 },
+          "seed": { "min": 1870000, "max": 2720000, "median": 2210000, "p25": 2040000, "p75": 2550000 },
+          "series_a": { "min": 2550000, "max": 4080000, "median": 3230000, "p25": 2805000, "p75": 3740000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 1230000, "max": 1804000, "median": 1476000, "p25": 1312000, "p75": 1681000 },
+          "seed": { "min": 1804000, "max": 2624000, "median": 2132000, "p25": 1968000, "p75": 2460000 },
+          "series_a": { "min": 2460000, "max": 3936000, "median": 3116000, "p25": 2706000, "p75": 3608000 }
+        }
+      }
+    },
+    {
+      "id": "head-product",
+      "title": "Head of Product / VP Product",
+      "function": "Product",
+      "level": "Head (10+ years)",
+      "years_experience": "10+",
+      "description": "First dedicated product leader. Translates business strategy into product roadmap, manages PM team, drives OKRs and customer research.",
+      "typical_scope": "Owns product roadmap, manages PMs, drives customer research and discovery, works with engineering on delivery, reports to CEO",
+      "esop_typical_range": "0.5–1.5%",
+      "esop_notes": "For the founding team or first 5 employees, a VP Product who joins pre-seed can expect 1-2% founding stake. Post-funding, 0.5-1% with 4yr vesting.",
+      "hiring_tips": "Look for PMs who've shipped 0-to-1 products and also scaled them. The skill sets are very different — early product requires customer obsession, later requires process. At pre-seed, hire the former.",
+      "interview_signal": "Can describe a product they decided NOT to build, why, and what happened next.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 1500000, "max": 2400000, "median": 1800000, "p25": 1600000, "p75": 2100000 },
+          "seed": { "min": 2400000, "max": 3600000, "median": 2800000, "p25": 2500000, "p75": 3300000 },
+          "series_a": { "min": 3500000, "max": 5200000, "median": 4000000, "p25": 3700000, "p75": 4700000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 1425000, "max": 2280000, "median": 1710000, "p25": 1520000, "p75": 1995000 },
+          "seed": { "min": 2280000, "max": 3420000, "median": 2660000, "p25": 2375000, "p75": 3135000 },
+          "series_a": { "min": 3325000, "max": 4940000, "median": 3800000, "p25": 3515000, "p75": 4465000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 1350000, "max": 2160000, "median": 1620000, "p25": 1440000, "p75": 1890000 },
+          "seed": { "min": 2160000, "max": 3240000, "median": 2520000, "p25": 2250000, "p75": 2970000 },
+          "series_a": { "min": 3150000, "max": 4680000, "median": 3600000, "p25": 3330000, "p75": 4230000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 1275000, "max": 2040000, "median": 1530000, "p25": 1360000, "p75": 1785000 },
+          "seed": { "min": 2040000, "max": 3060000, "median": 2380000, "p25": 2125000, "p75": 2805000 },
+          "series_a": { "min": 2975000, "max": 4420000, "median": 3400000, "p25": 3145000, "p75": 3995000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 1230000, "max": 1968000, "median": 1476000, "p25": 1312000, "p75": 1722000 },
+          "seed": { "min": 1968000, "max": 2952000, "median": 2296000, "p25": 2050000, "p75": 2706000 },
+          "series_a": { "min": 2870000, "max": 4264000, "median": 3280000, "p25": 3034000, "p75": 3854000 }
+        }
+      }
+    },
+    {
+      "id": "senior-pm",
+      "title": "Senior Product Manager",
+      "function": "Product",
+      "level": "Senior (6-10 years)",
+      "years_experience": "6-10",
+      "description": "Experienced PM who can own a product area end-to-end. Often the first dedicated PM hire at a startup, working directly with the founding team.",
+      "typical_scope": "Owns a product squad, drives discovery and delivery, writes PRDs, manages backlog, analyzes data, coordinates with design and engineering",
+      "esop_typical_range": "0.1–0.5%",
+      "esop_notes": "First PM hire often gets 0.25-0.5% ESOP at seed stage. Subsequent PM hires get 0.05-0.15%.",
+      "hiring_tips": "Most important test: can they write a PRD you'd actually build from? Ask for a sample of their best PRD before the final round.",
+      "interview_signal": "Can walk through a feature decision they made where the data pointed one way and their intuition pointed another — and explain why they chose what they chose.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 1200000, "max": 1900000, "median": 1500000, "p25": 1300000, "p75": 1700000 },
+          "seed": { "min": 1800000, "max": 2700000, "median": 2200000, "p25": 2000000, "p75": 2500000 },
+          "series_a": { "min": 2600000, "max": 4000000, "median": 3200000, "p25": 2900000, "p75": 3700000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 1140000, "max": 1805000, "median": 1425000, "p25": 1235000, "p75": 1615000 },
+          "seed": { "min": 1710000, "max": 2565000, "median": 2090000, "p25": 1900000, "p75": 2375000 },
+          "series_a": { "min": 2470000, "max": 3800000, "median": 3040000, "p25": 2755000, "p75": 3515000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 1080000, "max": 1710000, "median": 1350000, "p25": 1170000, "p75": 1530000 },
+          "seed": { "min": 1620000, "max": 2430000, "median": 1980000, "p25": 1800000, "p75": 2250000 },
+          "series_a": { "min": 2340000, "max": 3600000, "median": 2880000, "p25": 2610000, "p75": 3330000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 1020000, "max": 1615000, "median": 1275000, "p25": 1105000, "p75": 1445000 },
+          "seed": { "min": 1530000, "max": 2295000, "median": 1870000, "p25": 1700000, "p75": 2125000 },
+          "series_a": { "min": 2210000, "max": 3400000, "median": 2720000, "p25": 2465000, "p75": 3145000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 984000, "max": 1558000, "median": 1230000, "p25": 1066000, "p75": 1394000 },
+          "seed": { "min": 1476000, "max": 2214000, "median": 1804000, "p25": 1640000, "p75": 2050000 },
+          "series_a": { "min": 2132000, "max": 3280000, "median": 2624000, "p25": 2378000, "p75": 3034000 }
+        }
+      }
+    },
+    {
+      "id": "ux-designer",
+      "title": "Senior UX / Product Designer",
+      "function": "Design",
+      "level": "Senior (5-8 years)",
+      "years_experience": "5-8",
+      "description": "Full-stack designer who can handle UX research, visual design, and product prototyping. Critical hire for consumer-facing products.",
+      "typical_scope": "Owns design system, conducts user research, creates wireframes and high-fidelity mockups, implements design in Figma, works with engineering on implementation",
+      "esop_typical_range": "0.05–0.25%",
+      "esop_notes": "Design is often underpaid in early-stage Indian startups. A great senior designer at pre-seed who builds the design culture should get 0.15-0.25% ESOP.",
+      "hiring_tips": "Portfolio quality matters more than degree. Look for designers who've shipped — not just made beautiful Dribbble shots. Ask to see user research they've conducted.",
+      "interview_signal": "Can walk through a design decision they changed based on user feedback and quantify the impact.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 800000, "max": 1400000, "median": 1100000, "p25": 950000, "p75": 1250000 },
+          "seed": { "min": 1300000, "max": 2000000, "median": 1600000, "p25": 1450000, "p75": 1850000 },
+          "series_a": { "min": 1800000, "max": 2800000, "median": 2200000, "p25": 2000000, "p75": 2600000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 760000, "max": 1330000, "median": 1045000, "p25": 903000, "p75": 1188000 },
+          "seed": { "min": 1235000, "max": 1900000, "median": 1520000, "p25": 1378000, "p75": 1758000 },
+          "series_a": { "min": 1710000, "max": 2660000, "median": 2090000, "p25": 1900000, "p75": 2470000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 720000, "max": 1260000, "median": 990000, "p25": 855000, "p75": 1125000 },
+          "seed": { "min": 1170000, "max": 1800000, "median": 1440000, "p25": 1305000, "p75": 1665000 },
+          "series_a": { "min": 1620000, "max": 2520000, "median": 1980000, "p25": 1800000, "p75": 2340000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 680000, "max": 1190000, "median": 935000, "p25": 808000, "p75": 1063000 },
+          "seed": { "min": 1105000, "max": 1700000, "median": 1360000, "p25": 1233000, "p75": 1573000 },
+          "series_a": { "min": 1530000, "max": 2380000, "median": 1870000, "p25": 1700000, "p75": 2210000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 656000, "max": 1148000, "median": 902000, "p25": 779000, "p75": 1025000 },
+          "seed": { "min": 1066000, "max": 1640000, "median": 1312000, "p25": 1189000, "p75": 1517000 },
+          "series_a": { "min": 1476000, "max": 2296000, "median": 1804000, "p25": 1640000, "p75": 2132000 }
+        }
+      }
+    },
+    {
+      "id": "head-growth",
+      "title": "Head of Growth / VP Marketing",
+      "function": "Business",
+      "level": "Head (8+ years)",
+      "years_experience": "8+",
+      "description": "Growth leader who owns customer acquisition and retention. Either performance marketing dominant (for D2C/B2C) or content/PLG dominant (for B2B SaaS).",
+      "typical_scope": "Owns CAC targets, manages marketing budget, leads SEO/SEM/social/content, drives PLG loops, coordinates with sales on pipeline",
+      "esop_typical_range": "0.3–1%",
+      "esop_notes": "Growth leaders with strong track records command premium. 0.5% at seed for a proven growth person is competitive.",
+      "hiring_tips": "Ask for specific channel-level CAC and ROAS numbers from their last role. Vague answers ('we grew 3x') are a red flag. Growth is a numbers game.",
+      "interview_signal": "Can show a specific growth experiment they ran, what the hypothesis was, what the result was, and what they'd do differently.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 1200000, "max": 2000000, "median": 1500000, "p25": 1300000, "p75": 1800000 },
+          "seed": { "min": 2000000, "max": 3200000, "median": 2500000, "p25": 2200000, "p75": 2900000 },
+          "series_a": { "min": 3000000, "max": 4800000, "median": 3800000, "p25": 3300000, "p75": 4400000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 1140000, "max": 1900000, "median": 1425000, "p25": 1235000, "p75": 1710000 },
+          "seed": { "min": 1900000, "max": 3040000, "median": 2375000, "p25": 2090000, "p75": 2755000 },
+          "series_a": { "min": 2850000, "max": 4560000, "median": 3610000, "p25": 3135000, "p75": 4180000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 1080000, "max": 1800000, "median": 1350000, "p25": 1170000, "p75": 1620000 },
+          "seed": { "min": 1800000, "max": 2880000, "median": 2250000, "p25": 1980000, "p75": 2610000 },
+          "series_a": { "min": 2700000, "max": 4320000, "median": 3420000, "p25": 2970000, "p75": 3960000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 1020000, "max": 1700000, "median": 1275000, "p25": 1105000, "p75": 1530000 },
+          "seed": { "min": 1700000, "max": 2720000, "median": 2125000, "p25": 1870000, "p75": 2465000 },
+          "series_a": { "min": 2550000, "max": 4080000, "median": 3230000, "p25": 2805000, "p75": 3740000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 984000, "max": 1640000, "median": 1230000, "p25": 1066000, "p75": 1476000 },
+          "seed": { "min": 1640000, "max": 2624000, "median": 2050000, "p25": 1804000, "p75": 2378000 },
+          "series_a": { "min": 2460000, "max": 3936000, "median": 3116000, "p25": 2706000, "p75": 3608000 }
+        }
+      }
+    },
+    {
+      "id": "bd-manager",
+      "title": "Business Development Manager",
+      "function": "Business",
+      "level": "Mid-Senior (4-7 years)",
+      "years_experience": "4-7",
+      "description": "Hunter role focused on opening new accounts, partnerships, and revenue channels. Critical at Seed when you need to prove repeatable revenue.",
+      "typical_scope": "Prospecting, outbound, partnership development, closing deals, managing a pipeline of 30-50 accounts",
+      "esop_typical_range": "0.05–0.2%",
+      "esop_notes": "BD roles are often on variable pay. Total OTE (base + variable) is 1.5-2x base. ESOP is secondary motivation.",
+      "hiring_tips": "Test with a live role-play: give them a cold calling scenario and listen for their ability to handle objections. Past startup BD experience is a strong positive.",
+      "interview_signal": "Can name 3 deals they closed in the last 12 months, the ACV, and what the winning argument was.",
+      "commission_note": "Typical OTE = 1.5-2x base at seed stage. Structure: 50-60% base + 40-50% variable on revenue targets.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 700000, "max": 1200000, "median": 950000, "p25": 800000, "p75": 1050000 },
+          "seed": { "min": 1100000, "max": 1800000, "median": 1400000, "p25": 1200000, "p75": 1600000 },
+          "series_a": { "min": 1500000, "max": 2400000, "median": 1900000, "p25": 1700000, "p75": 2200000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 665000, "max": 1140000, "median": 903000, "p25": 760000, "p75": 998000 },
+          "seed": { "min": 1045000, "max": 1710000, "median": 1330000, "p25": 1140000, "p75": 1520000 },
+          "series_a": { "min": 1425000, "max": 2280000, "median": 1805000, "p25": 1615000, "p75": 2090000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 630000, "max": 1080000, "median": 855000, "p25": 720000, "p75": 945000 },
+          "seed": { "min": 990000, "max": 1620000, "median": 1260000, "p25": 1080000, "p75": 1440000 },
+          "series_a": { "min": 1350000, "max": 2160000, "median": 1710000, "p25": 1530000, "p75": 1980000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 595000, "max": 1020000, "median": 808000, "p25": 680000, "p75": 893000 },
+          "seed": { "min": 935000, "max": 1530000, "median": 1190000, "p25": 1020000, "p75": 1360000 },
+          "series_a": { "min": 1275000, "max": 2040000, "median": 1615000, "p25": 1445000, "p75": 1870000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 574000, "max": 984000, "median": 779000, "p25": 656000, "p75": 861000 },
+          "seed": { "min": 902000, "max": 1476000, "median": 1148000, "p25": 984000, "p75": 1312000 },
+          "series_a": { "min": 1230000, "max": 1968000, "median": 1558000, "p25": 1394000, "p75": 1804000 }
+        }
+      }
+    },
+    {
+      "id": "customer-success",
+      "title": "Customer Success Manager",
+      "function": "Business",
+      "level": "Mid (3-6 years)",
+      "years_experience": "3-6",
+      "description": "Owns onboarding and retention for a book of business. Critical for B2B SaaS — prevents churn before it happens.",
+      "typical_scope": "Manages 20-50 accounts, drives onboarding, QBRs, upsell conversations, NPS, and renewal pipeline",
+      "esop_typical_range": "0.03–0.15%",
+      "esop_notes": "CSMs rarely get meaningful ESOP unless they're very early hires. First CSM (#5-10 employee) should get 0.1-0.15%.",
+      "hiring_tips": "Look for CSMs who track churn rate and NRR (Net Revenue Retention). Ask their best GRR and NRR numbers from their previous role.",
+      "interview_signal": "Can describe a customer who was about to churn, exactly what they did to retain them, and what the outcome was.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 600000, "max": 1000000, "median": 800000, "p25": 700000, "p75": 900000 },
+          "seed": { "min": 900000, "max": 1400000, "median": 1150000, "p25": 1000000, "p75": 1300000 },
+          "series_a": { "min": 1300000, "max": 2000000, "median": 1600000, "p25": 1450000, "p75": 1850000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 570000, "max": 950000, "median": 760000, "p25": 665000, "p75": 855000 },
+          "seed": { "min": 855000, "max": 1330000, "median": 1093000, "p25": 950000, "p75": 1235000 },
+          "series_a": { "min": 1235000, "max": 1900000, "median": 1520000, "p25": 1378000, "p75": 1758000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 540000, "max": 900000, "median": 720000, "p25": 630000, "p75": 810000 },
+          "seed": { "min": 810000, "max": 1260000, "median": 1035000, "p25": 900000, "p75": 1170000 },
+          "series_a": { "min": 1170000, "max": 1800000, "median": 1440000, "p25": 1305000, "p75": 1665000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 510000, "max": 850000, "median": 680000, "p25": 595000, "p75": 765000 },
+          "seed": { "min": 765000, "max": 1190000, "median": 978000, "p25": 850000, "p75": 1105000 },
+          "series_a": { "min": 1105000, "max": 1700000, "median": 1360000, "p25": 1233000, "p75": 1573000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 492000, "max": 820000, "median": 656000, "p25": 574000, "p75": 738000 },
+          "seed": { "min": 738000, "max": 1148000, "median": 943000, "p25": 820000, "p75": 1066000 },
+          "series_a": { "min": 1066000, "max": 1640000, "median": 1312000, "p25": 1189000, "p75": 1517000 }
+        }
+      }
+    },
+    {
+      "id": "finance-controller",
+      "title": "Finance Controller / Head of Finance",
+      "function": "Business",
+      "level": "Head (8+ years)",
+      "years_experience": "8+",
+      "description": "First full-time finance hire. Manages bookkeeping, compliance, MIS reporting, cash management, and audit. Critical hire before a fundraise.",
+      "typical_scope": "Monthly P&L, cash flow management, statutory compliance, audit coordination, investor reporting, cap table maintenance",
+      "esop_typical_range": "0.1–0.4%",
+      "esop_notes": "Finance heads in startups are often underpaid on cash and undercompensated on equity. A good finance controller pre-Series A is worth 0.2-0.3% ESOP.",
+      "hiring_tips": "Look for CA/CMA with startup experience. The difference between a startup-experienced finance person and a corporate finance person is significant — they should know how to work with limited resources.",
+      "interview_signal": "Has prepared investor-grade financial models and MIS reports before, and can work in Tally/Zoho Books without a large team.",
+      "cities": {
+        "bengaluru": {
+          "pre_seed": { "min": 800000, "max": 1400000, "median": 1100000, "p25": 950000, "p75": 1250000 },
+          "seed": { "min": 1300000, "max": 2000000, "median": 1600000, "p25": 1450000, "p75": 1850000 },
+          "series_a": { "min": 2000000, "max": 3200000, "median": 2600000, "p25": 2300000, "p75": 3000000 }
+        },
+        "mumbai": {
+          "pre_seed": { "min": 760000, "max": 1330000, "median": 1045000, "p25": 903000, "p75": 1188000 },
+          "seed": { "min": 1235000, "max": 1900000, "median": 1520000, "p25": 1378000, "p75": 1758000 },
+          "series_a": { "min": 1900000, "max": 3040000, "median": 2470000, "p25": 2185000, "p75": 2850000 }
+        },
+        "delhi_ncr": {
+          "pre_seed": { "min": 720000, "max": 1260000, "median": 990000, "p25": 855000, "p75": 1125000 },
+          "seed": { "min": 1170000, "max": 1800000, "median": 1440000, "p25": 1305000, "p75": 1665000 },
+          "series_a": { "min": 1800000, "max": 2880000, "median": 2340000, "p25": 2070000, "p75": 2700000 }
+        },
+        "hyderabad": {
+          "pre_seed": { "min": 680000, "max": 1190000, "median": 935000, "p25": 808000, "p75": 1063000 },
+          "seed": { "min": 1105000, "max": 1700000, "median": 1360000, "p25": 1233000, "p75": 1573000 },
+          "series_a": { "min": 1700000, "max": 2720000, "median": 2210000, "p25": 1955000, "p75": 2550000 }
+        },
+        "pune": {
+          "pre_seed": { "min": 656000, "max": 1148000, "median": 902000, "p25": 779000, "p75": 1025000 },
+          "seed": { "min": 1066000, "max": 1640000, "median": 1312000, "p25": 1189000, "p75": 1517000 },
+          "series_a": { "min": 1640000, "max": 2624000, "median": 2132000, "p25": 1886000, "p75": 2460000 }
+        }
+      }
+    }
+  ],
+  "esop_context": {
+    "standard_pool_size": "10-15% pre-money at seed, 10-12% pre-money at pre-seed",
+    "vesting_cliff": "4 years total, 1-year cliff (25% vests at 12 months, then monthly thereafter)",
+    "esop_tax_treatment": "Options taxed as perquisite at exercise (income tax at slab rate). Shares taxed on sale (LTCG at 10% if held 24+ months post exercise).",
+    "esop_valuation": "Rule 11UA valuation required by a SEBI-registered valuer every time you issue new options. Cost: ₹25,000-₹75,000 per valuation exercise.",
+    "early_exercise": "Some startups allow early exercise (exercise before vesting) to reduce the tax burden on employees — the employee pays LTCG rate on exit instead of income tax at exercise."
+  },
+  "general_notes": [
+    "All figures are annual CTC (Cost to Company), which includes basic salary, HRA, PF contribution, and other allowances. Take-home is typically 65-75% of CTC for salaried employees.",
+    "Provident Fund (PF) contribution is mandatory for salaries below ₹15,000/month basic. Many startups offer voluntary PF or structure salaries to minimize PF if the employee prefers higher take-home.",
+    "Indian startup salaries are typically 20-40% below equivalent MNC/FAANG roles. ESOP is the compensation delta — ensure ESOP vesting is clearly documented in the offer letter.",
+    "Bengaluru has the highest startup salaries due to the highest cost of living and most competitive talent market. Hyderabad and Pune are 15-20% more affordable for equivalent talent quality.",
+    "For early hires (#1-10), negotiate primarily on ESOP, not salary. A 0.5% equity stake in a company that reaches ₹500 Cr valuation is worth ₹2.5 Cr — far more than a ₹3L/year salary premium.",
+    "Notice periods in India are typically 30-90 days. Build this into your hiring timeline — a senior SWE who needs to serve 90 days notice means 3 months from offer to start."
+  ]
+}

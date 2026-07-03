@@ -30,12 +30,12 @@ const STATES = [
 ];
 
 const TYPE_COLORS: Record<string, string> = {
-  "Incubator": "bg-blue-100 text-blue-700",
+  "Incubator": "bg-peach-50/60 text-stone-700",
   "Accelerator": "bg-green-100 text-green-700",
   "Technology Business Incubator": "bg-purple-100 text-purple-700",
   "Innovation Hub": "bg-amber-100 text-amber-700",
   "Technology Innovation Hub": "bg-orange-100 text-orange-700",
-  "Impact Incubator": "bg-teal-100 text-teal-700",
+  "Impact Incubator": "bg-peach-100/60 text-stone-700",
   "VC Fund": "bg-rose-100 text-rose-700",
 };
 
@@ -85,26 +85,26 @@ export default function IncubatorsPage() {
   });
 
   const content = (
-    <main className="flex-1 p-8">
+    <main className="flex-1 overflow-y-auto p-8">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-gray-900 mb-1">Incubators Directory</h1>
-          <p className="text-gray-500 text-sm">
+          <h1 className="text-2xl font-bold text-stone-900 mb-1">Incubators Directory</h1>
+          <p className="text-stone-500 text-sm">
             India&apos;s top incubators and accelerators — with funding details, apply links, and sector focus.
           </p>
         </div>
 
         {/* Filters */}
-        <div className="bg-white border border-gray-100 rounded-2xl p-4 mb-6 shadow-sm space-y-3">
+        <div className="glass rounded-2xl p-4 mb-6 shadow-sm space-y-3">
           <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
             <input
               type="text"
               placeholder="Search by name, sector, city..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-300"
+              className="w-full pl-9 pr-4 py-2 bg-white/60 border border-peach-200/60 rounded-xl text-sm focus:outline-none focus:outline-none focus:border-peach-400"
             />
           </div>
 
@@ -112,21 +112,21 @@ export default function IncubatorsPage() {
             <select
               value={sector}
               onChange={(e) => setSector(e.target.value)}
-              className="text-xs border border-gray-200 rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-brand-300"
+              className="text-xs border border-peach-200/60 rounded-lg px-3 py-1.5 bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               {SECTORS.map((s) => <option key={s}>{s}</option>)}
             </select>
             <select
               value={stage}
               onChange={(e) => setStage(e.target.value)}
-              className="text-xs border border-gray-200 rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-brand-300"
+              className="text-xs border border-peach-200/60 rounded-lg px-3 py-1.5 bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               {STAGES.map((s) => <option key={s}>{s}</option>)}
             </select>
             <select
               value={state}
               onChange={(e) => setState(e.target.value)}
-              className="text-xs border border-gray-200 rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-brand-300"
+              className="text-xs border border-peach-200/60 rounded-lg px-3 py-1.5 bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
             >
               {STATES.map((s) => <option key={s}>{s}</option>)}
             </select>
@@ -135,9 +135,9 @@ export default function IncubatorsPage() {
                 type="checkbox"
                 checked={equityFree}
                 onChange={(e) => setEquityFree(e.target.checked)}
-                className="rounded border-gray-300 text-brand-600"
+                className="rounded border-peach-300/60 text-peach-600"
               />
-              <span className="text-xs text-gray-600">No equity taken</span>
+              <span className="text-xs text-stone-600">No equity taken</span>
             </label>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function IncubatorsPage() {
         {isLoading && (
           <div className="space-y-4">
             {Array(5).fill(0).map((_, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 border border-gray-100 animate-pulse h-48" />
+              <div key={i} className="glass rounded-2xl p-6 border border-peach-200/40 skeleton h-48" />
             ))}
           </div>
         )}
@@ -154,12 +154,12 @@ export default function IncubatorsPage() {
         {/* Results */}
         {!isLoading && (
           <>
-            <p className="text-xs text-gray-400 mb-4">{incubators.length} incubators found</p>
+            <p className="text-xs text-stone-400 mb-4">{incubators.length} incubators found</p>
             <div className="space-y-4">
               {incubators.map((inc) => (
                 <div
                   key={inc.id}
-                  className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow"
+                  className="glass rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="flex flex-col sm:flex-row gap-4">
                     {/* Left */}
@@ -170,38 +170,38 @@ export default function IncubatorsPage() {
                           <span
                             key={t}
                             className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${
-                              TYPE_COLORS[t] || "bg-gray-100 text-gray-600"
+                              TYPE_COLORS[t] || "bg-peach-100/60 text-stone-600"
                             }`}
                           >
                             {t}
                           </span>
                         ))}
                         {inc.established && (
-                          <span className="text-[10px] text-gray-400 flex items-center gap-0.5">
+                          <span className="text-[10px] text-stone-400 flex items-center gap-0.5">
                             Est. {inc.established}
                           </span>
                         )}
                       </div>
 
-                      <h3 className="font-semibold text-gray-900 mb-0.5">{inc.name}</h3>
-                      <p className="text-xs text-gray-500 mb-0.5 flex items-center gap-1">
+                      <h3 className="font-semibold text-stone-900 mb-0.5">{inc.name}</h3>
+                      <p className="text-xs text-stone-500 mb-0.5 flex items-center gap-1">
                         <GraduationCap className="w-3 h-3" /> {inc.institution}
                       </p>
-                      <p className="text-xs text-gray-400 mb-3 flex items-center gap-1">
+                      <p className="text-xs text-stone-400 mb-3 flex items-center gap-1">
                         <MapPin className="w-3 h-3" /> {inc.city}, {inc.state}
                       </p>
 
-                      <p className="text-xs text-gray-500 leading-relaxed mb-3">{inc.description}</p>
+                      <p className="text-xs text-stone-500 leading-relaxed mb-3">{inc.description}</p>
 
                       {/* Sectors */}
                       <div className="flex flex-wrap gap-1 mb-2">
                         {inc.focus_sectors.slice(0, 5).map((s) => (
-                          <span key={s} className="text-[10px] bg-gray-50 text-gray-500 px-2 py-0.5 rounded-md border border-gray-100">
+                          <span key={s} className="text-[10px] bg-peach-50/40 text-stone-500 px-2 py-0.5 rounded-md border border-peach-200/40">
                             {s}
                           </span>
                         ))}
                         {inc.focus_sectors.length > 5 && (
-                          <span className="text-[10px] text-gray-400">+{inc.focus_sectors.length - 5}</span>
+                          <span className="text-[10px] text-stone-400">+{inc.focus_sectors.length - 5}</span>
                         )}
                       </div>
 
@@ -209,12 +209,12 @@ export default function IncubatorsPage() {
                       {inc.programs.length > 0 && (
                         <div className="flex flex-wrap gap-1">
                           {inc.programs.slice(0, 2).map((p) => (
-                            <span key={p} className="text-[10px] text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full">
+                            <span key={p} className="text-[10px] text-peach-600 bg-peach-50/60 px-2 py-0.5 rounded-full">
                               {p}
                             </span>
                           ))}
                           {inc.programs.length > 2 && (
-                            <span className="text-[10px] text-gray-400">+{inc.programs.length - 2} more</span>
+                            <span className="text-[10px] text-stone-400">+{inc.programs.length - 2} more</span>
                           )}
                         </div>
                       )}
@@ -223,12 +223,12 @@ export default function IncubatorsPage() {
                     {/* Right */}
                     <div className="sm:w-52 shrink-0 space-y-3">
                       {/* Funding box */}
-                      <div className="bg-gray-50 rounded-xl p-3 space-y-2">
+                      <div className="bg-peach-50/50 rounded-xl p-3 space-y-2">
                         <div className="flex items-start gap-2">
-                          <Banknote className="w-3.5 h-3.5 text-gray-400 mt-0.5 shrink-0" />
+                          <Banknote className="w-3.5 h-3.5 text-stone-400 mt-0.5 shrink-0" />
                           <div>
-                            <p className="text-[10px] text-gray-400">Funding</p>
-                            <p className="text-xs font-medium text-gray-700">{inc.funding_available}</p>
+                            <p className="text-[10px] text-stone-400">Funding</p>
+                            <p className="text-xs font-medium text-stone-700">{inc.funding_available}</p>
                           </div>
                         </div>
                         <div className="flex items-center gap-2">
@@ -237,13 +237,13 @@ export default function IncubatorsPage() {
                           ) : (
                             <CheckCircle2 className="w-3.5 h-3.5 text-green-500 shrink-0" />
                           )}
-                          <p className="text-[10px] text-gray-600">
+                          <p className="text-[10px] text-stone-600">
                             {inc.equity_taken ? "Equity required" : "No equity taken"}
                           </p>
                         </div>
                         <div>
-                          <p className="text-[10px] text-gray-400">Stages</p>
-                          <p className="text-xs text-gray-600">{inc.stage.join(", ")}</p>
+                          <p className="text-[10px] text-stone-400">Stages</p>
+                          <p className="text-xs text-stone-600">{inc.stage.join(", ")}</p>
                         </div>
                       </div>
 
@@ -252,7 +252,7 @@ export default function IncubatorsPage() {
                         href={inc.apply_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-1.5 px-4 py-2 bg-brand-600 text-white rounded-xl text-xs font-medium hover:bg-brand-700 transition-colors w-full"
+                        className="flex items-center justify-center gap-1.5 px-4 py-2 btn-coral rounded-xl text-xs font-medium transition-colors w-full"
                       >
                         Apply now <ExternalLink className="w-3 h-3" />
                       </a>
@@ -260,7 +260,7 @@ export default function IncubatorsPage() {
                         href={inc.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-1 text-xs text-gray-400 hover:text-gray-600 w-full"
+                        className="flex items-center justify-center gap-1 text-xs text-stone-400 hover:text-stone-600 w-full"
                       >
                         Visit website <ExternalLink className="w-3 h-3" />
                       </a>
@@ -268,8 +268,8 @@ export default function IncubatorsPage() {
                       {/* Notable alumni */}
                       {inc.notable_alumni.length > 0 && (
                         <div>
-                          <p className="text-[10px] text-gray-400 mb-1">Notable alumni</p>
-                          <p className="text-[10px] text-gray-600">{inc.notable_alumni.join(", ")}</p>
+                          <p className="text-[10px] text-stone-400 mb-1">Notable alumni</p>
+                          <p className="text-[10px] text-stone-600">{inc.notable_alumni.join(", ")}</p>
                         </div>
                       )}
                     </div>
@@ -279,7 +279,7 @@ export default function IncubatorsPage() {
             </div>
 
             {incubators.length === 0 && (
-              <div className="text-center py-16 text-gray-400">
+              <div className="text-center py-16 text-stone-400">
                 <Building className="w-10 h-10 mx-auto mb-3 opacity-30" />
                 <p className="text-sm">No incubators found. Try different filters.</p>
               </div>
@@ -292,7 +292,7 @@ export default function IncubatorsPage() {
 
   if (isAuthed) {
     return (
-      <div className="flex min-h-screen bg-gray-50">
+      <div className="flex min-h-screen">
         <Sidebar />
         {content}
       </div>
@@ -300,15 +300,15 @@ export default function IncubatorsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white border-b border-gray-100 px-6 h-14 flex items-center justify-between">
+    <div className="min-h-screen">
+      <nav className="glass-strong border-b border-peach-200/30 px-6 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-md flex items-center justify-center">
+          <div className="w-6 h-6 bg-gradient-to-br from-peach-500 to-saffron-500 rounded-md flex items-center justify-center">
             <Zap className="w-3 h-3 text-white" />
           </div>
-          <span className="font-bold text-gray-900 text-sm">OpenFounder OS</span>
+          <span className="font-bold text-stone-900 text-sm">OpenFounder OS</span>
         </Link>
-        <Link href="/login" className="text-sm font-medium text-brand-600 hover:underline">
+        <Link href="/login" className="text-sm font-medium text-peach-600 hover:underline">
           Sign in
         </Link>
       </nav>

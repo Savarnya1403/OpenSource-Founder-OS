@@ -12,12 +12,12 @@ import toast from "react-hot-toast";
 const CATEGORIES = ["General", "Fundraising", "GTM", "Product", "Legal & Compliance", "Mental Health"];
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "General": "bg-gray-100 text-gray-600",
+  "General": "bg-peach-100/60 text-stone-600",
   "Fundraising": "bg-green-100 text-green-700",
-  "GTM": "bg-blue-100 text-blue-700",
-  "Product": "bg-violet-100 text-violet-700",
+  "GTM": "bg-peach-50/60 text-stone-700",
+  "Product": "bg-peach-100/60 text-stone-700",
   "Legal & Compliance": "bg-orange-100 text-orange-700",
-  "Mental Health": "bg-pink-100 text-pink-700",
+  "Mental Health": "bg-peach-100/60 text-peach-700",
 };
 
 interface ForumPost {
@@ -91,18 +91,18 @@ export default function ForumPage() {
   if (!isAuthenticated()) return null;
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <main className="flex-1 p-8">
+      <main className="flex-1 overflow-y-auto p-8">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 mb-1">Founder Forum</h1>
-              <p className="text-gray-500 text-sm">Anonymous discussions for Indian startup founders.</p>
+              <h1 className="text-2xl font-bold text-stone-900 mb-1">Founder Forum</h1>
+              <p className="text-stone-500 text-sm">Anonymous discussions for Indian startup founders.</p>
             </div>
             <button
               onClick={() => setShowModal(true)}
-              className="flex items-center gap-2 bg-brand-600 text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-brand-700 transition-colors"
+              className="flex items-center gap-2 btn-coral px-4 py-2.5 rounded-lg text-sm font-medium transition-colors"
             >
               <Plus className="w-4 h-4" />
               New Post
@@ -114,7 +114,7 @@ export default function ForumPage() {
             <button
               onClick={() => setActiveCategory("")}
               className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
-                activeCategory === "" ? "bg-gray-900 text-white" : "bg-white border border-gray-200 text-gray-600 hover:bg-gray-50"
+                activeCategory === "" ? "btn-coral" : "bg-white border border-peach-200/60 text-stone-600 hover:bg-peach-50/60"
               }`}
             >
               All
@@ -125,8 +125,8 @@ export default function ForumPage() {
                 onClick={() => setActiveCategory(activeCategory === cat ? "" : cat)}
                 className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
                   activeCategory === cat
-                    ? "bg-gray-900 text-white"
-                    : "bg-white border border-gray-200 text-gray-600 hover:bg-gray-50"
+                    ? "btn-coral"
+                    : "bg-white border border-peach-200/60 text-stone-600 hover:bg-peach-50/60"
                 }`}
               >
                 {cat}
@@ -137,10 +137,10 @@ export default function ForumPage() {
           {/* Posts list */}
           {isLoading ? (
             <div className="flex justify-center py-20">
-              <Loader2 className="w-7 h-7 animate-spin text-brand-500" />
+              <Loader2 className="w-7 h-7 animate-spin text-peach-500" />
             </div>
           ) : posts.length === 0 ? (
-            <div className="text-center py-20 text-gray-400">
+            <div className="text-center py-20 text-stone-400">
               <MessageCircle className="w-10 h-10 mx-auto mb-3 opacity-40" />
               <p>No posts yet. Be the first to start a discussion!</p>
             </div>
@@ -150,17 +150,17 @@ export default function ForumPage() {
                 <Link
                   key={post.id}
                   href={`/forum/${post.id}`}
-                  className="block bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow group"
+                  className="block glass rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow group"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${CATEGORY_COLORS[post.category] || "bg-gray-100 text-gray-600"}`}>
+                        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${CATEGORY_COLORS[post.category] || "bg-peach-100/60 text-stone-600"}`}>
                           {post.category}
                         </span>
                       </div>
-                      <h3 className="font-semibold text-gray-900 group-hover:text-brand-700 transition-colors truncate">{post.title}</h3>
-                      <div className="flex items-center gap-3 mt-2 text-xs text-gray-400">
+                      <h3 className="font-semibold text-stone-900 group-hover:text-peach-700 transition-colors truncate">{post.title}</h3>
+                      <div className="flex items-center gap-3 mt-2 text-xs text-stone-400">
                         <span>{post.author_display || anonymizeId(post.author_id)}</span>
                         <span className="flex items-center gap-1">
                           <Clock className="w-3 h-3" />
@@ -168,7 +168,7 @@ export default function ForumPage() {
                         </span>
                       </div>
                     </div>
-                    <div className="shrink-0 flex items-center gap-1.5 text-xs text-gray-400">
+                    <div className="shrink-0 flex items-center gap-1.5 text-xs text-stone-400">
                       <MessageCircle className="w-4 h-4" />
                       {post.reply_count || 0}
                     </div>
@@ -183,61 +183,61 @@ export default function ForumPage() {
       {/* New post modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl shadow-xl w-full max-w-lg p-6">
+          <div className="glass rounded-2xl shadow-xl w-full max-w-lg p-6">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="font-semibold text-gray-900">New Post</h2>
-              <button onClick={() => setShowModal(false)} className="text-gray-400 hover:text-gray-600">
+              <h2 className="font-semibold text-stone-900">New Post</h2>
+              <button onClick={() => setShowModal(false)} className="text-stone-400 hover:text-stone-600">
                 <X className="w-5 h-5" />
               </button>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Category</label>
+                <label className="block text-sm font-medium text-stone-700 mb-1.5">Category</label>
                 <select
                   value={newCategory}
                   onChange={(e) => setNewCategory(e.target.value)}
-                  className="w-full px-3 py-2.5 border border-gray-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2.5 border border-peach-200/60 rounded-lg text-sm bg-white/60 focus:outline-none focus:outline-none focus:border-peach-400"
                 >
                   {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Title</label>
+                <label className="block text-sm font-medium text-stone-700 mb-1.5">Title</label>
                 <input
                   type="text"
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
                   placeholder="What's your question or topic?"
-                  className="w-full px-3 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2.5 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1.5">Body</label>
+                <label className="block text-sm font-medium text-stone-700 mb-1.5">Body</label>
                 <textarea
                   value={newBody}
                   onChange={(e) => setNewBody(e.target.value)}
                   placeholder="Share your thoughts, questions, or experience..."
                   rows={5}
-                  className="w-full px-3 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
+                  className="w-full px-3 py-2.5 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400 resize-none"
                 />
               </div>
 
-              <p className="text-xs text-gray-400">Your post will appear anonymously as a random Founder ID.</p>
+              <p className="text-xs text-stone-400">Your post will appear anonymously as a random Founder ID.</p>
 
               <div className="flex gap-3 pt-1">
                 <button
                   onClick={() => setShowModal(false)}
-                  className="flex-1 px-4 py-2.5 border border-gray-200 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors"
+                  className="flex-1 px-4 py-2.5 border border-peach-200/60 rounded-lg text-sm font-medium text-stone-600 hover:bg-peach-50/60 transition-colors"
                 >
                   Cancel
                 </button>
                 <button
                   onClick={createPost}
                   disabled={submitting || !newTitle.trim() || !newBody.trim()}
-                  className="flex-1 bg-brand-600 text-white py-2.5 rounded-lg text-sm font-medium disabled:opacity-60 hover:bg-brand-700 transition-colors flex items-center justify-center gap-2"
+                  className="flex-1 btn-coral py-2.5 rounded-lg text-sm font-medium disabled:opacity-60 transition-colors flex items-center justify-center gap-2"
                 >
                   {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
                   Post

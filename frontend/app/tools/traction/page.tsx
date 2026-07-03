@@ -44,18 +44,18 @@ interface ChartData {
 }
 
 function Arrow({ change }: { change?: number }) {
-  if (change === undefined || change === null || isNaN(change)) return <Minus className="w-4 h-4 text-gray-300" />;
+  if (change === undefined || change === null || isNaN(change)) return <Minus className="w-4 h-4 text-stone-300" />;
   if (change > 0) return <TrendingUp className="w-4 h-4 text-green-500" />;
   if (change < 0) return <TrendingDown className="w-4 h-4 text-red-500" />;
-  return <Minus className="w-4 h-4 text-gray-300" />;
+  return <Minus className="w-4 h-4 text-stone-300" />;
 }
 
 function ChangeLabel({ change }: { change?: number }) {
-  if (change === undefined || change === null || isNaN(change)) return <span className="text-gray-300">—</span>;
+  if (change === undefined || change === null || isNaN(change)) return <span className="text-stone-300">—</span>;
   const abs = Math.abs(change).toFixed(1);
   if (change > 0) return <span className="text-green-600 text-xs">+{abs}% vs last week</span>;
   if (change < 0) return <span className="text-red-500 text-xs">{abs}% vs last week</span>;
-  return <span className="text-gray-400 text-xs">No change</span>;
+  return <span className="text-stone-400 text-xs">No change</span>;
 }
 
 export default function TractionPage() {
@@ -117,31 +117,31 @@ export default function TractionPage() {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <main className="flex-1 p-8">
+      <main className="flex-1 overflow-y-auto p-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6 flex items-center gap-3">
-            <Link href="/tools" className="text-gray-400 hover:text-gray-600">
+            <Link href="/tools" className="text-stone-400 hover:text-stone-600">
               <ArrowLeft className="w-4 h-4" />
             </Link>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Traction Dashboard</h1>
-              <p className="text-gray-500 text-sm">Log and track your key startup metrics over time.</p>
+              <h1 className="text-2xl font-bold text-stone-900">Traction Dashboard</h1>
+              <p className="text-stone-500 text-sm">Log and track your key startup metrics over time.</p>
             </div>
           </div>
 
           {/* Stat cards */}
           {chartLoading ? (
             <div className="flex justify-center py-8">
-              <Loader2 className="w-6 h-6 animate-spin text-brand-500" />
+              <Loader2 className="w-6 h-6 animate-spin text-peach-500" />
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
               {STAT_CARDS.map(({ key, label, prefix, suffix, change, value, format }) => (
-                <div key={key} className="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm">
-                  <div className="text-xs text-gray-400 mb-1">{label}</div>
-                  <div className="text-xl font-bold text-gray-900 mb-1">
+                <div key={key} className="glass rounded-2xl p-4 shadow-sm">
+                  <div className="text-xs text-stone-400 mb-1">{label}</div>
+                  <div className="text-xl font-bold text-stone-900 mb-1">
                     {value !== undefined && value !== null ? `${prefix}${format(value)}${suffix || ""}` : "—"}
                   </div>
                   <div className="flex items-center gap-1">
@@ -154,70 +154,70 @@ export default function TractionPage() {
           )}
 
           {/* Log metrics form */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm mb-6">
-            <h2 className="font-semibold text-gray-900 mb-4">Log Metrics</h2>
+          <div className="glass rounded-2xl p-6 shadow-sm mb-6">
+            <h2 className="font-semibold text-stone-900 mb-4">Log Metrics</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">Date</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">Date</label>
                 <input
                   type="date"
                   value={form.date}
                   onChange={(e) => setField("date", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">MRR (₹)</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">MRR (₹)</label>
                 <input
                   type="number"
                   placeholder="0"
                   value={form.mrr ?? ""}
                   onChange={(e) => setField("mrr", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">DAU</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">DAU</label>
                 <input
                   type="number"
                   placeholder="0"
                   value={form.dau ?? ""}
                   onChange={(e) => setField("dau", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">MAU</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">MAU</label>
                 <input
                   type="number"
                   placeholder="0"
                   value={form.mau ?? ""}
                   onChange={(e) => setField("mau", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">CAC (₹)</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">CAC (₹)</label>
                 <input
                   type="number"
                   placeholder="0"
                   value={form.cac ?? ""}
                   onChange={(e) => setField("cac", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">LTV (₹)</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">LTV (₹)</label>
                 <input
                   type="number"
                   placeholder="0"
                   value={form.ltv ?? ""}
                   onChange={(e) => setField("ltv", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">NPS (0–100)</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">NPS (0–100)</label>
                 <input
                   type="number"
                   placeholder="0"
@@ -225,24 +225,24 @@ export default function TractionPage() {
                   max={100}
                   value={form.nps ?? ""}
                   onChange={(e) => setField("nps", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-gray-500 mb-1">Notes</label>
+                <label className="block text-xs font-medium text-stone-500 mb-1">Notes</label>
                 <input
                   type="text"
                   placeholder="Optional..."
                   value={form.notes ?? ""}
                   onChange={(e) => setField("notes", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+                  className="w-full px-3 py-2 bg-white/60 border border-peach-200/60 rounded-lg text-sm focus:outline-none focus:outline-none focus:border-peach-400"
                 />
               </div>
             </div>
             <button
               onClick={logMetrics}
               disabled={submitting || !form.date}
-              className="bg-brand-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-brand-700 disabled:opacity-60 transition-colors flex items-center gap-2"
+              className="btn-coral px-5 py-2.5 rounded-lg text-sm font-medium disabled:opacity-60 transition-colors flex items-center gap-2"
             >
               {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
               Log metrics
@@ -250,46 +250,46 @@ export default function TractionPage() {
           </div>
 
           {/* History table */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h2 className="font-semibold text-gray-900 mb-4">Recent History (last 8 weeks)</h2>
+          <div className="glass rounded-2xl p-6 shadow-sm">
+            <h2 className="font-semibold text-stone-900 mb-4">Recent History (last 8 weeks)</h2>
             {entriesLoading ? (
               <div className="flex justify-center py-8">
-                <Loader2 className="w-6 h-6 animate-spin text-brand-500" />
+                <Loader2 className="w-6 h-6 animate-spin text-peach-500" />
               </div>
             ) : recent.length === 0 ? (
-              <div className="text-center py-10 text-gray-400 text-sm">
+              <div className="text-center py-10 text-stone-400 text-sm">
                 No metrics logged yet. Use the form above to log your first entry.
               </div>
             ) : (
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-gray-50">
-                      <th className="text-left py-3 text-xs font-medium text-gray-400 pr-4">Date</th>
-                      <th className="text-right py-3 text-xs font-medium text-gray-400 px-4">MRR</th>
-                      <th className="text-right py-3 text-xs font-medium text-gray-400 px-4">DAU</th>
-                      <th className="text-right py-3 text-xs font-medium text-gray-400 px-4">CAC</th>
-                      <th className="text-right py-3 text-xs font-medium text-gray-400 px-4">LTV</th>
-                      <th className="text-right py-3 text-xs font-medium text-gray-400 pl-4">NPS</th>
+                    <tr className="border-b border-peach-100/40">
+                      <th className="text-left py-3 text-xs font-medium text-stone-400 pr-4">Date</th>
+                      <th className="text-right py-3 text-xs font-medium text-stone-400 px-4">MRR</th>
+                      <th className="text-right py-3 text-xs font-medium text-stone-400 px-4">DAU</th>
+                      <th className="text-right py-3 text-xs font-medium text-stone-400 px-4">CAC</th>
+                      <th className="text-right py-3 text-xs font-medium text-stone-400 px-4">LTV</th>
+                      <th className="text-right py-3 text-xs font-medium text-stone-400 pl-4">NPS</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-50">
                     {recent.map((entry, i) => (
-                      <tr key={entry.id || i} className="hover:bg-gray-50 transition-colors">
-                        <td className="py-3 text-gray-500 pr-4 whitespace-nowrap">{entry.date}</td>
-                        <td className="py-3 text-right px-4 font-medium text-gray-900">
+                      <tr key={entry.id || i} className="hover:bg-peach-50/60 transition-colors">
+                        <td className="py-3 text-stone-500 pr-4 whitespace-nowrap">{entry.date}</td>
+                        <td className="py-3 text-right px-4 font-medium text-stone-900">
                           {entry.mrr !== undefined ? `₹${entry.mrr.toLocaleString("en-IN")}` : "—"}
                         </td>
-                        <td className="py-3 text-right px-4 text-gray-700">
+                        <td className="py-3 text-right px-4 text-stone-700">
                           {entry.dau !== undefined ? entry.dau.toLocaleString() : "—"}
                         </td>
-                        <td className="py-3 text-right px-4 text-gray-700">
+                        <td className="py-3 text-right px-4 text-stone-700">
                           {entry.cac !== undefined ? `₹${entry.cac.toLocaleString("en-IN")}` : "—"}
                         </td>
-                        <td className="py-3 text-right px-4 text-gray-700">
+                        <td className="py-3 text-right px-4 text-stone-700">
                           {entry.ltv !== undefined ? `₹${entry.ltv.toLocaleString("en-IN")}` : "—"}
                         </td>
-                        <td className="py-3 text-right pl-4 text-gray-700">
+                        <td className="py-3 text-right pl-4 text-stone-700">
                           {entry.nps !== undefined ? entry.nps : "—"}
                         </td>
                       </tr>

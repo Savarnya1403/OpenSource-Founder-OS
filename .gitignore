@@ -56,3 +56,4 @@ neo4j_data/
 .coverage
 htmlcov/
 .pytest_cache/
+.vercel

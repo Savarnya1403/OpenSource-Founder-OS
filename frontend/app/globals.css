@@ -1,54 +1,270 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 30 100% 97%;
+    --foreground: 20 14% 12%;
+    --peach-core: #FFF0E5;
+    --peach-edge: #FFD6C2;
+    --coral: #FF8C42;
+    --glass-bg: rgba(255, 255, 255, 0.62);
+    --glass-border: rgba(255, 200, 160, 0.35);
+    --shadow-peach: 0 4px 24px rgba(255,140,66,0.12);
   }
 
-  * {
-    box-sizing: border-box;
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    @apply bg-gray-50 text-gray-900;
+    background: radial-gradient(ellipse 140% 90% at 60% -20%, #FFD6C2 0%, #FFF0E5 40%, #FFF8F3 75%, #FDFAF6 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #1a1009;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
+/* ─── Glass Card System ─────────────────────────────────── */
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.62);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 200, 160, 0.30);
+    box-shadow: 0 4px 24px rgba(255,140,66,0.08), 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 200, 160, 0.40);
+    box-shadow: 0 8px 40px rgba(255,140,66,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .glass-sidebar {
+    background: rgba(255, 253, 250, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-right: 1px solid rgba(255, 200, 160, 0.25);
+  }
+
+  .btn-coral {
+    background: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 16px rgba(255,140,66,0.30);
+    transition: all 0.2s ease;
+  }
+  .btn-coral:hover {
+    background: linear-gradient(135deg, #F07030 0%, #E0521E 100%);
+    box-shadow: 0 6px 24px rgba(255,140,66,0.42);
+    transform: translateY(-1px);
+  }
+  .btn-coral:active { transform: translateY(0); }
+
+  .btn-ghost-peach {
+    background: rgba(255,200,160,0.18);
+    color: #C8561E;
+    border: 1px solid rgba(255,200,160,0.40);
+    transition: all 0.2s ease;
+  }
+  .btn-ghost-peach:hover {
+    background: rgba(255,200,160,0.30);
+    border-color: rgba(255,140,66,0.45);
+  }
+
+  .card-hover {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .card-hover:hover {
+    box-shadow: 0 8px 32px rgba(255,140,66,0.14), 0 2px 8px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+  }
+
+  /* Skeleton shimmer — peach tones */
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      rgba(255,200,160,0.25) 0%,
+      rgba(255,220,190,0.50) 50%,
+      rgba(255,200,160,0.25) 100%
+    );
+    background-size: 400px 100%;
+    animation: shimmer 1.8s infinite linear;
+    border-radius: 8px;
+  }
+
+  /* Live glow dot */
+  .live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 0 rgba(34,197,94,0.5);
+    animation: glowPulse 2s ease-in-out infinite;
+  }
+
+  .stale-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #f59e0b;
+  }
+
+  /* Peach badge */
+  .badge-peach {
+    background: rgba(255,140,66,0.12);
+    color: #C8561E;
+    border: 1px solid rgba(255,140,66,0.22);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 100px;
+  }
+
+  .badge-green {
+    background: rgba(34,197,94,0.10);
+    color: #166534;
+    border: 1px solid rgba(34,197,94,0.20);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 100px;
+  }
+
+  .badge-blue {
+    background: rgba(59,130,246,0.10);
+    color: #1e40af;
+    border: 1px solid rgba(59,130,246,0.20);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 100px;
+  }
+
+  .badge-red {
+    background: rgba(239,68,68,0.10);
+    color: #991b1b;
+    border: 1px solid rgba(239,68,68,0.20);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 100px;
+  }
+
+  /* Section divider */
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #C8561E;
+    opacity: 0.6;
+  }
+}
+
+/* ─── Scrollbars ─────────────────────────────────────────── */
 @layer utilities {
-  .scrollbar-thin {
-    scrollbar-width: thin;
-  }
-
-  .scrollbar-thin::-webkit-scrollbar {
-    width: 4px;
-  }
-
-  .scrollbar-thin::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 rounded;
-  }
+  .scrollbar-thin { scrollbar-width: thin; scrollbar-color: rgba(255,140,66,0.25) transparent; }
+  .scrollbar-thin::-webkit-scrollbar { width: 4px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(255,140,66,0.30); border-radius: 4px; }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
 }
 
-/* Markdown prose inside chat */
-.chat-prose h1, .chat-prose h2, .chat-prose h3 {
-  @apply font-semibold mt-4 mb-2;
+/* ─── Keyframes ─────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position:  400px 0; }
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.50); }
+  50%       { box-shadow: 0 0 0 5px rgba(34,197,94,0.00); }
+}
+
+/* ─── Typography helpers ─────────────────────────────────── */
+.prose-peach p { line-height: 1.8; }
+.prose-peach h1, .prose-peach h2, .prose-peach h3 { font-weight: 700; color: #1a1009; }
+
+/* ─── Chat prose ─────────────────────────────────────────── */
+.chat-prose h1, .chat-prose h2, .chat-prose h3 { @apply font-semibold mt-4 mb-2; }
 .chat-prose h1 { @apply text-xl; }
 .chat-prose h2 { @apply text-lg; }
 .chat-prose h3 { @apply text-base; }
-.chat-prose p { @apply mb-3 leading-relaxed; }
+.chat-prose p  { line-height: 1.8; @apply mb-3; }
 .chat-prose ul { @apply list-disc ml-5 mb-3 space-y-1; }
 .chat-prose ol { @apply list-decimal ml-5 mb-3 space-y-1; }
-.chat-prose code { @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono; }
-.chat-prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg mb-3 overflow-x-auto; }
+.chat-prose code   { background: rgba(255,200,160,0.25); @apply px-1 py-0.5 rounded text-sm font-mono; }
+.chat-prose pre    { @apply bg-gray-900 text-gray-100 p-4 rounded-xl mb-3 overflow-x-auto; }
 .chat-prose pre code { @apply bg-transparent text-gray-100 p-0; }
 .chat-prose strong { @apply font-semibold; }
-.chat-prose a { @apply text-brand-600 underline; }
-.chat-prose table { @apply w-full border-collapse mb-4 text-sm; }
-.chat-prose th { @apply bg-gray-100 px-3 py-2 text-left font-semibold border border-gray-200; }
-.chat-prose td { @apply px-3 py-2 border border-gray-200; }
-.chat-prose blockquote { @apply border-l-4 border-brand-400 pl-4 italic text-gray-600 my-3; }
+.chat-prose a      { color: #C8561E; @apply underline; }
+.chat-prose table  { @apply w-full border-collapse mb-4 text-sm; }
+.chat-prose th     { background: rgba(255,200,160,0.20); @apply px-3 py-2 text-left font-semibold border border-peach-200; }
+.chat-prose td     { @apply px-3 py-2 border border-peach-200; }
+.chat-prose blockquote { @apply border-l-4 border-peach-400 pl-4 italic text-stone-600 my-3; }
+
+/* ─── Command bar ─────────────────────────────────────────── */
+[cmdk-root] { width: 100%; }
+[cmdk-input] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+  color: #1a1009;
+}
+[cmdk-input]::placeholder { color: rgba(26,16,9,0.35); }
+[cmdk-item] {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3d2008;
+  transition: background 0.15s;
+}
+[cmdk-item][aria-selected="true"],
+[cmdk-item]:hover {
+  background: rgba(255,140,66,0.12);
+  color: #C8561E;
+}
+[cmdk-group-heading] {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C8561E;
+  opacity: 0.55;
+  padding: 6px 12px 4px;
+}
+[cmdk-separator] {
+  height: 1px;
+  background: rgba(255,200,160,0.25);
+  margin: 4px 0;
+}
+[cmdk-empty] {
+  padding: 20px;
+  text-align: center;
+  color: rgba(26,16,9,0.40);
+  font-size: 13px;
+}

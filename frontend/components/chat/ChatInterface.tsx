@@ -171,7 +171,7 @@ export function ChatInterface({ initialQuestion }: Props) {
   return (
     <div className="flex flex-col h-full">
       {/* Agent indicator */}
-      <div className="px-4 py-2 border-b border-gray-100 bg-white">
+      <div className="px-4 py-2 border-b border-peach-200/40 bg-white">
         <div className={cn("inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full", agentInfo.color)}>
           <AgentIcon className="w-3 h-3" />
           {agentInfo.emoji} {agentInfo.label}
@@ -193,11 +193,11 @@ export function ChatInterface({ initialQuestion }: Props) {
       <div className="flex-1 overflow-y-auto scrollbar-thin px-4 py-6 space-y-6">
         {messages.length === 0 && !streaming && (
           <div className="flex flex-col items-center justify-center h-full text-center py-12">
-            <div className="w-14 h-14 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-2xl flex items-center justify-center mb-4">
+            <div className="w-14 h-14 bg-gradient-to-br from-peach-500 to-saffron-500 rounded-2xl flex items-center justify-center mb-4">
               <Sparkles className="w-7 h-7 text-white" />
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">Your AI Cofounder</h2>
-            <p className="text-gray-400 text-sm max-w-sm">
+            <h2 className="text-xl font-bold text-stone-900 mb-2">Your AI Cofounder</h2>
+            <p className="text-stone-400 text-sm max-w-sm">
               Ask me anything — startup strategy, government schemes, pitch coaching, or market research.
             </p>
           </div>
@@ -206,7 +206,7 @@ export function ChatInterface({ initialQuestion }: Props) {
         {messages.map((msg, i) => (
           <div key={i} className={cn("flex gap-3", msg.role === "user" ? "justify-end" : "justify-start")}>
             {msg.role === "assistant" && (
-              <div className="w-8 h-8 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <div className="w-8 h-8 bg-gradient-to-br from-peach-500 to-saffron-500 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
                 {msg.agent ? (
                   <span className="text-sm">{AGENT_META[msg.agent]?.emoji || "🧠"}</span>
                 ) : (
@@ -218,8 +218,8 @@ export function ChatInterface({ initialQuestion }: Props) {
               className={cn(
                 "max-w-[80%] rounded-2xl px-4 py-3 text-sm",
                 msg.role === "user"
-                  ? "bg-brand-600 text-white rounded-tr-sm"
-                  : "bg-white border border-gray-100 text-gray-800 rounded-tl-sm shadow-sm"
+                  ? "btn-coral rounded-tr-sm"
+                  : "bg-white border border-peach-200/40 text-stone-800 rounded-tl-sm shadow-sm"
               )}
             >
               {msg.role === "assistant" ? (
@@ -230,7 +230,7 @@ export function ChatInterface({ initialQuestion }: Props) {
                 msg.content
               )}
               {msg.role === "assistant" && msg.agent && (
-                <div className={cn("mt-2 pt-2 border-t border-gray-100 text-xs font-medium flex items-center gap-1", AGENT_META[msg.agent]?.color || "text-gray-400")}>
+                <div className={cn("mt-2 pt-2 border-t border-peach-200/40 text-xs font-medium flex items-center gap-1", AGENT_META[msg.agent]?.color || "text-stone-400")}>
                   <span>{AGENT_META[msg.agent]?.emoji}</span>
                   {AGENT_META[msg.agent]?.label}
                 </div>
@@ -242,14 +242,14 @@ export function ChatInterface({ initialQuestion }: Props) {
         {/* Streaming message */}
         {streaming && streamBuffer && (
           <div className="flex gap-3 justify-start">
-            <div className="w-8 h-8 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+            <div className="w-8 h-8 bg-gradient-to-br from-peach-500 to-saffron-500 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
               <span className="text-sm">{agentInfo.emoji}</span>
             </div>
-            <div className="max-w-[80%] bg-white border border-gray-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
-              <div className="chat-prose text-sm text-gray-800">
+            <div className="max-w-[80%] glass rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
+              <div className="chat-prose text-sm text-stone-800">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{streamBuffer}</ReactMarkdown>
               </div>
-              <span className="inline-block w-1.5 h-4 bg-brand-500 rounded-sm animate-pulse ml-0.5" />
+              <span className="inline-block w-1.5 h-4 bg-peach-50/600 rounded-sm animate-pulse ml-0.5" />
             </div>
           </div>
         )}
@@ -257,10 +257,10 @@ export function ChatInterface({ initialQuestion }: Props) {
         {/* Typing indicator */}
         {streaming && !streamBuffer && (
           <div className="flex gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-brand-500 to-saffron-500 rounded-lg flex items-center justify-center shrink-0">
+            <div className="w-8 h-8 bg-gradient-to-br from-peach-500 to-saffron-500 rounded-lg flex items-center justify-center shrink-0">
               <span className="text-sm">{agentInfo.emoji}</span>
             </div>
-            <div className="bg-white border border-gray-100 rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
+            <div className="glass rounded-2xl rounded-tl-sm px-4 py-3 shadow-sm">
               <div className="flex gap-1 items-center h-5">
                 {[0, 1, 2].map((i) => (
                   <span
@@ -278,8 +278,8 @@ export function ChatInterface({ initialQuestion }: Props) {
       </div>
 
       {/* Input */}
-      <div className="border-t border-gray-100 bg-white p-4">
-        <div className="flex gap-3 items-end bg-gray-50 border border-gray-200 rounded-2xl px-4 py-3 focus-within:border-brand-400 focus-within:bg-white transition-colors">
+      <div className="border-t border-peach-200/40 glass p-4">
+        <div className="flex gap-3 items-end bg-gray-50 border border-peach-200/60 rounded-2xl px-4 py-3 focus-within:border-peach-400 focus-within:bg-white transition-colors">
           <textarea
             ref={inputRef}
             rows={1}
@@ -291,12 +291,12 @@ export function ChatInterface({ initialQuestion }: Props) {
             }}
             onKeyDown={handleKeyDown}
             placeholder="Ask your AI cofounder anything..."
-            className="flex-1 bg-transparent text-sm text-gray-800 placeholder-gray-400 resize-none focus:outline-none min-h-[24px] max-h-[120px] leading-relaxed"
+            className="flex-1 bg-transparent text-sm text-stone-800 placeholder-gray-400 resize-none focus:outline-none min-h-[24px] max-h-[120px] leading-relaxed"
           />
           <button
             onClick={() => sendMessage(input)}
             disabled={!input.trim() || streaming}
-            className="shrink-0 w-8 h-8 bg-brand-600 text-white rounded-lg flex items-center justify-center hover:bg-brand-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="shrink-0 w-8 h-8 btn-coral rounded-lg flex items-center justify-center transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {streaming ? (
               <Loader2 className="w-4 h-4 animate-spin" />
@@ -305,7 +305,7 @@ export function ChatInterface({ initialQuestion }: Props) {
             )}
           </button>
         </div>
-        <p className="text-xs text-gray-400 text-center mt-2">
+        <p className="text-xs text-stone-400 text-center mt-2">
           Shift+Enter for new line · Enter to send
         </p>
       </div>

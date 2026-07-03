@@ -1,0 +1,827 @@
+[
+  {
+    "id": "aws-activate-founders",
+    "name": "AWS Activate Founders",
+    "provider": "Amazon Web Services",
+    "logo_emoji": "☁️",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 1000,
+    "total_value_inr_display": "₹83,000",
+    "headline": "AWS credits to get your startup off the ground — no VC required",
+    "what_you_get": [
+      "$1,000 in AWS credits (valid 2 years)",
+      "AWS technical support credits",
+      "Access to AWS Startup community and events",
+      "Free AWS training credits"
+    ],
+    "eligibility": [
+      "Pre-seed or bootstrapped startup (no VC funding required)",
+      "Less than 10 years old",
+      "Haven't received AWS Activate credits before"
+    ],
+    "how_to_apply": "Apply at aws.amazon.com/activate → select 'Founders' tier → submit startup details. Approval within 2-5 business days.",
+    "apply_url": "https://aws.amazon.com/activate/founders/",
+    "time_to_activate": "2-5 business days",
+    "validity": "2 years from activation",
+    "india_available": true,
+    "india_notes": "Available for Indian entities. Credits apply to AWS services. GST invoice available for business accounts.",
+    "tags": ["cloud", "infrastructure", "no-vc-needed", "pre-seed"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "aws-activate-portfolio",
+    "name": "AWS Activate Portfolio",
+    "provider": "Amazon Web Services",
+    "logo_emoji": "☁️",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 25000,
+    "total_value_inr_display": "₹21 lakh",
+    "headline": "Up to $25,000 in AWS credits via your VC or accelerator partner",
+    "what_you_get": [
+      "$25,000 in AWS Promotional credits (valid 2 years)",
+      "1 year of AWS Business Support",
+      "80 credits for AWS Training and Certification",
+      "Access to AWS Startup architecture review",
+      "AWS Well-Architected Review at no cost"
+    ],
+    "eligibility": [
+      "Backed by an AWS Activate Partner (most Indian VCs like Blume, Stellaris, Peak XV, 3one4 are partners)",
+      "Startup less than 10 years old",
+      "Must apply via a partner-provided Organisation ID"
+    ],
+    "how_to_apply": "Ask your VC/accelerator for their AWS Activate Organisation ID. Apply at aws.amazon.com/activate with the org ID. Approval in 5-10 days.",
+    "apply_url": "https://aws.amazon.com/activate/portfolio/",
+    "time_to_activate": "5-10 business days",
+    "validity": "2 years",
+    "india_available": true,
+    "india_notes": "Almost all major Indian VCs (Blume, Stellaris, 3one4, Accel India, Elevation) are AWS Activate Partners. Email your VC's platform team for the org ID.",
+    "tags": ["cloud", "infrastructure", "vc-backed", "seed"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "aws-activate-accelerate",
+    "name": "AWS Activate Accelerate",
+    "provider": "Amazon Web Services",
+    "logo_emoji": "☁️",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 100000,
+    "total_value_inr_display": "₹83 lakh",
+    "headline": "$100,000 in AWS credits for Series A+ startups and accelerator cohorts",
+    "what_you_get": [
+      "$100,000 in AWS Promotional credits",
+      "2 years of AWS Business Support",
+      "Access to AWS Solutions Architect for dedicated support",
+      "AWS Well-Architected Reviews",
+      "Credits for AWS training and certification"
+    ],
+    "eligibility": [
+      "Must be in an AWS partner accelerator (YC, Surge, Antler, TechStars, etc.)",
+      "OR have Series A+ funding from a Tier-1 VC",
+      "Building on AWS infrastructure"
+    ],
+    "how_to_apply": "Via your accelerator cohort program, or contact AWS Startup Business Development team directly if Series A funded.",
+    "apply_url": "https://aws.amazon.com/startups/",
+    "time_to_activate": "2-4 weeks",
+    "validity": "2 years",
+    "india_available": true,
+    "india_notes": "Surge (Peak XV) cohort companies get AWS Accelerate credits automatically. YC companies also qualify. Contact the AWS India startup team.",
+    "tags": ["cloud", "infrastructure", "series-a", "accelerator"],
+    "difficulty_to_get": "Hard"
+  },
+  {
+    "id": "google-for-startups-cloud",
+    "name": "Google for Startups Cloud Program",
+    "provider": "Google Cloud",
+    "logo_emoji": "🔵",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 200000,
+    "total_value_inr_display": "₹1.66 crore",
+    "headline": "Up to $200,000 in Google Cloud credits over 2 years",
+    "what_you_get": [
+      "Up to $200,000 in Google Cloud credits (distributed over 2 years: $100K Year 1 + $100K Year 2)",
+      "Access to Google technical experts and dedicated Startup Success Manager",
+      "Invites to Google for Startups events and summits",
+      "Google Workspace discounts",
+      "Firebase and Firebase Studio access",
+      "Access to Vertex AI and Gemini API credits separately",
+      "Office hours with Google PMs and engineers"
+    ],
+    "eligibility": [
+      "Seed to Series A funded (typical: backed by a VC or recognized accelerator)",
+      "Less than 5 years old",
+      "Primarily using or planning to use Google Cloud",
+      "Must apply and be accepted into the program"
+    ],
+    "how_to_apply": "Apply at cloud.google.com/startup. Describe your product, team, and why GCP is a fit. Review takes 2-4 weeks.",
+    "apply_url": "https://cloud.google.com/startup",
+    "time_to_activate": "2-4 weeks",
+    "validity": "2 years (Year 1: $100K, Year 2: $100K)",
+    "india_available": true,
+    "india_notes": "Fully available for Indian entities. Credits work on all GCP services including Compute Engine, BigQuery, Cloud Run, Vertex AI. GST-compliant invoicing available.",
+    "tags": ["cloud", "infrastructure", "ai-ml", "seed", "series-a"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "microsoft-founders-hub",
+    "name": "Microsoft for Startups Founders Hub",
+    "provider": "Microsoft",
+    "logo_emoji": "🪟",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 150000,
+    "total_value_inr_display": "₹1.25 crore",
+    "headline": "$150,000 in Azure + GitHub + LinkedIn + OpenAI credits — no VC required",
+    "what_you_get": [
+      "Up to $150,000 in Microsoft Azure credits",
+      "GitHub Enterprise access (free for 1 year)",
+      "LinkedIn Premium Business (up to 25 seats, 1 year)",
+      "Microsoft 365 Business Premium (up to 25 seats, 1 year)",
+      "Access to OpenAI API credits through Azure OpenAI",
+      "Visual Studio subscriptions for your dev team",
+      "Technical mentorship from Microsoft startup team",
+      "Go-to-market support and co-selling opportunities"
+    ],
+    "eligibility": [
+      "Startup less than 10 years old",
+      "NO funding required — open to bootstrapped founders",
+      "Must not be a subsidiary of a large enterprise",
+      "Apply with a startup pitch and product description"
+    ],
+    "how_to_apply": "Sign up at foundershub.startups.microsoft.com. Multi-tier program — credits unlock as you hit milestones. Basic tier available immediately.",
+    "apply_url": "https://foundershub.startups.microsoft.com/",
+    "time_to_activate": "Immediate (basic tier) to 2 weeks (full credits)",
+    "validity": "1-2 years depending on tier",
+    "india_available": true,
+    "india_notes": "Available to Indian startups. Azure India region (Central India, South India) fully supported. Azure OpenAI with GPT-4 and Claude models available.",
+    "tags": ["cloud", "azure", "openai", "github", "no-vc-needed", "pre-seed"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "cloudflare-startups",
+    "name": "Cloudflare for Startups",
+    "provider": "Cloudflare",
+    "logo_emoji": "🔶",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 5000,
+    "total_value_inr_display": "₹4.1 lakh",
+    "headline": "Cloudflare Pro plan + Workers credits for 1 year free",
+    "what_you_get": [
+      "Cloudflare Pro plan free for 1 year (CDN, DDoS protection, WAF)",
+      "$500 in Cloudflare Workers credits",
+      "Access to Zero Trust security features",
+      "Rate limiting and bot protection",
+      "Email routing and Pages hosting"
+    ],
+    "eligibility": [
+      "Startup backed by a VC partner of Cloudflare",
+      "OR apply directly at cloudflare.com/forstartups",
+      "Using or planning to use Cloudflare infrastructure"
+    ],
+    "how_to_apply": "Apply via cloudflare.com/forstartups or through your VC's platform team.",
+    "apply_url": "https://www.cloudflare.com/forstartups/",
+    "time_to_activate": "1-2 weeks",
+    "validity": "1 year",
+    "india_available": true,
+    "india_notes": "Cloudflare India CDN nodes fully supported. Excellent for India-first startups needing low-latency CDN across Tier-1 and Tier-2 cities.",
+    "tags": ["cdn", "security", "infrastructure", "workers"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "digitalocean-hatch",
+    "name": "DigitalOcean Hatch",
+    "provider": "DigitalOcean",
+    "logo_emoji": "🌊",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 100000,
+    "total_value_inr_display": "₹83 lakh",
+    "headline": "$100,000 in DO credits over 12 months for funded startups",
+    "what_you_get": [
+      "$100,000 in DigitalOcean credits over 12 months",
+      "Dedicated startup success manager",
+      "Access to DigitalOcean community and events",
+      "Preferred pricing after credits expire",
+      "Technical architecture support"
+    ],
+    "eligibility": [
+      "Must have raised at least $50K in funding",
+      "Less than 5 years old",
+      "Building on DigitalOcean infrastructure",
+      "Apply and be accepted into Hatch program"
+    ],
+    "how_to_apply": "Apply at do.co/hatch. Typically requires intro from a VC partner or direct application.",
+    "apply_url": "https://www.digitalocean.com/hatch",
+    "time_to_activate": "2-4 weeks",
+    "validity": "12 months",
+    "india_available": true,
+    "india_notes": "DO has Bangalore data center. Good alternative to AWS for Indian startups wanting simpler infrastructure. Used by many early-stage Indian SaaS companies.",
+    "tags": ["cloud", "infrastructure", "seed"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "mongodb-for-startups",
+    "name": "MongoDB for Startups",
+    "provider": "MongoDB",
+    "logo_emoji": "🍃",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 500,
+    "total_value_inr_display": "₹41,500",
+    "headline": "MongoDB Atlas credits + direct technical support for startups",
+    "what_you_get": [
+      "$500 in MongoDB Atlas credits",
+      "1 year of MongoDB Atlas Flex (M30 cluster equivalent)",
+      "Direct access to MongoDB Solutions Architect",
+      "MongoDB University training (free)",
+      "Co-marketing opportunities"
+    ],
+    "eligibility": [
+      "Early-stage startup (pre-Series B)",
+      "Using or planning to use MongoDB as primary database",
+      "Apply via mongodb.com/startups"
+    ],
+    "how_to_apply": "Apply at mongodb.com/startups. Simple form with startup details. Approval in 1 week.",
+    "apply_url": "https://www.mongodb.com/startups",
+    "time_to_activate": "1 week",
+    "validity": "1 year",
+    "india_available": true,
+    "india_notes": "Atlas available in Mumbai (ap-south-1). Indian startups widely use MongoDB for flexible schema design.",
+    "tags": ["database", "nosql", "infrastructure"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "hubspot-for-startups",
+    "name": "HubSpot for Startups",
+    "provider": "HubSpot",
+    "logo_emoji": "🧡",
+    "category": "CRM & Sales",
+    "total_value_usd": 15000,
+    "total_value_inr_display": "₹12.5 lakh",
+    "headline": "90% off HubSpot year 1, 50% off year 2 — full CRM + marketing suite",
+    "what_you_get": [
+      "90% discount on HubSpot Starter/Professional year 1",
+      "50% discount on HubSpot year 2",
+      "Access to full CRM, Marketing Hub, Sales Hub, Service Hub",
+      "HubSpot Academy free certifications",
+      "Dedicated startup success manager",
+      "Invites to HubSpot INBOUND conference"
+    ],
+    "eligibility": [
+      "Startup backed by an approved VC or accelerator (most major Indian VCs qualify)",
+      "Less than 2 years old and/or pre-Series B",
+      "Using HubSpot CRM as primary CRM"
+    ],
+    "how_to_apply": "Apply via hubspot.com/startups. Submit startup details and VC/accelerator affiliation. Approval in 3-5 days.",
+    "apply_url": "https://www.hubspot.com/startups",
+    "time_to_activate": "3-5 days",
+    "validity": "Year 1: 90% off, Year 2: 50% off, then standard pricing",
+    "india_available": true,
+    "india_notes": "HubSpot is heavily used by Indian B2B SaaS startups. The Starter tier at 90% off is effectively free for early teams. INR billing available.",
+    "tags": ["crm", "marketing", "sales", "b2b"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "zendesk-for-startups",
+    "name": "Zendesk for Startups",
+    "provider": "Zendesk",
+    "logo_emoji": "💬",
+    "category": "CRM & Sales",
+    "total_value_usd": 50000,
+    "total_value_inr_display": "₹41 lakh",
+    "headline": "6 months of Zendesk Suite Enterprise free — worth $50,000+",
+    "what_you_get": [
+      "6 months of Zendesk Suite Enterprise free (all channels: email, chat, voice, social)",
+      "Up to 50 agent seats included",
+      "Access to Zendesk AI features",
+      "Dedicated startup account manager",
+      "Zendesk community and training access"
+    ],
+    "eligibility": [
+      "Startup backed by an approved investor or accelerator",
+      "Less than 5 years old",
+      "Less than $5M ARR",
+      "Apply at zendesk.com/startups"
+    ],
+    "how_to_apply": "Apply at zendesk.com/startups with startup details and investor affiliation. Approval in 1-2 weeks.",
+    "apply_url": "https://www.zendesk.com/campaign/startups/",
+    "time_to_activate": "1-2 weeks",
+    "validity": "6 months free, then standard pricing",
+    "india_available": true,
+    "india_notes": "Zendesk supports INR billing and has strong India enterprise customer base. Excellent for B2C and B2B customer support teams.",
+    "tags": ["customer-support", "saas", "b2b", "b2c"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "intercom-for-startups",
+    "name": "Intercom for Startups",
+    "provider": "Intercom",
+    "logo_emoji": "💭",
+    "category": "CRM & Sales",
+    "total_value_usd": 10000,
+    "total_value_inr_display": "₹8.3 lakh",
+    "headline": "95% off for 12 months — in-app chat, support, and customer engagement",
+    "what_you_get": [
+      "95% off Intercom Early Stage plan for 12 months",
+      "All core features: Messenger, inbox, automation, analytics",
+      "Product tours and onboarding flows",
+      "Knowledge base builder",
+      "Access to Intercom Academy"
+    ],
+    "eligibility": [
+      "Less than $1M in annual revenue",
+      "Less than $5M in funding",
+      "Apply at intercom.com/early-stage"
+    ],
+    "how_to_apply": "Apply at intercom.com/early-stage. Straightforward form. Approval within 1 week.",
+    "apply_url": "https://www.intercom.com/early-stage",
+    "time_to_activate": "1 week",
+    "validity": "12 months at 95% off",
+    "india_available": true,
+    "india_notes": "Intercom is popular for SaaS onboarding flows in India. USD billing — budget ~$65/month after the startup deal ends. INR pricing not available yet.",
+    "tags": ["customer-support", "chat", "onboarding", "saas"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "freshworks-startups",
+    "name": "Freshworks Startup Program",
+    "provider": "Freshworks",
+    "logo_emoji": "🌱",
+    "category": "CRM & Sales",
+    "total_value_usd": 5000,
+    "total_value_inr_display": "₹4.1 lakh",
+    "headline": "India-built CRM suite — free plan + dedicated CSM for early startups",
+    "what_you_get": [
+      "Free Freshsales CRM for up to 3 users",
+      "Free Freshdesk (customer support) for unlimited agents (basic)",
+      "Free Freshchat for in-app messaging",
+      "Dedicated Customer Success Manager",
+      "Priority onboarding support",
+      "Access to Freshworks Academy"
+    ],
+    "eligibility": [
+      "Any early-stage startup (bootstrapped or funded)",
+      "Less than 3 years old",
+      "Apply at freshworks.com/startups"
+    ],
+    "how_to_apply": "Apply at freshworks.com/startups. Approval within 3-5 days. India-first team makes the process smooth.",
+    "apply_url": "https://www.freshworks.com/partners/startup-program/",
+    "time_to_activate": "3-5 days",
+    "validity": "1 year",
+    "india_available": true,
+    "india_notes": "Freshworks is Chennai-based — strong support for Indian startups. INR billing. Especially good fit for B2B SaaS and D2C customer support. SaaS pricing in INR is 60-70% cheaper than US alternatives.",
+    "tags": ["crm", "customer-support", "india-built", "pre-seed"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "mixpanel-for-startups",
+    "name": "Mixpanel for Startups",
+    "provider": "Mixpanel",
+    "logo_emoji": "📊",
+    "category": "Analytics & Data",
+    "total_value_usd": 12000,
+    "total_value_inr_display": "₹10 lakh",
+    "headline": "1 year free Mixpanel Growth — product analytics for 10M+ monthly events",
+    "what_you_get": [
+      "1 year free Mixpanel Growth plan (up to 5M monthly tracked users, 10M events)",
+      "All core product analytics: funnels, retention, flows, A/B testing",
+      "Access to Mixpanel team for onboarding support",
+      "Mixpanel Data Residency in EU/US"
+    ],
+    "eligibility": [
+      "Startup less than 3 years old",
+      "Less than $8M in funding",
+      "Apply at mixpanel.com/startups"
+    ],
+    "how_to_apply": "Apply at mixpanel.com/startups. Approval in 3-5 days.",
+    "apply_url": "https://mixpanel.com/startups/",
+    "time_to_activate": "3-5 days",
+    "validity": "12 months free",
+    "india_available": true,
+    "india_notes": "Mixpanel is widely used by Indian consumer startups (Swiggy, Myntra use enterprise plans). Free plan supports up to 20M events/month which covers most pre-Series A products.",
+    "tags": ["analytics", "product-analytics", "b2c", "saas"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "segment-startups",
+    "name": "Segment Startup Program",
+    "provider": "Twilio Segment",
+    "logo_emoji": "🔗",
+    "category": "Analytics & Data",
+    "total_value_usd": 25000,
+    "total_value_inr_display": "₹21 lakh",
+    "headline": "$25,000 in Segment credits — customer data platform to unify all your analytics",
+    "what_you_get": [
+      "$25,000 in Segment credits (valid 12 months)",
+      "Access to all Segment sources and destinations",
+      "Free connections to 400+ marketing and analytics tools",
+      "Technical support for data infrastructure setup"
+    ],
+    "eligibility": [
+      "Startup backed by an approved investor or accelerator",
+      "Less than $5M in annual revenue",
+      "Apply via segment.com/startups"
+    ],
+    "how_to_apply": "Apply at segment.com/startups. Requires investor reference or accelerator affiliation.",
+    "apply_url": "https://segment.com/startups/",
+    "time_to_activate": "1-2 weeks",
+    "validity": "12 months",
+    "india_available": true,
+    "india_notes": "Segment is the gold standard for unifying your data pipeline. Especially valuable if you're sending events to multiple destinations (Mixpanel + HubSpot + Amplitude).",
+    "tags": ["analytics", "data-pipeline", "cdp", "seed"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "amplitude-startups",
+    "name": "Amplitude Scholarship Program",
+    "provider": "Amplitude",
+    "logo_emoji": "📈",
+    "category": "Analytics & Data",
+    "total_value_usd": 5000,
+    "total_value_inr_display": "₹4.1 lakh",
+    "headline": "Free Amplitude Growth plan for early-stage startups — behavioral analytics",
+    "what_you_get": [
+      "Free Amplitude Scholarship plan (10M events/month)",
+      "All core analytics: funnels, retention, user paths, dashboards",
+      "Access to Amplitude community and templates",
+      "Free onboarding support"
+    ],
+    "eligibility": [
+      "Startup less than 2 years old",
+      "Less than $1M ARR",
+      "Apply at amplitude.com/startups"
+    ],
+    "how_to_apply": "Apply at amplitude.com/startups. Very quick — usually approved in 2-3 days.",
+    "apply_url": "https://amplitude.com/startups",
+    "time_to_activate": "2-3 days",
+    "validity": "1 year",
+    "india_available": true,
+    "india_notes": "Good alternative to Mixpanel for behavioral analytics. Used by several Indian B2B SaaS companies. Free tier is generous for early products.",
+    "tags": ["analytics", "product-analytics", "behavioral"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "posthog",
+    "name": "PostHog Open Source Analytics",
+    "provider": "PostHog",
+    "logo_emoji": "🦔",
+    "category": "Analytics & Data",
+    "total_value_usd": 0,
+    "total_value_inr_display": "Free forever",
+    "headline": "Open-source product analytics + feature flags + session recording — self-hostable",
+    "what_you_get": [
+      "Completely free open-source version — self-host on your AWS/GCP",
+      "PostHog Cloud: 1M events/month free forever",
+      "Product analytics, session recordings, feature flags, A/B tests",
+      "No vendor lock-in — you own your data",
+      "Active open-source community"
+    ],
+    "eligibility": [
+      "Anyone — no application needed for open source or free cloud tier",
+      "Startups get additional $50K in credits via their investor program"
+    ],
+    "how_to_apply": "Sign up at posthog.com — instant access. Or self-host from github.com/PostHog/posthog.",
+    "apply_url": "https://posthog.com/startups",
+    "time_to_activate": "Immediate",
+    "validity": "Forever (free tier)",
+    "india_available": true,
+    "india_notes": "Excellent choice for Indian startups wanting data sovereignty. Self-host on your own AWS VPC to keep data in India. PostHog Cloud also available with EU/US hosting.",
+    "tags": ["analytics", "open-source", "self-host", "free", "feature-flags"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "notion-for-startups",
+    "name": "Notion for Startups",
+    "provider": "Notion",
+    "logo_emoji": "📓",
+    "category": "Design & Dev Tools",
+    "total_value_usd": 3000,
+    "total_value_inr_display": "₹2.5 lakh",
+    "headline": "6 months free Notion Plus → 50% off for life — your startup's second brain",
+    "what_you_get": [
+      "6 months free Notion Plus plan for your entire team",
+      "50% off for the lifetime of your subscription after 6 months",
+      "Unlimited blocks, pages, and file uploads",
+      "Access to Notion's startup template library",
+      "AI features included"
+    ],
+    "eligibility": [
+      "Startup less than 5 years old",
+      "Less than $5M in total funding",
+      "Apply via notion.com/startups"
+    ],
+    "how_to_apply": "Apply at notion.com/startups. Submit startup details. Approval in 3-5 days.",
+    "apply_url": "https://www.notion.com/startups",
+    "time_to_activate": "3-5 days",
+    "validity": "6 months free, then 50% off ongoing",
+    "india_available": true,
+    "india_notes": "Notion is widely used by Indian founding teams for documentation, wikis, and OKR tracking. USD billing only — budget ~$8/user/month after deal ends.",
+    "tags": ["productivity", "documentation", "wiki", "pre-seed"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "linear-early-stage",
+    "name": "Linear Early Stage",
+    "provider": "Linear",
+    "logo_emoji": "📋",
+    "category": "Design & Dev Tools",
+    "total_value_usd": 2000,
+    "total_value_inr_display": "₹1.66 lakh",
+    "headline": "Free for teams under 25 users — the best issue tracker for startups",
+    "what_you_get": [
+      "Linear Free plan: unlimited issues, projects, cycles for up to 25 users",
+      "All core features: sprints, roadmap, git integrations, API",
+      "Slack + GitHub + GitLab + Figma integrations",
+      "Linear Insights analytics"
+    ],
+    "eligibility": [
+      "Team of fewer than 25 users — free forever",
+      "Upgrade to Plus/Pro only needed at 25+ users"
+    ],
+    "how_to_apply": "Sign up at linear.app — instant. No application needed.",
+    "apply_url": "https://linear.app/",
+    "time_to_activate": "Immediate",
+    "validity": "Free forever for teams under 25",
+    "india_available": true,
+    "india_notes": "Linear is increasingly popular among Indian startup engineering teams as a Jira replacement. Much faster and simpler. Free tier is more than enough for early-stage teams.",
+    "tags": ["project-management", "engineering", "free", "no-vc-needed"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "figma-startups",
+    "name": "Figma Startup Program",
+    "provider": "Figma",
+    "logo_emoji": "🎨",
+    "category": "Design & Dev Tools",
+    "total_value_usd": 3000,
+    "total_value_inr_display": "₹2.5 lakh",
+    "headline": "50% off Figma Organization for 1 year — design collaboration for your team",
+    "what_you_get": [
+      "50% off Figma Professional or Organization plan for 1 year",
+      "Unlimited projects and version history",
+      "Dev Mode for engineering handoffs",
+      "FigJam whiteboard included",
+      "Figma AI features"
+    ],
+    "eligibility": [
+      "Startup less than 5 years old",
+      "Apply at figma.com/startups or via VC partner"
+    ],
+    "how_to_apply": "Apply via figma.com/startups or ask your VC's platform team for a Figma startup code.",
+    "apply_url": "https://www.figma.com/startups/",
+    "time_to_activate": "1-2 weeks",
+    "validity": "1 year at 50% off",
+    "india_available": true,
+    "india_notes": "Figma is the de facto design tool for Indian product teams. The Professional plan at 50% off is ~$6/user/month — well worth it for any product-led startup.",
+    "tags": ["design", "ux", "product", "collaboration"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "github-for-startups",
+    "name": "GitHub for Startups",
+    "provider": "GitHub / Microsoft",
+    "logo_emoji": "🐙",
+    "category": "Design & Dev Tools",
+    "total_value_usd": 2500,
+    "total_value_inr_display": "₹2 lakh",
+    "headline": "Free GitHub Team for 1 year via VC partner — unlimited private repos + CI/CD",
+    "what_you_get": [
+      "Free GitHub Team plan for 20 seats for 1 year",
+      "Unlimited private repositories",
+      "GitHub Actions CI/CD (2,000 minutes/month)",
+      "GitHub Packages and Container Registry",
+      "GitHub Copilot access for your team",
+      "GitHub Codespaces (development environments)"
+    ],
+    "eligibility": [
+      "Startup backed by a GitHub for Startups partner (most major VCs)",
+      "OR apply directly at github.com/solutions/startups"
+    ],
+    "how_to_apply": "Ask your VC's platform team for a GitHub for Startups code, or apply at github.com/solutions/startups.",
+    "apply_url": "https://github.com/solutions/startups",
+    "time_to_activate": "1 week",
+    "validity": "1 year free",
+    "india_available": true,
+    "india_notes": "GitHub is universal for Indian engineering teams. The free Team plan is a solid upgrade from individual accounts. GitHub Copilot alone saves 1-2 hours of dev time per day per engineer.",
+    "tags": ["engineering", "devtools", "ci-cd", "version-control"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "stripe-atlas",
+    "name": "Stripe Atlas",
+    "provider": "Stripe",
+    "logo_emoji": "💳",
+    "category": "Finance & Legal",
+    "total_value_usd": 1500,
+    "total_value_inr_display": "₹1.25 lakh",
+    "headline": "US company incorporation + Stripe + banking setup — $500 in credits",
+    "what_you_get": [
+      "$500 in Stripe fee credits (waived processing fees on first $500K volume)",
+      "Delaware C-Corp incorporation included in Atlas fee ($500 one-time)",
+      "EIN setup, registered agent (1 year), IRS forms",
+      "Mercury bank account setup",
+      "Access to Stripe Atlas legal templates library",
+      "Stripe Atlas community access"
+    ],
+    "eligibility": [
+      "Founding a new startup (individuals and teams)",
+      "Want to incorporate in Delaware C-Corp structure",
+      "Pay the $500 Atlas incorporation fee to get started"
+    ],
+    "how_to_apply": "Apply at stripe.com/atlas. $500 one-time fee. Setup takes 2-4 weeks.",
+    "apply_url": "https://stripe.com/atlas",
+    "time_to_activate": "2-4 weeks",
+    "validity": "Credits applied immediately to your Stripe account",
+    "india_available": true,
+    "india_notes": "Widely used by Indian founders who want a US parent entity (Delaware C-Corp) + Indian subsidiary. Essential if targeting US customers or planning to raise from US VCs. Atlas makes the US entity paperwork simple.",
+    "tags": ["legal", "incorporation", "us-entity", "payments", "banking"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "brex-startup",
+    "name": "Brex Business Account",
+    "provider": "Brex",
+    "logo_emoji": "💰",
+    "category": "Finance & Legal",
+    "total_value_usd": 5000,
+    "total_value_inr_display": "₹4.1 lakh",
+    "headline": "US corporate card with no personal guarantee + $5,000 in cashback rewards",
+    "what_you_get": [
+      "Corporate credit card with no personal guarantee (credit based on company cash)",
+      "Brex Cash (FDIC-insured USD account)",
+      "$5,000+ in partner perks (AWS, Segment, Stripe, etc.)",
+      "Automatic expense categorization and accounting integrations",
+      "Multi-currency support",
+      "Instant virtual cards for SaaS subscriptions"
+    ],
+    "eligibility": [
+      "US-incorporated entity (C-Corp or LLC)",
+      "At least $1,000 in company bank balance",
+      "Founders using US entity for USD operations"
+    ],
+    "how_to_apply": "Apply at brex.com. Approval within 2-3 business days. No credit check on founders personally.",
+    "apply_url": "https://www.brex.com/",
+    "time_to_activate": "2-3 business days",
+    "validity": "Ongoing",
+    "india_available": false,
+    "india_notes": "Requires US entity (Delaware C-Corp or LLC). Relevant for Indian founders who have set up a US parent entity via Stripe Atlas or direct incorporation. Used for USD expenses like AWS, SaaS tools, US contractor payments.",
+    "tags": ["finance", "us-entity", "corporate-card", "banking"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "razorpay-route",
+    "name": "Razorpay for Startups",
+    "provider": "Razorpay",
+    "logo_emoji": "🇮🇳",
+    "category": "Finance & Legal",
+    "total_value_usd": 500,
+    "total_value_inr_display": "₹41,000",
+    "headline": "India's leading payment gateway — zero setup fee + startup support program",
+    "what_you_get": [
+      "Zero setup fee and zero annual maintenance charge",
+      "Free Razorpay Payment Links (share and collect payments instantly)",
+      "Free Razorpay RazorpayX current account (zero balance)",
+      "Free Payment Pages (hosted checkout without code)",
+      "Startup community access and events",
+      "Dedicated startup account manager for first 90 days",
+      "Priority support for first 6 months"
+    ],
+    "eligibility": [
+      "Any registered Indian entity (Private Limited, LLP, OPC)",
+      "GSTIN required for full features",
+      "Apply at razorpay.com"
+    ],
+    "how_to_apply": "Sign up at razorpay.com. KYC verification in 1-3 business days. Apply for Startup Program separately via partner link.",
+    "apply_url": "https://razorpay.com/startups/",
+    "time_to_activate": "1-3 business days (KYC)",
+    "validity": "Ongoing",
+    "india_available": true,
+    "india_notes": "Essential for any India-facing startup. Razorpay processes INR payments, supports UPI, net banking, cards, and EMI. The RazorpayX current account is excellent for startup banking without legacy bank bureaucracy.",
+    "tags": ["payments", "india", "fintech", "banking", "essential"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "startup-india-recognition",
+    "name": "DPIIT Startup Recognition",
+    "provider": "Startup India / DPIIT",
+    "logo_emoji": "🇮🇳",
+    "category": "India-Specific",
+    "total_value_usd": 10000,
+    "total_value_inr_display": "₹8+ lakh annually",
+    "headline": "Free DPIIT recognition — unlocks ₹500+ crore in govt schemes + tax exemptions",
+    "what_you_get": [
+      "DPIIT Startup Certificate — gateway to all 47+ government schemes",
+      "Income tax exemption for 3 years (Sec 80-IAC for eligible startups)",
+      "Capital gains tax exemption on investments",
+      "Self-certification for 9 labour laws for 5 years",
+      "Fast-track patent examination at 80% reduced fee",
+      "Self-certification for 3 environmental laws",
+      "Government e-marketplace (GeM) seller registration",
+      "Access to Startup India Hub, mentors, and investors",
+      "Insolvency winding-up in 90 days (vs 4+ years normally)"
+    ],
+    "eligibility": [
+      "Private Limited Company, LLP, or Registered Partnership",
+      "Incorporated less than 10 years ago",
+      "Annual turnover less than ₹100 crore in any year",
+      "Working towards innovation, development, or improvement of products/services",
+      "Not formed by splitting or restructuring an existing company"
+    ],
+    "how_to_apply": "Apply at startupindia.gov.in → Register → Apply for DPIIT Recognition. Fill online form, upload incorporation certificate and other docs. Approval in 2-7 days.",
+    "apply_url": "https://www.startupindia.gov.in/",
+    "time_to_activate": "2-7 days",
+    "validity": "10 years from incorporation or until ₹100 Cr turnover",
+    "india_available": true,
+    "india_notes": "This should be your FIRST application as an Indian startup. It's free and unlocks everything else. The DPIIT certificate is required for almost all government schemes on this platform.",
+    "tags": ["government", "india", "tax-benefit", "legal", "essential", "free"],
+    "difficulty_to_get": "Easy"
+  },
+  {
+    "id": "nasscom-10k-startups",
+    "name": "NASSCOM 10K Startups Program",
+    "provider": "NASSCOM",
+    "logo_emoji": "🏢",
+    "category": "India-Specific",
+    "total_value_usd": 3000,
+    "total_value_inr_display": "₹2.5 lakh",
+    "headline": "NASSCOM validation, co-working space, and enterprise customer connects",
+    "what_you_get": [
+      "NASSCOM Startup Warehouse access (co-working space in 5 cities)",
+      "Access to NASSCOM's 2,000+ member company network for pilot opportunities",
+      "Mentorship from NASSCOM network (500+ mentors)",
+      "Visibility in NASSCOM annual reports and ecosystem",
+      "Priority access to NASSCOM events (Emerge50, Product Conclave, etc.)",
+      "NASSCOM GovTech and enterprise pilot connect programs"
+    ],
+    "eligibility": [
+      "Tech startup less than 5 years old",
+      "Product or platform-based (not services company)",
+      "Apply at 10000startups.nasscom.in"
+    ],
+    "how_to_apply": "Apply at 10000startups.nasscom.in. Online application + review. Acceptance in 2-4 weeks.",
+    "apply_url": "https://10000startups.nasscom.in/",
+    "time_to_activate": "2-4 weeks",
+    "validity": "Ongoing membership",
+    "india_available": true,
+    "india_notes": "NASSCOM is particularly valuable for B2B/enterprise startups looking to pilot with large Indian companies. The NASSCOM network opens doors that cold outreach cannot.",
+    "tags": ["india", "enterprise", "b2b", "government-adjacent", "community"],
+    "difficulty_to_get": "Medium"
+  },
+  {
+    "id": "microsoft-biz-spark",
+    "name": "Microsoft BizSpark Plus",
+    "provider": "Microsoft",
+    "logo_emoji": "🪟",
+    "category": "Cloud Infrastructure",
+    "total_value_usd": 120000,
+    "total_value_inr_display": "₹1 crore",
+    "headline": "For VC-backed startups: $120,000 Azure + full Microsoft stack free for 3 years",
+    "what_you_get": [
+      "$120,000 in Azure credits over 3 years ($40,000/year)",
+      "Full Microsoft Visual Studio Enterprise subscription",
+      "Microsoft 365 E3 for up to 25 users",
+      "GitHub Enterprise (via Microsoft ownership)",
+      "Technical advisory from Microsoft",
+      "Go-to-market co-sell support with Microsoft's enterprise sales team"
+    ],
+    "eligibility": [
+      "Startup backed by a qualified VC or accelerator",
+      "Less than 5 years old",
+      "Must be nominated by a Microsoft Partner or VC"
+    ],
+    "how_to_apply": "Contact Microsoft for Startups via your VC or directly at microsoft.com/en-us/startups. BizSpark Plus requires VC nomination.",
+    "apply_url": "https://www.microsoft.com/en-us/startups",
+    "time_to_activate": "2-4 weeks",
+    "validity": "3 years",
+    "india_available": true,
+    "india_notes": "Microsoft India has dedicated startup programs. Azure India data centers (Pune, Chennai) are included. Especially valuable for AI/ML startups using Azure OpenAI.",
+    "tags": ["cloud", "azure", "vc-backed", "enterprise", "series-a"],
+    "difficulty_to_get": "Hard"
+  },
+  {
+    "id": "wise-business",
+    "name": "Wise Business Account",
+    "provider": "Wise (formerly TransferWise)",
+    "logo_emoji": "💸",
+    "category": "Finance & Legal",
+    "total_value_usd": 500,
+    "total_value_inr_display": "₹41,500 (saved on FX fees)",
+    "headline": "International business account — convert USD to INR at mid-market rate",
+    "what_you_get": [
+      "Business account in 10+ currencies (USD, EUR, GBP, SGD, AUD)",
+      "Virtual local account numbers in US, EU, UK for receiving payments",
+      "FX conversion at mid-market rate (vs 3-5% bank margin)",
+      "Free Wise debit card for business expenses",
+      "API for automated transfers",
+      "Batch payments for international contractor payroll"
+    ],
+    "eligibility": [
+      "Registered Indian business entity or foreign entity with Indian operations",
+      "Valid business documents required (COI, GST, director ID)"
+    ],
+    "how_to_apply": "Sign up at wise.com/business. KYC in 3-5 business days.",
+    "apply_url": "https://wise.com/in/business/",
+    "time_to_activate": "3-5 business days",
+    "validity": "Ongoing",
+    "india_available": true,
+    "india_notes": "Essential for Indian startups with USD revenue. Wise charges 0.4-0.7% FX fee vs ICICI/HDFC's 3-5%. On $50K USD revenue, Wise saves ₹1-2 lakh annually. Also useful for paying international contractors.",
+    "tags": ["finance", "banking", "international", "fx", "payments"],
+    "difficulty_to_get": "Easy"
+  }
+]

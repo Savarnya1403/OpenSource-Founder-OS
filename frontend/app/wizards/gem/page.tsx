@@ -71,41 +71,41 @@ export default function GeMAWizardPage() {
   const progress = steps.length > 0 ? Math.round((doneCount / steps.length) * 100) : 0;
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <main className="flex-1 p-8">
+      <main className="flex-1 overflow-y-auto p-8">
         <div className="max-w-3xl mx-auto">
           <div className="mb-6 flex items-center gap-3">
-            <Link href="/wizards" className="text-gray-400 hover:text-gray-600">
+            <Link href="/wizards" className="text-stone-400 hover:text-stone-600">
               <ArrowLeft className="w-4 h-4" />
             </Link>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">GeM Onboarding Wizard</h1>
-              <p className="text-gray-500 text-sm">Get listed on the Government e-Marketplace and access ₹2L+ Cr in govt procurement.</p>
+              <h1 className="text-2xl font-bold text-stone-900">GeM Onboarding Wizard</h1>
+              <p className="text-stone-500 text-sm">Get listed on the Government e-Marketplace and access ₹2L+ Cr in govt procurement.</p>
             </div>
           </div>
 
           {/* Progress bar */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm mb-6">
+          <div className="glass rounded-2xl p-5 shadow-sm mb-6">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-medium text-gray-700">Your GeM Journey</span>
-              <span className="text-sm font-bold text-brand-600">{doneCount}/{steps.length} steps</span>
+              <span className="text-sm font-medium text-stone-700">Your GeM Journey</span>
+              <span className="text-sm font-bold text-peach-600">{doneCount}/{steps.length} steps</span>
             </div>
-            <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
+            <div className="h-3 bg-peach-100/50 rounded-full overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-orange-400 to-orange-600 rounded-full transition-all duration-500"
                 style={{ width: `${progress}%` }}
               />
             </div>
-            <div className="text-xs text-gray-400 mt-2">{progress}% complete</div>
+            <div className="text-xs text-stone-400 mt-2">{progress}% complete</div>
           </div>
 
           {isLoading ? (
             <div className="flex justify-center py-20">
-              <Loader2 className="w-7 h-7 animate-spin text-brand-500" />
+              <Loader2 className="w-7 h-7 animate-spin text-peach-500" />
             </div>
           ) : steps.length === 0 ? (
-            <div className="text-center py-20 text-gray-400">
+            <div className="text-center py-20 text-stone-400">
               No steps available. The wizard data is loading from the backend.
             </div>
           ) : (
@@ -116,28 +116,28 @@ export default function GeMAWizardPage() {
                 return (
                   <div
                     key={stepId}
-                    className={`bg-white border rounded-2xl p-6 shadow-sm transition-all ${
-                      isDone ? "border-orange-200 bg-orange-50/20" : "border-gray-100"
+                    className={`glass border rounded-2xl p-6 shadow-sm transition-all ${
+                      isDone ? "border-orange-200 bg-orange-50/20" : "border-peach-200/40"
                     }`}
                   >
                     <div className="flex items-start gap-4">
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 text-sm font-bold ${
-                        isDone ? "bg-orange-500 text-white" : "bg-gray-100 text-gray-500"
+                        isDone ? "bg-orange-500 text-white" : "bg-peach-50/60 text-stone-500"
                       }`}>
                         {isDone ? "✓" : idx + 1}
                       </div>
 
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-gray-900 mb-1">{step.title}</h3>
-                        <p className="text-sm text-gray-600 mb-4">{step.description}</p>
+                        <h3 className="font-semibold text-stone-900 mb-1">{step.title}</h3>
+                        <p className="text-sm text-stone-600 mb-4">{step.description}</p>
 
                         {step.documents && step.documents.length > 0 && (
                           <div className="mb-3">
-                            <div className="text-xs font-medium text-gray-500 mb-2">Documents needed:</div>
+                            <div className="text-xs font-medium text-stone-500 mb-2">Documents needed:</div>
                             <ul className="space-y-1">
                               {step.documents.map((doc, i) => (
-                                <li key={i} className="text-xs text-gray-600 flex items-center gap-2">
-                                  <span className="w-1.5 h-1.5 rounded-full bg-gray-300 shrink-0" />
+                                <li key={i} className="text-xs text-stone-600 flex items-center gap-2">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-peach-300 shrink-0" />
                                   {doc}
                                 </li>
                               ))}
@@ -166,7 +166,7 @@ export default function GeMAWizardPage() {
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-1.5 text-xs text-brand-600 hover:text-brand-700 bg-brand-50 border border-brand-100 px-3 py-1.5 rounded-lg"
+                                className="inline-flex items-center gap-1.5 text-xs text-peach-600 hover:text-peach-700 bg-peach-50/60 border border-peach-200/60 px-3 py-1.5 rounded-lg"
                               >
                                 {link.label} <ExternalLink className="w-3 h-3" />
                               </a>
@@ -179,7 +179,7 @@ export default function GeMAWizardPage() {
                           className={`flex items-center gap-2 text-xs font-medium px-3 py-2 rounded-lg transition-colors ${
                             isDone
                               ? "bg-orange-100 text-orange-700 hover:bg-orange-200"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                              : "bg-peach-100/60 text-stone-600 hover:bg-gray-200"
                           }`}
                         >
                           {isDone ? <CheckCircle2 className="w-4 h-4" /> : <Circle className="w-4 h-4" />}
