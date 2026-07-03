@@ -7,6 +7,7 @@ import { Scale, ChevronDown, ChevronUp, AlertTriangle, CheckCircle } from "lucid
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001";
 
 interface StageTerms {
+  [key: string]: string | string[] | undefined;
   label: string;
   typical_stage: string;
   typical_investors: string[];
@@ -162,10 +163,9 @@ export default function DealTermsPage() {
                     <tr key={row.key}>
                       <td className="text-stone-400 py-2 pr-4 font-medium">{row.label}</td>
                       {STAGES.map((s) => {
-                        const stageData = data.stages[s.key] as unknown as Record<string, unknown>;
                         return (
                           <td key={s.key} className={`py-2 pr-4 text-stone-700 ${activeStage === s.key ? "font-semibold text-stone-900" : ""}`}>
-                            {String(stageData[row.key] || "—")}
+                            {String(data.stages[s.key][row.key] || "—")}
                           </td>
                         );
                       })}
@@ -227,7 +227,7 @@ export default function DealTermsPage() {
                     {isExpanded && (
                       <div className="px-5 pb-5 border-t border-peach-100/40 pt-4 space-y-4">
                         {section.fields.map((fieldKey) => {
-                          const value = (currentStage as Record<string, unknown>)[fieldKey];
+                          const value = currentStage[fieldKey];
                           if (!value) return null;
                           const isBad = fieldKey === "red_flags";
                           const isGood = fieldKey === "founder_tips";
