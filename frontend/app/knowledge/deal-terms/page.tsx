@@ -162,7 +162,7 @@ export default function DealTermsPage() {
                     <tr key={row.key}>
                       <td className="text-stone-400 py-2 pr-4 font-medium">{row.label}</td>
                       {STAGES.map((s) => {
-                        const stageData = data.stages[s.key] as Record<string, unknown>;
+                        const stageData = data.stages[s.key] as unknown as Record<string, unknown>;
                         return (
                           <td key={s.key} className={`py-2 pr-4 text-stone-700 ${activeStage === s.key ? "font-semibold text-stone-900" : ""}`}>
                             {String(stageData[row.key] || "—")}
