@@ -64,5 +64,16 @@
     "sector": "Technology",
     "city": "Bokaro",
     "created_at": "2026-07-03T17:27:16.767418+00:00"
+  },
+  {
+    "id": 7,
+    "email": "Shanu@gmail.com",
+    "name": "Shanu",
+    "hashed_password": "$2b$12$49hF.wc4nb5c19Zno0zJ1ejhcP4flo1sfkc1p0KKndruao6fOi5Gq",
+    "startup_name": "Dime",
+    "startup_stage": "Idea",
+    "sector": "FinTech",
+    "city": "Bengaluru",
+    "created_at": "2026-07-07T05:15:27.042097+00:00"
   }
 ]
