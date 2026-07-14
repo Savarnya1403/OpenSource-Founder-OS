@@ -1,36 +1,27 @@
-from __future__ import annotations
 from fastapi import Depends, HTTPException, status
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi.security import HTTPBearer, HTTPAuthCredentials
 from app.core.security import decode_token
-from app.core.github_db import find_user_by_id
 
-bearer = HTTPBearer(auto_error=False)
-
-
-async def get_current_user(
-    credentials: HTTPAuthorizationCredentials | None = Depends(bearer),
-) -> dict:
-    if not credentials:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Not authenticated")
-
-    payload = decode_token(credentials.credentials)
-    user_id = payload.get("sub")
-    if not user_id:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token")
-
-    user = await find_user_by_id(int(user_id))
-    if not user:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
-
-    return user
+security = HTTPBearer()
 
 
-async def get_optional_user(
-    credentials: HTTPAuthorizationCredentials | None = Depends(bearer),
-) -> dict | None:
-    if not credentials:
-        return None
+async def get_current_user(credentials: HTTPAuthCredentials = Depends(security)) -> dict:
+    """Dependency to get current authenticated user"""
     try:
-        return await get_current_user(credentials)
-    except HTTPException:
-        return None
+        payload = decode_token(credentials.credentials)
+        if not payload or "sub" not in payload:
+            raise HTTPException(status_code=401, detail="Invalid token")
+        return {"id": int(payload["sub"]), **payload}
+    except Exception:
+        raise HTTPException(status_code=401, detail="Invalid token")
+
+
+async def get_current_admin(credentials: HTTPAuthCredentials = Depends(security)) -> dict:
+    """Dependency to get current authenticated admin"""
+    try:
+        payload = decode_token(credentials.credentials)
+        if not payload or payload.get("role") != "admin":
+            raise HTTPException(status_code=403, detail="Admin access required")
+        return payload
+    except Exception:
+        raise HTTPException(status_code=403, detail="Invalid or expired admin token")

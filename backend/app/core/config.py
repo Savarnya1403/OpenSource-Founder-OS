@@ -20,6 +20,10 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080  # 7 days
     ALGORITHM: str = "HS256"
 
+    # Admin Auth
+    ADMIN_USERNAME: str = "admin"
+    ADMIN_PASSWORD: str = "admin123"  # Change in production
+
     # GitHub-as-database (user storage)
     GITHUB_TOKEN: str = ""       # set in Vercel env vars
     GITHUB_OWNER: str = "Savarnya1403"
