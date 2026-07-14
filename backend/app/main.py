@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import get_settings
 from app.core.database import init_db
-from app.api.routes import auth, chat, schemes, health, vcs, knowledge, wizards, tools, traction, forum, events, incubators, mentors, accelerators, funded_startups, individual_angels, term_sheet, intel
+from app.api.routes import auth, chat, schemes, health, vcs, knowledge, wizards, tools, traction, forum, events, incubators, mentors, accelerators, funded_startups, individual_angels, term_sheet, intel, login_activity
 
 # Import models so SQLAlchemy registers them before init_db()
 import app.models.traction  # noqa: F401
@@ -54,6 +54,7 @@ app.include_router(funded_startups.router, prefix="/api")
 app.include_router(individual_angels.router, prefix="/api")
 app.include_router(term_sheet.router, prefix="/api")
 app.include_router(intel.router, prefix="/api")
+app.include_router(login_activity.router, prefix="/api")
 
 
 @app.get("/")
