@@ -1,12 +1,41 @@
 from __future__ import annotations
 from datetime import datetime, timezone
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, Request
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import insert
 from app.core.security import hash_password, verify_password, create_access_token
 from app.core.github_db import get_users, save_users, find_user_by_email
+from app.core.database import get_db
 from app.models.user import UserRegister, UserLogin, UserProfile, TokenResponse
+from app.models.login_activity import LoginActivityDB
 from app.api.deps import get_current_user
 
 router = APIRouter(prefix="/auth", tags=["auth"])
+
+
+async def log_login_activity(
+    db: AsyncSession,
+    user_id: int,
+    email: str,
+    ip_address: str | None,
+    user_agent: str | None,
+    login_status: str,
+) -> None:
+    """Log user login activity for audit trail and tracking"""
+    try:
+        stmt = insert(LoginActivityDB).values(
+            user_id=user_id,
+            email=email,
+            ip_address=ip_address,
+            user_agent=user_agent,
+            login_status=login_status,
+            device_info=f"{user_agent[:100] if user_agent else 'unknown'}" if user_agent else None,
+        )
+        await db.execute(stmt)
+        await db.commit()
+    except Exception as e:
+        print(f"Error logging login activity: {e}")
+        await db.rollback()
 
 
 @router.post("/register", response_model=TokenResponse, status_code=status.HTTP_201_CREATED)
@@ -40,12 +69,39 @@ async def register(payload: UserRegister):
 
 
 @router.post("/login", response_model=TokenResponse)
-async def login(payload: UserLogin):
+async def login(
+    payload: UserLogin,
+    request: Request,
+    db: AsyncSession = Depends(get_db),
+):
     users, _ = await get_users()
     user = next((u for u in users if u["email"] == payload.email), None)
 
+    # Extract client details
+    ip_address = request.client.host if request.client else None
+    user_agent = request.headers.get("user-agent", None)
+    
     if not user or not verify_password(payload.password, user["hashed_password"]):
+        # Log failed login attempt
+        await log_login_activity(
+            db=db,
+            user_id=0,
+            email=payload.email,
+            ip_address=ip_address,
+            user_agent=user_agent,
+            login_status="failed",
+        )
         raise HTTPException(status_code=401, detail="Invalid email or password")
+
+    # Log successful login
+    await log_login_activity(
+        db=db,
+        user_id=user["id"],
+        email=user["email"],
+        ip_address=ip_address,
+        user_agent=user_agent,
+        login_status="success",
+    )
 
     token = create_access_token({"sub": str(user["id"])})
     return TokenResponse(
