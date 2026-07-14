@@ -8,6 +8,7 @@ from app.api.routes import auth, chat, schemes, health, vcs, knowledge, wizards,
 # Import models so SQLAlchemy registers them before init_db()
 import app.models.traction  # noqa: F401
 import app.models.forum     # noqa: F401
+import app.models.login_activity  # noqa: F401
 
 settings = get_settings()
 
