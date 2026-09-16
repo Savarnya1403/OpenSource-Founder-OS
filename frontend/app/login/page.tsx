@@ -4,9 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { Zap, Eye, EyeOff } from "lucide-react";
-import axios from "axios";
-
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+import { api } from "@/lib/api";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -20,7 +18,7 @@ export default function LoginPage() {
     setLoading(true);
     try {
       if (mode === "admin") {
-        const { data } = await axios.post(`${API_BASE}/api/admin/login`, {
+        const { data } = await api.post("/api/admin/login", {
           username: form.username,
           password: form.password,
         });
@@ -29,7 +27,7 @@ export default function LoginPage() {
         toast.success(`Welcome Admin ${data.username}!`);
         router.push("/admin/dashboard");
       } else {
-        const { data } = await axios.post(`${API_BASE}/api/auth/login`, {
+        const { data } = await api.post("/api/auth/login", {
           email: form.email,
           password: form.password,
         });
