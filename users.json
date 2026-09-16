@@ -75,5 +75,16 @@
     "sector": "FinTech",
     "city": "Bengaluru",
     "created_at": "2026-07-07T05:15:27.042097+00:00"
+  },
+  {
+    "id": 8,
+    "email": "kanu@gmail.com",
+    "name": "Kanishk Savarnya",
+    "hashed_password": "$2b$12$9sQ5QdmiVTOD7VQ8SLE/2.LIQf6c7LodcHrdrOzgQTknJ/LshO09q",
+    "startup_name": "kjjmn",
+    "startup_stage": "Idea",
+    "sector": "Technology",
+    "city": "Bokaro",
+    "created_at": "2026-09-16T13:51:18.006103+00:00"
   }
 ]
