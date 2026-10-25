@@ -1,9 +1,10 @@
 from __future__ import annotations
-from fastapi import APIRouter, Depends, HTTPException, status
+import hmac
+from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc, func
 from datetime import datetime, timedelta, timezone
-from app.core.security import create_access_token, hash_password, verify_password
+from app.core.security import create_access_token
 from app.core.config import get_settings
 from app.core.database import get_db
 from app.models.admin import AdminLogin, AdminToken
@@ -17,7 +18,9 @@ settings = get_settings()
 @router.post("/login", response_model=AdminToken)
 async def admin_login(payload: AdminLogin):
     """Admin login endpoint"""
-    if payload.username != settings.ADMIN_USERNAME or payload.password != settings.ADMIN_PASSWORD:
+    username_ok = hmac.compare_digest(payload.username, settings.ADMIN_USERNAME)
+    password_ok = hmac.compare_digest(payload.password, settings.ADMIN_PASSWORD)
+    if not username_ok or not password_ok:
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
     
     token = create_access_token({"sub": "admin", "role": "admin"})
@@ -82,14 +85,14 @@ async def get_dashboard_overview(
             "logins_last_24h": logins_24h,
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching overview: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching overview")
 
 
 @router.get("/dashboard/recent-logins", response_model=list[LoginActivityResponse])
 async def get_recent_logins(
     admin: dict = Depends(get_current_admin),
     db: AsyncSession = Depends(get_db),
-    limit: int = 50,
+    limit: int = Query(50, ge=1, le=500),
 ):
     """Get recent logins for admin dashboard"""
     try:
@@ -102,14 +105,14 @@ async def get_recent_logins(
         logins = result.scalars().all()
         return logins
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching recent logins: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching recent logins")
 
 
 @router.get("/dashboard/failed-logins", response_model=list[LoginActivityResponse])
 async def get_failed_logins(
     admin: dict = Depends(get_current_admin),
     db: AsyncSession = Depends(get_db),
-    limit: int = 50,
+    limit: int = Query(50, ge=1, le=500),
 ):
     """Get failed login attempts for security monitoring"""
     try:
@@ -123,7 +126,7 @@ async def get_failed_logins(
         logins = result.scalars().all()
         return logins
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching failed logins: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching failed logins")
 
 
 @router.get("/dashboard/ip-analysis")
@@ -160,7 +163,7 @@ async def get_ip_analysis(
         ]
         return data
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error analyzing IPs: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error analyzing IPs")
 
 
 @router.get("/dashboard/user-analysis")
@@ -201,14 +204,14 @@ async def get_user_analysis(
         ]
         return data
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error analyzing users: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error analyzing users")
 
 
 @router.get("/dashboard/hourly-stats")
 async def get_hourly_stats(
     admin: dict = Depends(get_current_admin),
     db: AsyncSession = Depends(get_db),
-    hours: int = 24,
+    hours: int = Query(24, ge=1, le=168),
 ):
     """Get hourly login statistics for the last N hours"""
     try:
@@ -239,4 +242,4 @@ async def get_hourly_stats(
         ]
         return data
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching hourly stats: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching hourly stats")

@@ -1,8 +1,14 @@
 from __future__ import annotations
+import warnings
 from pydantic_settings import BaseSettings
 from pydantic import field_validator
 from functools import lru_cache
 from typing import List
+
+_INSECURE_DEFAULTS = {
+    "dev-secret-change-in-production",
+    "admin123",
+}
 
 
 class Settings(BaseSettings):
@@ -22,10 +28,10 @@ class Settings(BaseSettings):
 
     # Admin Auth
     ADMIN_USERNAME: str = "admin"
-    ADMIN_PASSWORD: str = "admin123"  # Change in production
+    ADMIN_PASSWORD: str = "admin123"
 
     # GitHub-as-database (user storage)
-    GITHUB_TOKEN: str = ""       # set in Vercel env vars
+    GITHUB_TOKEN: str = ""
     GITHUB_OWNER: str = "Savarnya1403"
     GITHUB_REPO: str = "OpenSource-Founder-OS"
     GITHUB_DB_BRANCH: str = "db"
@@ -47,6 +53,15 @@ class Settings(BaseSettings):
     def cors_origins_list(self) -> List[str]:
         return [o.strip() for o in self.CORS_ORIGINS.split(",")]
 
+    def warn_insecure(self) -> None:
+        if self.ENVIRONMENT == "production":
+            if self.SECRET_KEY in _INSECURE_DEFAULTS:
+                raise RuntimeError("SECRET_KEY must be changed in production")
+            if self.ADMIN_PASSWORD in _INSECURE_DEFAULTS:
+                raise RuntimeError("ADMIN_PASSWORD must be changed in production")
+            if not self.GITHUB_TOKEN:
+                raise RuntimeError("GITHUB_TOKEN must be set in production")
+
     class Config:
         env_file = ".env"
         extra = "ignore"
@@ -54,4 +69,6 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings() -> Settings:
-    return Settings()
+    s = Settings()
+    s.warn_insecure()
+    return s

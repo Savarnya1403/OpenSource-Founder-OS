@@ -1,7 +1,7 @@
 from __future__ import annotations
 from sqlalchemy import Integer, String, Text, DateTime, func, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from typing import Optional, List
 from datetime import datetime
 from app.core.database import Base
@@ -44,9 +44,39 @@ class ForumPostCreate(BaseModel):
     body: str
     category: str = "General"
 
+    @field_validator("title")
+    @classmethod
+    def title_limits(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("Title cannot be empty")
+        if len(v) > 200:
+            raise ValueError("Title must be under 200 characters")
+        return v
+
+    @field_validator("body")
+    @classmethod
+    def body_limits(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("Body cannot be empty")
+        if len(v) > 10_000:
+            raise ValueError("Body must be under 10,000 characters")
+        return v
+
 
 class ForumReplyCreate(BaseModel):
     body: str
+
+    @field_validator("body")
+    @classmethod
+    def body_limits(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("Reply cannot be empty")
+        if len(v) > 5_000:
+            raise ValueError("Reply must be under 5,000 characters")
+        return v
 
 
 def _anon_id(user_id: int) -> str:

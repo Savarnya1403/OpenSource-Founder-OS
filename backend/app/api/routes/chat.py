@@ -27,6 +27,25 @@ AGENT_SYSTEMS = {
     "pitch": (PITCH_SYSTEM, 0.6),
 }
 
+CHAT_MODE_OVERRIDES = {
+    "quick": {
+        "suffix": "\n\n[RESPONSE MODE: QUICK ANSWER]\nRespond in 3–5 bullet points maximum. Be direct and actionable. No preamble, no caveats. Under 150 words total.",
+        "max_tokens": 300,
+    },
+    "deep": {
+        "suffix": "\n\n[RESPONSE MODE: DEEP DIVE]\nGive a thorough, structured response with headers and subsections. Include data, examples from Indian startups, and actionable frameworks. Aim for 500–1000 words.",
+        "max_tokens": 2048,
+    },
+    "devil": {
+        "suffix": "\n\n[RESPONSE MODE: DEVIL'S ADVOCATE]\nChallenge the user's assumption or plan. What are the 3 most dangerous flaws in their thinking? What would a skeptical VC or experienced operator say? Be direct and critical — don't validate, stress-test. End with what would actually change your mind.",
+        "max_tokens": 1000,
+    },
+    "debate": {
+        "suffix": "\n\n[RESPONSE MODE: STRUCTURED DEBATE]\nPresent BOTH sides of this question as a genuine debate. Use format:\n\n**FOR (Why this is right):**\n[arguments]\n\n**AGAINST (Why this fails):**\n[arguments]\n\n**Verdict:** Your honest recommendation with reasoning.",
+        "max_tokens": 1500,
+    },
+}
+
 # In-memory session store (use Redis in production)
 _sessions: dict[str, list] = {}
 
@@ -125,8 +144,13 @@ async def chat_stream(
             yield f"data: {json.dumps({'type': 'agent_switch', 'agent': agent, 'session_id': session_id})}\n\n"
 
             # ── Step 2: Build system prompt ───────────────────────────────
+            mode = (payload.chat_mode or "mentor").lower()
+            mode_override = CHAT_MODE_OVERRIDES.get(mode, {})
+            mode_suffix = mode_override.get("suffix", "")
+            max_tokens = mode_override.get("max_tokens", 2048)
+
             if agent == "schemes":
-                system_content = build_schemes_system(payload.message, startup_profile)
+                system_content = build_schemes_system(payload.message, startup_profile) + mode_suffix
                 temperature = 0.3
             else:
                 base_system, temperature = AGENT_SYSTEMS[agent]
@@ -135,10 +159,10 @@ async def chat_stream(
                     profile_ctx = "\n\n[Founder's Startup Profile]\n" + "\n".join(
                         f"- {k}: {v}" for k, v in startup_profile.items() if v
                     )
-                system_content = base_system + profile_ctx
+                system_content = base_system + profile_ctx + mode_suffix
 
             # ── Step 3: Stream tokens directly ───────────────────────────
-            agent_llm = build_llm_from_state(state_stub, max_tokens=2048, temperature=temperature)
+            agent_llm = build_llm_from_state(state_stub, max_tokens=max_tokens, temperature=temperature)
             messages = [SystemMessage(content=system_content)] + history
 
             async for chunk in agent_llm.astream(messages):
@@ -217,6 +241,9 @@ async def chat_message(
 
 
 @router.delete("/history")
-async def clear_history(session_id: str):
+async def clear_history(
+    session_id: str,
+    user: dict | None = Depends(get_optional_user),
+):
     _sessions.pop(session_id, None)
     return {"status": "cleared", "session_id": session_id}

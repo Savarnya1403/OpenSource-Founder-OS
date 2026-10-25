@@ -6,7 +6,7 @@ from sqlalchemy import insert
 from app.core.security import hash_password, verify_password, create_access_token
 from app.core.github_db import get_users, save_users, find_user_by_email
 from app.core.database import get_db
-from app.models.user import UserRegister, UserLogin, UserProfile, TokenResponse
+from app.models.user import UserRegister, UserLogin, UserProfile, UserProfileUpdate, TokenResponse
 from app.models.login_activity import LoginActivityDB
 from app.api.deps import get_current_user
 
@@ -118,17 +118,15 @@ async def me(user: dict = Depends(get_current_user)):
 
 @router.patch("/me", response_model=UserProfile)
 async def update_profile(
-    payload: dict,
+    payload: UserProfileUpdate,
     user: dict = Depends(get_current_user),
 ):
     users, sha = await get_users()
-    allowed = {"name", "startup_name", "startup_stage", "sector", "city"}
+    updates = payload.model_dump(exclude_none=True)
 
     for i, u in enumerate(users):
         if u["id"] == user["id"]:
-            for key, value in payload.items():
-                if key in allowed:
-                    users[i][key] = value
+            users[i].update(updates)
             await save_users(users, sha)
             return UserProfile(**{k: users[i][k] for k in UserProfile.model_fields if k in users[i]})
 

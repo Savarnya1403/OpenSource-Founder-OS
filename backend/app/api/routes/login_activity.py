@@ -1,5 +1,5 @@
 from __future__ import annotations
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
 from app.core.database import get_db
@@ -13,8 +13,8 @@ router = APIRouter(prefix="/login-activities", tags=["login-activities"])
 async def get_login_activities(
     user: dict = Depends(get_current_user),
     db: AsyncSession = Depends(get_db),
-    limit: int = 50,
-    offset: int = 0,
+    limit: int = Query(50, ge=1, le=200),
+    offset: int = Query(0, ge=0),
 ):
     """Get login activity history for the current user"""
     try:
@@ -29,7 +29,7 @@ async def get_login_activities(
         activities = result.scalars().all()
         return activities
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching login activities: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching login activities")
 
 
 @router.get("/stats", response_model=dict)
@@ -68,7 +68,7 @@ async def get_login_stats(
             "unique_ip_addresses": unique_ips,
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching login stats: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching login stats")
 
 
 @router.get("/recent", response_model=LoginActivityResponse)
@@ -97,4 +97,4 @@ async def get_recent_login(
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error fetching recent login: {str(e)}")
+        raise HTTPException(status_code=500, detail="Error fetching recent login")

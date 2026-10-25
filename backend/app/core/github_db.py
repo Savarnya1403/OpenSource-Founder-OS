@@ -1,9 +1,9 @@
 from __future__ import annotations
+import asyncio
 import json
 import base64
 import httpx
 from datetime import datetime, timezone
-from functools import lru_cache
 
 
 def _get_settings():
@@ -13,6 +13,7 @@ def _get_settings():
 
 GITHUB_API = "https://api.github.com"
 _FALLBACK_STORE: list[dict] = []  # in-memory fallback for local dev without token
+_write_lock = asyncio.Lock()       # serialise concurrent writes within a single invocation
 
 
 def _headers(token: str) -> dict:
@@ -74,11 +75,15 @@ async def _write_file(
     if sha:
         payload["sha"] = sha
     async with httpx.AsyncClient(timeout=15) as client:
-        await client.put(
+        r = await client.put(
             f"{GITHUB_API}/repos/{owner}/{repo}/contents/{path}",
             json=payload,
             headers=_headers(token),
         )
+        if r.status_code not in (200, 201):
+            raise httpx.HTTPStatusError(
+                f"GitHub write failed: {r.status_code}", request=r.request, response=r
+            )
 
 
 # ── Public interface ──────────────────────────────────────────────────────────
@@ -97,11 +102,30 @@ async def save_users(users: list[dict], sha: str | None) -> None:
         _FALLBACK_STORE.clear()
         _FALLBACK_STORE.extend(users)
         return
-    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    await _write_file(
-        s.GITHUB_TOKEN, s.GITHUB_OWNER, s.GITHUB_REPO, s.GITHUB_DB_BRANCH,
-        "users.json", users, sha, f"db: update users [{ts}]"
-    )
+
+    async with _write_lock:
+        ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+        last_exc: Exception | None = None
+        for attempt in range(3):
+            try:
+                await _write_file(
+                    s.GITHUB_TOKEN, s.GITHUB_OWNER, s.GITHUB_REPO, s.GITHUB_DB_BRANCH,
+                    "users.json", users, sha, f"db: update users [{ts}]"
+                )
+                return
+            except httpx.HTTPStatusError as exc:
+                # 409 = sha conflict (another write landed first); re-read and retry
+                if exc.response.status_code in (409, 422) and attempt < 2:
+                    await asyncio.sleep(0.5 * (attempt + 1))
+                    users, sha = await _read_file(
+                        s.GITHUB_TOKEN, s.GITHUB_OWNER, s.GITHUB_REPO,
+                        s.GITHUB_DB_BRANCH, "users.json"
+                    )
+                    last_exc = exc
+                else:
+                    raise
+        if last_exc:
+            raise last_exc
 
 
 async def find_user_by_email(email: str) -> dict | None:
