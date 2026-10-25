@@ -88,7 +88,7 @@ export default function FundraisePipelinePage() {
   });
 
   const updateMut = useMutation({
-    mutationFn: ({ id, ...payload }: Partial<Deal> & { id: number }) => api.patch(`/api/pipeline/${id}`, payload),
+    mutationFn: ({ id, ...payload }: { id: number } & Record<string, unknown>) => api.patch(`/api/pipeline/${id}`, payload),
     onSuccess: () => { qc.invalidateQueries({ queryKey: ["pipeline"] }); qc.invalidateQueries({ queryKey: ["pipeline-summary"] }); setEditingId(null); toast.success("Updated"); },
   });
 
