@@ -86,5 +86,16 @@
     "sector": "Technology",
     "city": "Bokaro",
     "created_at": "2026-09-16T13:51:18.006103+00:00"
+  },
+  {
+    "id": 9,
+    "email": "kanishksavarnyam@gmail.com",
+    "name": "Kanishk Savarnya",
+    "hashed_password": "$2b$12$fpv0Zrv9OL0nTPdx0BKKCOQ7n6iG4kugO0reyphQPzWLksQVDl1uu",
+    "startup_name": "TISSOT",
+    "startup_stage": "Idea",
+    "sector": "FinTech",
+    "city": "Bokaro",
+    "created_at": "2026-10-26T06:32:35.865893+00:00"
   }
 ]
